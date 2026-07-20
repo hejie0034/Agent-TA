@@ -1,0 +1,21 @@
+# Secrets and local runtime state
+.env
+.server.*
+server.out.log
+server.err.log
+unanswered_questions.jsonl
+feedback/*.xlsx
+
+# Python caches
+__pycache__/
+*.py[cod]
+
+# Generated document build caches
+build_cache/
+
+# Office temp files
+~$*
+
+# OS/editor noise
+.DS_Store
+Thumbs.db

@@ -1,0 +1,1072 @@
+﻿{
+    "source":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程",
+    "imageCount":  152,
+    "ocrCount":  152,
+    "failedCount":  0,
+    "results":  [
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\AI工作台的功能\\备课\\step1.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\AI工作台的功能\\备课\\step1.ocr.txt",
+                        "ok":  true,
+                        "textLength":  562,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\AI工作台的功能\\备课\\step2.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\AI工作台的功能\\备课\\step2.ocr.txt",
+                        "ok":  true,
+                        "textLength":  542,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\AI工作台的功能\\公式识别\\step1.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\AI工作台的功能\\公式识别\\step1.ocr.txt",
+                        "ok":  true,
+                        "textLength":  491,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\AI工作台的功能\\公式识别\\step2.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\AI工作台的功能\\公式识别\\step2.ocr.txt",
+                        "ok":  true,
+                        "textLength":  205,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\AI工作台的功能\\公式识别\\step3.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\AI工作台的功能\\公式识别\\step3.ocr.txt",
+                        "ok":  true,
+                        "textLength":  320,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\AI工作台的功能\\教案生成\\step1.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\AI工作台的功能\\教案生成\\step1.ocr.txt",
+                        "ok":  true,
+                        "textLength":  566,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\AI工作台的功能\\教案生成\\step2.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\AI工作台的功能\\教案生成\\step2.ocr.txt",
+                        "ok":  true,
+                        "textLength":  448,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\AI工作台的功能\\教案生成\\step3.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\AI工作台的功能\\教案生成\\step3.ocr.txt",
+                        "ok":  true,
+                        "textLength":  1127,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\AI工作台的功能\\教案生成\\step4.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\AI工作台的功能\\教案生成\\step4.ocr.txt",
+                        "ok":  true,
+                        "textLength":  337,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\AI工作台的功能\\生成PPT\\大纲生成PPT\\step1.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\AI工作台的功能\\生成PPT\\大纲生成PPT\\step1.ocr.txt",
+                        "ok":  true,
+                        "textLength":  495,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\AI工作台的功能\\生成PPT\\大纲生成PPT\\step2.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\AI工作台的功能\\生成PPT\\大纲生成PPT\\step2.ocr.txt",
+                        "ok":  true,
+                        "textLength":  193,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\AI工作台的功能\\生成PPT\\大纲生成PPT\\step3.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\AI工作台的功能\\生成PPT\\大纲生成PPT\\step3.ocr.txt",
+                        "ok":  true,
+                        "textLength":  319,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\AI工作台的功能\\生成PPT\\大纲生成PPT\\step4.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\AI工作台的功能\\生成PPT\\大纲生成PPT\\step4.ocr.txt",
+                        "ok":  true,
+                        "textLength":  614,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\AI工作台的功能\\生成PPT\\大纲生成PPT\\step5.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\AI工作台的功能\\生成PPT\\大纲生成PPT\\step5.ocr.txt",
+                        "ok":  true,
+                        "textLength":  108,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\AI工作台的功能\\生成PPT\\主题生成PPT\\step1.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\AI工作台的功能\\生成PPT\\主题生成PPT\\step1.ocr.txt",
+                        "ok":  true,
+                        "textLength":  495,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\AI工作台的功能\\生成PPT\\主题生成PPT\\step2.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\AI工作台的功能\\生成PPT\\主题生成PPT\\step2.ocr.txt",
+                        "ok":  true,
+                        "textLength":  193,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\AI工作台的功能\\生成PPT\\主题生成PPT\\step3.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\AI工作台的功能\\生成PPT\\主题生成PPT\\step3.ocr.txt",
+                        "ok":  true,
+                        "textLength":  299,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\AI工作台的功能\\生成PPT\\主题生成PPT\\step4.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\AI工作台的功能\\生成PPT\\主题生成PPT\\step4.ocr.txt",
+                        "ok":  true,
+                        "textLength":  549,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\AI工作台的功能\\生成PPT\\主题生成PPT\\step5.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\AI工作台的功能\\生成PPT\\主题生成PPT\\step5.ocr.txt",
+                        "ok":  true,
+                        "textLength":  373,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\AI工作台的功能\\生成PPT\\主题生成PPT\\step6.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\AI工作台的功能\\生成PPT\\主题生成PPT\\step6.ocr.txt",
+                        "ok":  true,
+                        "textLength":  223,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\AI工作台的功能\\生成图谱\\step1.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\AI工作台的功能\\生成图谱\\step1.ocr.txt",
+                        "ok":  true,
+                        "textLength":  501,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\AI工作台的功能\\生成图谱\\step2.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\AI工作台的功能\\生成图谱\\step2.ocr.txt",
+                        "ok":  true,
+                        "textLength":  300,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\AI工作台的功能\\生成图谱\\step3.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\AI工作台的功能\\生成图谱\\step3.ocr.txt",
+                        "ok":  true,
+                        "textLength":  369,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\AI工作台的功能\\生成图谱\\step4.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\AI工作台的功能\\生成图谱\\step4.ocr.txt",
+                        "ok":  true,
+                        "textLength":  226,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\AI工作台的功能\\视频分析\\step1.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\AI工作台的功能\\视频分析\\step1.ocr.txt",
+                        "ok":  true,
+                        "textLength":  503,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\AI工作台的功能\\视频分析\\step2.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\AI工作台的功能\\视频分析\\step2.ocr.txt",
+                        "ok":  true,
+                        "textLength":  209,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\AI工作台的功能\\视频分析\\step3.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\AI工作台的功能\\视频分析\\step3.ocr.txt",
+                        "ok":  true,
+                        "textLength":  1054,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\AI工作台的功能\\文档阅读\\step1.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\AI工作台的功能\\文档阅读\\step1.ocr.txt",
+                        "ok":  true,
+                        "textLength":  501,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\AI工作台的功能\\文档阅读\\step2.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\AI工作台的功能\\文档阅读\\step2.ocr.txt",
+                        "ok":  true,
+                        "textLength":  189,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\AI工作台的功能\\文档阅读\\step3.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\AI工作台的功能\\文档阅读\\step3.ocr.txt",
+                        "ok":  true,
+                        "textLength":  831,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\AI工作台的功能\\文档阅读\\step4.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\AI工作台的功能\\文档阅读\\step4.ocr.txt",
+                        "ok":  true,
+                        "textLength":  297,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\AI工作台的功能\\文档阅读\\step5.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\AI工作台的功能\\文档阅读\\step5.ocr.txt",
+                        "ok":  true,
+                        "textLength":  659,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\AI工作台的功能\\学情分析\\step1.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\AI工作台的功能\\学情分析\\step1.ocr.txt",
+                        "ok":  true,
+                        "textLength":  501,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\AI工作台的功能\\学情分析\\step2.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\AI工作台的功能\\学情分析\\step2.ocr.txt",
+                        "ok":  true,
+                        "textLength":  271,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\AI工作台的功能\\学生画像\\step1.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\AI工作台的功能\\学生画像\\step1.ocr.txt",
+                        "ok":  true,
+                        "textLength":  497,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\AI工作台的功能\\学生画像\\step2.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\AI工作台的功能\\学生画像\\step2.ocr.txt",
+                        "ok":  true,
+                        "textLength":  139,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\AI工作台的功能\\学生画像\\step3.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\AI工作台的功能\\学生画像\\step3.ocr.txt",
+                        "ok":  true,
+                        "textLength":  129,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\AI工作台的功能\\学生画像\\step4.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\AI工作台的功能\\学生画像\\step4.ocr.txt",
+                        "ok":  true,
+                        "textLength":  647,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\AI工作台的功能\\智能出题\\step1.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\AI工作台的功能\\智能出题\\step1.ocr.txt",
+                        "ok":  true,
+                        "textLength":  499,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\AI工作台的功能\\智能出题\\step2.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\AI工作台的功能\\智能出题\\step2.ocr.txt",
+                        "ok":  true,
+                        "textLength":  468,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\AI工作台的功能\\智能出题\\step3.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\AI工作台的功能\\智能出题\\step3.ocr.txt",
+                        "ok":  true,
+                        "textLength":  573,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\AI工作台的功能\\智能出题\\step4.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\AI工作台的功能\\智能出题\\step4.ocr.txt",
+                        "ok":  true,
+                        "textLength":  403,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\AI工作台的功能\\智能出题\\step5.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\AI工作台的功能\\智能出题\\step5.ocr.txt",
+                        "ok":  true,
+                        "textLength":  93,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\AI工作台的功能\\智能批改\\step1.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\AI工作台的功能\\智能批改\\step1.ocr.txt",
+                        "ok":  true,
+                        "textLength":  509,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\AI工作台的功能\\智能批改\\step2.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\AI工作台的功能\\智能批改\\step2.ocr.txt",
+                        "ok":  true,
+                        "textLength":  541,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\AI工作台的功能\\智能批改\\step3.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\AI工作台的功能\\智能批改\\step3.ocr.txt",
+                        "ok":  true,
+                        "textLength":  1641,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\AI工作台的功能\\智能批改\\step4.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\AI工作台的功能\\智能批改\\step4.ocr.txt",
+                        "ok":  true,
+                        "textLength":  473,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\AI工作台的功能\\资源检索\\step1.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\AI工作台的功能\\资源检索\\step1.ocr.txt",
+                        "ok":  true,
+                        "textLength":  505,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\AI工作台的功能\\资源检索\\step2.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\AI工作台的功能\\资源检索\\step2.ocr.txt",
+                        "ok":  true,
+                        "textLength":  389,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\AI工作台的功能\\资源检索\\step3.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\AI工作台的功能\\资源检索\\step3.ocr.txt",
+                        "ok":  true,
+                        "textLength":  1141,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\创建课程\\step1.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\创建课程\\step1.ocr.txt",
+                        "ok":  true,
+                        "textLength":  266,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\创建课程\\step2.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\创建课程\\step2.ocr.txt",
+                        "ok":  true,
+                        "textLength":  349,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\创建课程\\step3.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\创建课程\\step3.ocr.txt",
+                        "ok":  true,
+                        "textLength":  302,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何编辑公告\\step1.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何编辑公告\\step1.ocr.txt",
+                        "ok":  true,
+                        "textLength":  285,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何编辑公告\\step2.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何编辑公告\\step2.ocr.txt",
+                        "ok":  true,
+                        "textLength":  169,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何创建AI助手\\step1.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何创建AI助手\\step1.ocr.txt",
+                        "ok":  true,
+                        "textLength":  463,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何创建AI助手\\step2.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何创建AI助手\\step2.ocr.txt",
+                        "ok":  true,
+                        "textLength":  244,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何创建AI助手\\step3.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何创建AI助手\\step3.ocr.txt",
+                        "ok":  true,
+                        "textLength":  330,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何创建AI助手\\step4.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何创建AI助手\\step4.ocr.txt",
+                        "ok":  true,
+                        "textLength":  373,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何创建AI助手\\step5.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何创建AI助手\\step5.ocr.txt",
+                        "ok":  true,
+                        "textLength":  500,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何创建AI助手\\step6.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何创建AI助手\\step6.ocr.txt",
+                        "ok":  true,
+                        "textLength":  264,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何创建单元\\导入课件生成单元\\step1.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何创建单元\\导入课件生成单元\\step1.ocr.txt",
+                        "ok":  true,
+                        "textLength":  286,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何创建单元\\导入课件生成单元\\step2.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何创建单元\\导入课件生成单元\\step2.ocr.txt",
+                        "ok":  true,
+                        "textLength":  241,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何创建单元\\导入课件生成单元\\step3.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何创建单元\\导入课件生成单元\\step3.ocr.txt",
+                        "ok":  true,
+                        "textLength":  209,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何创建单元\\导入课件生成单元\\step4.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何创建单元\\导入课件生成单元\\step4.ocr.txt",
+                        "ok":  true,
+                        "textLength":  269,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何创建单元\\添加单元\\e3e018cf6f4670d7580490025ee87628.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何创建单元\\添加单元\\e3e018cf6f4670d7580490025ee87628.ocr.txt",
+                        "ok":  true,
+                        "textLength":  241,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何创建单元\\添加单元\\step1.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何创建单元\\添加单元\\step1.ocr.txt",
+                        "ok":  true,
+                        "textLength":  286,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何创建单元\\添加单元\\step2.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何创建单元\\添加单元\\step2.ocr.txt",
+                        "ok":  true,
+                        "textLength":  230,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何创建单元\\添加单元\\step3.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何创建单元\\添加单元\\step3.ocr.txt",
+                        "ok":  true,
+                        "textLength":  287,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何从课件库导入课件\\step1.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何从课件库导入课件\\step1.ocr.txt",
+                        "ok":  true,
+                        "textLength":  314,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何从课件库导入课件\\step2.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何从课件库导入课件\\step2.ocr.txt",
+                        "ok":  true,
+                        "textLength":  387,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何从课件库导入课件\\step3.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何从课件库导入课件\\step3.ocr.txt",
+                        "ok":  true,
+                        "textLength":  111,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何导入自己的课件\\step1.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何导入自己的课件\\step1.ocr.txt",
+                        "ok":  true,
+                        "textLength":  289,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何导入自己的课件\\step2.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何导入自己的课件\\step2.ocr.txt",
+                        "ok":  true,
+                        "textLength":  309,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何开始上课\\step1.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何开始上课\\step1.ocr.txt",
+                        "ok":  true,
+                        "textLength":  204,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何开始上课\\step2.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何开始上课\\step2.ocr.txt",
+                        "ok":  true,
+                        "textLength":  186,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何开始上课\\step3.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何开始上课\\step3.ocr.txt",
+                        "ok":  true,
+                        "textLength":  146,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何开始上课\\step4.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何开始上课\\step4.ocr.txt",
+                        "ok":  true,
+                        "textLength":  273,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何批量导入班级与学生\\从其他课程批量导入班级与学生step1.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何批量导入班级与学生\\从其他课程批量导入班级与学生step1.ocr.txt",
+                        "ok":  true,
+                        "textLength":  360,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何批量导入班级与学生\\从其他课程批量导入班级与学生step2.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何批量导入班级与学生\\从其他课程批量导入班级与学生step2.ocr.txt",
+                        "ok":  true,
+                        "textLength":  193,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何批量导入班级与学生\\从学生库批量导入班级与学生step1.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何批量导入班级与学生\\从学生库批量导入班级与学生step1.ocr.txt",
+                        "ok":  true,
+                        "textLength":  347,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何批量导入班级与学生\\从学生库批量导入班级与学生step2.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何批量导入班级与学生\\从学生库批量导入班级与学生step2.ocr.txt",
+                        "ok":  true,
+                        "textLength":  279,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何删除公告\\step1.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何删除公告\\step1.ocr.txt",
+                        "ok":  true,
+                        "textLength":  270,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何删除公告\\step2.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何删除公告\\step2.ocr.txt",
+                        "ok":  true,
+                        "textLength":  161,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何设置教学团队\\创建班级\\step1.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何设置教学团队\\创建班级\\step1.ocr.txt",
+                        "ok":  true,
+                        "textLength":  286,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何设置教学团队\\创建班级\\step2.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何设置教学团队\\创建班级\\step2.ocr.txt",
+                        "ok":  true,
+                        "textLength":  358,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何设置教学团队\\创建班级\\step3创建班级.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何设置教学团队\\创建班级\\step3创建班级.ocr.txt",
+                        "ok":  true,
+                        "textLength":  361,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何设置教学团队\\加入学生-老师添加\\step1.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何设置教学团队\\加入学生-老师添加\\step1.ocr.txt",
+                        "ok":  true,
+                        "textLength":  344,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何设置教学团队\\加入学生-老师添加\\step2.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何设置教学团队\\加入学生-老师添加\\step2.ocr.txt",
+                        "ok":  true,
+                        "textLength":  209,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何设置教学团队\\加入学生-学生扫码\\c45d6f9566964adc001f07700a2d4dfa.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何设置教学团队\\加入学生-学生扫码\\c45d6f9566964adc001f07700a2d4dfa.ocr.txt",
+                        "ok":  true,
+                        "textLength":  250,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何设置教学团队\\加入学生-学生扫码\\step1.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何设置教学团队\\加入学生-学生扫码\\step1.ocr.txt",
+                        "ok":  true,
+                        "textLength":  338,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何设置教学团队\\指定教师\\step1.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何设置教学团队\\指定教师\\step1.ocr.txt",
+                        "ok":  true,
+                        "textLength":  346,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何设置教学团队\\指定教师\\step2.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何设置教学团队\\指定教师\\step2.ocr.txt",
+                        "ok":  true,
+                        "textLength":  199,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何使用教师备课助手\\step1.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何使用教师备课助手\\step1.ocr.txt",
+                        "ok":  true,
+                        "textLength":  286,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何使用教师备课助手\\step2.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何使用教师备课助手\\step2.ocr.txt",
+                        "ok":  true,
+                        "textLength":  471,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何使用教师备课助手\\step3.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何使用教师备课助手\\step3.ocr.txt",
+                        "ok":  true,
+                        "textLength":  450,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何使用教师备课助手\\step4.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何使用教师备课助手\\step4.ocr.txt",
+                        "ok":  true,
+                        "textLength":  349,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何使用教师备课助手\\step5.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何使用教师备课助手\\step5.ocr.txt",
+                        "ok":  true,
+                        "textLength":  582,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何使用教师备课助手\\step6.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何使用教师备课助手\\step6.ocr.txt",
+                        "ok":  true,
+                        "textLength":  562,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何使用教师备课助手\\step7.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何使用教师备课助手\\step7.ocr.txt",
+                        "ok":  true,
+                        "textLength":  607,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何使用教师备课助手\\step8.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何使用教师备课助手\\step8.ocr.txt",
+                        "ok":  true,
+                        "textLength":  421,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何添加AI助手至AI工作台首页\\step1.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何添加AI助手至AI工作台首页\\step1.ocr.txt",
+                        "ok":  true,
+                        "textLength":  437,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何添加AI助手至AI工作台首页\\step2.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何添加AI助手至AI工作台首页\\step2.ocr.txt",
+                        "ok":  true,
+                        "textLength":  220,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何添加AI助手至AI工作台首页\\step3.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何添加AI助手至AI工作台首页\\step3.ocr.txt",
+                        "ok":  true,
+                        "textLength":  220,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何添加AI助手至AI工作台首页\\step4.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何添加AI助手至AI工作台首页\\step4.ocr.txt",
+                        "ok":  true,
+                        "textLength":  243,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何添加AI助手至AI工作台首页\\step5.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何添加AI助手至AI工作台首页\\step5.ocr.txt",
+                        "ok":  true,
+                        "textLength":  469,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何添加扣子智能体\\step1.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何添加扣子智能体\\step1.ocr.txt",
+                        "ok":  true,
+                        "textLength":  463,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何添加扣子智能体\\step2.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何添加扣子智能体\\step2.ocr.txt",
+                        "ok":  true,
+                        "textLength":  254,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何添加扣子智能体\\step3.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何添加扣子智能体\\step3.ocr.txt",
+                        "ok":  true,
+                        "textLength":  642,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何新建公告\\step1.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何新建公告\\step1.ocr.txt",
+                        "ok":  true,
+                        "textLength":  286,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何新建公告\\step2.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何新建公告\\step2.ocr.txt",
+                        "ok":  true,
+                        "textLength":  210,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何新建公告\\step3.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何新建公告\\step3.ocr.txt",
+                        "ok":  true,
+                        "textLength":  174,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何新建公告\\step4.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何新建公告\\step4.ocr.txt",
+                        "ok":  true,
+                        "textLength":  292,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何新建课件\\step1.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何新建课件\\step1.ocr.txt",
+                        "ok":  true,
+                        "textLength":  314,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何新建课件\\step2.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何新建课件\\step2.ocr.txt",
+                        "ok":  true,
+                        "textLength":  199,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何新建课件\\step3.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何新建课件\\step3.ocr.txt",
+                        "ok":  true,
+                        "textLength":  210,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何新建课件\\step4.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何新建课件\\step4.ocr.txt",
+                        "ok":  true,
+                        "textLength":  345,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何新建课件\\step5.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何新建课件\\step5.ocr.txt",
+                        "ok":  true,
+                        "textLength":  159,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何新建课件\\step6.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何新建课件\\step6.ocr.txt",
+                        "ok":  true,
+                        "textLength":  215,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何新建课件\\step7.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何新建课件\\step7.ocr.txt",
+                        "ok":  true,
+                        "textLength":  262,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何新建课件\\step8.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何新建课件\\step8.ocr.txt",
+                        "ok":  true,
+                        "textLength":  274,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何新建题库文件夹\\step1.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何新建题库文件夹\\step1.ocr.txt",
+                        "ok":  true,
+                        "textLength":  191,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何新建题库文件夹\\step2.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何新建题库文件夹\\step2.ocr.txt",
+                        "ok":  true,
+                        "textLength":  221,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何新建题库文件夹\\step3.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何新建题库文件夹\\step3.ocr.txt",
+                        "ok":  true,
+                        "textLength":  198,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何在单元内添加资源\\添加教学活动\\添加测验\\c193b3a5aed2a662380dbdd51e0a1fb5.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何在单元内添加资源\\添加教学活动\\添加测验\\c193b3a5aed2a662380dbdd51e0a1fb5.ocr.txt",
+                        "ok":  true,
+                        "textLength":  189,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何在单元内添加资源\\添加教学活动\\添加测验\\step1.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何在单元内添加资源\\添加教学活动\\添加测验\\step1.ocr.txt",
+                        "ok":  true,
+                        "textLength":  217,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何在单元内添加资源\\添加教学活动\\添加个人作业\\1cf2bbd2a2809def1eb3ae23030637bc.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何在单元内添加资源\\添加教学活动\\添加个人作业\\1cf2bbd2a2809def1eb3ae23030637bc.ocr.txt",
+                        "ok":  true,
+                        "textLength":  193,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何在单元内添加资源\\添加教学活动\\添加个人作业\\step1.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何在单元内添加资源\\添加教学活动\\添加个人作业\\step1.ocr.txt",
+                        "ok":  true,
+                        "textLength":  217,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何在单元内添加资源\\添加教学活动\\添加公告\\step1.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何在单元内添加资源\\添加教学活动\\添加公告\\step1.ocr.txt",
+                        "ok":  true,
+                        "textLength":  217,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何在单元内添加资源\\添加教学活动\\添加公告\\step2.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何在单元内添加资源\\添加教学活动\\添加公告\\step2.ocr.txt",
+                        "ok":  true,
+                        "textLength":  189,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何在单元内添加资源\\添加教学活动\\添加考试\\bb6b620f4c52ba53f7cd409abe37244b.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何在单元内添加资源\\添加教学活动\\添加考试\\bb6b620f4c52ba53f7cd409abe37244b.ocr.txt",
+                        "ok":  true,
+                        "textLength":  189,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何在单元内添加资源\\添加教学活动\\添加考试\\step1.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何在单元内添加资源\\添加教学活动\\添加考试\\step1.ocr.txt",
+                        "ok":  true,
+                        "textLength":  217,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何在单元内添加资源\\添加教学活动\\添加课堂\\b2e1ccb7301be9141f7a4f30b6602795.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何在单元内添加资源\\添加教学活动\\添加课堂\\b2e1ccb7301be9141f7a4f30b6602795.ocr.txt",
+                        "ok":  true,
+                        "textLength":  189,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何在单元内添加资源\\添加教学活动\\添加课堂\\step1.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何在单元内添加资源\\添加教学活动\\添加课堂\\step1.ocr.txt",
+                        "ok":  true,
+                        "textLength":  217,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何在单元内添加资源\\添加教学活动\\添加讨论\\77000a747a57edaae148336c018158db.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何在单元内添加资源\\添加教学活动\\添加讨论\\77000a747a57edaae148336c018158db.ocr.txt",
+                        "ok":  true,
+                        "textLength":  189,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何在单元内添加资源\\添加教学活动\\添加讨论\\step1.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何在单元内添加资源\\添加教学活动\\添加讨论\\step1.ocr.txt",
+                        "ok":  true,
+                        "textLength":  217,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何在单元内添加资源\\添加教学活动\\添加小组作业\\step1.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何在单元内添加资源\\添加教学活动\\添加小组作业\\step1.ocr.txt",
+                        "ok":  true,
+                        "textLength":  217,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何在单元内添加资源\\添加教学活动\\添加小组作业\\step2.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何在单元内添加资源\\添加教学活动\\添加小组作业\\step2.ocr.txt",
+                        "ok":  true,
+                        "textLength":  193,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何在单元内添加资源\\添加教学活动\\添加直播\\13f46929b7859a2e90daea3d0ac97781.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何在单元内添加资源\\添加教学活动\\添加直播\\13f46929b7859a2e90daea3d0ac97781.ocr.txt",
+                        "ok":  true,
+                        "textLength":  189,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何在单元内添加资源\\添加教学活动\\添加直播\\step1.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何在单元内添加资源\\添加教学活动\\添加直播\\step1.ocr.txt",
+                        "ok":  true,
+                        "textLength":  217,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何在单元内添加资源\\添加教学资源\\添加课件\\step1.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何在单元内添加资源\\添加教学资源\\添加课件\\step1.ocr.txt",
+                        "ok":  true,
+                        "textLength":  217,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何在单元内添加资源\\添加教学资源\\添加课件\\step2.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何在单元内添加资源\\添加教学资源\\添加课件\\step2.ocr.txt",
+                        "ok":  true,
+                        "textLength":  189,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何在单元内添加资源\\添加教学资源\\添加资源\\step1.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何在单元内添加资源\\添加教学资源\\添加资源\\step1.ocr.txt",
+                        "ok":  true,
+                        "textLength":  217,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何在单元内添加资源\\添加教学资源\\添加资源\\step2.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何在单元内添加资源\\添加教学资源\\添加资源\\step2.ocr.txt",
+                        "ok":  true,
+                        "textLength":  189,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何在课堂中打开资源\\step1.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何在课堂中打开资源\\step1.ocr.txt",
+                        "ok":  true,
+                        "textLength":  136,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何在课堂中打开资源\\step2.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何在课堂中打开资源\\step2.ocr.txt",
+                        "ok":  true,
+                        "textLength":  305,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何在课堂中打开资源\\step3.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\如何在课堂中打开资源\\step3.ocr.txt",
+                        "ok":  true,
+                        "textLength":  139,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\删除课程\\step1.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\删除课程\\step1.ocr.txt",
+                        "ok":  true,
+                        "textLength":  251,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\删除课程\\step2.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\删除课程\\step2.ocr.txt",
+                        "ok":  true,
+                        "textLength":  384,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\新增AI助手中-选择AI助手\\step1.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\新增AI助手中-选择AI助手\\step1.ocr.txt",
+                        "ok":  true,
+                        "textLength":  286,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\新增AI助手中-选择AI助手\\step2.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\新增AI助手中-选择AI助手\\step2.ocr.txt",
+                        "ok":  true,
+                        "textLength":  437,
+                        "error":  ""
+                    },
+                    {
+                        "file":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\新增AI助手中-选择AI助手\\step3.png",
+                        "sidecar":  "C:\\Users\\huawei\\Desktop\\前端\\截图教程\\新增AI助手中-选择AI助手\\step3.ocr.txt",
+                        "ok":  true,
+                        "textLength":  367,
+                        "error":  ""
+                    }
+                ]
+}

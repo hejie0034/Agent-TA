@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI 教师助手</title>
+    <link rel="stylesheet" href="styles.css?v=20260706-text-guidance" />
+  </head>
+  <body>
+    <div class="shell" id="appShell">
+      <aside class="sidebar" aria-label="对话侧边栏">
+        <div class="brand">
+          <span class="bee-avatar bee-mascot" aria-hidden="true">
+            <span class="bee-wing bee-wing-left"></span>
+            <span class="bee-wing bee-wing-right"></span>
+            <span class="bee-body"><span class="bee-face"></span></span>
+          </span>
+          <strong>小蜜蜂</strong>
+        </div>
+
+        <button class="new-chat" id="newChat" type="button">
+          <span aria-hidden="true">＋</span>
+          <span class="label">新建对话</span>
+        </button>
+
+        <section class="history-section">
+          <div class="section-label">对话回溯</div>
+          <div id="historyList" class="history-list"></div>
+        </section>
+
+      </aside>
+
+      <main class="chat-panel">
+        <section class="prompt-strip" aria-label="推荐问题">
+          <button class="prompt-collapsed-icon" type="button" aria-label="打开常见问题" aria-expanded="false">问</button>
+          <div class="prompt-panel-content" id="promptPanelContent">
+            <button class="prompt-panel-close" type="button" aria-label="收起常见问题">×</button>
+            <div class="prompt-heading">
+              <span class="prompt-bee bee-mascot" aria-hidden="true"><span class="bee-wing bee-wing-left"></span><span class="bee-wing bee-wing-right"></span><span class="bee-body"><span class="bee-face"></span></span></span>
+              <div>
+                <h1>老师您好，我是小蜜蜂</h1>
+                <p>不知道怎么问也没关系，点一个常见问题就能开始。</p>
+              </div>
+            </div>
+            <div class="prompt-grid">
+              <button class="prompt-card prompt-card-primary" type="button" data-question="我应该从哪里开始？"><span>快速上手</span><small>第一次使用，从这里开始</small></button>
+              <button class="prompt-card" type="button" data-question="如何快速创建一门课程？"><span>创建课程</span><small>建立第一门课程</small></button>
+              <button class="prompt-card" type="button" data-question="如何设置教学团队？"><span>教学团队</span><small>添加老师和分配班级</small></button>
+              <button class="prompt-card" type="button" data-question="如何新建课件？"><span>制作课件</span><small>添加并发布教学内容</small></button>
+              <button class="prompt-card" type="button" data-question="如何布置个人作业？"><span>布置作业</span><small>设置要求、班级和时间</small></button>
+              <button class="prompt-card" type="button" data-question="如何开始上课？"><span>开始上课</span><small>创建课堂并邀请学生</small></button>
+              <button class="prompt-card" type="button" data-question="如何查看进度成绩？"><span>查看成绩</span><small>了解学生学习情况</small></button>
+              <button class="prompt-card" type="button" data-question="uLearning 有哪些功能？"><span>功能总览</span><small>看看平台能帮你做什么</small></button>
+            </div>
+          </div>
+        </section>
+
+        <section class="messages" id="messages" aria-live="polite"></section>
+
+        <form class="composer" id="chatForm">
+          <button class="icon-button" id="knowledgeButton" type="button" title="查看知识库范围" aria-label="查看知识库范围">
+            <span aria-hidden="true">?</span>
+          </button>
+          <textarea id="chatInput" rows="1" placeholder="请输入你的问题，例如：如何发布作业？"></textarea>
+          <button class="send-button" type="submit" title="发送" aria-label="发送">
+            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none">
+              <path d="M4.8 5.4 20 12 4.8 18.6l2.1-5.1L14 12l-7.1-1.5-2.1-5.1Z" />
+            </svg>
+          </button>
+        </form>
+      </main>
+    </div>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <div class="feedback-dialog" id="feedbackDialog" aria-hidden="true">
+      <div class="feedback-dialog-card" role="dialog" aria-modal="true" aria-labelledby="feedbackDialogTitle">
+        <button class="dialog-close" id="feedbackDialogClose" type="button" aria-label="关闭">×</button>
+        <h2 id="feedbackDialogTitle">很抱歉给您带来了不好的体验</h2>
+        <p>请问您需要转人工吗？点击后将进入人工服务入口。</p>
+        <div class="dialog-actions">
+          <button class="dialog-primary" id="dialogHandoff" type="button">转人工</button>
+          <button class="dialog-secondary" id="dialogCancel" type="button">暂时不用</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="feedback-dialog" id="handoffDialog" aria-hidden="true">
+      <div class="feedback-dialog-card" role="dialog" aria-modal="true" aria-labelledby="handoffDialogTitle">
+        <button class="dialog-close" id="handoffDialogClose" type="button" aria-label="关闭">×</button>
+        <h2 id="handoffDialogTitle">目前暂未接入人工</h2>
+        <p>麻烦您写下遇到的问题，我们将完善知识库，感谢您的反馈。</p>
+        <textarea class="handoff-textarea" id="handoffInput" rows="4" placeholder="请描述您遇到的问题"></textarea>
+        <div class="dialog-actions">
+          <button class="dialog-primary" id="handoffSubmit" type="button">提交反馈</button>
+          <button class="dialog-secondary" id="handoffCancel" type="button">取消</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js?v=20260706-text-guidance"></script>
+  </body>
+</html>

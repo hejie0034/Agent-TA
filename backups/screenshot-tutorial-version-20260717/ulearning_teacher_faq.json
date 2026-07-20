@@ -1,0 +1,3280 @@
+[
+  {
+    "id": "course-create",
+    "category": "course",
+    "question": "如何创建课程？",
+    "summary": "教师开课的第一步，用于创建后续教学内容和班级。",
+    "keywords": [
+      "创建课程",
+      "新建课程",
+      "开课",
+      "课程名称",
+      "课程封面",
+      "建课"
+    ],
+    "answer": {
+      "entry": "教师首页点击【创建课程】。",
+      "steps": [
+        "输入课程名称。",
+        "选择或上传课程封面。",
+        "点击确认创建。",
+        "进入课程后继续设置教学团队、班级和教学内容。"
+      ],
+      "check": "创建成功后，教师首页会出现这门课程。",
+      "risk": "团队教学时通常由课程负责人创建课程，其他老师通过教学团队加入，不需要重复建课。"
+    },
+    "audience": "uLearning teachers",
+    "client": "Web/APP as described in source"
+  },
+  {
+    "id": "teaching-team",
+    "category": "course",
+    "question": "如何设置教学团队？",
+    "summary": "课程负责人可添加老师、分配班级并设置角色。",
+    "keywords": [
+      "教学团队",
+      "添加老师",
+      "任课老师",
+      "助教",
+      "课程管理员",
+      "分配班级",
+      "角色"
+    ],
+    "answer": {
+      "entry": "进入课程后，打开【教学团队】或课程设置中的教学团队入口。",
+      "steps": [
+        "点击添加老师。",
+        "搜索并选择要加入的老师。",
+        "为老师分配负责班级。",
+        "按需要设置课程管理员、教师或助教角色。"
+      ],
+      "check": "教学团队列表中能看到新增老师，并显示对应角色和班级。",
+      "risk": "只有课程管理员可以设置教学团队，教师和助教通常不能修改团队。"
+    },
+    "audience": "uLearning teachers",
+    "client": "Web/APP as described in source"
+  },
+  {
+    "id": "class-setup",
+    "category": "course",
+    "question": "如何设置班级？",
+    "summary": "用于建立教学班，方便学生入班、发任务和统计成绩。",
+    "keywords": [
+      "设置班级",
+      "新建班级",
+      "班课",
+      "班级",
+      "学生入班",
+      "邀请码",
+      "二维码"
+    ],
+    "answer": {
+      "entry": "进入课程后，打开【班级】或【班课】管理。",
+      "steps": [
+        "点击新建班级。",
+        "填写班级名称。",
+        "保存班级。",
+        "把入班二维码或邀请码发给学生。"
+      ],
+      "check": "班级列表中能看到新班级，学生加入后人数会更新。",
+      "risk": "发布作业、公告、考试前，请先确认选择的是正确班级。"
+    },
+    "audience": "uLearning teachers",
+    "client": "Web/APP as described in source"
+  },
+  {
+    "id": "invite-students",
+    "category": "course",
+    "question": "如何邀请学生加入班课？",
+    "summary": "学生可通过二维码、邀请码或老师提供的入口加入班课。",
+    "keywords": [
+      "邀请学生",
+      "加入班课",
+      "扫码入班",
+      "邀请码",
+      "学生加入",
+      "班课"
+    ],
+    "answer": {
+      "entry": "进入目标课程的班级管理页面。",
+      "steps": [
+        "选择要邀请学生加入的班级。",
+        "打开班级二维码或邀请码。",
+        "把二维码或邀请码发给学生。",
+        "学生加入后，在班级成员中核对名单。"
+      ],
+      "check": "班级人数增加，学生名单中出现对应学生。",
+      "risk": "学生加入失败时，先确认二维码是否过期、学生账号是否正确、班级是否仍允许加入。"
+    },
+    "audience": "uLearning teachers",
+    "client": "Web/APP as described in source"
+  },
+  {
+    "id": "announcement",
+    "category": "course",
+    "question": "如何发布公告？",
+    "summary": "用于向学生发布课程通知、安排和提醒。",
+    "keywords": [
+      "公告",
+      "发布公告",
+      "通知",
+      "课程通知",
+      "阅读"
+    ],
+    "answer": {
+      "entry": "进入课程后点击【公告】，再点击【发布新公告】。",
+      "steps": [
+        "输入公告标题和正文。",
+        "选择发布对象或班级。",
+        "确认内容无误后发布。",
+        "发布后可返回公告列表查看。"
+      ],
+      "check": "公告列表中出现新公告，学生端可以看到。",
+      "risk": "课程管理员可对所有班级发布公告；任课教师和助教通常只能对自己负责的班级发布。"
+    },
+    "audience": "uLearning teachers",
+    "client": "Web/APP as described in source"
+  },
+  {
+    "id": "courseware-link",
+    "category": "content",
+    "question": "如何为班课关联教学课件？",
+    "summary": "把课件关联到班课后，学生才能按课程安排学习。",
+    "keywords": [
+      "关联课件",
+      "教学课件",
+      "课件",
+      "班课",
+      "课程内容"
+    ],
+    "answer": {
+      "entry": "进入课程后，打开教学内容或课件相关入口。",
+      "steps": [
+        "选择需要关联的班课。",
+        "点击关联教学课件。",
+        "选择已有课件或课程内容。",
+        "保存后检查学生端是否可见。"
+      ],
+      "check": "班课中能看到已关联课件，学生端可以进入学习。",
+      "risk": "关联前请确认课件内容已完成，避免学生看到未整理好的内容。"
+    },
+    "audience": "uLearning teachers",
+    "client": "Web/APP as described in source"
+  },
+  {
+    "id": "learning-plan",
+    "category": "content",
+    "question": "如何设置学习计划？",
+    "summary": "用于安排学生学习时间、章节开放和学习进度。",
+    "keywords": [
+      "学习计划",
+      "学习安排",
+      "开放时间",
+      "学习进度",
+      "计划"
+    ],
+    "answer": {
+      "entry": "进入课程后，打开【学习计划】或教学安排页面。",
+      "steps": [
+        "选择要设置的班级或章节。",
+        "设置学习时间、开放范围或截止时间。",
+        "保存计划。",
+        "用学生视角检查是否按计划显示。"
+      ],
+      "check": "学生端能按设置看到对应章节和学习任务。",
+      "risk": "时间设置会影响学生能否进入学习，发布前请核对日期。"
+    },
+    "audience": "uLearning teachers",
+    "client": "Web/APP as described in source"
+  },
+  {
+    "id": "progress-score",
+    "category": "content",
+    "question": "如何查看进度成绩？",
+    "summary": "查看学生课件学习进度、时长和成绩。",
+    "keywords": [
+      "进度成绩",
+      "学习进度",
+      "课件成绩",
+      "学习时长",
+      "完成率"
+    ],
+    "answer": {
+      "entry": "进入课程后，打开【进度成绩】或学习统计页面。",
+      "steps": [
+        "选择班级。",
+        "查看学生学习进度、学习时长和成绩。",
+        "按章节或学生筛选数据。",
+        "需要留档时导出或下载统计表。"
+      ],
+      "check": "页面能显示学生维度或章节维度的学习数据。",
+      "risk": "学生端整体进度通常按节计算，和教师端考核规则可能不完全一样。"
+    },
+    "audience": "uLearning teachers",
+    "client": "Web/APP as described in source"
+  },
+  {
+    "id": "resource-add",
+    "category": "content",
+    "question": "如何添加资源？",
+    "summary": "把文档、视频、音频、图片等资源补充到课程中。",
+    "keywords": [
+      "添加资源",
+      "上传资源",
+      "资源库",
+      "视频",
+      "文档",
+      "图片",
+      "音频"
+    ],
+    "answer": {
+      "entry": "进入课程的资源或教学内容页面，点击添加资源。",
+      "steps": [
+        "选择资源类型。",
+        "上传本地文件或选择已有资源。",
+        "填写资源名称。",
+        "保存后检查资源是否能打开。"
+      ],
+      "check": "资源出现在课程内容中，并且可以正常预览。",
+      "risk": "如果资源需要转码，请等待处理完成后再通知学生学习。"
+    },
+    "audience": "uLearning teachers",
+    "client": "Web/APP as described in source"
+  },
+  {
+    "id": "personal-homework",
+    "category": "activity",
+    "question": "如何布置个人作业？",
+    "summary": "适合每个学生单独提交作业。",
+    "keywords": [
+      "个人作业",
+      "布置作业",
+      "发布作业",
+      "作业",
+      "提交"
+    ],
+    "answer": {
+      "entry": "进入课程后，打开【作业】并选择布置个人作业。",
+      "steps": [
+        "填写作业标题和要求。",
+        "设置提交时间和提交方式。",
+        "选择发布班级。",
+        "确认无误后发布。"
+      ],
+      "check": "作业列表显示已发布，学生端能看到提交入口。",
+      "risk": "发布前重点核对截止时间和班级，避免学生收不到或收到错误任务。"
+    },
+    "audience": "uLearning teachers",
+    "client": "Web/APP as described in source"
+  },
+  {
+    "id": "peer-review",
+    "category": "activity",
+    "question": "如何设置学生互评？",
+    "summary": "适合作业提交后让学生互相评价。",
+    "keywords": [
+      "学生互评",
+      "互评",
+      "作业互评",
+      "评价维度",
+      "互评时间"
+    ],
+    "answer": {
+      "entry": "在作业设置页面找到互评设置。",
+      "steps": [
+        "开启学生互评。",
+        "设置互评开始和截止时间。",
+        "设置评价规则、评价维度或分配方式。",
+        "发布后查看互评完成情况。"
+      ],
+      "check": "互评阶段开始后，学生端能看到互评任务。",
+      "risk": "互评结果可能影响成绩，规则要在发布前说明清楚。"
+    },
+    "audience": "uLearning teachers",
+    "client": "Web/APP as described in source"
+  },
+  {
+    "id": "group-homework",
+    "category": "activity",
+    "question": "如何布置小组作业？",
+    "summary": "适合调研报告、实验报告等协作任务。",
+    "keywords": [
+      "小组作业",
+      "组内",
+      "组间",
+      "小组提交",
+      "协作作业"
+    ],
+    "answer": {
+      "entry": "进入【作业】，选择布置小组作业。",
+      "steps": [
+        "确认课程已经完成分组。",
+        "填写作业要求和提交时间。",
+        "设置教师评分或学生互评。",
+        "选择班级并发布。"
+      ],
+      "check": "学生端以小组为单位看到作业任务。",
+      "risk": "小组作业通常由组内任意一位同学提交，请提前说明提交规则。"
+    },
+    "audience": "uLearning teachers",
+    "client": "Web/APP as described in source"
+  },
+  {
+    "id": "quiz-publish",
+    "category": "activity",
+    "question": "如何发布测验？",
+    "summary": "用于课堂小测或阶段性学习检查。",
+    "keywords": [
+      "测验",
+      "发布测验",
+      "在线测验",
+      "测试",
+      "题目"
+    ],
+    "answer": {
+      "entry": "进入课程后，打开【测验】并点击发布测验。",
+      "steps": [
+        "填写测验名称。",
+        "添加或选择题目。",
+        "设置答题时间、开放班级和提交规则。",
+        "预览无误后发布。"
+      ],
+      "check": "测验列表显示已发布，学生端能进入答题。",
+      "risk": "测验发布前请核对题目答案和开放时间，避免影响学生成绩。"
+    },
+    "audience": "uLearning teachers",
+    "client": "Web/APP as described in source"
+  },
+  {
+    "id": "discussion",
+    "category": "activity",
+    "question": "如何发布讨论？",
+    "summary": "用于课程交流、答疑和课堂延伸讨论。",
+    "keywords": [
+      "讨论",
+      "发布讨论",
+      "课程讨论",
+      "话题",
+      "回帖"
+    ],
+    "answer": {
+      "entry": "进入课程后，打开【讨论】并点击发布讨论。",
+      "steps": [
+        "填写讨论主题和说明。",
+        "选择参与班级。",
+        "设置是否计分或是否限时。",
+        "发布后查看学生回复。"
+      ],
+      "check": "讨论区出现新话题，学生端可以回复。",
+      "risk": "涉及评分的讨论，请提前说明积分或评分规则。"
+    },
+    "audience": "uLearning teachers",
+    "client": "Web/APP as described in source"
+  },
+  {
+    "id": "screen-cast",
+    "category": "classroom",
+    "question": "如何进行手机投屏互动？",
+    "summary": "用于课堂中把手机端内容投到电脑端展示互动。",
+    "keywords": [
+      "手机投屏",
+      "投屏",
+      "电脑互动",
+      "课堂互动",
+      "移动教学"
+    ],
+    "answer": {
+      "entry": "在课堂互动或移动教学相关页面，打开手机投屏功能。",
+      "steps": [
+        "确认电脑端和手机端登录同一教师账号。",
+        "按页面提示完成连接。",
+        "在手机端选择需要展示或互动的内容。",
+        "课堂结束后关闭投屏。"
+      ],
+      "check": "电脑端能正常显示手机端操作内容。",
+      "risk": "投屏前请确认网络稳定，避免课堂中断。"
+    },
+    "audience": "uLearning teachers",
+    "client": "Web/APP as described in source"
+  },
+  {
+    "id": "question-bank-add",
+    "category": "exam",
+    "question": "如何添加题目到试题库？",
+    "summary": "可手动添加单选、多选、判断、填空、简答等题目。",
+    "keywords": [
+      "试题库",
+      "添加题目",
+      "题库",
+      "单选",
+      "多选",
+      "判断",
+      "填空",
+      "简答"
+    ],
+    "answer": {
+      "entry": "进入【题库】或【试题库】，点击添加题目。",
+      "steps": [
+        "选择题型。",
+        "填写题干、选项和答案。",
+        "设置分值、解析或标签。",
+        "保存题目。"
+      ],
+      "check": "题目出现在试题库列表中，可以被组卷引用。",
+      "risk": "保存前请核对正确答案，题目错误会影响测验或考试结果。"
+    },
+    "audience": "uLearning teachers",
+    "client": "Web/APP as described in source"
+  },
+  {
+    "id": "question-bank-import",
+    "category": "exam",
+    "question": "如何批量导入试题？",
+    "summary": "适合一次性录入大量题目。",
+    "keywords": [
+      "批量导入",
+      "导入试题",
+      "Excel导入",
+      "文本导入",
+      "试题模板"
+    ],
+    "answer": {
+      "entry": "进入【题库】>【我的题库】>【批量导入】。",
+      "steps": [
+        "选择文本导入、从试卷导入或从 Excel 导入。",
+        "按页面提示下载模板。",
+        "按模板填写题目。",
+        "上传文件并检查导入结果。"
+      ],
+      "check": "导入成功后，题目会出现在题库中。",
+      "risk": "模板格式不要随意改动，否则可能导入失败。"
+    },
+    "audience": "uLearning teachers",
+    "client": "Web/APP as described in source"
+  },
+  {
+    "id": "question-bank-quote",
+    "category": "exam",
+    "question": "如何引用试题？",
+    "summary": "从已有题库中引用题目，减少重复录入。",
+    "keywords": [
+      "引用试题",
+      "引用题目",
+      "题库引用",
+      "已有题目"
+    ],
+    "answer": {
+      "entry": "进入试题库或组卷页面，选择引用试题。",
+      "steps": [
+        "选择题库来源。",
+        "按题型、标签或关键词筛选题目。",
+        "勾选需要引用的试题。",
+        "确认引用到当前题库或试卷。"
+      ],
+      "check": "被引用的题目能在当前题库或试卷中看到。",
+      "risk": "引用后请检查题目答案和适用课程，避免引用到不合适的题目。"
+    },
+    "audience": "uLearning teachers",
+    "client": "Web/APP as described in source"
+  },
+  {
+    "id": "paper-manual",
+    "category": "exam",
+    "question": "如何手动组卷？",
+    "summary": "教师自己选择题目组成试卷。",
+    "keywords": [
+      "手动组卷",
+      "试卷库",
+      "组卷",
+      "添加试题",
+      "试卷"
+    ],
+    "answer": {
+      "entry": "进入【试卷库】，选择手动组卷。",
+      "steps": [
+        "填写试卷名称。",
+        "添加试题。",
+        "设置每题分值和试卷总分。",
+        "保存并预览试卷。"
+      ],
+      "check": "试卷库中出现新试卷，题目和分值显示正确。",
+      "risk": "组卷完成后请预览，重点检查题目顺序、答案和总分。"
+    },
+    "audience": "uLearning teachers",
+    "client": "Web/APP as described in source"
+  },
+  {
+    "id": "paper-auto",
+    "category": "exam",
+    "question": "如何自动组卷？",
+    "summary": "按题型、数量和规则自动生成试卷。",
+    "keywords": [
+      "自动组卷",
+      "随机组卷",
+      "抽题",
+      "组卷规则"
+    ],
+    "answer": {
+      "entry": "进入【试卷库】，选择自动组卷。",
+      "steps": [
+        "设置题型、题量和分值。",
+        "选择题库范围。",
+        "设置抽题规则。",
+        "生成后预览并保存试卷。"
+      ],
+      "check": "系统生成的试卷符合题量、分值和题库范围要求。",
+      "risk": "自动组卷后也要人工检查，避免题目难度或范围不合适。"
+    },
+    "audience": "uLearning teachers",
+    "client": "Web/APP as described in source"
+  },
+  {
+    "id": "paper-quote",
+    "category": "exam",
+    "question": "如何引用试卷？",
+    "summary": "从已有试卷中引用，快速复用考试内容。",
+    "keywords": [
+      "引用试卷",
+      "试卷引用",
+      "复用试卷",
+      "已有试卷"
+    ],
+    "answer": {
+      "entry": "进入【试卷库】，选择引用试卷。",
+      "steps": [
+        "选择试卷来源。",
+        "筛选或搜索目标试卷。",
+        "确认引用。",
+        "引用后检查试题和分值。"
+      ],
+      "check": "被引用试卷出现在当前试卷库。",
+      "risk": "引用试卷前请确认适用课程、题目内容和考试要求。"
+    },
+    "audience": "uLearning teachers",
+    "client": "Web/APP as described in source"
+  },
+  {
+    "id": "exam-arrange",
+    "category": "exam",
+    "question": "如何安排考试？",
+    "summary": "把试卷发布成正式考试，并设置时间、考生和规则。",
+    "keywords": [
+      "安排考试",
+      "在线考试",
+      "考试",
+      "考生",
+      "试卷",
+      "考试时间"
+    ],
+    "answer": {
+      "entry": "进入考试模块，点击安排考试或新建考试。",
+      "steps": [
+        "选择试卷。",
+        "设置考试时间、考试时长和考生范围。",
+        "设置提交、查看成绩等规则。",
+        "确认无误后发布考试。"
+      ],
+      "check": "考试列表中出现该考试，学生端能在规定时间进入。",
+      "risk": "考试属于高风险操作，发布前请重点核对时间、考生范围和试卷。"
+    },
+    "audience": "uLearning teachers",
+    "client": "Web/APP as described in source"
+  },
+  {
+    "id": "exam-grade",
+    "category": "exam",
+    "question": "如何批阅试卷主观题？",
+    "summary": "客观题通常自动判分，主观题需要教师批阅。",
+    "keywords": [
+      "批阅",
+      "主观题",
+      "阅卷",
+      "简答题",
+      "试卷批改"
+    ],
+    "answer": {
+      "entry": "进入考试详情或阅卷页面，打开主观题批阅。",
+      "steps": [
+        "选择需要批阅的学生或题目。",
+        "查看学生答案。",
+        "填写分数和评语。",
+        "保存批阅结果。"
+      ],
+      "check": "主观题分数保存后，考试总分会更新。",
+      "risk": "批阅分数会影响考试成绩，保存前请核对评分标准。"
+    },
+    "audience": "uLearning teachers",
+    "client": "Web/APP as described in source"
+  },
+  {
+    "id": "exam-result",
+    "category": "exam",
+    "question": "如何查看考试成绩？",
+    "summary": "查看学生考试得分、提交状态和成绩明细。",
+    "keywords": [
+      "考试成绩",
+      "查看成绩",
+      "成绩",
+      "提交状态",
+      "考试结果"
+    ],
+    "answer": {
+      "entry": "进入考试详情，打开成绩或考试结果页面。",
+      "steps": [
+        "选择考试和班级。",
+        "查看学生提交状态和得分。",
+        "需要时查看答题明细。",
+        "按页面入口导出成绩。"
+      ],
+      "check": "成绩列表能显示学生姓名、提交状态和分数。",
+      "risk": "成绩公布前请确认主观题已批阅完成。"
+    },
+    "audience": "uLearning teachers",
+    "client": "Web/APP as described in source"
+  },
+  {
+    "id": "exam-analysis",
+    "category": "exam",
+    "question": "如何查看考试分析？",
+    "summary": "查看考试整体情况、题目正确率和学生表现。",
+    "keywords": [
+      "考试分析",
+      "试卷分析",
+      "正确率",
+      "考试报告",
+      "分析"
+    ],
+    "answer": {
+      "entry": "进入考试详情，打开考试分析或统计分析。",
+      "steps": [
+        "选择目标考试。",
+        "查看整体得分、最高分、平均分等数据。",
+        "查看题目正确率和薄弱题目。",
+        "按需要导出分析结果。"
+      ],
+      "check": "分析页面能显示班级和题目维度的数据。",
+      "risk": "分析数据应结合教学实际判断，不建议只看单一分数。"
+    },
+    "audience": "uLearning teachers",
+    "client": "Web/APP as described in source"
+  },
+  {
+    "id": "assessment-rule",
+    "category": "grade",
+    "question": "如何设置课程考核规则？",
+    "summary": "把课件学习、作业、讨论、点名、表现和考试汇总为课程成绩。",
+    "keywords": [
+      "考核规则",
+      "课程成绩",
+      "成绩权重",
+      "总成绩",
+      "成绩汇总",
+      "权重"
+    ],
+    "answer": {
+      "entry": "进入课程的成绩、考核或评价设置页面。",
+      "steps": [
+        "选择参与考核的项目。",
+        "设置课件学习、作业、讨论、课堂点名、课程表现、考试等权重。",
+        "保存规则。",
+        "查看成绩汇总是否按规则计算。"
+      ],
+      "check": "成绩汇总页能显示各项得分和总成绩。",
+      "risk": "考核规则会影响最终成绩，调整前请确认教学方案和学校要求。"
+    },
+    "audience": "uLearning teachers",
+    "client": "Web/APP as described in source"
+  },
+  {
+    "id": "courseware-score",
+    "category": "grade",
+    "question": "课件学习成绩如何计算？",
+    "summary": "课件学习成绩通常按章节平均分计算。",
+    "keywords": [
+      "课件学习成绩",
+      "章节平均",
+      "学习成绩",
+      "考核范围"
+    ],
+    "answer": {
+      "entry": "进入课程考核规则或课件学习成绩设置。",
+      "steps": [
+        "查看课件学习成绩项。",
+        "确认参与考核的章节范围。",
+        "需要排除章节时进入设置修改考核范围。",
+        "保存后查看成绩汇总。"
+      ],
+      "check": "课件学习成绩按设置范围参与总成绩计算。",
+      "risk": "默认通常所有章节参与考核，排除章节前请确认教学要求。"
+    },
+    "audience": "uLearning teachers",
+    "client": "Web/APP as described in source"
+  },
+  {
+    "id": "courseware-time",
+    "category": "grade",
+    "question": "课件学习时长如何计算？",
+    "summary": "支持累计时长、按章时长或按节时长计算。",
+    "keywords": [
+      "学习时长",
+      "累计时长",
+      "按章",
+      "按节",
+      "时长计算"
+    ],
+    "answer": {
+      "entry": "进入课程考核规则中的课件学习时长设置。",
+      "steps": [
+        "选择累计时长、按章时长或按节时长。",
+        "设置达到满分所需时长。",
+        "保存规则。",
+        "查看学生时长得分。"
+      ],
+      "check": "学习时长成绩按选择的计算方式显示。",
+      "risk": "按章或按节计算会影响学生得分，请在开课前确定规则。"
+    },
+    "audience": "uLearning teachers",
+    "client": "Web/APP as described in source"
+  },
+  {
+    "id": "courseware-progress",
+    "category": "grade",
+    "question": "课件学习进度如何计算？",
+    "summary": "支持按章计算或按节计算。",
+    "keywords": [
+      "学习进度",
+      "进度计算",
+      "按章计算",
+      "按节计算",
+      "完成进度"
+    ],
+    "answer": {
+      "entry": "进入课程考核规则中的课件学习进度设置。",
+      "steps": [
+        "选择按章计算或按节计算。",
+        "确认参与考核的章节。",
+        "保存规则。",
+        "查看成绩汇总中的进度得分。"
+      ],
+      "check": "学习进度成绩按所选规则更新。",
+      "risk": "学生端课件整体进度默认常按节显示，可能和教师设置的考核规则不同。"
+    },
+    "audience": "uLearning teachers",
+    "client": "Web/APP as described in source"
+  },
+  {
+    "id": "homework-score",
+    "category": "grade",
+    "question": "作业成绩如何计算？",
+    "summary": "可按所有作业平均分，也可给每份作业单独设置权重。",
+    "keywords": [
+      "作业成绩",
+      "作业权重",
+      "平均分",
+      "作业考核"
+    ],
+    "answer": {
+      "entry": "进入课程考核规则中的作业成绩设置。",
+      "steps": [
+        "选择所有作业平均分或单独设置权重。",
+        "确认哪些作业参与考核。",
+        "保存规则。",
+        "查看成绩汇总。"
+      ],
+      "check": "作业成绩按设置方式参与总成绩计算。",
+      "risk": "默认可能所有作业都参与考核，不参与的作业需要手动排除。"
+    },
+    "audience": "uLearning teachers",
+    "client": "Web/APP as described in source"
+  },
+  {
+    "id": "attendance-score",
+    "category": "grade",
+    "question": "课堂点名成绩如何计算？",
+    "summary": "根据签到记录扣分或得分。",
+    "keywords": [
+      "课堂点名",
+      "签到成绩",
+      "缺勤",
+      "迟到",
+      "早退",
+      "考勤"
+    ],
+    "answer": {
+      "entry": "进入课程考核规则中的课堂点名设置。",
+      "steps": [
+        "设置点名在总成绩中的权重。",
+        "设置缺勤、迟到、早退、病假、事假的扣分规则。",
+        "保存后查看点名成绩。"
+      ],
+      "check": "学生点名记录会按规则进入成绩汇总。",
+      "risk": "扣分通常从总成绩中扣除，扣分上限为课堂点名所占权重。"
+    },
+    "audience": "uLearning teachers",
+    "client": "Web/APP as described in source"
+  },
+  {
+    "id": "mobile-diff",
+    "category": "support",
+    "question": "电脑端和 App 功能有什么区别？",
+    "summary": "部分教师操作更适合电脑端，App 偏移动教学和课堂互动。",
+    "keywords": [
+      "电脑端",
+      "App",
+      "手机端",
+      "移动教学",
+      "功能区别"
+    ],
+    "answer": {
+      "entry": "先确认你使用的是电脑网页端还是手机 App。",
+      "steps": [
+        "课程建设、题库、试卷、考试安排等复杂操作建议优先用电脑端。",
+        "课堂互动、移动教学等场景可使用 App。",
+        "如果两端入口不一致，以当前端实际页面为准。"
+      ],
+      "check": "回答路径应与你当前端的页面按钮一致。",
+      "risk": "不要把电脑端路径直接套到 App，涉及考试、成绩和发布操作时尤其要确认。"
+    },
+    "audience": "uLearning teachers",
+    "client": "Web/APP as described in source"
+  },
+  {
+    "id": "profile-edit",
+    "category": "support",
+    "question": "如何修改个人信息？",
+    "summary": "可在右上角头像处进入个人资料修改姓名、邮箱或密码。",
+    "keywords": [
+      "个人信息",
+      "个人资料",
+      "修改密码",
+      "邮箱",
+      "姓名",
+      "头像"
+    ],
+    "answer": {
+      "entry": "登录优学院后，点击右上角头像处的【个人资料】。",
+      "steps": [
+        "进入个人资料页面。",
+        "修改姓名、邮箱等信息。",
+        "需要改密码时进入修改密码。",
+        "保存修改。"
+      ],
+      "check": "重新进入个人资料后，信息显示为最新内容。",
+      "risk": "如果手机号、学校信息或账号权限不能修改，请联系管理员或人工客服。"
+    },
+    "audience": "uLearning teachers",
+    "client": "Web/APP as described in source"
+  },
+  {
+    "id": "contact-service",
+    "category": "support",
+    "question": "如何联系在线客服？",
+    "summary": "优学院官网右下角可进入在线客服。",
+    "keywords": [
+      "客服",
+      "在线客服",
+      "联系人工",
+      "咨询客服",
+      "人工"
+    ],
+    "answer": {
+      "entry": "进入优学院官网，点击右下角【咨询客服】。",
+      "steps": [
+        "说明你遇到的问题。",
+        "提供端别、课程名称、页面位置和账号角色。",
+        "如果有报错文字，复制给客服。",
+        "等待客服确认处理方式。"
+      ],
+      "check": "客服能根据你提供的信息定位问题。",
+      "risk": "账号异常、权限未开通、系统报错、成绩异常等问题建议直接联系人工。"
+    },
+    "audience": "uLearning teachers",
+    "client": "Web/APP as described in source"
+  },
+  {
+    "id": "permission-missing",
+    "category": "support",
+    "question": "为什么看不到某个按钮？",
+    "summary": "常见原因是角色、班级分配、端别或学校版本不同。",
+    "keywords": [
+      "看不到按钮",
+      "没有入口",
+      "找不到",
+      "权限",
+      "角色",
+      "版本"
+    ],
+    "answer": {
+      "entry": "先确认当前账号角色、课程身份和使用端。",
+      "steps": [
+        "确认自己是课程管理员、任课教师还是助教。",
+        "确认是否已被分配到对应班级。",
+        "确认当前使用电脑端还是 App。",
+        "仍看不到时联系人工检查权限。"
+      ],
+      "check": "权限调整后重新登录，目标按钮应出现在对应页面。",
+      "risk": "涉及教学团队、考试、成绩等功能时，不同角色可操作范围不同。"
+    },
+    "audience": "uLearning teachers",
+    "client": "Web/APP as described in source"
+  },
+  {
+    "id": "system-error",
+    "category": "support",
+    "question": "遇到系统报错怎么办？",
+    "summary": "先记录信息，再刷新或联系人工。",
+    "keywords": [
+      "报错",
+      "保存失败",
+      "加载失败",
+      "系统异常",
+      "打不开"
+    ],
+    "answer": {
+      "entry": "先停留在报错页面，记录报错信息。",
+      "steps": [
+        "记录发生时间、页面名称、课程名称和账号角色。",
+        "复制报错文字或保存截图。",
+        "刷新页面或重新登录再试一次。",
+        "仍失败时联系在线客服。"
+      ],
+      "check": "人工处理时能看到完整问题背景。",
+      "risk": "不要反复点击提交、发布、评分等按钮，避免重复操作。"
+    },
+    "audience": "uLearning teachers",
+    "client": "Web/APP as described in source"
+  },
+  {
+    "id": "courseware-create-video",
+    "category": "content",
+    "question": "如何创建课件？",
+    "summary": "创建课件用于准备课程内容的基础载体。",
+    "keywords": [
+      "创建课件",
+      "新建课件",
+      "课件制作",
+      "课件"
+    ],
+    "answer": {
+      "entry": "进入课程内容或课件相关入口，选择创建课件。",
+      "steps": [
+        "填写课件名称。",
+        "选择课件类型或创建方式。",
+        "保存课件。",
+        "继续添加章节结构和课程内容。"
+      ],
+      "check": "课件列表中出现新课件，后续可以继续编辑内容。",
+      "risk": "创建后还需要填充内容并完成发布，学生端才可能看到可学习内容。"
+    },
+    "audience": "uLearning teachers",
+    "client": "Web/APP as described in source"
+  },
+  {
+    "id": "courseware-chapter-video",
+    "category": "content",
+    "question": "如何添加章节结构？",
+    "summary": "章节结构用于组织课件目录和学习顺序。",
+    "keywords": [
+      "添加章节结构",
+      "章节结构",
+      "添加章节",
+      "课件章节",
+      "目录结构"
+    ],
+    "answer": {
+      "entry": "进入目标课件的编辑页面。",
+      "steps": [
+        "打开章节或目录编辑区域。",
+        "新增章、节或学习单元。",
+        "填写章节名称。",
+        "按教学顺序调整层级和位置。",
+        "保存结构。"
+      ],
+      "check": "课件目录中能看到新增章节，并且顺序正确。",
+      "risk": "章节结构会影响学生学习路径，发布前请核对顺序。"
+    },
+    "audience": "uLearning teachers",
+    "client": "Web/APP as described in source"
+  },
+  {
+    "id": "courseware-content-fill-video",
+    "category": "content",
+    "question": "如何填充课程内容？",
+    "summary": "向课件章节中添加视频、文档、图片等教学内容。",
+    "keywords": [
+      "填充课程内容",
+      "添加课程内容",
+      "课程内容",
+      "课件内容",
+      "填充课件"
+    ],
+    "answer": {
+      "entry": "进入目标课件的章节编辑页面。",
+      "steps": [
+        "选择要填充内容的章节。",
+        "添加视频、文档、图片或其他资源。",
+        "填写必要的标题和说明。",
+        "保存内容。",
+        "预览确认内容可正常打开。"
+      ],
+      "check": "章节下能看到已添加的教学内容。",
+      "risk": "如果资源需要转码或处理，请等待完成后再发布给学生。"
+    },
+    "audience": "uLearning teachers",
+    "client": "Web/APP as described in source"
+  },
+  {
+    "id": "courseware-publish-video",
+    "category": "content",
+    "question": "如何进行课件设置及发布？",
+    "summary": "完成课件设置后发布，学生才能按规则学习。",
+    "keywords": [
+      "课件设置及发布",
+      "课件发布",
+      "发布课件",
+      "设置课件",
+      "课件设置"
+    ],
+    "answer": {
+      "entry": "进入目标课件的设置或发布页面。",
+      "steps": [
+        "检查课件名称、章节和内容。",
+        "设置学习开放范围或发布规则。",
+        "保存设置。",
+        "执行发布。",
+        "用学生视角检查是否可见。"
+      ],
+      "check": "课件状态显示已发布，学生端能看到对应内容。",
+      "risk": "发布前请确认内容完整、班级范围正确，避免学生看到未整理好的内容。"
+    },
+    "audience": "uLearning teachers",
+    "client": "Web/APP as described in source"
+  },
+  {
+    "id": "homework-grade-video",
+    "category": "activity",
+    "question": "如何批阅作业？",
+    "summary": "教师可进入作业提交记录进行批阅和评分。",
+    "keywords": [
+      "批阅作业",
+      "作业批阅",
+      "批改作业",
+      "评分作业"
+    ],
+    "answer": {
+      "entry": "进入课程内的作业模块，打开目标作业。",
+      "steps": [
+        "查看学生提交列表。",
+        "打开学生提交内容。",
+        "填写评语或分数。",
+        "保存批阅结果。",
+        "确认成绩状态已更新。"
+      ],
+      "check": "学生提交记录中显示已批阅或已评分。",
+      "risk": "保存前请核对分数和评语，避免影响学生作业成绩。"
+    },
+    "audience": "uLearning teachers",
+    "client": "Web/APP as described in source"
+  },
+  {
+    "id": "live-start-pc-video",
+    "category": "activity",
+    "question": "如何在PC端发起直播？",
+    "summary": "教师可在电脑端发起课程直播活动。",
+    "keywords": [
+      "PC端发起直播",
+      "发起直播",
+      "直播",
+      "课程直播"
+    ],
+    "answer": {
+      "entry": "进入课程内与直播或课堂活动相关的入口。",
+      "steps": [
+        "选择发起直播。",
+        "填写直播主题或相关设置。",
+        "确认参与班级或对象。",
+        "保存并发起直播。",
+        "进入直播页面检查状态。"
+      ],
+      "check": "直播状态显示已开始，学生端可进入观看。",
+      "risk": "发起前请确认网络、设备和参与对象，避免学生无法进入。"
+    },
+    "audience": "uLearning teachers",
+    "client": "Web/APP as described in source"
+  },
+  {
+    "id": "paper-add-video",
+    "category": "exam",
+    "question": "如何添加试卷？",
+    "summary": "在试卷库中创建或添加试卷，用于后续考试安排。",
+    "keywords": [
+      "添加试卷",
+      "创建试卷",
+      "试卷库",
+      "组卷"
+    ],
+    "answer": {
+      "entry": "进入试卷库或考试题库中的试卷管理页面。",
+      "steps": [
+        "选择添加试卷或新建试卷。",
+        "填写试卷名称。",
+        "添加或引用试题。",
+        "设置分值和结构。",
+        "保存并预览试卷。"
+      ],
+      "check": "试卷库中出现新试卷，题目和分值显示正确。",
+      "risk": "用于考试前请预览核对题目、答案和总分。"
+    },
+    "audience": "uLearning teachers",
+    "client": "Web/APP as described in source"
+  },
+  {
+    "id": "course-analysis-video",
+    "category": "assessment",
+    "question": "如何查看课程分析？",
+    "summary": "课程分析用于查看课程整体学习和教学数据。",
+    "keywords": [
+      "查看课程分析",
+      "课程分析",
+      "教学分析",
+      "学习分析"
+    ],
+    "answer": {
+      "entry": "进入目标课程的数据分析或课程分析入口。",
+      "steps": [
+        "选择要查看的课程或班级。",
+        "打开课程分析页面。",
+        "查看学习进度、成绩或活动数据。",
+        "按需要筛选班级或时间范围。"
+      ],
+      "check": "页面能显示对应课程的数据分析结果。",
+      "risk": "分析数据可能受统计口径、班级范围和时间范围影响，查看前请确认筛选条件。"
+    },
+    "audience": "uLearning teachers",
+    "client": "Web/APP as described in source"
+  },
+  {
+    "id": "course-certificate-video",
+    "category": "assessment",
+    "question": "如何设置课程证书？",
+    "summary": "课程证书用于学生达到条件后获得学习证明。",
+    "keywords": [
+      "课程证书",
+      "设置课程证书",
+      "证书"
+    ],
+    "answer": {
+      "entry": "进入课程内与证书或成绩评价相关的设置入口。",
+      "steps": [
+        "打开课程证书设置。",
+        "设置证书名称、发放条件或展示信息。",
+        "保存设置。",
+        "检查证书规则是否生效。"
+      ],
+      "check": "课程证书设置页面显示已保存的规则。",
+      "risk": "证书通常与成绩或完成条件相关，发布前请核对发放条件。"
+    },
+    "audience": "uLearning teachers",
+    "client": "Web/APP as described in source"
+  },
+  {
+    "id": "cast-end-export-video",
+    "category": "classroom",
+    "question": "如何结束投屏和导出数据？",
+    "summary": "课堂投屏结束后可关闭投屏并导出相关互动数据。",
+    "keywords": [
+      "结束投屏",
+      "导出投屏数据",
+      "导出数据",
+      "课堂互动数据"
+    ],
+    "answer": {
+      "entry": "进入正在进行的投屏或课堂互动页面。",
+      "steps": [
+        "确认课堂互动已完成。",
+        "结束当前投屏。",
+        "按页面入口导出互动数据。",
+        "保存导出的文件。"
+      ],
+      "check": "投屏状态结束，导出文件可正常打开。",
+      "risk": "结束前请确认数据已经生成，避免遗漏课堂互动记录。"
+    },
+    "audience": "uLearning teachers",
+    "client": "Web/APP as described in source"
+  },
+  {
+    "id": "course-delete-screenshot",
+    "category": "course",
+    "question": "如何删除课程？",
+    "summary": "从课程卡片更多菜单进入删除课程，并在弹窗中二次确认。",
+    "keywords": [
+      "删除课程",
+      "删课程",
+      "移除课程",
+      "确认删除",
+      "课程卡片",
+      "更多菜单"
+    ],
+    "answer": {
+      "entry": "在教师首页或课程列表中找到要删除的课程卡片。",
+      "steps": [
+        "点击课程卡片右上角的更多菜单。",
+        "选择【删除课程】。",
+        "在弹窗中输入“确认删除”。",
+        "点击【删除课程】完成确认。"
+      ],
+      "check": "课程列表中不再显示该课程。",
+      "risk": "删除后课程无法恢复，已经加入该课程的学生也无法继续学习，请确认课程和学生范围后再操作。"
+    },
+    "audience": "uLearning teachers",
+    "client": "Web/APP as described in source"
+  },
+  {
+    "id": "courseware-create",
+    "category": "content",
+    "question": "如何新建课件？",
+    "summary": "在课程工作台中新建课件，并添加章节和教学内容。",
+    "keywords": [
+      "新建课件",
+      "创建课件",
+      "添加章节",
+      "课件内容",
+      "课程工作台"
+    ],
+    "related": [
+      "courseware-ai-create",
+      "courseware-import-library",
+      "courseware-link",
+      "class-start"
+    ],
+    "answer": {
+      "entry": "进入课程工作台，打开课件管理。",
+      "steps": [
+        "点击【新建课件】。",
+        "填写课件名称并创建。",
+        "添加章节和教学内容。",
+        "保存并发布课件。"
+      ],
+      "check": "课件列表中出现新课件，并可进入编辑或关联班级。",
+      "risk": "发布前请检查章节和内容是否完整，避免学生看到未完成内容。"
+    },
+    "audience": "uLearning teachers",
+    "client": "Web"
+  },
+  {
+    "id": "courseware-import-library",
+    "category": "content",
+    "question": "如何从现有课件库导入课件？",
+    "summary": "从已有课件库选择课件，导入当前课程继续使用。",
+    "keywords": [
+      "课件库",
+      "导入课件",
+      "现有课件",
+      "引用课件",
+      "复用课件"
+    ],
+    "related": [
+      "courseware-import-local",
+      "courseware-create",
+      "courseware-link",
+      "class-start"
+    ],
+    "answer": {
+      "entry": "进入课程工作台的课件管理页面。",
+      "steps": [
+        "选择从课件库导入。",
+        "查找并选择目标课件。",
+        "确认导入。",
+        "导入后检查或继续编辑课件。"
+      ],
+      "check": "导入的课件出现在当前课程的课件列表中。",
+      "risk": "导入后请检查内容是否适用于当前课程和班级。"
+    },
+    "audience": "uLearning teachers",
+    "client": "Web"
+  },
+  {
+    "id": "courseware-import-local",
+    "category": "content",
+    "question": "如何导入自己的课件或资源？",
+    "summary": "把教师已有的本地课件或资源上传到课程内容中。",
+    "keywords": [
+      "导入自己的课件",
+      "上传课件",
+      "本地课件",
+      "添加资源",
+      "上传资源"
+    ],
+    "related": [
+      "courseware-import-library",
+      "courseware-create",
+      "courseware-link",
+      "class-start"
+    ],
+    "answer": {
+      "entry": "进入课件内容编辑页面，选择添加资源或上传本地文件。",
+      "steps": [
+        "选择需要上传的文件。",
+        "等待上传完成。",
+        "填写或确认资源名称。",
+        "保存资源。"
+      ],
+      "check": "资源出现在课件内容中，并且可以正常打开。",
+      "risk": "如果资源需要转码，请等待处理完成后再用于上课。"
+    },
+    "audience": "uLearning teachers",
+    "client": "Web"
+  },
+  {
+    "id": "courseware-ai-create",
+    "category": "content",
+    "question": "如何使用 AI 工作台生成课件？",
+    "summary": "使用教师备课助手，根据课程主题和要求生成课件内容。",
+    "keywords": [
+      "AI工作台",
+      "AI生成课件",
+      "教师备课助手",
+      "备课助手",
+      "一键生成课件"
+    ],
+    "related": [
+      "courseware-create",
+      "courseware-link",
+      "class-start"
+    ],
+    "answer": {
+      "entry": "进入课程工作台，打开【教师备课助手】。",
+      "steps": [
+        "输入课程主题和备课要求。",
+        "提交生成任务。",
+        "检查生成的课件内容。",
+        "按需要修改并保存。"
+      ],
+      "check": "生成内容可以在课件中查看和继续编辑。",
+      "risk": "生成后请教师检查内容准确性和课程适用性。"
+    },
+    "audience": "uLearning teachers",
+    "client": "Web"
+  },
+  {
+    "id": "teaching-team-full-flow",
+    "category": "course",
+    "question": "如何完成教学团队和班级设置？",
+    "summary": "依次创建班级、添加学生并指定授课教师。",
+    "keywords": [
+      "创建班级添加学生指定教师",
+      "教学团队完整流程",
+      "班级学生教师",
+      "开课准备"
+    ],
+    "related": [
+      "course-create",
+      "class-setup",
+      "invite-students",
+      "courseware-link"
+    ],
+    "answer": {
+      "entry": "进入课程工作台中的教学团队与班级管理入口。",
+      "steps": [
+        "创建班级。",
+        "向班级添加学生。",
+        "为班级指定授课教师。",
+        "检查教师负责班级和学生名单。"
+      ],
+      "check": "班级中能看到学生名单，并显示对应授课教师。",
+      "risk": "设置前请确认当前账号拥有课程管理权限。"
+    },
+    "audience": "uLearning teachers",
+    "client": "Web"
+  },
+  {
+    "id": "student-batch-import",
+    "category": "course",
+    "question": "如何批量导入班级和学生？",
+    "summary": "从学生库或其他课程批量导入班级与学生。",
+    "keywords": [
+      "批量导入班级",
+      "批量导入学生",
+      "学生库导入",
+      "其他课程导入",
+      "班级学生"
+    ],
+    "related": [
+      "class-setup",
+      "invite-students",
+      "teaching-team",
+      "courseware-link"
+    ],
+    "answer": {
+      "entry": "进入课程的班级或学生管理页面。",
+      "steps": [
+        "选择批量导入。",
+        "选择从学生库导入或从其他课程导入。",
+        "勾选班级和学生。",
+        "确认导入并检查名单。"
+      ],
+      "check": "目标班级和学生出现在当前课程中。",
+      "risk": "导入前请核对课程、班级和学生范围，避免重复添加。"
+    },
+    "audience": "uLearning teachers",
+    "client": "Web"
+  },
+  {
+    "id": "class-start",
+    "category": "classroom",
+    "question": "如何开始上课？",
+    "summary": "进入课程和对应班级，确认课件后启动课堂。",
+    "keywords": [
+      "开始上课",
+      "启动课堂",
+      "进入课堂",
+      "课堂入口",
+      "选择班级"
+    ],
+    "related": [
+      "classroom-open-resource",
+      "screen-cast",
+      "discussion",
+      "quiz-publish"
+    ],
+    "answer": {
+      "entry": "进入需要授课的课程并选择对应班级。",
+      "steps": [
+        "打开课堂入口。",
+        "确认本次课堂使用的课件。",
+        "点击【开始上课】。",
+        "进入课堂教学页面。"
+      ],
+      "check": "页面显示课堂已经开始，并能使用课堂功能。",
+      "risk": "开始前请确认班级和课件，避免进入错误课堂。"
+    },
+    "audience": "uLearning teachers",
+    "client": "Web"
+  },
+  {
+    "id": "classroom-open-resource",
+    "category": "classroom",
+    "question": "如何在课堂中打开资源？",
+    "summary": "在正在进行的课堂中打开课件或资源并展示。",
+    "keywords": [
+      "课堂中打开资源",
+      "上课打开课件",
+      "展示资源",
+      "课堂资源",
+      "打开教学资料"
+    ],
+    "related": [
+      "class-start",
+      "screen-cast",
+      "quiz-publish",
+      "discussion"
+    ],
+    "answer": {
+      "entry": "进入正在进行的课堂。",
+      "steps": [
+        "打开课件或资源列表。",
+        "选择需要展示的资源。",
+        "点击打开并确认展示内容。"
+      ],
+      "check": "课堂页面中显示所选资源。",
+      "risk": "展示前请确认资源内容和学生可见范围。"
+    },
+    "audience": "uLearning teachers",
+    "client": "Web"
+  },
+  {
+    "id": "student-scan-join",
+    "category": "course",
+    "question": "如何让学生扫码加入班级？",
+    "summary": "通过班级二维码或加入信息，让学生自行扫码加入班级。",
+    "keywords": [
+      "学生扫码加入",
+      "扫码入班",
+      "班级二维码",
+      "加入班级",
+      "学生加入"
+    ],
+    "related": [
+      "class-setup",
+      "student-teacher-add",
+      "teacher-assign-class",
+      "courseware-link"
+    ],
+    "answer": {
+      "entry": "进入课程的班级管理页面，打开目标班级的学生加入入口。",
+      "steps": [
+        "找到班级二维码或学生加入信息。",
+        "把二维码或加入信息发给学生。",
+        "学生扫码加入。",
+        "回到班级成员列表检查学生是否加入成功。"
+      ],
+      "check": "班级成员列表中出现学生名单，班级人数同步更新。",
+      "risk": "如果学生加入失败，请确认二维码是否有效、学生账号是否正确、班级是否允许加入。"
+    },
+    "audience": "uLearning teachers",
+    "client": "Web"
+  },
+  {
+    "id": "student-teacher-add",
+    "category": "course",
+    "question": "老师如何手动添加学生？",
+    "summary": "由老师在班级中选择学生并添加到班级名单。",
+    "keywords": [
+      "老师添加学生",
+      "手动添加学生",
+      "添加学生",
+      "班级成员",
+      "学生名单"
+    ],
+    "related": [
+      "student-scan-join",
+      "class-setup",
+      "teacher-assign-class",
+      "courseware-link"
+    ],
+    "answer": {
+      "entry": "进入课程的班级管理页面，选择目标班级。",
+      "steps": [
+        "点击添加学生。",
+        "选择学生来源或搜索学生。",
+        "勾选需要添加的学生。",
+        "确认添加并检查班级成员名单。"
+      ],
+      "check": "班级成员列表中能看到新添加的学生。",
+      "risk": "添加前请核对班级和学生身份，避免加错班级。"
+    },
+    "audience": "uLearning teachers",
+    "client": "Web"
+  },
+  {
+    "id": "teacher-assign-class",
+    "category": "course",
+    "question": "如何为班级指定教师？",
+    "summary": "为班级选择授课教师，确保教师负责的班级正确。",
+    "keywords": [
+      "指定教师",
+      "分配教师",
+      "任课教师",
+      "授课教师",
+      "教师负责班级"
+    ],
+    "related": [
+      "teaching-team-full-flow",
+      "class-setup",
+      "student-teacher-add",
+      "courseware-link"
+    ],
+    "answer": {
+      "entry": "进入课程的教学团队或班级教师设置入口。",
+      "steps": [
+        "选择需要指定教师的班级。",
+        "选择或添加授课教师。",
+        "确认教师负责的班级。",
+        "保存后检查教师与班级关系。"
+      ],
+      "check": "班级中显示指定教师，教学团队中也能看到对应负责班级。",
+      "risk": "只有课程管理员通常可以调整教学团队和教师负责班级。"
+    },
+    "audience": "uLearning teachers",
+    "client": "Web"
+  },
+  {
+    "id": "screenshot_tutorial_001-ai-workspace-feature",
+    "category": "AI工作台的功能",
+    "question": "如何公式识别？",
+    "summary": "根据截图教程《AI工作台的功能 > 公式识别》整理的操作入口和步骤。",
+    "keywords": [
+      "AI工作台的功能",
+      "AI工作台的功能 - 公式识别",
+      "AI工作台的功能 > 公式识别",
+      "公式识别",
+      "公式识别入口在哪里？",
+      "公式识别在哪里？",
+      "公式识别怎么操作？",
+      "如何公式识别？",
+      "怎么公式识别？",
+      "生成智能生成辅PPT生成根啹主题大纲能生成叩T课能A吩析学情分折昏隹；生成分析告智能备课智能生成全流程教字资料",
+      "返回上传图片示例：上传带公式的照片后将跳转此界面1识别结果O此处；复制结果3lint-ahbf(x)",
+      "返回工作台口资源讨论0直幡的考试击“公式识别\"后将跳转此界；上传资源2将图片拖匭眦处或点击上传仅支持png、j四、jpe"
+    ],
+    "answer": {
+      "entry": "进入课程工作台，打开【AI工作台】。",
+      "steps": [
+        "找到并点击【公式识别】。",
+        "按页面提示上传材料、输入要求或选择生成方式。",
+        "等待系统生成或识别结果。",
+        "检查结果后复制、下载或保存。"
+      ],
+      "check": "页面出现对应功能的处理结果或历史记录。",
+      "risk": "AI 生成或识别结果需要教师复核后再用于教学。"
+    },
+    "related": [],
+    "audience": "uLearning teachers",
+    "client": "Web",
+    "source": "截图教程",
+    "sourcePath": "AI工作台的功能 > 公式识别"
+  },
+  {
+    "id": "screenshot_tutorial_002-ai-workspace-feature",
+    "category": "AI工作台的功能",
+    "question": "如何备课？",
+    "summary": "根据截图教程《AI工作台的功能 > 备课》整理的操作入口和步骤。",
+    "keywords": [
+      "AI工作台的功能",
+      "AI工作台的功能 - 备课",
+      "AI工作台的功能 > 备课",
+      "备课",
+      "备课入口在哪里？",
+      "备课在哪里？",
+      "备课怎么操作？",
+      "如何备课？",
+      "怎么备课？",
+      "生成一份课程帮我设计一东习题及答解析帮我设计一伤学评价与作业设计方案；生成全流釋教字资料",
+      "返回智能备课智能生成全流程教学资料；单击“智能备课\"后将跳转至此界面1工作台0口资源20考试"
+    ],
+    "answer": {
+      "entry": "进入课程工作台，打开【AI工作台】。",
+      "steps": [
+        "找到并点击【备课】。",
+        "按页面提示上传材料、输入要求或选择生成方式。",
+        "等待系统生成或识别结果。",
+        "检查结果后复制、下载或保存。"
+      ],
+      "check": "页面出现对应功能的处理结果或历史记录。",
+      "risk": "AI 生成或识别结果需要教师复核后再用于教学。"
+    },
+    "related": [],
+    "audience": "uLearning teachers",
+    "client": "Web",
+    "source": "截图教程",
+    "sourcePath": "AI工作台的功能 > 备课"
+  },
+  {
+    "id": "screenshot_tutorial_003-ai-workspace-feature",
+    "category": "AI工作台的功能",
+    "question": "如何学情分析？",
+    "summary": "根据截图教程《AI工作台的功能 > 学情分析》整理的操作入口和步骤。",
+    "keywords": [
+      "AI工作台的功能",
+      "AI工作台的功能 - 学情分析",
+      "AI工作台的功能 > 学情分析",
+      "如何学情分析？",
+      "学情分析",
+      "学情分析入口在哪里？",
+      "学情分析在哪里？",
+      "学情分析怎么操作？",
+      "怎么学情分析？",
+      "生成智能生成辅PPT生成根啹主题大纲能生成叩T课能智能备课智能生成全；生成炼习题目",
+      "返回学情分析点击“学情分析\"后将跳转此界一Ai工作台单元课件；添加图表十添川毪表"
+    ],
+    "answer": {
+      "entry": "进入课程工作台，打开【AI工作台】。",
+      "steps": [
+        "找到并点击【学情分析】。",
+        "按页面提示上传材料、输入要求或选择生成方式。",
+        "等待系统生成或识别结果。",
+        "检查结果后复制、下载或保存。"
+      ],
+      "check": "页面出现对应功能的处理结果或历史记录。",
+      "risk": "AI 生成或识别结果需要教师复核后再用于教学。"
+    },
+    "related": [],
+    "audience": "uLearning teachers",
+    "client": "Web",
+    "source": "截图教程",
+    "sourcePath": "AI工作台的功能 > 学情分析"
+  },
+  {
+    "id": "screenshot_tutorial_004-ai-workspace-feature-student",
+    "category": "AI工作台的功能",
+    "question": "如何学生画像？",
+    "summary": "根据截图教程《AI工作台的功能 > 学生画像》整理的操作入口和步骤。",
+    "keywords": [
+      "AI工作台的功能",
+      "AI工作台的功能 - 学生画像",
+      "AI工作台的功能 > 学生画像",
+      "如何学生画像？",
+      "学生画像",
+      "学生画像入口在哪里？",
+      "学生画像在哪里？",
+      "学生画像怎么操作？",
+      "怎么学生画像？",
+      "点击导出可下载PDF版学生画像至本地字习务知识掌握+·A《",
+      "生成智能生成辅PPT生成根啹主题大纲能生成叩T课能A吩析学情分折昏隹；生成分析告智能备课智能生成全流程教字资料",
+      "返回学生画像智能学生画像；输入姓名／学号搜康=点击“学生画像\"后将跳转此界面",
+      "返回学生画像生画像；输入姓名学号搜索口资源讨论默认班级考试示例：点击想要制作画像"
+    ],
+    "answer": {
+      "entry": "进入课程工作台，打开【AI工作台】。",
+      "steps": [
+        "找到并点击【学生画像】。",
+        "按页面提示上传材料、输入要求或选择生成方式。",
+        "等待系统生成或识别结果。",
+        "检查结果后复制、下载或保存。"
+      ],
+      "check": "页面出现对应功能的处理结果或历史记录。",
+      "risk": "AI 生成或识别结果需要教师复核后再用于教学。"
+    },
+    "related": [],
+    "audience": "uLearning teachers",
+    "client": "Web",
+    "source": "截图教程",
+    "sourcePath": "AI工作台的功能 > 学生画像"
+  },
+  {
+    "id": "screenshot_tutorial_005-ai-workspace-feature-generate",
+    "category": "AI工作台的功能",
+    "question": "如何教案生成？",
+    "summary": "根据截图教程《AI工作台的功能 > 教案生成》整理的操作入口和步骤。",
+    "keywords": [
+      "AI工作台的功能",
+      "AI工作台的功能 - 教案生成",
+      "AI工作台的功能 > 教案生成",
+      "单击“教案生成\"后将跳转至此界面1教案生成根据主题智能生成教；输入主题名称·学生学段智能匹配教案内容教学目标参考资料在此输入教",
+      "如何教案生成？",
+      "怎么教案生成？",
+      "教案生成",
+      "教案生成入口在哪里？",
+      "教案生成在哪里？",
+      "教案生成怎么操作？",
+      "点击保存2作业设计：1．基础题（巩固姬念）：根据给；点击下载3教案至本地2．应用题（联系实际）：阅读一段描",
+      "生成一份课程帮我设计一东习题及答解析工作台帮我设计一伤学评价与作业设；生成教案2A《工作台往下翻0口资源0考试A江具智能课智能生成",
+      "返回'主题名称输入主题名称准荐主题．主1《主2主题3主题；保存后的教案可以在这里打开教案生成根据主题智能生成教案0工作台0口"
+    ],
+    "answer": {
+      "entry": "进入课程工作台，打开【AI工作台】。",
+      "steps": [
+        "找到并点击【教案生成】。",
+        "按页面提示上传材料、输入要求或选择生成方式。",
+        "等待系统生成或识别结果。",
+        "检查结果后复制、下载或保存。"
+      ],
+      "check": "页面出现对应功能的处理结果或历史记录。",
+      "risk": "AI 生成或识别结果需要教师复核后再用于教学。"
+    },
+    "related": [],
+    "audience": "uLearning teachers",
+    "client": "Web",
+    "source": "截图教程",
+    "sourcePath": "AI工作台的功能 > 教案生成"
+  },
+  {
+    "id": "screenshot_tutorial_006-ai-workspace-feature",
+    "category": "AI工作台的功能",
+    "question": "如何文档阅读？",
+    "summary": "根据截图教程《AI工作台的功能 > 文档阅读》整理的操作入口和步骤。",
+    "keywords": [
+      "AI工作台的功能",
+      "AI工作台的功能 - 文档阅读",
+      "AI工作台的功能 > 文档阅读",
+      "上传工作台口资源0考试示例：上传文档后可以通过与智能体对话快速；输入亻问题",
+      "上传智新挞词云文工作台0=资源0直幡考试示例：点击文档可以",
+      "上传智新挞词云文档工作台0口资源0考试示例：点击词云可以看到文",
+      "如何文档阅读？",
+      "怎么文档阅读？",
+      "文档阅读",
+      "文档阅读入口在哪里？",
+      "文档阅读在哪里？",
+      "文档阅读怎么操作？",
+      "生成智能生成辅PPT生成根啹主题大纲能生成叩T课能A吩析学情分折昏隹；生成分析告智能备课智能生成全流程教字资料",
+      "返回工作台口资源直播单击“文档阅读\"将跳转至此界面文档阅读；上传文档生成词云"
+    ],
+    "answer": {
+      "entry": "进入课程工作台，打开【AI工作台】。",
+      "steps": [
+        "找到并点击【文档阅读】。",
+        "按页面提示上传材料、输入要求或选择生成方式。",
+        "等待系统生成或识别结果。",
+        "检查结果后复制、下载或保存。"
+      ],
+      "check": "页面出现对应功能的处理结果或历史记录。",
+      "risk": "AI 生成或识别结果需要教师复核后再用于教学。"
+    },
+    "related": [],
+    "audience": "uLearning teachers",
+    "client": "Web",
+    "source": "截图教程",
+    "sourcePath": "AI工作台的功能 > 文档阅读"
+  },
+  {
+    "id": "screenshot_tutorial_007-ai-workspace-feature",
+    "category": "AI工作台的功能",
+    "question": "如何智能出题？",
+    "summary": "根据截图教程《AI工作台的功能 > 智能出题》整理的操作入口和步骤。",
+    "keywords": [
+      "AI工作台的功能",
+      "AI工作台的功能 - 智能出题",
+      "AI工作台的功能 > 智能出题",
+      "保存至尬中的题库目录下；单击“保存到题库\"后将弹出此弹窗1工作台0口资源0讨论考试",
+      "单击“开始生成\"后将跳转至此界面1选進度：一般当£+；保存库2单击保存到题库工作台口资源0考试A．高阶无穷小B伺阶但",
+      "单击“智能出题\"后将跳转至此界面10口U000工作台；输入知清输入知只点名称",
+      "单击“确定\"后将跳转至此界面工作台口资源题目保存成珈题目保；查看题库或返回主页讨论",
+      "如何智能出题？",
+      "怎么智能出题？",
+      "智能出题",
+      "智能出题入口在哪里？",
+      "智能出题在哪里？",
+      "智能出题怎么操作？",
+      "生成智能生成辅PPT生成根啹主题大纲能生成叩T课能A吩析学情分折智能；生成全流程教字资料"
+    ],
+    "answer": {
+      "entry": "进入课程工作台，打开【AI工作台】。",
+      "steps": [
+        "找到并点击【智能出题】。",
+        "按页面提示上传材料、输入要求或选择生成方式。",
+        "等待系统生成或识别结果。",
+        "检查结果后复制、下载或保存。"
+      ],
+      "check": "页面出现对应功能的处理结果或历史记录。",
+      "risk": "AI 生成或识别结果需要教师复核后再用于教学。"
+    },
+    "related": [],
+    "audience": "uLearning teachers",
+    "client": "Web",
+    "source": "截图教程",
+    "sourcePath": "AI工作台的功能 > 智能出题"
+  },
+  {
+    "id": "screenshot_tutorial_008-ai-workspace-feature",
+    "category": "AI工作台的功能",
+    "question": "如何智能批改？",
+    "summary": "根据截图教程《AI工作台的功能 > 智能批改》整理的操作入口和步骤。",
+    "keywords": [
+      "AI工作台的功能",
+      "AI工作台的功能 - 智能批改",
+      "AI工作台的功能 > 智能批改",
+      "单击“批改测试\"后将跳转至此界面1测试通过后徼积分基础练习题；点击关闭數f(X).题目3（导数乘法法则）求函数g冈=",
+      "单击“智能批改\"后将跳转至此界面智能批改钅；添加需要批改的作业题目要求清输入题目丿要求在此输入批改要求为评分亻",
+      "如何智能批改？",
+      "开始评分附加评分细则（选填）附加的畅级佳、开始评分后；确定开始评分？满分：1開分最高可得：100考试评分尺度",
+      "怎么智能批改？",
+      "智能批改",
+      "智能批改入口在哪里？",
+      "智能批改在哪里？",
+      "智能批改怎么操作？",
+      "生成智能生成辅PPT生成根啹主题大纲能生成叩T课能A吩析学情分折昏隹；生成分析告智能批改可以帮助老师批改作业和试卷2智能备课智能生成全流程"
+    ],
+    "answer": {
+      "entry": "进入课程工作台，打开【AI工作台】。",
+      "steps": [
+        "找到并点击【智能批改】。",
+        "按页面提示上传材料、输入要求或选择生成方式。",
+        "等待系统生成或识别结果。",
+        "检查结果后复制、下载或保存。"
+      ],
+      "check": "页面出现对应功能的处理结果或历史记录。",
+      "risk": "AI 生成或识别结果需要教师复核后再用于教学。"
+    },
+    "related": [],
+    "audience": "uLearning teachers",
+    "client": "Web",
+    "source": "截图教程",
+    "sourcePath": "AI工作台的功能 > 智能批改"
+  },
+  {
+    "id": "screenshot_tutorial_009-ai-workspace-feature-generate-ppt-generate-ppt",
+    "category": "AI工作台的功能",
+    "question": "如何主题生成PPT？",
+    "summary": "根据截图教程《AI工作台的功能 > 生成PPT > 主题生成PPT》整理的操作入口和步骤。",
+    "keywords": [
+      "AI工作台的功能",
+      "AI工作台的功能 - 生成PPT - 主题生成PPT",
+      "AI工作台的功能 > 生成PPT > 主题生成PPT",
+      "主题生成PPT",
+      "主题生成PPT入口在哪里？",
+      "主题生成PPT在哪里？",
+      "主题生成PPT怎么操作？",
+      "单击“生成PPT\"后将跳转至此界面0重新生成大纲工作台课件资；选择PPT模板研究汇报PPT专业文献研究汇报文匚报答辩用行通用行业忘",
+      "单击“生成大纲\"后将跳转至此界面无穷级数不是简单的无穷项0只；生成大纲0生b2PPT2点击生成PPT开始生成PPT",
+      "如何主题生成PPT？",
+      "如何用AI生成PPT？",
+      "怎么主题生成PPT？",
+      "怎么生成PPT？",
+      "生成PPT",
+      "生成工作台口资源考试单击“主题生成\"后将跳转至此界面'；输入主题名称输入主题名称在此选择大模型参考资料可上传教字大教材等文提",
+      "生成智能生成辅PPT生成根啹主题大纲能生成叩T课能智能备课智能生成全；生成炼习题目",
+      "返回工作台0=资源0考试．历史记录PPT生成根据主题或大纲；生成PPT大纲生成粘麩或输入爹考大纲生成PPT返回PPT生成即可看到",
+      "返回工作台0口资源讨论0考试0单击“PPT生成\"后将跳转至；生成根据主题或大纲智能生成PPT选择主题生成2主题生成大纲生成辑入主"
+    ],
+    "answer": {
+      "entry": "进入课程工作台，打开【AI工作台】或【教师备课助手】中的 PPT 生成入口。",
+      "steps": [
+        "选择【主题生成 PPT】。",
+        "按页面提示输入主题或粘贴大纲。",
+        "选择参考资料或模板。",
+        "点击生成并等待结果。"
+      ],
+      "check": "页面生成 PPT 内容或出现可编辑、下载、继续生成的结果。",
+      "risk": "生成后请检查内容准确性、模板适配性和课程适用性。"
+    },
+    "related": [],
+    "audience": "uLearning teachers",
+    "client": "Web",
+    "source": "截图教程",
+    "sourcePath": "AI工作台的功能 > 生成PPT > 主题生成PPT"
+  },
+  {
+    "id": "screenshot_tutorial_010-ai-workspace-feature-generate-ppt-generate-ppt",
+    "category": "AI工作台的功能",
+    "question": "如何大纲生成PPT？",
+    "summary": "根据截图教程《AI工作台的功能 > 生成PPT > 大纲生成PPT》整理的操作入口和步骤。",
+    "keywords": [
+      "AI工作台的功能",
+      "AI工作台的功能 - 生成PPT - 大纲生成PPT",
+      "AI工作台的功能 > 生成PPT > 大纲生成PPT",
+      "单击“下一步\"后将跳转至此界面·多元函数的基本厩念介绍二；生成大纲0生fi2PPT点击生成PPT开始生成PPT．结束",
+      "单击“生成PPT\"后将跳转至此界面生成单页对单页不满意可生成；点击可下载PPT至本地",
+      "大纲生成PPT",
+      "大纲生成PPT入口在哪里？",
+      "大纲生成PPT在哪里？",
+      "大纲生成PPT怎么操作？",
+      "如何大纲生成PPT？",
+      "如何用AI生成PPT？",
+      "怎么大纲生成PPT？",
+      "怎么生成PPT？",
+      "生成PPT",
+      "生成单击“大纲生成\"后将跳转至此界面主题名称在此输入主题名称；输入主题名称睢荐主题獄Aen1gnrPlasheUnconQu",
+      "生成智能生成辅PPT生成根啹主题大纲能生成叩T课能智能备课智能生成全；生成炼习题目",
+      "返回工作台0口资源讨论0考试单击“PPT生成\"后将跳转至此；生成辑入主题名称生成PPTPPT生成根据主题或大纲智能生成PPT选"
+    ],
+    "answer": {
+      "entry": "进入课程工作台，打开【AI工作台】或【教师备课助手】中的 PPT 生成入口。",
+      "steps": [
+        "选择【大纲生成 PPT】。",
+        "按页面提示输入主题或粘贴大纲。",
+        "选择参考资料或模板。",
+        "点击生成并等待结果。"
+      ],
+      "check": "页面生成 PPT 内容或出现可编辑、下载、继续生成的结果。",
+      "risk": "生成后请检查内容准确性、模板适配性和课程适用性。"
+    },
+    "related": [],
+    "audience": "uLearning teachers",
+    "client": "Web",
+    "source": "截图教程",
+    "sourcePath": "AI工作台的功能 > 生成PPT > 大纲生成PPT"
+  },
+  {
+    "id": "screenshot_tutorial_011-ai-workspace-feature-generate",
+    "category": "AI工作台的功能",
+    "question": "如何生成图谱？",
+    "summary": "根据截图教程《AI工作台的功能 > 生成图谱》整理的操作入口和步骤。",
+    "keywords": [
+      "AI工作台的功能",
+      "AI工作台的功能 - 生成图谱",
+      "AI工作台的功能 > 生成图谱",
+      "单击“下一步\"后将跳转至此界面生成知识点知识点总数：89；生成题目点击开始生成题目开始些成是目点击自动为每百知兄生成关联的测验",
+      "单击“开始生成\"后将跳转至此界面1新生成0保存图谱2生成完毕；点击下一步工作台0口资源讨论0考试生成知识点'微域疝用物理学中",
+      "单击“生成图谱\"后将跳转至此界面1A生成图讠普基于琿智能；生成知识工作台0=资源讨论0直播的〕考试图称：在此输入",
+      "如何生成图谱？",
+      "怎么生成图谱？",
+      "生成图谱",
+      "生成图谱入口在哪里？",
+      "生成图谱在哪里？",
+      "生成图谱怎么操作？",
+      "生成智能生成辅PPT生成根啹主题大纲能生成叩T课能A吩析学情分折昏隹；生成分析告2根据知识点生成知识点题目智能备课智能生成全流程教字资料"
+    ],
+    "answer": {
+      "entry": "进入课程工作台，打开【AI工作台】。",
+      "steps": [
+        "找到并点击【生成图谱】。",
+        "按页面提示上传材料、输入要求或选择生成方式。",
+        "等待系统生成或识别结果。",
+        "检查结果后复制、下载或保存。"
+      ],
+      "check": "页面出现对应功能的处理结果或历史记录。",
+      "risk": "AI 生成或识别结果需要教师复核后再用于教学。"
+    },
+    "related": [],
+    "audience": "uLearning teachers",
+    "client": "Web",
+    "source": "截图教程",
+    "sourcePath": "AI工作台的功能 > 生成图谱"
+  },
+  {
+    "id": "screenshot_tutorial_012-ai-workspace-feature",
+    "category": "AI工作台的功能",
+    "question": "如何视频分析？",
+    "summary": "根据截图教程《AI工作台的功能 > 视频分析》整理的操作入口和步骤。",
+    "keywords": [
+      "AI工作台的功能",
+      "AI工作台的功能 - 视频分析",
+      "AI工作台的功能 > 视频分析",
+      "上传视频后将跳转至此界面《《10丿巼0、工智能+教育1；上传对视频的切片总结2片段摘要字幕：28人工智能能教育",
+      "如何视频分析？",
+      "怎么视频分析？",
+      "生成智能生成辅PPT生成根啹主题大纲能生成叩T课能A吩析学情分折昏隹；生成分析告智能备课智能生成全流程教字资料",
+      "视频分析",
+      "视频分析入口在哪里？",
+      "视频分析在哪里？",
+      "视频分析怎么操作？",
+      "返回工作台=资源讨论考试单击“视频分析\"后将跳转至此界；上传褲音频生成片段摘要、字幕、词云"
+    ],
+    "answer": {
+      "entry": "进入课程工作台，打开【AI工作台】。",
+      "steps": [
+        "找到并点击【视频分析】。",
+        "按页面提示上传材料、输入要求或选择生成方式。",
+        "等待系统生成或识别结果。",
+        "检查结果后复制、下载或保存。"
+      ],
+      "check": "页面出现对应功能的处理结果或历史记录。",
+      "risk": "AI 生成或识别结果需要教师复核后再用于教学。"
+    },
+    "related": [],
+    "audience": "uLearning teachers",
+    "client": "Web",
+    "source": "截图教程",
+    "sourcePath": "AI工作台的功能 > 视频分析"
+  },
+  {
+    "id": "screenshot_tutorial_013-ai-workspace-feature-resource",
+    "category": "AI工作台的功能",
+    "question": "如何资源检索？",
+    "summary": "根据截图教程《AI工作台的功能 > 资源检索》整理的操作入口和步骤。",
+    "keywords": [
+      "AI工作台的功能",
+      "AI工作台的功能 - 资源检索",
+      "AI工作台的功能 > 资源检索",
+      "单击“资源检索\"后将跳转至此界面1工作台0口资源0考试清输；输入想寻找的资源2沥史：经》学溧程1xxx3为您推荐在此",
+      "如何资源检索？",
+      "怎么资源检索？",
+      "生成智能生成辅PPT生成根啹主题大纲能生成叩T课能A吩析学情分折昏隹；生成分析告资源检索可以搜索平台内教学素材2智能备课智能生成全流程教字",
+      "资源检索",
+      "资源检索入口在哪里？",
+      "资源检索在哪里？",
+      "资源检索怎么操作？",
+      "输入框内输入“经济学\"后将跳转至此界面1工作台0=资源；返回全部1伊48经济学历史：经济学xxx蒹1文档图片音频2在此更"
+    ],
+    "answer": {
+      "entry": "进入课程工作台，打开【AI工作台】。",
+      "steps": [
+        "找到并点击【资源检索】。",
+        "按页面提示上传材料、输入要求或选择生成方式。",
+        "等待系统生成或识别结果。",
+        "检查结果后复制、下载或保存。"
+      ],
+      "check": "页面出现对应功能的处理结果或历史记录。",
+      "risk": "AI 生成或识别结果需要教师复核后再用于教学。"
+    },
+    "related": [],
+    "audience": "uLearning teachers",
+    "client": "Web",
+    "source": "截图教程",
+    "sourcePath": "AI工作台的功能 > 资源检索"
+  },
+  {
+    "id": "screenshot_tutorial_014-create-course",
+    "category": "course",
+    "question": "如何创建课程？",
+    "summary": "在教师首页创建一门新课程。",
+    "keywords": [
+      "创建课程",
+      "创建课程入口在哪里？",
+      "创建课程单击进入课程编辑跳转蕻课程回顶部关于我们：关于文华联系",
+      "创建课程在哪里？",
+      "创建课程怎么操作？",
+      "单击创建课程回顶部关于刂：关于文华联系找们教材清单帮助中心友情赳",
+      "如何创建课程？",
+      "建课",
+      "怎么创建课程？",
+      "新增课程",
+      "新建课程",
+      "课程名称",
+      "课程封面",
+      "输入课程名称1课程面课程状态Q班级1Q课件库800pX@4弱px；创建课程提示．如果是教研组共管课程"
+    ],
+    "answer": {
+      "entry": "教师首页点击【创建课程】。",
+      "steps": [
+        "填写课程名称。",
+        "选择或上传课程封面。",
+        "确认创建。"
+      ],
+      "check": "教师首页出现新创建的课程卡片。",
+      "risk": "团队教学通常由课程负责人创建课程，其他老师通过教学团队加入。"
+    },
+    "related": [],
+    "audience": "uLearning teachers",
+    "client": "Web",
+    "source": "截图教程",
+    "sourcePath": "创建课程"
+  },
+  {
+    "id": "screenshot_tutorial_015-delete-course",
+    "category": "course",
+    "question": "如何删除课程？",
+    "summary": "从课程卡片更多菜单删除课程。",
+    "keywords": [
+      "删课程",
+      "删除课程",
+      "删除课程入口在哪里？",
+      "删除课程在哪里？",
+      "删除课程怎么操作？",
+      "单击删除课程后会弹出此弹窗删除课程删除舌；输入“确定删打字输入“确认删除\"试卷库中心@（〕",
+      "如何删除课程？",
+      "怎么删除课程？",
+      "点击1单击删除课程2Q级1Q字生．0关于：关于文华联系我；返回顶",
+      "确认删除",
+      "移除课程",
+      "课程卡片"
+    ],
+    "answer": {
+      "entry": "在教师首页或课程列表中找到要删除的课程卡片。",
+      "steps": [
+        "点击课程卡片右上角更多菜单。",
+        "选择【删除课程】。",
+        "在弹窗中输入确认文字。",
+        "点击删除完成确认。"
+      ],
+      "check": "课程列表中不再显示该课程。",
+      "risk": "删除课程属于高风险操作，删除后可能无法恢复，请确认课程和学生范围后再操作。"
+    },
+    "related": [],
+    "audience": "uLearning teachers",
+    "client": "Web",
+    "source": "截图教程",
+    "sourcePath": "删除课程"
+  },
+  {
+    "id": "screenshot_tutorial_016-courseware-import-courseware",
+    "category": "如何从课件库导入课件",
+    "question": "如何从课件库导入课件？",
+    "summary": "根据截图教程《如何从课件库导入课件》整理的操作入口和步骤。",
+    "keywords": [
+      "从课件库导入课件",
+      "从课件库导入课件入口在哪里？",
+      "从课件库导入课件在哪里？",
+      "从课件库导入课件怎么操作？",
+      "如何从课件库导入课件",
+      "如何从课件库导入课件？",
+      "怎么从课件库导入课件？",
+      "点击导入完成操作",
+      "返回课件由课程管理员引入；导入输入关键词醭数：10C刷新智能像机及缘产品与应用《形势",
+      "选择课件1从件中入从课件库入单击从课件库导入2当前课程还耒引入课件"
+    ],
+    "answer": {
+      "entry": "进入课程工作台的课件或资源管理页面。",
+      "steps": [
+        "选择【从课件库导入课件】相关入口。",
+        "按页面提示选择课件、上传文件或填写名称。",
+        "确认保存。",
+        "返回列表检查结果。"
+      ],
+      "check": "课件列表或课程内容中出现对应课件。",
+      "risk": "发布或关联前请检查课件内容是否完整、适用于当前班级。"
+    },
+    "related": [],
+    "audience": "uLearning teachers",
+    "client": "Web",
+    "source": "截图教程",
+    "sourcePath": "如何从课件库导入课件"
+  },
+  {
+    "id": "screenshot_tutorial_017-use-teacher",
+    "category": "如何使用教师备课助手",
+    "question": "如何使用教师备课助手？",
+    "summary": "根据截图教程《如何使用教师备课助手》整理的操作入口和步骤。",
+    "keywords": [
+      "使用教师备课助手",
+      "使用教师备课助手入口在哪里？",
+      "使用教师备课助手在哪里？",
+      "使用教师备课助手怎么操作？",
+      "保存发布自动保存（刀点击下载可下载大纲至本地工作台0口资源0讨；生成片请输入生成文档的要求以上容均出AI生成",
+      "如何使用教师备课助手",
+      "如何使用教师备课助手？",
+      "怎么使用教师备课助手？",
+      "点击A《备课助手1备课動手保存发布三0工作台0口资源讨论0考试；保存（刀备课助手增加一个溧堂讨论话题补充一个教学案例插入3道随堂",
+      "点击“箭头\"后将跳转至此界面工作台口讨论0考试顶目课程名称；保存发布030閬0",
+      "点击进入课程跳转关于我们：关于文华联系才清单帮助中心友情赳妾",
+      "生成学资料、快速梳理知说优化课堂设计等；生成一份ux的课程大纲示例：生成一份关于“微积分\"的课程",
+      "返回溧程列表点击工作台工作台资源讨论教师备课助手选中教师备课助手教师；生成教学资料、快速梳理知识点、优化课堂设计等"
+    ],
+    "answer": {
+      "entry": "参考截图教程路径：【如何使用教师备课助手】。",
+      "steps": [
+        "进入与【如何使用教师备课助手】对应的页面。",
+        "按页面中的【如何使用教师备课助手】入口或按钮继续操作。",
+        "根据弹窗或表单提示填写信息并保存。"
+      ],
+      "check": "完成后页面应进入截图中的结果状态或出现对应记录。",
+      "risk": "涉及发布、删除、考试、学生范围或权限时，提交前先核对对象和影响范围。"
+    },
+    "related": [],
+    "audience": "uLearning teachers",
+    "client": "Web",
+    "source": "截图教程",
+    "sourcePath": "如何使用教师备课助手"
+  },
+  {
+    "id": "screenshot_tutorial_018-create-ai",
+    "category": "如何创建AI助手",
+    "question": "如何创建AI助手？",
+    "summary": "根据截图教程《如何创建AI助手》整理的操作入口和步骤。",
+    "keywords": [
+      "AI助手入口在哪里？",
+      "保存并发布3点击保存并发布技能分亨点击“确定A《生成\"；上传图片O点击保存并预览",
+      "创建AI助手",
+      "创建AI助手入口在哪里？",
+      "创建AI助手在哪里？",
+      "创建AI助手怎么操作？",
+      "创建和犏痱基于大模型的A厝能体应用·示例A励手大模型：0包昌；创建的A《助手0C0添力啪孑智能体",
+      "如何创建AI助手",
+      "如何创建AI助手？",
+      "怎么创建AI助手？",
+      "怎么添加AI助手？",
+      "新增AI助手",
+      "新建AI助手",
+      "点击A《工作台1生档的要求0考试教师助手教师番课助手》帮我；生成一份课程大纲2点击加号园助手管畦助手曰本课程您专属A课助手",
+      "点击“创建A《助手\"后将弹出此弹窗个一C中智能体广场A；创建和A勵手创建A励手手动创建请眉述想创建一首科么样的A《助手",
+      "点击“创建A《助手\"船创建A助手到名称点击手动创建2个；创建创建和知识库工作流指令集在此输入智能体名称3给A慟手起个名字简单",
+      "点击“管理我的A《助手\"后将跳转此界面智能体广场10个；创建和徘退于大模型的A厝能体应且Q清输"
+    ],
+    "answer": {
+      "entry": "参考截图教程路径：【如何创建AI助手】。",
+      "steps": [
+        "进入与【如何创建AI助手】对应的页面。",
+        "按页面中的【如何创建AI助手】入口或按钮继续操作。",
+        "根据弹窗或表单提示填写信息并保存。"
+      ],
+      "check": "完成后页面应进入截图中的结果状态或出现对应记录。",
+      "risk": "涉及发布、删除、考试、学生范围或权限时，提交前先核对对象和影响范围。"
+    },
+    "related": [],
+    "audience": "uLearning teachers",
+    "client": "Web",
+    "source": "截图教程",
+    "sourcePath": "如何创建AI助手"
+  },
+  {
+    "id": "screenshot_tutorial_019-create-unit-import-courseware-generate-unit",
+    "category": "如何创建单元",
+    "question": "如何导入课件生成单元？",
+    "summary": "根据截图教程《如何创建单元 > 导入课件生成单元》整理的操作入口和步骤。",
+    "keywords": [
+      "发布教学活动；查看示例点击“导入\"后将跳转此界面工作台单元口资源讨论考",
+      "发布教学活讥看示例展开全部单元点击导入课件生成单元21》单元；添加单元入课件牛成年元点击单元",
+      "如何创建单元",
+      "如何创建单元 - 导入课件生成单元",
+      "如何创建单元 > 导入课件生成单元",
+      "如何导入课件生成单元？",
+      "导入课件生成单元",
+      "导入课件生成单元入口在哪里？",
+      "导入课件生成单元在哪里？",
+      "导入课件生成单元怎么操作？",
+      "怎么导入课件生成单元？",
+      "点击进入课程跳转关于我们：关于文华联系才清单帮助中心友情赳妾",
+      "返回课程列表导入课件件本校课件请输入关键湖叟索0示牛dassl点击；导入课件生成单元\"后将跳转此界面1压工作台资源作业直幡在此选择已"
+    ],
+    "answer": {
+      "entry": "进入课程工作台的单元管理页面。",
+      "steps": [
+        "选择导入课件生成单元。",
+        "选择要导入的课件。",
+        "确认生成单元结构。",
+        "检查生成后的单元内容并保存。"
+      ],
+      "check": "单元列表中出现由课件生成的单元。",
+      "risk": "生成后请检查章节和资源是否符合当前课程安排。"
+    },
+    "related": [],
+    "audience": "uLearning teachers",
+    "client": "Web",
+    "source": "截图教程",
+    "sourcePath": "如何创建单元 > 导入课件生成单元"
+  },
+  {
+    "id": "screenshot_tutorial_020-create-unit-add-unit",
+    "category": "如何创建单元",
+    "question": "如何添加单元？",
+    "summary": "根据截图教程《如何创建单元 > 添加单元》整理的操作入口和步骤。",
+    "keywords": [
+      "发布教学活动；查看示例点击“添加单元\"后将跳转此界面工作台单元》单元",
+      "发布教学活讥查看示例点击“确定\"后将跳转此界面展开全部单元；创建完成0个活动皙无活动卜单元1飠健单元'",
+      "发布教学活讥看示例工作台单元口资源讨论0直幡的考试2点击添加单元；点击单元1单元1@健单元",
+      "如何创建单元",
+      "如何创建单元 - 添加单元",
+      "如何创建单元 > 添加单元",
+      "如何添加单元？",
+      "怎么添加单元？",
+      "添加单元",
+      "添加单元入口在哪里？",
+      "添加单元在哪里？",
+      "添加单元怎么操作？",
+      "点击进入课程跳转关于我们：关于文华联系才清单帮助中心友情赳妾"
+    ],
+    "answer": {
+      "entry": "进入课程工作台的单元管理页面。",
+      "steps": [
+        "点击添加单元。",
+        "填写单元名称。",
+        "保存单元。",
+        "按需要继续添加资源或活动。"
+      ],
+      "check": "单元列表中出现新建单元。",
+      "risk": "单元结构会影响学生学习路径，发布前请核对顺序。"
+    },
+    "related": [],
+    "audience": "uLearning teachers",
+    "client": "Web",
+    "source": "截图教程",
+    "sourcePath": "如何创建单元 > 添加单元"
+  },
+  {
+    "id": "screenshot_tutorial_021-delete-announcement",
+    "category": "course",
+    "question": "如何删除公告？",
+    "summary": "在公告列表中删除不再需要的公告。",
+    "keywords": [
+      "公告删除",
+      "删除公告",
+      "删除公告入口在哪里？",
+      "删除公告在哪里？",
+      "删除公告怎么操作？",
+      "如何删除公告",
+      "如何删除公告？",
+      "怎么删除公告？",
+      "撤掉公告",
+      "移除公告",
+      "返回课程列表2工作台单元资源考试课程么惡计1条公告发布人何洁发时可2；点击“删除\"后将弹出此弹窗删除公告确定除该公告？点击确定",
+      "返回课程列表O0口与课程教学相关的通知、公告等都可以发布旺这；发布公告·0工作台资源讨论考试课程公告总计1条发布人何洁发布时可"
+    ],
+    "answer": {
+      "entry": "进入目标课程后，打开左侧【公告】。",
+      "steps": [
+        "找到要删除的公告。",
+        "点击公告右侧操作入口。",
+        "选择删除并按弹窗确认。"
+      ],
+      "check": "公告列表中不再显示该公告。",
+      "risk": "删除后学生将无法继续查看该公告，请确认公告内容和影响班级后再操作。"
+    },
+    "related": [],
+    "audience": "uLearning teachers",
+    "client": "Web",
+    "source": "截图教程",
+    "sourcePath": "如何删除公告"
+  },
+  {
+    "id": "screenshot_tutorial_022-unit-add-resource-add-add-homework",
+    "category": "如何在单元内添加资源",
+    "question": "如何添加个人作业？",
+    "summary": "根据截图教程《如何在单元内添加资源 > 添加教学活动 > 添加个人作业》整理的操作入口和步骤。",
+    "keywords": [
+      "发布教学活讥查看示例工作台展开全部单元点击单元口资源》单元1；点击加号暂无活动",
+      "如何在单元内添加资源",
+      "如何在单元内添加资源 - 添加教学活动 - 添加个人作业",
+      "如何在单元内添加资源 > 添加教学活动 > 添加个人作业",
+      "如何添加个人作业？",
+      "怎么添加个人作业？",
+      "添加个人作业",
+      "添加个人作业入口在哪里？",
+      "添加个人作业在哪里？",
+      "添加个人作业怎么操作？",
+      "添加教学活动",
+      "点击“加号+\"后将弹出此弹窗压工作台资源0；点击个人作业2发布教学活讥查看示例创建单元"
+    ],
+    "answer": {
+      "entry": "进入课程工作台，打开目标【单元】。",
+      "steps": [
+        "点击单元中的【+】添加入口。",
+        "选择【教学活动】。",
+        "选择【个人作业】。",
+        "按页面提示填写活动信息并保存或发布。"
+      ],
+      "check": "目标单元下出现新增的个人作业活动。",
+      "risk": "发布前请核对班级、时间、对象和活动规则。"
+    },
+    "related": [],
+    "audience": "uLearning teachers",
+    "client": "Web",
+    "source": "截图教程",
+    "sourcePath": "如何在单元内添加资源 > 添加教学活动 > 添加个人作业"
+  },
+  {
+    "id": "screenshot_tutorial_023-unit-add-resource-add-add-announcement",
+    "category": "如何在单元内添加资源",
+    "question": "如何添加公告？",
+    "summary": "根据截图教程《如何在单元内添加资源 > 添加教学活动 > 添加公告》整理的操作入口和步骤。",
+    "keywords": [
+      "发布教学活讥查看示例工作台展开全部单元点击单元口资源》单元1；点击加号暂无活动",
+      "如何在单元内添加资源",
+      "如何在单元内添加资源 - 添加教学活动 - 添加公告",
+      "如何在单元内添加资源 > 添加教学活动 > 添加公告",
+      "如何添加公告？",
+      "怎么添加公告？",
+      "添加公告",
+      "添加公告入口在哪里？",
+      "添加公告在哪里？",
+      "添加公告怎么操作？",
+      "添加教学活动",
+      "点击“加号+\"后将弹出此弹窗压工作台资源0；点击公告2发布教学活讥查看示例创建单元"
+    ],
+    "answer": {
+      "entry": "进入课程工作台，打开目标【单元】。",
+      "steps": [
+        "点击单元中的【+】添加入口。",
+        "选择【教学活动】。",
+        "选择【公告】。",
+        "按页面提示填写活动信息并保存或发布。"
+      ],
+      "check": "目标单元下出现新增的公告活动。",
+      "risk": "发布前请核对班级、时间、对象和活动规则。"
+    },
+    "related": [],
+    "audience": "uLearning teachers",
+    "client": "Web",
+    "source": "截图教程",
+    "sourcePath": "如何在单元内添加资源 > 添加教学活动 > 添加公告"
+  },
+  {
+    "id": "screenshot_tutorial_024-unit-add-resource-add-add-homework",
+    "category": "如何在单元内添加资源",
+    "question": "如何添加小组作业？",
+    "summary": "根据截图教程《如何在单元内添加资源 > 添加教学活动 > 添加小组作业》整理的操作入口和步骤。",
+    "keywords": [
+      "发布教学活讥查看示例工作台展开全部单元点击单元口资源》单元1；点击加号暂无活动",
+      "如何在单元内添加资源",
+      "如何在单元内添加资源 - 添加教学活动 - 添加小组作业",
+      "如何在单元内添加资源 > 添加教学活动 > 添加小组作业",
+      "如何添加小组作业？",
+      "怎么添加小组作业？",
+      "添加小组作业",
+      "添加小组作业入口在哪里？",
+      "添加小组作业在哪里？",
+      "添加小组作业怎么操作？",
+      "添加教学活动",
+      "点击“加号+\"后将弹出此弹窗压工作台《展开全元0个活动；点击小组作业2个人作业0小组作业发布教学活讥查看示例创建单元"
+    ],
+    "answer": {
+      "entry": "进入课程工作台，打开目标【单元】。",
+      "steps": [
+        "点击单元中的【+】添加入口。",
+        "选择【教学活动】。",
+        "选择【小组作业】。",
+        "按页面提示填写活动信息并保存或发布。"
+      ],
+      "check": "目标单元下出现新增的小组作业活动。",
+      "risk": "发布前请核对班级、时间、对象和活动规则。"
+    },
+    "related": [],
+    "audience": "uLearning teachers",
+    "client": "Web",
+    "source": "截图教程",
+    "sourcePath": "如何在单元内添加资源 > 添加教学活动 > 添加小组作业"
+  },
+  {
+    "id": "screenshot_tutorial_025-unit-add-resource-add-add",
+    "category": "如何在单元内添加资源",
+    "question": "如何添加测验？",
+    "summary": "根据截图教程《如何在单元内添加资源 > 添加教学活动 > 添加测验》整理的操作入口和步骤。",
+    "keywords": [
+      "发布教学活讥查看示例工作台展开全部单元点击单元口资源》单元1；点击加号暂无活动",
+      "如何在单元内添加资源",
+      "如何在单元内添加资源 - 添加教学活动 - 添加测验",
+      "如何在单元内添加资源 > 添加教学活动 > 添加测验",
+      "如何添加测验？",
+      "怎么添加测验？",
+      "添加教学活动",
+      "添加测验",
+      "添加测验入口在哪里？",
+      "添加测验在哪里？",
+      "添加测验怎么操作？",
+      "点击“加号+\"后将弹出此弹窗压工作台资源0；点击测验2发布教学活讥查看示例创建单元"
+    ],
+    "answer": {
+      "entry": "进入课程工作台，打开目标【单元】。",
+      "steps": [
+        "点击单元中的【+】添加入口。",
+        "选择【教学活动】。",
+        "选择【测验】。",
+        "按页面提示填写活动信息并保存或发布。"
+      ],
+      "check": "目标单元下出现新增的测验活动。",
+      "risk": "发布前请核对班级、时间、对象和活动规则。"
+    },
+    "related": [],
+    "audience": "uLearning teachers",
+    "client": "Web",
+    "source": "截图教程",
+    "sourcePath": "如何在单元内添加资源 > 添加教学活动 > 添加测验"
+  },
+  {
+    "id": "screenshot_tutorial_026-unit-add-resource-add-add-live",
+    "category": "如何在单元内添加资源",
+    "question": "如何添加直播？",
+    "summary": "根据截图教程《如何在单元内添加资源 > 添加教学活动 > 添加直播》整理的操作入口和步骤。",
+    "keywords": [
+      "发布教学活讥查看示例工作台展开全部单元点击单元口资源》单元1；点击加号暂无活动",
+      "如何在单元内添加资源",
+      "如何在单元内添加资源 - 添加教学活动 - 添加直播",
+      "如何在单元内添加资源 > 添加教学活动 > 添加直播",
+      "如何添加直播？",
+      "怎么添加直播？",
+      "添加教学活动",
+      "添加直播",
+      "添加直播入口在哪里？",
+      "添加直播在哪里？",
+      "添加直播怎么操作？",
+      "点击“加号+\"后将弹出此弹窗压工作台《展开全元0个活动；发布教学活讥查看示例创建单元"
+    ],
+    "answer": {
+      "entry": "进入课程工作台，打开目标【单元】。",
+      "steps": [
+        "点击单元中的【+】添加入口。",
+        "选择【教学活动】。",
+        "选择【直播】。",
+        "按页面提示填写活动信息并保存或发布。"
+      ],
+      "check": "目标单元下出现新增的直播活动。",
+      "risk": "发布前请核对班级、时间、对象和活动规则。"
+    },
+    "related": [],
+    "audience": "uLearning teachers",
+    "client": "Web",
+    "source": "截图教程",
+    "sourcePath": "如何在单元内添加资源 > 添加教学活动 > 添加直播"
+  },
+  {
+    "id": "screenshot_tutorial_027-unit-add-resource-add-add-exam",
+    "category": "如何在单元内添加资源",
+    "question": "如何添加考试？",
+    "summary": "根据截图教程《如何在单元内添加资源 > 添加教学活动 > 添加考试》整理的操作入口和步骤。",
+    "keywords": [
+      "发布教学活讥查看示例工作台展开全部单元点击单元口资源》单元1；点击加号暂无活动",
+      "如何在单元内添加资源",
+      "如何在单元内添加资源 - 添加教学活动 - 添加考试",
+      "如何在单元内添加资源 > 添加教学活动 > 添加考试",
+      "如何添加考试？",
+      "怎么添加考试？",
+      "添加教学活动",
+      "添加考试",
+      "添加考试入口在哪里？",
+      "添加考试在哪里？",
+      "添加考试怎么操作？",
+      "点击“加号+\"后将弹出此弹窗压工作台《展开全元0个活动；发布教学活讥查看示例创建单元"
+    ],
+    "answer": {
+      "entry": "进入课程工作台，打开目标【单元】。",
+      "steps": [
+        "点击单元中的【+】添加入口。",
+        "选择【教学活动】。",
+        "选择【考试】。",
+        "按页面提示填写活动信息并保存或发布。"
+      ],
+      "check": "目标单元下出现新增的考试活动。",
+      "risk": "发布前请核对班级、时间、对象和活动规则。"
+    },
+    "related": [],
+    "audience": "uLearning teachers",
+    "client": "Web",
+    "source": "截图教程",
+    "sourcePath": "如何在单元内添加资源 > 添加教学活动 > 添加考试"
+  },
+  {
+    "id": "screenshot_tutorial_028-unit-add-resource-add-add-discussion",
+    "category": "如何在单元内添加资源",
+    "question": "如何添加讨论？",
+    "summary": "根据截图教程《如何在单元内添加资源 > 添加教学活动 > 添加讨论》整理的操作入口和步骤。",
+    "keywords": [
+      "发布教学活讥查看示例工作台展开全部单元点击单元口资源》单元1；点击加号暂无活动",
+      "如何在单元内添加资源",
+      "如何在单元内添加资源 - 添加教学活动 - 添加讨论",
+      "如何在单元内添加资源 > 添加教学活动 > 添加讨论",
+      "如何添加讨论？",
+      "怎么添加讨论？",
+      "添加教学活动",
+      "添加讨论",
+      "添加讨论入口在哪里？",
+      "添加讨论在哪里？",
+      "添加讨论怎么操作？",
+      "点击“加号+\"后将弹出此弹窗发布教学活讥查看示例创建单元；点击讨论2导入已发布的活动讨论"
+    ],
+    "answer": {
+      "entry": "进入课程工作台，打开目标【单元】。",
+      "steps": [
+        "点击单元中的【+】添加入口。",
+        "选择【教学活动】。",
+        "选择【讨论】。",
+        "按页面提示填写活动信息并保存或发布。"
+      ],
+      "check": "目标单元下出现新增的讨论活动。",
+      "risk": "发布前请核对班级、时间、对象和活动规则。"
+    },
+    "related": [],
+    "audience": "uLearning teachers",
+    "client": "Web",
+    "source": "截图教程",
+    "sourcePath": "如何在单元内添加资源 > 添加教学活动 > 添加讨论"
+  },
+  {
+    "id": "screenshot_tutorial_029-unit-add-resource-add-add-classroom",
+    "category": "如何在单元内添加资源",
+    "question": "如何添加课堂？",
+    "summary": "根据截图教程《如何在单元内添加资源 > 添加教学活动 > 添加课堂》整理的操作入口和步骤。",
+    "keywords": [
+      "发布教学活讥查看示例工作台展开全部单元点击单元口资源》单元1；点击加号暂无活动",
+      "如何在单元内添加资源",
+      "如何在单元内添加资源 - 添加教学活动 - 添加课堂",
+      "如何在单元内添加资源 > 添加教学活动 > 添加课堂",
+      "如何添加课堂？",
+      "怎么添加课堂？",
+      "添加教学活动",
+      "添加课堂",
+      "添加课堂入口在哪里？",
+      "添加课堂在哪里？",
+      "添加课堂怎么操作？",
+      "点击“加号+\"后将弹出此弹窗压工作台《展开全元0个活动；发布教学活讥查看示例创建单元"
+    ],
+    "answer": {
+      "entry": "进入课程工作台，打开目标【单元】。",
+      "steps": [
+        "点击单元中的【+】添加入口。",
+        "选择【教学活动】。",
+        "选择【课堂】。",
+        "按页面提示填写活动信息并保存或发布。"
+      ],
+      "check": "目标单元下出现新增的课堂活动。",
+      "risk": "发布前请核对班级、时间、对象和活动规则。"
+    },
+    "related": [],
+    "audience": "uLearning teachers",
+    "client": "Web",
+    "source": "截图教程",
+    "sourcePath": "如何在单元内添加资源 > 添加教学活动 > 添加课堂"
+  },
+  {
+    "id": "screenshot_tutorial_030-unit-add-resource-add-resource-add-courseware",
+    "category": "如何在单元内添加资源",
+    "question": "如何添加课件？",
+    "summary": "根据截图教程《如何在单元内添加资源 > 添加教学资源 > 添加课件》整理的操作入口和步骤。",
+    "keywords": [
+      "发布教学活讥查看示例工作台展开全部单元点击单元口资源》单元1；点击加号暂无活动",
+      "如何在单元内添加资源",
+      "如何在单元内添加资源 - 添加教学资源 - 添加课件",
+      "如何在单元内添加资源 > 添加教学资源 > 添加课件",
+      "如何添加课件？",
+      "怎么添加课件？",
+      "添加教学资源",
+      "添加课件",
+      "添加课件入口在哪里？",
+      "添加课件在哪里？",
+      "添加课件怎么操作？",
+      "点击“加号+\"后将弹出此弹窗压工作台资源0；点击课件2《教学活动0个活动口0个活动个人作业0小组作业发布教"
+    ],
+    "answer": {
+      "entry": "进入课程工作台，打开目标【单元】。",
+      "steps": [
+        "点击单元中的【+】添加入口。",
+        "选择【教学资源】。",
+        "选择【课件】。",
+        "上传或选择资源后保存。"
+      ],
+      "check": "目标单元下出现新增的课件。",
+      "risk": "如果资源需要转码或处理，请等待完成后再通知学生学习。"
+    },
+    "related": [],
+    "audience": "uLearning teachers",
+    "client": "Web",
+    "source": "截图教程",
+    "sourcePath": "如何在单元内添加资源 > 添加教学资源 > 添加课件"
+  },
+  {
+    "id": "screenshot_tutorial_031-unit-add-resource-add-resource-add-resource",
+    "category": "如何在单元内添加资源",
+    "question": "如何添加资源？",
+    "summary": "根据截图教程《如何在单元内添加资源 > 添加教学资源 > 添加资源》整理的操作入口和步骤。",
+    "keywords": [
+      "发布教学活讥查看示例工作台展开全部单元点击单元口资源》单元1；点击加号暂无活动",
+      "如何在单元内添加资源",
+      "如何在单元内添加资源 - 添加教学资源 - 添加资源",
+      "如何在单元内添加资源 > 添加教学资源 > 添加资源",
+      "如何添加资源？",
+      "怎么添加资源？",
+      "添加教学资源",
+      "添加资源",
+      "添加资源入口在哪里？",
+      "添加资源在哪里？",
+      "添加资源怎么操作？",
+      "点击“加号+\"后将弹出此弹窗压工作台资源0；点击资源2《教学活动0个活动口0个活动个人作业0小组作业发布教"
+    ],
+    "answer": {
+      "entry": "进入课程工作台，打开目标【单元】。",
+      "steps": [
+        "点击单元中的【+】添加入口。",
+        "选择【教学资源】。",
+        "选择【资源】。",
+        "上传或选择资源后保存。"
+      ],
+      "check": "目标单元下出现新增的资源。",
+      "risk": "如果资源需要转码或处理，请等待完成后再通知学生学习。"
+    },
+    "related": [],
+    "audience": "uLearning teachers",
+    "client": "Web",
+    "source": "截图教程",
+    "sourcePath": "如何在单元内添加资源 > 添加教学资源 > 添加资源"
+  },
+  {
+    "id": "screenshot_tutorial_032-classroom-open-resource",
+    "category": "classroom",
+    "question": "如何在课堂中打开资源？",
+    "summary": "在课堂进行中打开教学资源展示给学生。",
+    "keywords": [
+      "上课资源",
+      "单击“开始上课\"后将跳转此页面列表发起点名上课中06．；打开暂无内容KTF61399点击打开资源AI工作台通知",
+      "单击“打开资源\"后将跳转此页面班课资源所有资源处班课资源到A；打开暂无内容处点击班课资源华为℃T实验2《形势与政策》（",
+      "在课堂中打开资源",
+      "在课堂中打开资源入口在哪里？",
+      "在课堂中打开资源在哪里？",
+      "在课堂中打开资源怎么操作？",
+      "如何在课堂中打开资源",
+      "如何在课堂中打开资源？",
+      "展示资源",
+      "怎么在课堂中打开资源？",
+      "打开资源",
+      "课堂打开资源",
+      "课堂资源",
+      "选择上课需要的文件；打开发送给学生AI工作台"
+    ],
+    "answer": {
+      "entry": "进入正在进行的课堂页面。",
+      "steps": [
+        "点击右侧【资源】。",
+        "选择最近打开或课程资源中的目标资源。",
+        "打开后确认课堂页面正常展示。"
+      ],
+      "check": "课堂页面中显示选中的资源内容。",
+      "risk": "展示前请确认资源内容正确，避免课堂中打开错误资料。"
+    },
+    "related": [],
+    "audience": "uLearning teachers",
+    "client": "Web",
+    "source": "截图教程",
+    "sourcePath": "如何在课堂中打开资源"
+  },
+  {
+    "id": "screenshot_tutorial_033-import-courseware",
+    "category": "如何导入自己的课件",
+    "question": "如何导入自己的课件？",
+    "summary": "根据截图教程《如何导入自己的课件》整理的操作入口和步骤。",
+    "keywords": [
+      "如何导入自己的课件",
+      "如何导入自己的课件？",
+      "导入自己的课件",
+      "导入自己的课件入口在哪里？",
+      "导入自己的课件在哪里？",
+      "导入自己的课件怎么操作？",
+      "怎么导入自己的课件？",
+      "返回课程列表工作台单元0考试XXX》课程资源当前位置：全部资；单击“上传文件\"后会弹出此弹窗斗资源库翎型输入关叟索2点击本",
+      "返回课程列表工作台资源讨论资、原这甲是发布给学生的资您可以在这里；发布到汶您可以对不同的班级设首不伺的访问杈轧当前位首：全部资源输"
+    ],
+    "answer": {
+      "entry": "进入课程工作台的课件或资源管理页面。",
+      "steps": [
+        "选择【导入自己的课件】相关入口。",
+        "按页面提示选择课件、上传文件或填写名称。",
+        "确认保存。",
+        "返回列表检查结果。"
+      ],
+      "check": "课件列表或课程内容中出现对应课件。",
+      "risk": "发布或关联前请检查课件内容是否完整、适用于当前班级。"
+    },
+    "related": [],
+    "audience": "uLearning teachers",
+    "client": "Web",
+    "source": "截图教程",
+    "sourcePath": "如何导入自己的课件"
+  },
+  {
+    "id": "screenshot_tutorial_034-start",
+    "category": "classroom",
+    "question": "如何开始上课？",
+    "summary": "创建课堂并开始上课，学生可通过课堂码加入课堂。",
+    "keywords": [
+      "上课记录",
+      "创建课堂",
+      "单击“开始上课\"后将跳转此页面上课中06．25星期四11；输入课堂码后即可加入课堂KTF61399AI工作台暂",
+      "如何创建课堂？",
+      "如何开始上课",
+      "如何开始上课？",
+      "学生怎么加入课堂？",
+      "开始上课",
+      "开始上课入口在哪里？",
+      "开始上课在哪里？",
+      "开始上课怎么操作？",
+      "怎么上课？",
+      "怎么开始上课？",
+      "课堂码",
+      "课堂码在哪里？",
+      "返回课程列表工作台资源讨论考核分析讠果星．面向线下灤堂教学场景；发布点名、泷人“沧笞、授票和碭等课活动",
+      "返回课程列表工作台资源讨论考试考核分析果呈面向线下课教学场教师可以；发布点名、选人、抢答、扌殳票和打分等课堂活动·上课记",
+      "返回课程列表直单击“创建课堂\"后会弹出此弹窗0一创建课堂24；输入课堂名称20上课记录00课堂积分榜口考试考核默认班级3在",
+      "进入课堂",
+      "通知上课"
+    ],
+    "answer": {
+      "entry": "进入目标课程后，打开左侧【课堂】。",
+      "steps": [
+        "点击【创建课堂】。",
+        "输入课堂名称。",
+        "选择上课班级。",
+        "点击【开始上课】。",
+        "进入上课页面后，可把课堂码发给学生加入课堂。"
+      ],
+      "check": "课堂页面显示【上课中】，并出现课堂码、点名、资源等课堂工具。",
+      "risk": "开始前请确认班级和课堂名称，避免学生加入错误课堂。"
+    },
+    "related": [],
+    "audience": "uLearning teachers",
+    "client": "Web",
+    "source": "截图教程",
+    "sourcePath": "如何开始上课"
+  },
+  {
+    "id": "screenshot_tutorial_035-batch-import-class-student",
+    "category": "如何批量导入班级与学生",
+    "question": "如何批量导入班级与学生？",
+    "summary": "根据截图教程《如何批量导入班级与学生》整理的操作入口和步骤。",
+    "keywords": [
+      "如何批量导入班级与学生",
+      "如何批量导入班级与学生？",
+      "怎么批量导入班级与学生？",
+      "批量导入班级与学生",
+      "批量导入班级与学生入口在哪里？",
+      "批量导入班级与学生在哪里？",
+      "批量导入班级与学生怎么操作？",
+      "返回课刂表从学生库导入班级与学生单元班级名称资源0作业O注如果课程中；导入班级与学生输入班级名称000班级小绢方案批量入班级一跳转人脸",
+      "返回课程列表0资源讨论考试考核分析仄．在这里可以看和您有关级；导入班级与学生班级管理佬师序号学生管理教学团队班级小绢方案从其他课程",
+      "返回课程列表0资源讨论考试考核分析仄．在这里可以看和您有关级；导入班级与学生班级管理佬师序号学生管理教学团队班级小绢方案从学生库导",
+      "返回课程列表从具他课程导入班级输入班级名称索默认班级O0从其他课程；导入班级与学生导入该班级0001选择想要导入的班级會考试2点击"
+    ],
+    "answer": {
+      "entry": "参考截图教程路径：【如何批量导入班级与学生】。",
+      "steps": [
+        "进入与【如何批量导入班级与学生】对应的页面。",
+        "按页面中的【如何批量导入班级与学生】入口或按钮继续操作。",
+        "根据弹窗或表单提示填写信息并保存。"
+      ],
+      "check": "完成后页面应进入截图中的结果状态或出现对应记录。",
+      "risk": "涉及发布、删除、考试、学生范围或权限时，提交前先核对对象和影响范围。"
+    },
+    "related": [],
+    "audience": "uLearning teachers",
+    "client": "Web",
+    "source": "截图教程",
+    "sourcePath": "如何批量导入班级与学生"
+  },
+  {
+    "id": "screenshot_tutorial_036-create-announcement",
+    "category": "course",
+    "question": "如何新建公告？",
+    "summary": "进入课程公告模块，发布新的课程公告。",
+    "keywords": [
+      "公告内容",
+      "公告名称",
+      "创建公告",
+      "发公告",
+      "发布公告",
+      "如何发布公告？",
+      "如何新建公告",
+      "如何新建公告？",
+      "怎么发公告？",
+      "怎么发布课程公告？",
+      "怎么新建公告？",
+      "新增公告",
+      "新建公告",
+      "新建公告入口在哪里？",
+      "新建公告在哪里？",
+      "新建公告怎么操作？",
+      "点击进入课程跳转关于我们：关于文华联系才清单帮助中心友情赳妾",
+      "课程公告",
+      "返回课刂表工作台资源讨论直幡考试公告与课程教学相关的涌知、公告；发布在里",
+      "返回课程列表口与课程教学相关的通知、公告等都可以．发布旺虱；发布公告",
+      "返回课程列表点击“发布新公告\"后将跳出一此弹窗资源0口00；添加附件园级“考试在此输入公告名称2",
+      "选择班级"
+    ],
+    "answer": {
+      "entry": "进入目标课程后，打开左侧【公告】。",
+      "steps": [
+        "点击右上角【发布新公告】。",
+        "在弹窗中填写公告名称。",
+        "填写公告内容，可按需要添加附件。",
+        "选择发布班级。",
+        "点击【确定】发布。"
+      ],
+      "check": "返回公告页面后，公告列表中能看到刚发布的公告。",
+      "risk": "发布前请核对班级范围和公告内容；课程管理员可对所有班级发布，任课教师和助教通常只能对自己负责的班级发布。"
+    },
+    "related": [],
+    "audience": "uLearning teachers",
+    "client": "Web",
+    "source": "截图教程",
+    "sourcePath": "如何新建公告"
+  },
+  {
+    "id": "screenshot_tutorial_037-create-courseware",
+    "category": "如何新建课件",
+    "question": "如何新建课件？",
+    "summary": "根据截图教程《如何新建课件》整理的操作入口和步骤。",
+    "keywords": [
+      "创建课件",
+      "单击“创建课件\"后会弹出此弹窗提示．学管理〕功能；点击查看共1条名称classl创建课件诺输入课亻铭称创建课件操作在此",
+      "单击“创建课件\"后将跳转至此界面4或点击直接发布完成创建0课；创建章节目录清将目录粘贴在输入黽使'#錶示1级目录",
+      "单击“返回课件主页\"后将跳转至此界面侦览课件协同舁设首沂童节；发布）卜第二章侏发布）2点击发布完成编辑复制章节逞妾复制童节",
+      "单击编辑我的课件2选择课件1从课件库入当前课程还耒引入课件",
+      "如何新建课件",
+      "如何新建课件？",
+      "怎么新建课件？",
+      "新增课件",
+      "新建课件",
+      "新建课件入口在哪里？",
+      "新建课件在哪里？",
+      "新建课件怎么操作？",
+      "点击查看共1名称classl导入舁且账号课件全部命核状态简体中文创建；创建人0创腱时间2025．06．12更司2025．％．",
+      "返回课件庄页示例课件1单击“创建\"后将跳转至此界面3点击返回；保存模板罔文档9评分"
+    ],
+    "answer": {
+      "entry": "进入课程工作台的课件或资源管理页面。",
+      "steps": [
+        "选择【新建课件】相关入口。",
+        "按页面提示选择课件、上传文件或填写名称。",
+        "确认保存。",
+        "返回列表检查结果。"
+      ],
+      "check": "课件列表或课程内容中出现对应课件。",
+      "risk": "发布或关联前请检查课件内容是否完整、适用于当前班级。"
+    },
+    "related": [],
+    "audience": "uLearning teachers",
+    "client": "Web",
+    "source": "截图教程",
+    "sourcePath": "如何新建课件"
+  },
+  {
+    "id": "screenshot_tutorial_038-create-question-bank",
+    "category": "如何新建题库文件夹",
+    "question": "如何新建题库文件夹？",
+    "summary": "根据截图教程《如何新建题库文件夹》整理的操作入口和步骤。",
+    "keywords": [
+      "创建题库文件夹",
+      "单击“题库\"后将跳转至此界面我的题库当前位首：全部添加题；点击添加文件夹2Ai智能出题统计1导出添加文件夹全部难度批量导入题",
+      "发布庐看考试；发布喳看考试",
+      "如何新建题库文件夹",
+      "如何新建题库文件夹？",
+      "怎么新建题库文件夹？",
+      "新增题库文件夹",
+      "新建题库文件夹",
+      "新建题库文件夹入口在哪里？",
+      "新建题库文件夹在哪里？",
+      "新建题库文件夹怎么操作？",
+      "添加题目本校题库共享题库单击“添加文件夹\"后将弹出此弹窗添加；导入题目'Ai智能出题添加文件夹统计导出关闭题目详情在此输入文件"
+    ],
+    "answer": {
+      "entry": "参考截图教程路径：【如何新建题库文件夹】。",
+      "steps": [
+        "进入与【如何新建题库文件夹】对应的页面。",
+        "按页面中的【如何新建题库文件夹】入口或按钮继续操作。",
+        "根据弹窗或表单提示填写信息并保存。"
+      ],
+      "check": "完成后页面应进入截图中的结果状态或出现对应记录。",
+      "risk": "涉及发布、删除、考试、学生范围或权限时，提交前先核对对象和影响范围。"
+    },
+    "related": [],
+    "audience": "uLearning teachers",
+    "client": "Web",
+    "source": "截图教程",
+    "sourcePath": "如何新建题库文件夹"
+  },
+  {
+    "id": "screenshot_tutorial_039-add-ai-ai-workspace",
+    "category": "如何添加AI助手至AI工作台首页",
+    "question": "如何添加AI助手至AI工作台首页？",
+    "summary": "根据截图教程《如何添加AI助手至AI工作台首页》整理的操作入口和步骤。",
+    "keywords": [
+      "AI助手入口在哪里？",
+      "如何添加AI助手至AI工作台首页",
+      "如何添加AI助手至AI工作台首页？",
+      "怎么创建AI助手？",
+      "怎么添加AI助手至AI工作台首页？",
+      "怎么添加AI助手？",
+      "添加AI助手至AI工作台首页",
+      "添加AI助手至AI工作台首页入口在哪里？",
+      "添加AI助手至AI工作台首页在哪里？",
+      "添加AI助手至AI工作台首页怎么操作？",
+      "添加好的A《助手工作台口资源讨论直幡教师番课助手》我是本课；生成教学资料、快速梳理知识点、优化课堂设计等",
+      "点击“添加A《助手\"后将弹出此弹窗工作台口资源讨论0直；创建的团阝关建0示《助手本1享2在此选择A《助手3点击确定",
+      "点击“设置\"后将跳转至此界面压工作台000讨论考试返回设；点击添加A《助手20学生A修改设首状态：状态：已启用已",
+      "生成教学资料、快速梳理知识点、优化课堂设计等；输入生成文要求帮我生成一份课程A江具智能甾课能生成全流程教字资助力教",
+      "返回设置讠A江作台中关助手、A江具和知识AI助手A江具知只库+；添加好的A《助手状态：状态：已启用已启用权眼：仅教师"
+    ],
+    "answer": {
+      "entry": "参考截图教程路径：【如何添加AI助手至AI工作台首页】。",
+      "steps": [
+        "进入与【如何添加AI助手至AI工作台首页】对应的页面。",
+        "按页面中的【如何添加AI助手至AI工作台首页】入口或按钮继续操作。",
+        "根据弹窗或表单提示填写信息并保存。"
+      ],
+      "check": "完成后页面应进入截图中的结果状态或出现对应记录。",
+      "risk": "涉及发布、删除、考试、学生范围或权限时，提交前先核对对象和影响范围。"
+    },
+    "related": [],
+    "audience": "uLearning teachers",
+    "client": "Web",
+    "source": "截图教程",
+    "sourcePath": "如何添加AI助手至AI工作台首页"
+  },
+  {
+    "id": "screenshot_tutorial_040-add",
+    "category": "如何添加扣子智能体",
+    "question": "如何添加扣子智能体？",
+    "summary": "根据截图教程《如何添加扣子智能体》整理的操作入口和步骤。",
+    "keywords": [
+      "创建和退于大模型的A厝能体应且全部状态示例A励手e大模型：壹包昌；点击添加扣子智能体添力眺子智能体",
+      "如何添加扣子智能体",
+      "如何添加扣子智能体？",
+      "怎么添加扣子智能体？",
+      "添加扣子智能体",
+      "添加扣子智能体入口在哪里？",
+      "添加扣子智能体在哪里？",
+      "添加扣子智能体怎么操作？",
+      "点击A《工作台1生档的要求0考试教师助手教师番课助手》帮我；生成一份课程大纲2点击加号园助手管畦助手曰本课程您专属A课助手",
+      "点击“添加扣子智能体\"后将弹出此弹窗AI助手啪子智能体创建和；创建A慟手C中添加扣子智能体2应用授权点击下方登录了账号"
+    ],
+    "answer": {
+      "entry": "参考截图教程路径：【如何添加扣子智能体】。",
+      "steps": [
+        "进入与【如何添加扣子智能体】对应的页面。",
+        "按页面中的【如何添加扣子智能体】入口或按钮继续操作。",
+        "根据弹窗或表单提示填写信息并保存。"
+      ],
+      "check": "完成后页面应进入截图中的结果状态或出现对应记录。",
+      "risk": "涉及发布、删除、考试、学生范围或权限时，提交前先核对对象和影响范围。"
+    },
+    "related": [],
+    "audience": "uLearning teachers",
+    "client": "Web",
+    "source": "截图教程",
+    "sourcePath": "如何添加扣子智能体"
+  },
+  {
+    "id": "screenshot_tutorial_041-edit-announcement",
+    "category": "course",
+    "question": "如何编辑公告？",
+    "summary": "在公告列表中编辑已发布公告。",
+    "keywords": [
+      "修改公告",
+      "公告修改",
+      "如何编辑公告",
+      "如何编辑公告？",
+      "怎么编辑公告？",
+      "更新公告内容",
+      "编辑公告",
+      "编辑公告入口在哪里？",
+      "编辑公告在哪里？",
+      "编辑公告怎么操作？",
+      "返回课刂表O0口与课程教学相关的通知、公告等都可以发布旺课程；发布公告",
+      "返回课程列表点击“编辑\"将弹出此弹窗资源考试公告名你公告内容；点击确定4"
+    ],
+    "answer": {
+      "entry": "进入目标课程后，打开左侧【公告】。",
+      "steps": [
+        "找到要修改的公告。",
+        "点击公告右侧【编辑】。",
+        "修改公告名称、内容或班级范围。",
+        "确认保存。"
+      ],
+      "check": "公告列表中显示修改后的内容或更新时间。",
+      "risk": "修改已发布公告会影响学生看到的通知内容，保存前请核对公告对象。"
+    },
+    "related": [],
+    "audience": "uLearning teachers",
+    "client": "Web",
+    "source": "截图教程",
+    "sourcePath": "如何编辑公告"
+  },
+  {
+    "id": "screenshot_tutorial_042-set-create-class",
+    "category": "如何设置教学团队",
+    "question": "如何创建班级？",
+    "summary": "根据截图教程《如何设置教学团队 > 创建班级》整理的操作入口和步骤。",
+    "keywords": [
+      "创建班级",
+      "创建班级入口在哪里？",
+      "创建班级在哪里？",
+      "创建班级怎么操作？",
+      "如何创建班级？",
+      "如何设置教学团队",
+      "如何设置教学团队 - 创建班级",
+      "如何设置教学团队 > 创建班级",
+      "怎么创建班级？",
+      "新增班级",
+      "新建班级",
+      "点击进入课程跳转关于我们：关于文华联系才清单帮助中心友情赳妾",
+      "返回课刂表创建班级单击在此输入班级名称；输入要创建的班级名称",
+      "返回课刂表讨论考试考核分析．成员．在里可以吉看和您有关联的班；选择班级管理班级管理学生管理教学团队班级小组方人脸认证3单击创建班级"
+    ],
+    "answer": {
+      "entry": "进入课程的教学团队或班级管理页面。",
+      "steps": [
+        "点击创建班级。",
+        "填写班级名称。",
+        "保存班级。",
+        "按需要继续添加学生或指定教师。"
+      ],
+      "check": "班级列表中出现新班级。",
+      "risk": "创建后请确认班级和授课教师关系正确。"
+    },
+    "related": [],
+    "audience": "uLearning teachers",
+    "client": "Web",
+    "source": "截图教程",
+    "sourcePath": "如何设置教学团队 > 创建班级"
+  },
+  {
+    "id": "screenshot_tutorial_043-set-student-student",
+    "category": "如何设置教学团队",
+    "question": "如何加入学生-学生扫码？",
+    "summary": "根据截图教程《如何设置教学团队 > 加入学生-学生扫码》整理的操作入口和步骤。",
+    "keywords": [
+      "加入学生",
+      "加入学生-学生扫码",
+      "加入学生-学生扫码入口在哪里？",
+      "加入学生-学生扫码在哪里？",
+      "加入学生-学生扫码怎么操作？",
+      "如何加入学生-学生扫码？",
+      "如何设置教学团队",
+      "如何设置教学团队 - 加入学生-学生扫码",
+      "如何设置教学团队 > 加入学生-学生扫码",
+      "学生扫码",
+      "怎么加入学生-学生扫码？",
+      "输入班级名称索Q班级称皂计1个默认班级班级小绢方案加退班申请0批量入；创建时司2026．06．23学生名单学生输入班级编码加入班级",
+      "返回课程列表单击二维码\"后会弹出以生管理资源此弹窗•TIPS；创建瞓司2026．06．23人脸认证创建班级"
+    ],
+    "answer": {
+      "entry": "进入课程的班级或学生管理页面。",
+      "steps": [
+        "打开目标班级的学生加入信息。",
+        "找到班级二维码或课堂码。",
+        "把二维码或编码发给学生。",
+        "学生扫码后回到名单检查加入结果。"
+      ],
+      "check": "班级成员列表中出现学生，人数同步增加。",
+      "risk": "如果学生加入失败，请检查二维码是否有效、班级是否允许加入。"
+    },
+    "related": [],
+    "audience": "uLearning teachers",
+    "client": "Web",
+    "source": "截图教程",
+    "sourcePath": "如何设置教学团队 > 加入学生-学生扫码"
+  },
+  {
+    "id": "screenshot_tutorial_044-set-student-add",
+    "category": "如何设置教学团队",
+    "question": "如何加入学生-老师添加？",
+    "summary": "根据截图教程《如何设置教学团队 > 加入学生-老师添加》整理的操作入口和步骤。",
+    "keywords": [
+      "加入学生",
+      "加入学生-老师添加",
+      "加入学生-老师添加入口在哪里？",
+      "加入学生-老师添加在哪里？",
+      "加入学生-老师添加怎么操作？",
+      "如何加入学生-老师添加？",
+      "如何设置教学团队",
+      "如何设置教学团队 - 加入学生-老师添加",
+      "如何设置教学团队 > 加入学生-老师添加",
+      "怎么加入学生-老师添加？",
+      "查看和您有关联的班级、学生、教学团队程管理员可以看所有班级；输入班级名称码搜索Q班级名称总计1个默认班级戏班级小组方案人人证C力",
+      "老师添加",
+      "返回课刂表；选择学生单击“添加学生\"后会弹出此弹窗•TIPS：学生"
+    ],
+    "answer": {
+      "entry": "进入课程的班级或学生管理页面。",
+      "steps": [
+        "选择目标班级。",
+        "点击添加学生。",
+        "搜索或选择要加入的学生。",
+        "确认添加并检查名单。"
+      ],
+      "check": "班级成员列表中出现新增学生。",
+      "risk": "添加前请核对班级和学生身份，避免加错班级。"
+    },
+    "related": [],
+    "audience": "uLearning teachers",
+    "client": "Web",
+    "source": "截图教程",
+    "sourcePath": "如何设置教学团队 > 加入学生-老师添加"
+  },
+  {
+    "id": "screenshot_tutorial_045-set-teacher",
+    "category": "如何设置教学团队",
+    "question": "如何指定教师？",
+    "summary": "根据截图教程《如何设置教学团队 > 指定教师》整理的操作入口和步骤。",
+    "keywords": [
+      "如何指定教师？",
+      "如何设置教学团队",
+      "如何设置教学团队 - 指定教师",
+      "如何设置教学团队 > 指定教师",
+      "怎么指定教师？",
+      "指定教师",
+      "指定教师入口在哪里？",
+      "指定教师在哪里？",
+      "指定教师怎么操作？",
+      "查看和您有关联的班级、学生、教学团队程管理员可以看所有班级；输入班级名称码搜索Q班级名称总计1个默认班级戏班级小组方案人人证C力",
+      "返回课程列表单击“指定教师\"后会弹出此弹窗直幡考试考核XXX；输入教师名称搜索给默认班级指定以下教师．选择想要的教师2点击保存"
+    ],
+    "answer": {
+      "entry": "进入课程的教学团队或班级教师设置页面。",
+      "steps": [
+        "选择目标班级。",
+        "点击指定教师或分配教师。",
+        "选择授课教师。",
+        "保存后检查教师负责班级。"
+      ],
+      "check": "班级中显示指定教师，教学团队中显示对应负责关系。",
+      "risk": "通常需要课程管理员权限才能调整教学团队和教师负责班级。"
+    },
+    "related": [],
+    "audience": "uLearning teachers",
+    "client": "Web",
+    "source": "截图教程",
+    "sourcePath": "如何设置教学团队 > 指定教师"
+  },
+  {
+    "id": "screenshot_tutorial_046-ai-select-ai",
+    "category": "新增AI助手中-选择AI助手",
+    "question": "如何新增AI助手中-选择AI助手？",
+    "summary": "根据截图教程《新增AI助手中-选择AI助手》整理的操作入口和步骤。",
+    "keywords": [
+      "AI助手入口在哪里？",
+      "如何新增AI助手中-选择AI助手？",
+      "怎么创建AI助手？",
+      "怎么新增AI助手中-选择AI助手？",
+      "怎么添加AI助手？",
+      "新增AI助手中",
+      "新增AI助手中-选择AI助手",
+      "新增AI助手中-选择AI助手入口在哪里？",
+      "新增AI助手中-选择AI助手在哪里？",
+      "新增AI助手中-选择AI助手怎么操作？",
+      "点击进入课程跳转关于我们：关于文华联系才清单帮助中心友情赳妾",
+      "返回课程列表工作台课件资源讨论教师手0学生A助教教师番课助手《；生成教学资料、快速梳理知识点、优化课堂设计等",
+      "返回课程列表教师“助手单击“选择A《助手\"后会弹出此；创建的团阝关建不校共享0教“乍助手2选择已有的A《助手C到0",
+      "选择AI助手"
+    ],
+    "answer": {
+      "entry": "参考截图教程路径：【新增AI助手中-选择AI助手】。",
+      "steps": [
+        "进入与【新增AI助手中-选择AI助手】对应的页面。",
+        "按页面中的【新增AI助手中-选择AI助手】入口或按钮继续操作。",
+        "根据弹窗或表单提示填写信息并保存。"
+      ],
+      "check": "完成后页面应进入截图中的结果状态或出现对应记录。",
+      "risk": "涉及发布、删除、考试、学生范围或权限时，提交前先核对对象和影响范围。"
+    },
+    "related": [],
+    "audience": "uLearning teachers",
+    "client": "Web",
+    "source": "截图教程",
+    "sourcePath": "新增AI助手中-选择AI助手"
+  }
+]

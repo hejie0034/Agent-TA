@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI 教师助手</title>
+    <link rel="stylesheet" href="styles.css?v=20260706-text-guidance" />
+  </head>
+  <body>
+    <div class="shell" id="appShell">
+      <aside class="sidebar" aria-label="对话侧边栏">
+        <div class="brand">
+          <span class="bee-avatar bee-mascot" aria-hidden="true">
+            <span class="bee-wing bee-wing-left"></span>
+            <span class="bee-wing bee-wing-right"></span>
+            <span class="bee-body"><span class="bee-face"></span></span>
+          </span>
+          <strong>小蜜蜂</strong>
+        </div>
+
+        <button class="new-chat" id="newChat" type="button">
+          <span aria-hidden="true">＋</span>
+          <span class="label">新建对话</span>
+        </button>
+
+        <section class="history-section">
+          <div class="section-label">对话回溯</div>
+          <div id="historyList" class="history-list"></div>
+        </section>
+
+      </aside>
+
+      <main class="chat-panel">
+        <section class="prompt-strip" aria-label="推荐问题">
+          <button class="prompt-card" type="button" data-question="我应该从哪里开始？">我应该从哪里开始？</button>
+          <button class="prompt-card" type="button" data-question="如何快速创建一门课程？">如何快速创建一门课程？</button>
+          <button class="prompt-card" type="button" data-question="uLearning 有哪些功能？">uLearning 有哪些功能？</button>
+          <button class="prompt-card" type="button" data-question="如何布置个人作业？">如何布置作业？</button>
+          <button class="prompt-card" type="button" data-question="如何设置教学团队？">如何设置教学团队？</button>
+          <button class="prompt-card" type="button" data-question="如何新建课件？">如何新建课件？</button>
+          <button class="prompt-card" type="button" data-question="如何开始上课？">如何开始上课？</button>
+          <button class="prompt-card" type="button" data-question="如何查看进度成绩？">如何查看进度成绩？</button>
+        </section>
+
+        <section class="messages" id="messages" aria-live="polite"></section>
+
+        <form class="composer" id="chatForm">
+          <button class="icon-button" id="knowledgeButton" type="button" title="查看知识库范围" aria-label="查看知识库范围">
+            <span aria-hidden="true">?</span>
+          </button>
+          <textarea id="chatInput" rows="1" placeholder="请输入你的问题，例如：如何发布作业？"></textarea>
+          <button class="send-button" type="submit" title="发送" aria-label="发送">
+            <span aria-hidden="true">➤</span>
+          </button>
+        </form>
+      </main>
+    </div>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <div class="feedback-dialog" id="feedbackDialog" aria-hidden="true">
+      <div class="feedback-dialog-card" role="dialog" aria-modal="true" aria-labelledby="feedbackDialogTitle">
+        <button class="dialog-close" id="feedbackDialogClose" type="button" aria-label="关闭">×</button>
+        <h2 id="feedbackDialogTitle">很抱歉给您带来了不好的体验</h2>
+        <p>请问您需要转人工吗？点击后将进入人工服务入口。</p>
+        <div class="dialog-actions">
+          <button class="dialog-primary" id="dialogHandoff" type="button">转人工</button>
+          <button class="dialog-secondary" id="dialogCancel" type="button">暂时不用</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="feedback-dialog" id="handoffDialog" aria-hidden="true">
+      <div class="feedback-dialog-card" role="dialog" aria-modal="true" aria-labelledby="handoffDialogTitle">
+        <button class="dialog-close" id="handoffDialogClose" type="button" aria-label="关闭">×</button>
+        <h2 id="handoffDialogTitle">目前暂未接入人工</h2>
+        <p>麻烦您写下遇到的问题，我们将完善知识库，感谢您的反馈。</p>
+        <textarea class="handoff-textarea" id="handoffInput" rows="4" placeholder="请描述您遇到的问题"></textarea>
+        <div class="dialog-actions">
+          <button class="dialog-primary" id="handoffSubmit" type="button">提交反馈</button>
+          <button class="dialog-secondary" id="handoffCancel" type="button">取消</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js?v=20260706-text-guidance"></script>
+  </body>
+</html>

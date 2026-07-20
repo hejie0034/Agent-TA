@@ -1,0 +1,9 @@
+{
+  "source": "C:\\Users\\huawei\\Desktop\\前端\\截图教程",
+  "output": "C:\\Users\\huawei\\Desktop\\前端\\切片读取知识库\\screenshot_tutorial_kb.jsonl",
+  "tutorialCount": 46,
+  "imageCount": 152,
+  "ocrImageCount": 152,
+  "ocrAvailable": false,
+  "ocrLanguage": "chi_sim+eng"
+}
