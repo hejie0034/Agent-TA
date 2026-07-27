@@ -1,152 +1,117 @@
-# Agent-TA
+# Agent-TA｜AI 教师操作助手
 
-Agent-TA 是面向 uLearning / 优学院 Web 教师端的操作问答助手。项目使用原生 HTML、CSS 和 JavaScript 构建前端，并由一个 Python 服务同时提供网页、知识库问答接口和反馈记录功能。
+面向 uLearning / 优学院 Web 教师端的操作问答助手。接收方克隆或下载本仓库后，可以按照本文完成配置、启动、测试和后续修改。
+
+## 交付信息
+
+| 项目 | 内容 |
+| --- | --- |
+| 当前版本 | V1.0.0 |
+| 运行方式 | Python 本地 Web 服务 |
+| 本地地址 | `http://127.0.0.1:8012` |
+| 前端 | 原生 HTML、CSS、JavaScript |
+| 后端 | Python |
+| AI 服务商 | **DeepSeek（深度求索）** |
+| API 类型 | DeepSeek 官方、OpenAI 兼容格式的 Chat Completions API |
+| 默认 API 地址 | `https://api.deepseek.com/v1/chat/completions` |
+| 默认模型 | `deepseek-chat` |
+| API Key | 不包含，由接收方在 DeepSeek 平台申请并填写 |
+
+> 本项目不是调用 OpenAI 的模型。接口报文采用 OpenAI 兼容格式，但默认服务商和模型均为 DeepSeek。
 
 ## 主要功能
 
 - 回答课程、班级、课件、资源、作业、考试、成绩和课堂互动等教师端操作问题
-- 根据本地 FAQ 知识库检索相关答案
-- 使用 DeepSeek 对检索结果进行自然语言整理
-- 提供相关问题跳转和操作引导
-- 记录点赞、点踩和转人工反馈
+- 检索本地 FAQ、知识库切片和截图教程
+- 使用 DeepSeek 整理检索结果并生成自然语言回答
+- 展示相关问题和操作步骤截图
+- 在本地记录点赞、点踩、未回答问题和转人工反馈
 
-## 环境要求
+## 五分钟启动
 
-- Python 3.10 或更高版本
-- 可访问 DeepSeek API 的网络环境
-- DeepSeek API Key
-
-项目不需要 Node.js，也不需要分别启动前端和后端。
-
-## 安装
-
-### 1. 获取项目
-
-使用 Git 克隆：
-
-```bash
-git clone https://github.com/hejie0034/Agent-TA.git
-cd Agent-TA
-```
-
-也可以在 GitHub 页面点击 `Code` → `Download ZIP`，解压后进入项目目录。
-
-### 2. 安装 Python 依赖
-
-```bash
-python -m pip install openpyxl
-```
-
-如果 Windows 找不到 `python` 命令，可以尝试：
+环境要求：Windows 10/11、Python 3.10 或更高版本、Chrome 或 Edge，以及可访问 DeepSeek API 的网络。
 
 ```powershell
-py -m pip install openpyxl
+git clone https://github.com/hejie0034/Agent-TA.git
+cd Agent-TA
+python -m pip install -r requirements.txt
+Copy-Item .env.example .env
 ```
 
-### 3. 配置 API Key
-
-在项目根目录（与 `web_agent.py` 同级）新建一个名为 `.env` 的文件：
+打开 `.env`，填写自己的 DeepSeek API Key：
 
 ```env
-DEEPSEEK_API_KEY=替换为你的DeepSeek_API_Key
-DEEPSEEK_BASE_URL=https://api.deepseek.com/v1
-DEEPSEEK_MODEL=deepseek-chat
+DEEPSEEK_API_KEY=在这里填写接收方自己的密钥
 ```
 
-`.env` 已加入 `.gitignore`，请勿将真实 API Key 提交到 GitHub、聊天记录或截图中。
+启动：
 
-## 启动项目
-
-在项目根目录运行：
-
-```bash
+```powershell
 python web_agent.py --port 8012
 ```
 
-Windows 也可以使用：
+浏览器访问：
 
-```powershell
-py web_agent.py --port 8012
-```
+- 项目页面：<http://127.0.0.1:8012>
+- 健康检查：<http://127.0.0.1:8012/api/health>
 
-看到下面的提示即表示服务已启动：
+停止服务时，在运行窗口按 `Ctrl + C`。
+
+## 工作流程与密钥安全
 
 ```text
-Serving on http://127.0.0.1:8012
+浏览器前端
+  ↓ 请求本项目 /api/chat
+Python 后端（读取本地知识库和 .env）
+  ↓ 携带服务端 API Key
+DeepSeek API
 ```
 
-随后在浏览器打开：
-
-<http://127.0.0.1:8012>
-
-这个 Python 服务会同时提供前端页面和后端 API，不需要额外启动前端服务。
-
-## 检查运行状态
-
-浏览器访问下面的地址：
-
-<http://127.0.0.1:8012/api/health>
-
-返回结果中的关键字段：
-
-- `ok: true`：服务运行正常
-- `configured: true`：已经读取到 API Key
-- `faqCount`：当前加载的 FAQ 数量
-
-如果 `configured` 为 `false`，请检查 `.env` 是否位于项目根目录、变量名是否正确，然后重启服务。
-
-## 常见问题
-
-### 网页打不开
-
-确认终端中的 Python 服务仍在运行，并检查使用的端口是否为 `8012`。如果端口被占用，可以更换端口：
-
-```bash
-python web_agent.py --port 8080
-```
-
-然后访问 <http://127.0.0.1:8080>。
-
-### 提示缺少 `openpyxl`
-
-重新安装依赖：
-
-```bash
-python -m pip install openpyxl
-```
-
-### 可以打开网页，但智能回答不可用
-
-检查 `/api/health` 返回的 `configured` 是否为 `true`。如果为 `false`，通常是 `.env` 缺失、API Key 变量名错误，或者修改 `.env` 后没有重启服务。
-
-### 没有 API Key 能否使用
-
-页面和部分本地知识库匹配仍可运行，但 DeepSeek 的答案整理能力不可用。建议配置有效的 API Key 以获得完整体验。
-
-### 如何停止服务
-
-回到运行服务的终端，按 `Ctrl + C`。
+真实密钥只应保存在本机 `.env` 中。`.env` 已被 `.gitignore` 排除，不应上传 GitHub、放进前端 JavaScript、写入文档或出现在截图中。仓库只交付不含密钥的 `.env.example`。
 
 ## 项目结构
 
 ```text
 Agent-TA/
-├─ index.html                    # 前端页面
-├─ styles.css                    # 页面样式
-├─ app.js                        # 前端交互逻辑
-├─ web_agent.py                  # Web 服务和问答接口
-├─ ulearning_teacher_faq.json    # FAQ 知识库
-├─ deepseek_prompt.md            # 模型提示词
-├─ 截图教程/                     # 操作教程图片
-├─ 切片读取知识库/               # 知识库切片和索引数据
-├─ feedback/                     # 本地反馈文件目录
-└─ .env                          # 本地密钥配置，不上传 GitHub
+├─ index.html                   # 前端页面
+├─ styles.css                   # 页面样式
+├─ app.js                       # 前端交互逻辑
+├─ web_agent.py                 # Web 服务、知识库检索和 AI 接口
+├─ requirements.txt             # Python 依赖
+├─ .env.example                 # 环境变量示例（不含密钥）
+├─ ulearning_teacher_faq.json   # FAQ 知识库
+├─ deepseek_prompt.md           # DeepSeek 系统提示词
+├─ 截图教程/                    # 教师端操作截图
+├─ 切片读取知识库/              # 知识库切片和索引数据
+├─ scripts/                     # 知识库维护脚本
+├─ docs/                        # 启动、部署、接口和测试文档
+├─ version.txt                  # 当前版本
+└─ README.md                    # 交付入口
 ```
 
-## 数据与隐私
+## 交付文档
 
-- API Key 仅保存在本地 `.env` 文件中
-- 未回答问题和反馈数据默认保存在项目本地
-- 上传或分享项目前，请再次确认没有把 `.env`、日志或用户反馈文件加入 Git
-- 如果 API Key 曾经公开，应立即到对应平台撤销并重新生成
+- [项目说明书](docs/项目说明书.md)
+- [本地启动说明](docs/本地启动说明.md)
+- [服务器部署说明](docs/服务器部署说明.md)
+- [接口说明](docs/接口说明.md)
+- [测试说明](docs/测试说明.md)
+- [常见问题](docs/常见问题.md)
+- [交付清单](docs/交付清单.md)
 
+## 已知边界
+
+- 当前是本地运行版，未包含 Docker 和生产级进程守护配置
+- 服务默认只监听 `127.0.0.1`，同一局域网的其他电脑无法直接访问
+- 不会自动点击或控制优学院教师端页面
+- 回答质量受知识库完整度、截图清晰度和 DeepSeek 服务状态影响
+- 用户反馈默认保存在运行机器本地，部署前需自行制定数据保留和隐私规则
+
+## 发布前检查
+
+```powershell
+git status --short
+git ls-files .env
+```
+
+第二条命令应没有输出。还应在一台未配置过本项目的电脑上，按《本地启动说明》完整运行一次。

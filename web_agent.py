@@ -900,7 +900,6 @@ def call_deepseek_rewrite(
     api_key = (
         os.getenv("DEEPSEEK_API_KEY")
         or os.getenv("ULEARNING_TEACHER_ASSISTANT_API_KEY")
-        or os.getenv("OPENAI_API_KEY")
     )
     if not api_key:
         raise RuntimeError("Missing DEEPSEEK_API_KEY")
@@ -1363,7 +1362,6 @@ class AgentHandler(SimpleHTTPRequestHandler):
             configured = bool(
                 os.getenv("DEEPSEEK_API_KEY")
                 or os.getenv("ULEARNING_TEACHER_ASSISTANT_API_KEY")
-                or os.getenv("OPENAI_API_KEY")
             )
             self._send_json(
                 200,
