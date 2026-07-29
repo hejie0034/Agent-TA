@@ -652,7 +652,7 @@ const featureLinks = [
   ["系统报错", "遇到系统报错怎么办？"]
 ];
 
-const videoGuides = [
+let videoGuides = [
   { title: "创建课件", question: "如何创建课件？", src: "指导视频/准备教学内容与班级/2.创建课件.mp4", aliases: ["创建课件", "新建课件"] },
   { title: "添加章节结构", question: "如何添加章节结构？", src: "指导视频/准备教学内容与班级/3.添加章节结构.mp4", aliases: ["添加章节结构", "章节结构", "添加章节"] },
   { title: "填充课程内容", question: "如何填充课程内容？", src: "指导视频/准备教学内容与班级/4.填充课程内容.mp4", aliases: ["填充课程内容", "课程内容", "添加课程内容"] },
@@ -758,7 +758,7 @@ let screenshotGuides = [
     id: "new-courseware-flow",
     title: "新建课件",
     question: "关联课件：新建课件",
-    aliases: ["如何新建课件"],
+    aliases: ["如何新建课件", "如何创建课件", "创建课件", "新建课件"],
     steps: [
       { label: "Step 1", text: "进入课程工作台，打开课件管理。", src: "截图教程/如何新建课件/step1.png" },
       { label: "Step 2", text: "点击新建课件。", src: "截图教程/如何新建课件/step2.png" },
@@ -828,8 +828,15 @@ let screenshotGuides = [
 
 const guidedResponses = [
   {
-    triggers: ["我应该从哪里开始", "第一次使用应该从哪里开始", "老师应该从哪里开始"],
-    answer: "你是第一次使用 uLearning 吗？我们可以通过下面几个步骤快速熟悉系统，点击你想了解的步骤吧。\n\n一、创建课程\n二、设置教学团队\n三、关联课件\n四、开始上课"
+    triggers: ["快速开始", "我应该从哪里开始", "第一次使用应该从哪里开始", "老师应该从哪里开始"],
+    answer: "第一次使用 uLearning，可以按下面 4 个步骤快速开始：\n\n一、创建课程\n二、设置教学团队\n三、关联课件\n四、开始上课",
+    prompt: "点击任一步骤，查看具体操作：",
+    actions: [
+      { label: "一、创建课程", question: "引导步骤一：创建课程" },
+      { label: "二、设置教学团队", question: "引导步骤二：设置教学团队" },
+      { label: "三、关联课件", question: "引导步骤三：关联课件" },
+      { label: "四、开始上课", question: "引导步骤四：开始上课" }
+    ]
   },
   {
     triggers: ["引导步骤一：创建课程", "第一步创建课程"],
@@ -967,7 +974,7 @@ const guidedResponses = [
     actions: [
       { label: "发起投屏", question: "如何发起投屏？" },
       { label: "发布课堂测验", question: "如何发布测验？" },
-      { label: "查看开课四步", question: "我应该从哪里开始？" }
+      { label: "返回快速开始", question: "快速开始" }
     ]
   }
 ];
@@ -975,6 +982,7 @@ const guidedResponses = [
 init();
 
 async function init() {
+  await Promise.all([loadScreenshotGuides(), loadVideoGuides()]);
   repairSessionTitles();
   startSession(false);
   renderHistory();
@@ -994,11 +1002,28 @@ async function loadScreenshotGuides() {
   }
 }
 
+async function loadVideoGuides() {
+  try {
+    const response = await fetch(`/api/video-guides?t=${Date.now()}`);
+    if (!response.ok) return;
+    const data = await response.json();
+    const dynamicGuides = Array.isArray(data.guides) ? data.guides : [];
+    if (!dynamicGuides.length) return;
+    videoGuides = mergeTutorialGuides(dynamicGuides, videoGuides, "src");
+  } catch (error) {
+    console.warn("Failed to load video guides", error);
+  }
+}
+
 function mergeScreenshotGuides(primaryGuides, fallbackGuides) {
+  return mergeTutorialGuides(primaryGuides, fallbackGuides, "path");
+}
+
+function mergeTutorialGuides(primaryGuides, fallbackGuides, identityField) {
   const merged = [];
   const seen = new Set();
   [...primaryGuides, ...fallbackGuides].forEach((guide) => {
-    const key = normalize(guide.path || guide.title || guide.question || guide.id || "");
+    const key = normalize(guide[identityField] || guide.title || guide.question || guide.id || "");
     if (!key || seen.has(key)) return;
     seen.add(key);
     merged.push(guide);
@@ -1018,6 +1043,17 @@ function repairSessionTitles() {
 }
 
 function bindEvents() {
+  document.addEventListener("pointerdown", unlockBeeAudio, { passive: true });
+  document.addEventListener(
+    "pointerover",
+    (event) => {
+      const bee = event.target.closest?.(".bee-mascot");
+      if (!bee || bee.contains(event.relatedTarget)) return;
+      playBeeBuzz();
+    },
+    { passive: true }
+  );
+
   nodes.promptStrip.addEventListener("click", (event) => {
     if (event.target.closest(".prompt-panel-close")) {
       closePromptPanel();
@@ -1045,6 +1081,12 @@ function bindEvents() {
   });
 
   nodes.messages.addEventListener("click", (event) => {
+    const tutorialTab = event.target.closest("[data-tutorial-tab]");
+    if (tutorialTab) {
+      switchTutorialTab(tutorialTab);
+      return;
+    }
+
     const scrollButton = event.target.closest("[data-screenshot-scroll]");
     if (scrollButton) {
       scrollScreenshotGuide(scrollButton);
@@ -1128,6 +1170,64 @@ function showVideoGuideMenu() {
   persistCurrentSession("操作视频教程");
 }
 
+function unlockBeeAudio() {
+  const AudioContextClass = window.AudioContext || window.webkitAudioContext;
+  if (!AudioContextClass) return;
+  if (!playBeeBuzz.context) playBeeBuzz.context = new AudioContextClass();
+  if (playBeeBuzz.context.state === "suspended") playBeeBuzz.context.resume().catch(() => {});
+}
+
+function playBeeBuzz() {
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  const now = Date.now();
+  if (now - (playBeeBuzz.lastAt || 0) < 800) return;
+  playBeeBuzz.lastAt = now;
+  unlockBeeAudio();
+  const context = playBeeBuzz.context;
+  if (!context || context.state !== "running") return;
+
+  const start = context.currentTime;
+  const end = start + 0.48;
+  const envelope = context.createGain();
+  const filter = context.createBiquadFilter();
+  const buzz = context.createOscillator();
+  const hum = context.createOscillator();
+  const humLevel = context.createGain();
+  const flutter = context.createOscillator();
+  const flutterDepth = context.createGain();
+
+  buzz.type = "triangle";
+  buzz.frequency.setValueAtTime(158, start);
+  hum.type = "sine";
+  hum.frequency.setValueAtTime(237, start);
+  humLevel.gain.setValueAtTime(0.28, start);
+  flutter.type = "sine";
+  flutter.frequency.setValueAtTime(19, start);
+  flutterDepth.gain.setValueAtTime(3.2, start);
+  flutter.connect(flutterDepth);
+  flutterDepth.connect(buzz.frequency);
+
+  filter.type = "lowpass";
+  filter.frequency.setValueAtTime(480, start);
+  filter.Q.setValueAtTime(0.45, start);
+  envelope.gain.setValueAtTime(0.0001, start);
+  envelope.gain.exponentialRampToValueAtTime(0.028, start + 0.07);
+  envelope.gain.setValueAtTime(0.028, end - 0.11);
+  envelope.gain.exponentialRampToValueAtTime(0.0001, end);
+  buzz.connect(filter);
+  hum.connect(humLevel);
+  humLevel.connect(filter);
+  filter.connect(envelope);
+  envelope.connect(context.destination);
+
+  buzz.start(start);
+  hum.start(start);
+  flutter.start(start);
+  buzz.stop(end);
+  hum.stop(end);
+  flutter.stop(end);
+}
+
 function startSession(createRecord) {
   state.currentSessionId = `session-${Date.now()}`;
   state.messages = [];
@@ -1142,13 +1242,21 @@ async function ask(question) {
   setConversationMode(true);
   addMessage("user", question, "教师");
   const thinkingMessage = addThinkingMessage();
+  const guidedResponse = findGuidedResponse(question);
   const result = await getAssistantAnswer(question);
   window.setTimeout(() => {
     removeMessage(thinkingMessage);
     const video = null;
     const rawAnswer = isOverviewQuestion(question) ? overviewAnswer : result.answer;
     const answer = addContextualLead(rawAnswer, result, question);
-    const next = getTextAnswerGuidance(result, question);
+    const next = guidedResponse
+      ? {
+          type: "guided",
+          prompt: guidedResponse.prompt,
+          actions: guidedResponse.actions || [],
+          screenshots: (guidedResponse.screenshotIds || []).map(findScreenshotGuideById).filter(Boolean)
+        }
+      : getTextAnswerGuidance(result, question);
     addMessage(
       "assistant",
       answer,
@@ -1158,7 +1266,8 @@ async function ask(question) {
       null,
       next,
       question,
-      (result.matches || []).map((item) => item.question).filter(Boolean)
+      (result.matches || []).map((item) => item.question).filter(Boolean),
+      Boolean(result.matched && !["small_talk", "general_chat", "troubleshooting"].includes(result.intent))
     );
     persistCurrentSession(question);
   }, 160);
@@ -1268,11 +1377,15 @@ function isBadHistoryTitle(value) {
   );
 }
 
-function addMessage(role, content, meta, video, videoMenu, screenshot, guidance, sourceQuestion, blockedQuestions = []) {
+function addMessage(role, content, meta, video, videoMenu, screenshot, guidance, sourceQuestion, blockedQuestions = [], tutorialMode = false) {
+  const normalizedContent =
+    role === "assistant" && tutorialMode
+      ? ensureTutorialTextAnswer(content, findScreenshotGuide(sourceQuestion))
+      : content;
   const message = {
     id: `msg-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`,
     role,
-    content: normalizeMessageDisplayText(content),
+    content: normalizeMessageDisplayText(normalizedContent),
     meta,
     video,
     videoMenu,
@@ -1280,6 +1393,7 @@ function addMessage(role, content, meta, video, videoMenu, screenshot, guidance,
     guidance,
     sourceQuestion,
     blockedQuestions,
+    tutorialMode,
     at: new Date().toISOString()
   };
   state.messages.push(message);
@@ -1353,10 +1467,19 @@ function renderMessageToContainer(message, container) {
   el.className = classNames.join(" ");
   el.dataset.messageId = message.id;
   const displayContent = normalizeMessageDisplayText(message.content);
+  const matchedScreenshotGuide =
+    message.role === "assistant" && !message.pending
+      ? findScreenshotGuide(message.sourceQuestion)
+      : null;
+  const matchedVideoGuide =
+    message.role === "assistant" && !message.pending
+      ? findVideoGuide(message.sourceQuestion)
+      : null;
+  const unifiedTutorial = Boolean(message.tutorialMode || matchedScreenshotGuide || matchedVideoGuide);
   const content =
     message.pending
       ? `<div class="thinking-indicator" role="status"><span class="thinking-spinner" aria-hidden="true"></span><span>DeepSeek 正在思考</span></div>`
-      : message.role === "assistant" && hasScreenshotGuide
+      : message.role === "assistant" && hasScreenshotGuide && !unifiedTutorial
       ? ""
       : message.role === "assistant"
         ? renderAssistantContent(displayContent, message)
@@ -1366,8 +1489,11 @@ function renderMessageToContainer(message, container) {
   const video = "";
   const videoMenu = message.videoMenu ? renderVideoMenu(message.videoMenu) : "";
   const guidance = message.guidance ? renderGuidance(message.guidance) : "";
+  const tutorial = unifiedTutorial
+    ? renderUnifiedTutorialTabs(displayContent, matchedScreenshotGuide, matchedVideoGuide)
+    : "";
   const tools = renderMessageTools(message).trim();
-  const body = `<div class="message-body"><div class="message-meta"><span>${escapeHtml(label)}</span><time>${formatTime(message.at)}</time></div>${content ? `<div class="message-content">${content}</div>` : ""}${screenshot}${guidedScreenshots}${videoMenu}${video}${guidance}${tools}</div>`;
+  const body = `<div class="message-body"><div class="message-meta"><span>${escapeHtml(label)}</span><time>${formatTime(message.at)}</time></div>${tutorial || (content ? `<div class="message-content">${content}</div>` : "")}${unifiedTutorial ? "" : screenshot}${unifiedTutorial ? "" : guidedScreenshots}${videoMenu}${video}${guidance}${tools}</div>`;
   el.innerHTML = message.role === "assistant" ? `<div class="message-avatar">${beeMascotMarkup}</div>${body}` : body;
   container.appendChild(el);
   return el;
@@ -1601,7 +1727,7 @@ function isClickablePhraseMatch(text, keyword, index) {
 }
 
 function isOverviewQuestion(text) {
-  return ["有哪些功能", "能做什么", "功能包括", "主要功能", "从哪里开始"].some((term) => text.includes(normalize(term)));
+  return ["有哪些功能", "能做什么", "功能包括", "主要功能"].some((term) => text.includes(normalize(term)));
 }
 
 function isWordLikeChar(char) {
@@ -1635,6 +1761,9 @@ function getGuidanceTitle(prompt) {
 }
 
 function renderVideoGuide(video) {
+  if (!video?.src) {
+    return `<div class="tutorial-empty" role="status">暂未提供视频教程</div>`;
+  }
   return `
     <figure class="video-guide">
       <figcaption>${escapeHtml(video.title)} 指导视频</figcaption>
@@ -1645,12 +1774,16 @@ function renderVideoGuide(video) {
 
 function renderScreenshotGuide(guide) {
   const steps = guide.steps || [];
+  if (!steps.length) {
+    return `<div class="tutorial-empty" role="status">暂未提供图片教程</div>`;
+  }
   const brief = getGuideBrief(guide);
   const prerequisite = getGuidePrerequisite(guide);
   const stepCount = Math.max(steps.length, 1);
   const stepColumnWidth = getScreenshotStepColumnWidth(stepCount);
+  const minimumCarouselHeight = getScreenshotMinimumHeight(stepCount);
   return `
-    <section class="screenshot-guide" aria-label="${escapeAttr(guide.title)}截图教程">
+    <section class="screenshot-guide ${stepCount >= 6 ? "is-dense" : ""}" aria-label="${escapeAttr(guide.title)}截图教程">
       <div class="guide-brief">
         <strong>${escapeHtml(brief)}</strong>
         ${
@@ -1662,7 +1795,7 @@ function renderScreenshotGuide(guide) {
             : ""
         }
       </div>
-      <div class="screenshot-carousel" style="--step-count: ${stepCount}; --step-column-width: ${stepColumnWidth}px;">
+      <div class="screenshot-carousel" style="--step-count: ${stepCount}; --step-column-width: ${stepColumnWidth}px; --screenshot-min-height: ${minimumCarouselHeight}px;">
         <div class="screenshot-steps">
           ${steps
             .map(
@@ -1701,7 +1834,13 @@ function getScreenshotStepColumnWidth(stepCount) {
   if (stepCount <= 2) return 280;
   if (stepCount === 3) return 250;
   if (stepCount === 4) return 220;
-  return 190;
+  return stepCount >= 6 ? 230 : 200;
+}
+
+function getScreenshotMinimumHeight(stepCount) {
+  if (stepCount >= 8) return 370;
+  if (stepCount >= 6) return 320;
+  return 0;
 }
 
 function prepareScreenshotImages(root = document) {
@@ -1771,8 +1910,12 @@ function observeScreenshotImageSize(img) {
   observer.observe(img);
 }
 
-function syncScreenshotCarouselHeight(img) {
+function syncScreenshotCarouselHeight(img, force = false) {
   const carousel = img.closest(".screenshot-carousel");
+  const guide = img.closest(".screenshot-guide");
+  const card = img.closest(".screenshot-card");
+  const activeStep = guide?.querySelector(".screenshot-step.active");
+  if (!force && card && activeStep && Number(card.dataset.stepIndex) !== Number(activeStep.dataset.screenshotStep)) return;
   const height = Math.round(img.getBoundingClientRect().height);
   if (!carousel || height <= 0) return;
   carousel.style.setProperty("--screenshot-image-height", `${height}px`);
@@ -1824,7 +1967,21 @@ function scrollScreenshotRailTo(rail, index) {
   const card = rail.querySelector(".screenshot-card");
   if (!card) return;
   rail.scrollTo({ left: index * card.getBoundingClientRect().width, behavior: "smooth" });
-  setActiveScreenshotStep(rail.closest(".screenshot-guide"), index);
+  const guide = rail.closest(".screenshot-guide");
+  setActiveScreenshotStep(guide, index);
+  scheduleActiveScreenshotHeightSync(guide, index);
+}
+
+function scheduleActiveScreenshotHeightSync(guide, index) {
+  const img = guide?.querySelector(`.screenshot-card[data-step-index="${index}"] img`);
+  if (!img) return;
+  const sync = () => syncScreenshotCarouselHeight(img, true);
+  if (!img.complete) img.addEventListener("load", sync, { once: true });
+  window.requestAnimationFrame(() => {
+    sync();
+    window.requestAnimationFrame(sync);
+  });
+  window.setTimeout(sync, 360);
 }
 
 function setActiveScreenshotStep(guide, index) {
@@ -1902,27 +2059,119 @@ function renderVideoMenu(groups) {
 }
 
 function findVideoGuide(question) {
-  const text = normalize(question);
-  return videoGuides.find((video) => {
-    const terms = [video.title, video.question, ...(video.aliases || [])];
-    return terms.some((term) => text.includes(normalize(term)));
-  });
+  return findBestTutorialGuide(question, videoGuides);
 }
 
 function findScreenshotGuide(question) {
+  if (isCreateCoursewareTutorialQuestion(question)) {
+    return findScreenshotGuideById("new-courseware-flow");
+  }
+  return findBestTutorialGuide(question, screenshotGuides);
+}
+
+function findBestTutorialGuide(question, guides) {
+  const ranked = guides
+    .map((guide) => ({ guide, score: tutorialGuideScore(question, guide) }))
+    .filter((item) => item.score >= 35)
+    .sort((left, right) => right.score - left.score);
+  return ranked[0]?.guide || null;
+}
+
+function tutorialGuideScore(question, guide) {
   const text = normalize(question);
-  return screenshotGuides.find((guide) => {
-    const terms = [guide.title, guide.question, ...(guide.aliases || [])];
-    return terms.some((term) => {
-      const normalizedTerm = normalize(term);
-      return text.includes(normalizedTerm) || normalizedTerm.includes(text);
-    });
-  }) || screenshotGuides.find((guide) => {
-    const questionTokens = getScreenshotMatchTokens(question);
-    if (!questionTokens.length) return false;
-    const guideTokens = getScreenshotMatchTokens([guide.title, guide.question, guide.path, ...(guide.aliases || [])].join(" "));
-    return questionTokens.some((token) => guideTokens.includes(token));
+  const coreText = text.replace(/^(请问|如何|怎么|怎样|咋)/, "").replace(/[？?。.]$/, "");
+  const terms = [guide.title, guide.question, guide.path, ...(guide.aliases || [])].filter(Boolean);
+  let best = 0;
+  terms.forEach((term) => {
+    const normalizedTerm = normalize(term);
+    const coreTerm = normalizedTerm.replace(/^(请问|如何|怎么|怎样|咋)/, "").replace(/[？?。.]$/, "");
+    if (text === normalizedTerm) {
+      best = Math.max(best, 240);
+      return;
+    }
+    if (coreText.length >= 3 && coreText === coreTerm) {
+      best = Math.max(best, 200);
+      return;
+    }
+    if (
+      coreText.length >= 4 &&
+      coreTerm.length >= 4 &&
+      (coreText.includes(coreTerm) || coreTerm.includes(coreText))
+    ) {
+      const coverage = Math.min(coreText.length, coreTerm.length) / Math.max(coreText.length, coreTerm.length);
+      best = Math.max(best, 35 + Math.round(coverage * 45));
+    }
   });
+  return best;
+}
+
+function isCreateCoursewareTutorialQuestion(question) {
+  const text = normalize(question || "");
+  return ["如何创建课件", "怎么创建课件", "怎样创建课件", "如何新建课件", "怎么新建课件"].some((term) =>
+    text.includes(normalize(term))
+  );
+}
+
+function ensureTutorialTextAnswer(answer, guide) {
+  const text = normalizeMessageDisplayText(answer);
+  const numberedSteps = text.match(/(?:^|\n)\s*\d+[、.．)]\s*\S+/g) || [];
+  if (numberedSteps.length >= 2) return text;
+
+  const screenshotSteps = (guide?.steps || [])
+    .map((step) => String(step?.text || "").trim())
+    .filter(Boolean);
+  if (!screenshotSteps.length) return text;
+
+  const title = String(guide?.title || guide?.question || "当前功能").replace(/\s+-\s+/g, " > ");
+  const lines = [
+    `入口位置：打开与【${title}】对应的功能页面。`,
+    "",
+    "操作步骤：",
+    ...screenshotSteps.map((step, index) => `${index + 1}、${cleanSentence(step)}。`),
+    "",
+    "完成后看：页面进入最后一张截图所示状态，或列表中出现刚完成的操作结果。",
+    "",
+    "注意：提交、发布或保存前，请核对当前课程、班级和操作对象。"
+  ];
+  return normalizeMessageDisplayText(lines.join("\n"));
+}
+
+function renderUnifiedTutorialTabs(answer, guide, video) {
+  return `
+    <section class="answer-tutorial" data-answer-tutorial>
+      <div class="tutorial-tabs" role="tablist" aria-label="选择教程形式">
+        <button class="tutorial-tab active" type="button" role="tab" aria-selected="true" data-tutorial-tab="text">文字解答</button>
+        <button class="tutorial-tab" type="button" role="tab" aria-selected="false" data-tutorial-tab="image">图片教程</button>
+        <button class="tutorial-tab" type="button" role="tab" aria-selected="false" data-tutorial-tab="video">视频教程</button>
+      </div>
+      <div class="tutorial-panel active" role="tabpanel" data-tutorial-panel="text">
+        <div class="message-content">${renderAssistantContent(answer)}</div>
+      </div>
+      <div class="tutorial-panel" role="tabpanel" data-tutorial-panel="image" hidden>
+        ${guide ? renderScreenshotGuide(guide) : `<div class="tutorial-empty" role="status">暂未提供图片教程</div>`}
+      </div>
+      <div class="tutorial-panel" role="tabpanel" data-tutorial-panel="video" hidden>
+        ${renderVideoGuide(video)}
+      </div>
+    </section>
+  `;
+}
+
+function switchTutorialTab(button) {
+  const tutorial = button.closest("[data-answer-tutorial]");
+  if (!tutorial) return;
+  const target = button.dataset.tutorialTab;
+  tutorial.querySelectorAll("[data-tutorial-tab]").forEach((tab) => {
+    const active = tab.dataset.tutorialTab === target;
+    tab.classList.toggle("active", active);
+    tab.setAttribute("aria-selected", String(active));
+  });
+  tutorial.querySelectorAll("[data-tutorial-panel]").forEach((panel) => {
+    const active = panel.dataset.tutorialPanel === target;
+    panel.classList.toggle("active", active);
+    panel.hidden = !active;
+  });
+  if (target === "image") prepareScreenshotImages(tutorial);
 }
 
 function isExplicitActionPhrase(keyword) {

@@ -1,0 +1,170 @@
+{
+  "faqCount": 237,
+  "queriesChecked": 531,
+  "retrievalMisses": [],
+  "aliasCollisions": [
+    {
+      "alias": "创建课程",
+      "ids": [
+        "course-create",
+        "screenshot_tutorial_014-create-course"
+      ]
+    },
+    {
+      "alias": "新建课程",
+      "ids": [
+        "course-create",
+        "screenshot_tutorial_014-create-course"
+      ]
+    },
+    {
+      "alias": "设置教学团队",
+      "ids": [
+        "screenshot_tutorial_042-set-create-class",
+        "screenshot_tutorial_043-set-student-student",
+        "screenshot_tutorial_044-set-student-add",
+        "screenshot_tutorial_045-set-teacher",
+        "teaching-team"
+      ]
+    },
+    {
+      "alias": "新建班级",
+      "ids": [
+        "class-setup",
+        "screenshot_tutorial_042-set-create-class"
+      ]
+    },
+    {
+      "alias": "发布公告",
+      "ids": [
+        "announcement",
+        "screenshot_tutorial_036-create-announcement"
+      ]
+    },
+    {
+      "alias": "添加资源",
+      "ids": [
+        "courseware-import-local",
+        "resource-add",
+        "screenshot_tutorial_031-unit-add-resource-add-resource-add-resource"
+      ]
+    },
+    {
+      "alias": "创建课件",
+      "ids": [
+        "courseware-create",
+        "courseware-create-video",
+        "screenshot_tutorial_037-create-courseware"
+      ]
+    },
+    {
+      "alias": "新建课件",
+      "ids": [
+        "courseware-create",
+        "courseware-create-video",
+        "screenshot_tutorial_037-create-courseware"
+      ]
+    },
+    {
+      "alias": "添加章节",
+      "ids": [
+        "courseware-chapter-video",
+        "courseware-create"
+      ]
+    },
+    {
+      "alias": "删除课程",
+      "ids": [
+        "course-delete-screenshot",
+        "screenshot_tutorial_015-delete-course"
+      ]
+    },
+    {
+      "alias": "导入自己的课件",
+      "ids": [
+        "courseware-import-local",
+        "screenshot_tutorial_033-import-courseware"
+      ]
+    },
+    {
+      "alias": "开始上课",
+      "ids": [
+        "class-start",
+        "screenshot_tutorial_034-start"
+      ]
+    },
+    {
+      "alias": "在课堂中打开资源",
+      "ids": [
+        "classroom-open-resource",
+        "screenshot_tutorial_032-classroom-open-resource"
+      ]
+    },
+    {
+      "alias": "用ai生成ppt",
+      "ids": [
+        "screenshot_tutorial_009-ai-workspace-feature-generate-ppt-generate-ppt",
+        "screenshot_tutorial_010-ai-workspace-feature-generate-ppt-generate-ppt"
+      ]
+    },
+    {
+      "alias": "生成ppt",
+      "ids": [
+        "screenshot_tutorial_009-ai-workspace-feature-generate-ppt-generate-ppt",
+        "screenshot_tutorial_010-ai-workspace-feature-generate-ppt-generate-ppt"
+      ]
+    },
+    {
+      "alias": "ai助手入口在哪里",
+      "ids": [
+        "screenshot_tutorial_018-create-ai",
+        "screenshot_tutorial_039-add-ai-ai-workspace",
+        "screenshot_tutorial_046-ai-select-ai"
+      ]
+    },
+    {
+      "alias": "创建单元",
+      "ids": [
+        "screenshot_tutorial_019-create-unit-import-courseware-generate-unit",
+        "screenshot_tutorial_020-create-unit-add-unit"
+      ]
+    },
+    {
+      "alias": "在单元内添加资源",
+      "ids": [
+        "screenshot_tutorial_022-unit-add-resource-add-add-homework",
+        "screenshot_tutorial_023-unit-add-resource-add-add-announcement",
+        "screenshot_tutorial_024-unit-add-resource-add-add-homework",
+        "screenshot_tutorial_025-unit-add-resource-add-add",
+        "screenshot_tutorial_026-unit-add-resource-add-add-live",
+        "screenshot_tutorial_027-unit-add-resource-add-add-exam",
+        "screenshot_tutorial_028-unit-add-resource-add-add-discussion",
+        "screenshot_tutorial_029-unit-add-resource-add-add-classroom",
+        "screenshot_tutorial_030-unit-add-resource-add-resource-add-courseware",
+        "screenshot_tutorial_031-unit-add-resource-add-resource-add-resource"
+      ]
+    },
+    {
+      "alias": "添加教学活动",
+      "ids": [
+        "screenshot_tutorial_022-unit-add-resource-add-add-homework",
+        "screenshot_tutorial_023-unit-add-resource-add-add-announcement",
+        "screenshot_tutorial_024-unit-add-resource-add-add-homework",
+        "screenshot_tutorial_025-unit-add-resource-add-add",
+        "screenshot_tutorial_026-unit-add-resource-add-add-live",
+        "screenshot_tutorial_027-unit-add-resource-add-add-exam",
+        "screenshot_tutorial_028-unit-add-resource-add-add-discussion",
+        "screenshot_tutorial_029-unit-add-resource-add-add-classroom"
+      ]
+    },
+    {
+      "alias": "添加教学资源",
+      "ids": [
+        "screenshot_tutorial_030-unit-add-resource-add-resource-add-courseware",
+        "screenshot_tutorial_031-unit-add-resource-add-resource-add-resource"
+      ]
+    }
+  ],
+  "placeholderAnswers": [],
+  "unstructuredAnswers": []
+}
