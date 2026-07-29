@@ -24,7 +24,9 @@ PRECONDITION_PATH = ROOT / "不完全前置条件功能.txt"
 UNKNOWN_LOG_PATH = ROOT / "unanswered_questions.jsonl"
 FEEDBACK_DIR = ROOT / "feedback"
 SCREENSHOT_DIR = ROOT / "截图教程"
+VIDEO_DIRS = (ROOT / "视频教程", ROOT / "指导视频")
 IMAGE_EXTENSIONS = {".png", ".jpg", ".jpeg", ".webp", ".bmp"}
+VIDEO_EXTENSIONS = {".mp4", ".webm", ".mov", ".m4v"}
 HELPFUL_FEEDBACK_TABLE_PATH = FEEDBACK_DIR / "有帮助反馈表.xlsx"
 UNHELPFUL_FEEDBACK_TABLE_PATH = FEEDBACK_DIR / "无帮助反馈表.xlsx"
 HANDOFF_FEEDBACK_TABLE_PATH = FEEDBACK_DIR / "转人工反馈表.xlsx"
@@ -302,6 +304,11 @@ ACTION_GROUPS = {
         "创建": ["创建", "新建", "新增", "建课"],
         "删除": ["删除", "移除"],
     },
+    "AI助手": {
+        "创建": ["创建", "新建"],
+        "添加": ["添加", "新增", "选择"],
+        "使用": ["使用", "打开"],
+    },
 }
 
 
@@ -354,10 +361,7 @@ def expanded_question_text(question: str) -> str:
 
 
 def intent_core_text(question: str) -> str:
-    text = normalize(question)
-    for prefix in ["请问", "怎么", "怎样", "如何", "我想", "我要", "想要", "能不能", "可以"]:
-        text = text.replace(prefix, "")
-    return text.strip("？?。.")
+    return canonical_intent_text(question)
 
 
 def help_kb_score(question: str, item: dict[str, Any]) -> int:
@@ -420,7 +424,21 @@ def find_help_kb_matches(
 
 
 def normalize(value: Any) -> str:
-    return re.sub(r"\s+", "", str(value).lower())
+    return re.sub(r"[\s，。！？、；：/()（）【】<>“”‘’\"']+", "", str(value).lower())
+
+
+def canonical_intent_text(value: Any) -> str:
+    """Normalize harmless wording differences without merging different functions."""
+    text = normalize(value)
+    for prefix in ["麻烦", "请问", "请教", "请", "我想要", "我想", "我要", "想要", "能不能", "可不可以"]:
+        if text.startswith(prefix):
+            text = text[len(prefix) :]
+            break
+    for prefix in ["怎么", "怎样", "如何"]:
+        if text.startswith(prefix):
+            text = text[len(prefix) :]
+            break
+    return re.sub(r"^(创建|新建|新增|添加|做|建)(?:一个|一名|个)", r"\1", text)
 
 
 def split_term(term: str) -> list[str]:
@@ -441,30 +459,40 @@ def searchable_terms(item: dict[str, Any]) -> list[str]:
 
 
 def score_item(question: str, item: dict[str, Any]) -> int:
-    text = normalize(expanded_question_text(question))
     raw_text = normalize(question)
-    core_text = intent_core_text(question)
-    score = 0
+    core_text = canonical_intent_text(question)
+    best_score = 0
+    supporting_hits = 0
     for term in searchable_terms(item):
         if not term:
             continue
         if raw_text and raw_text == term:
-            score += 120
-        elif core_text and len(core_text) >= 3 and (core_text == term or core_text in term or term in core_text):
-            score += 60
-        if text == term:
-            score += 12
-        elif text in term or term in text:
-            score += 6 if len(term) > 2 else 2
+            term_score = 240
+        else:
+            canonical_term = canonical_intent_text(term)
+            if core_text and len(core_text) >= 3 and core_text == canonical_term:
+                term_score = 200
+            elif core_text and len(core_text) >= 4 and (
+                core_text in canonical_term or canonical_term in core_text
+            ):
+                coverage = min(len(core_text), len(canonical_term)) / max(
+                    len(core_text), len(canonical_term)
+                )
+                term_score = 30 + round(coverage * 40)
+            else:
+                term_score = 0
         for part in split_term(term):
-            if len(part) >= 2 and part in text:
-                score += 1
+            normalized_part = canonical_intent_text(part)
+            if len(normalized_part) >= 3 and normalized_part in core_text:
+                supporting_hits += 1
+        best_score = max(best_score, term_score)
+    score = best_score + min(supporting_hits, 5)
     return max(0, score - action_mismatch_penalty(question, item))
 
 
 def find_matches(question: str, items: list[dict[str, Any]], limit: int = 3) -> list[dict[str, Any]]:
     matches = [{"item": item, "score": score_item(question, item)} for item in items]
-    matches = [match for match in matches if match["score"] >= 2]
+    matches = [match for match in matches if match["score"] >= 35]
     matches.sort(key=lambda match: match["score"], reverse=True)
     return matches[:limit]
 
@@ -636,6 +664,147 @@ def scope_answer() -> str:
     )
 
 
+TROUBLESHOOTING_TRIGGERS = (
+    "看不到",
+    "找不到",
+    "没看到",
+    "没有看到",
+    "没有显示",
+    "不显示",
+    "无法",
+    "不能",
+    "失败",
+    "打不开",
+    "不见了",
+    "没反应",
+    "报错",
+)
+
+TROUBLESHOOTING_RULES = [
+    {
+        "id": "homework-not-visible",
+        "objects": ("作业",),
+        "questions": [
+            "这份作业是否已经点击【发布】，而不是仍保存在草稿中？",
+            "发布时选择的班级里，是否包含这名学生所在的班级？",
+            "这名学生是否已经加入当前课程的正确班级？",
+            "作业的开始时间是否已经到达，截止时间是否尚未结束？",
+            "学生登录的是否是正确账号，并且查看的是当前学期课程？",
+        ],
+        "next": "先确认以上五项。哪一项不确定，就从那一项开始检查；如果全部满足，再提供作业名称、班级和学生端当前页面。",
+    },
+    {
+        "id": "exam-not-visible",
+        "objects": ("考试", "测验"),
+        "questions": [
+            "考试或测验是否已经发布？",
+            "发布对象是否包含该学生所在班级？",
+            "学生是否已加入当前课程的正确班级？",
+            "考试的开放时间是否已经到达，结束时间是否尚未超过？",
+            "学生登录的账号和所在机构是否正确？",
+        ],
+        "next": "先核对发布状态、班级和时间。全部正确仍看不到时，请提供考试名称、班级和学生端页面。",
+    },
+    {
+        "id": "courseware-not-visible",
+        "objects": ("课件", "章节", "单元"),
+        "questions": [
+            "课件是否已经保存并发布？",
+            "课件是否已经关联到学生所在的班课？",
+            "学生是否已加入当前课程的正确班级？",
+            "学习计划或章节开放时间是否允许当前查看？",
+            "学生查看的是否是当前课程和当前学期？",
+        ],
+        "next": "优先检查“是否发布”和“是否关联班课”。这两项满足后，再检查开放时间与学生账号。",
+    },
+    {
+        "id": "resource-not-visible",
+        "objects": ("资源", "视频", "文档", "文件"),
+        "questions": [
+            "资源是否已经上传完成并保存？",
+            "视频或文件是否仍处于转码、处理中？",
+            "资源是否已经添加到学生可见的课程或单元中？",
+            "可见班级是否包含该学生所在班级？",
+            "当前问题出现在电脑端还是 App？",
+        ],
+        "next": "如果资源仍在处理，请等待处理完成；否则继续核对资源所在单元和可见班级。",
+    },
+    {
+        "id": "announcement-not-visible",
+        "objects": ("公告", "通知"),
+        "questions": [
+            "公告是否已经正式发布？",
+            "发布对象是否包含该学生所在班级？",
+            "学生是否已加入当前课程的正确班级？",
+            "学生查看的是否是当前课程的公告页面？",
+        ],
+        "next": "先检查公告发布状态和发布班级；两项都正确时，再核对学生账号和课程。",
+    },
+    {
+        "id": "entry-or-button-missing",
+        "objects": ("按钮", "入口", "功能", "设置"),
+        "questions": [
+            "当前账号角色是课程管理员、任课教师还是助教？",
+            "当前是否进入了正确课程和正确功能页面？",
+            "该账号是否已被分配到对应班级？",
+            "当前使用的是电脑端还是 App？",
+        ],
+        "next": "按钮缺失通常与账号角色、所在页面或端类型有关。请先提供当前页面名称和账号角色。",
+    },
+    {
+        "id": "student-course-missing",
+        "objects": ("班课", "课程"),
+        "questions": [
+            "学生登录的是否是正确账号和学校机构？",
+            "学生是否已经通过班级编码或二维码加入班级？",
+            "教师查看的班级名单中是否能找到该学生？",
+            "学生查看的是否是当前学期课程？",
+        ],
+        "next": "如果教师名单中没有该学生，请先让学生加入正确班级；名单中已有学生时，再检查账号和学期。",
+    },
+]
+
+
+def get_troubleshooting_rule(question: str) -> dict[str, Any] | None:
+    text = normalize(question)
+    has_issue_trigger = any(
+        normalize(trigger) in text for trigger in TROUBLESHOOTING_TRIGGERS
+    )
+    has_missing_ui_pattern = bool(
+        re.search(r"(?:没有|没找到|未显示).*(?:按钮|入口|功能|设置)", text)
+    )
+    if not has_issue_trigger and not has_missing_ui_pattern:
+        return None
+    for rule in TROUBLESHOOTING_RULES:
+        if any(normalize(object_name) in text for object_name in rule["objects"]):
+            return rule
+    return {
+        "id": "general-operation-failure",
+        "questions": [
+            "当前操作是否已经保存或发布成功？",
+            "操作对象和可见班级是否选择正确？",
+            "当前账号角色是否有该功能权限？",
+            "页面显示的时间范围或状态是否允许当前操作？",
+            "刷新页面或重新登录后，问题是否仍然存在？",
+        ],
+        "next": "请补充当前页面名称、账号角色、操作对象和页面提示，我再帮你定位到具体环节。",
+    }
+
+
+def troubleshooting_answer(rule: dict[str, Any]) -> str:
+    lines = [
+        "这类情况先不要重复创建或重新发布，我们先定位是哪一个前置条件没有满足。",
+        "",
+        "请依次确认：",
+    ]
+    lines.extend(
+        f"{index}、{question}"
+        for index, question in enumerate(rule.get("questions") or [], start=1)
+    )
+    lines.extend(["", f"下一步：{rule.get('next')}"])
+    return "\n".join(lines)
+
+
 PROMPT_GUIDE_IDS = {
     "overview": [
         "course-create",
@@ -801,19 +970,6 @@ def fallback_answer(question: str) -> str:
 
 def format_faq_answer(item: dict[str, Any]) -> str:
     answer = item.get("answer") or {}
-    if item.get("source") == "截图教程" and item.get("images"):
-        path = item.get("path") or item.get("question") or "截图教程"
-        images = item.get("images") or []
-        lines = [f"入口位置：参考截图教程【{path}】。"]
-        if images:
-            lines.append(f"进入后：按该教程的 {len(images)} 张截图顺序操作。")
-        ocr_text = str(item.get("ocrText") or "").strip()
-        if ocr_text:
-            lines.append(f"截图文字：{ocr_text[:300]}")
-        else:
-            lines.append("如需更细步骤，可打开对应截图查看按钮位置。")
-        lines.append("注意：涉及发布、删除、考试、学生范围或权限时，提交前先核对对象和影响范围。")
-        return "\n".join(lines)
     lines = []
     entry = answer.get("entry")
     if entry:
@@ -829,14 +985,22 @@ def format_faq_answer(item: dict[str, Any]) -> str:
                 text = text[:700].rstrip() + "……"
             if text:
                 cleaned_steps.append(text.strip("。"))
+        if len(cleaned_steps) == 1:
+            cleaned_steps.append("按上述说明处理后，返回当前页面检查结果是否已经生效")
         if cleaned_steps:
-            lines.append(f"进入后：{' > '.join(cleaned_steps)}。")
+            lines.append("")
+            lines.append("操作步骤：")
+            lines.extend(f"{index}、{step}。" for index, step in enumerate(cleaned_steps, start=1))
     check = answer.get("check")
     risk = answer.get("risk")
-    if check:
-        lines.append(f"完成后看：{check}")
-    if risk:
-        lines.append(f"注意：{risk}")
+    if not check:
+        check = "返回当前模块的列表或详情页，确认刚才的操作结果已经显示。"
+    if not risk:
+        risk = "如果页面入口、按钮名称或结果与上述说明不一致，请先核对当前账号角色和所在页面。"
+    lines.append("")
+    lines.append(f"完成后看：{check}")
+    lines.append("")
+    lines.append(f"注意：{risk}")
     return "\n".join(lines)
 
 
@@ -875,7 +1039,8 @@ def build_rewrite_messages(
                         "如果用户一次问多个操作，请把多个命中的参考答案自然串接回答。"
                         "先用一句话说明用户要完成什么，再定位入口并写操作路径。"
                         "只回答用户当前要做的这一件事，不要主动展开后续所有分支。"
-                        "简单问题用入口位置、操作方法、完成后看三个短段；复杂教程用不超过6步的编号步骤。"
+                        "所有操作问题都必须使用“入口位置、操作步骤、完成后看、注意”的固定结构。"
+                        "操作步骤必须用1、2、3这样的阿拉伯数字编号，写出完整且可照做的步骤，不得省略为概括描述。"
                         "每一步只写一个动作，按钮名使用【】突出；不要把多个点击动作塞进一个长句。"
                         "涉及发布、班级、时间、成绩或删除时，最后单独写注意事项。"
                         "回答要让第一次使用平台的老师也能照着完成，不能只给概括性结论。"
@@ -900,6 +1065,7 @@ def call_deepseek_rewrite(
     api_key = (
         os.getenv("DEEPSEEK_API_KEY")
         or os.getenv("ULEARNING_TEACHER_ASSISTANT_API_KEY")
+        or os.getenv("OPENAI_API_KEY")
     )
     if not api_key:
         raise RuntimeError("Missing DEEPSEEK_API_KEY")
@@ -935,6 +1101,80 @@ def call_deepseek_rewrite(
         if content:
             return clean_model_answer(content)
     return "\n\n".join(format_faq_answer(item) for item in items)
+
+
+GENERAL_CHAT_SUFFIX = "关于 uLearning，你还想做点什么吗？"
+
+
+def call_deepseek_general_chat(question: str) -> str:
+    api_key = (
+        os.getenv("DEEPSEEK_API_KEY")
+        or os.getenv("ULEARNING_TEACHER_ASSISTANT_API_KEY")
+        or os.getenv("OPENAI_API_KEY")
+    )
+    if not api_key:
+        raise RuntimeError("Missing DEEPSEEK_API_KEY")
+
+    base_url = os.getenv("DEEPSEEK_BASE_URL", "https://api.deepseek.com/v1").rstrip("/")
+    model = os.getenv("DEEPSEEK_MODEL", "deepseek-chat")
+    payload = {
+        "model": model,
+        "messages": [
+            {
+                "role": "system",
+                "content": (
+                    "你是“小蜜蜂”，一个以 uLearning 教师操作指导为主要职责的智能助手。"
+                    "用户闲聊、表达情绪或询问一般知识时，可以像通用 DeepSeek 助手一样自然、"
+                    "灵活且有帮助地回答，不要生硬拒绝，也不要把普通闲聊误判成平台故障。"
+                    "回答当前问题本身，保持简洁、友好、真实；不确定的事实不要编造。"
+                    "不要声称已经替用户完成现实操作。"
+                    f"回答结束后另起一行，固定补充：{GENERAL_CHAT_SUFFIX}"
+                ),
+            },
+            {"role": "user", "content": question},
+        ],
+        "temperature": 0.7,
+        "stream": False,
+    }
+    request = urllib.request.Request(
+        f"{base_url}/chat/completions",
+        data=json.dumps(payload).encode("utf-8"),
+        headers={
+            "Authorization": f"Bearer {api_key}",
+            "Content-Type": "application/json",
+        },
+        method="POST",
+    )
+    try:
+        with urllib.request.urlopen(request, timeout=60) as response:
+            data = json.loads(response.read().decode("utf-8"))
+    except urllib.error.HTTPError as exc:
+        body = exc.read().decode("utf-8", errors="replace")
+        raise RuntimeError(f"DeepSeek request failed with HTTP {exc.code}: {body}") from exc
+
+    choices = data.get("choices") or []
+    content = (
+        ((choices[0].get("message") or {}).get("content") or "").strip()
+        if choices
+        else ""
+    )
+    if not content:
+        raise RuntimeError("DeepSeek returned an empty response")
+    cleaned = clean_model_answer(content)
+    if GENERAL_CHAT_SUFFIX not in cleaned:
+        cleaned = f"{cleaned}\n\n{GENERAL_CHAT_SUFFIX}"
+    return cleaned
+
+
+def general_chat_fallback(question: str) -> str:
+    text = normalize(question)
+    if "为什么不回答我" in text or "怎么不回答" in text:
+        lead = "抱歉，刚才可能把你的话误判成了平台故障。现在你可以正常和我聊天，我也会继续帮你处理 uLearning 操作问题。"
+    elif is_greeting_or_small_talk(question):
+        lead = small_talk_answer(question)
+    else:
+        lead = "这个问题我暂时没能连接到通用问答服务。你可以稍后再问一次，我不会把普通聊天当成平台故障。"
+    return f"{lead}\n\n{GENERAL_CHAT_SUFFIX}"
 
 
 def clean_model_answer(answer: str) -> str:
@@ -1002,10 +1242,16 @@ def answer_question(question: str) -> dict[str, Any]:
         }
 
     if is_greeting_or_small_talk(question):
+        try:
+            answer = call_deepseek_general_chat(question)
+            model_used = True
+        except Exception:
+            answer = general_chat_fallback(question)
+            model_used = False
         return {
-            "answer": small_talk_answer(question),
+            "answer": answer,
             "matched": False,
-            "modelUsed": False,
+            "modelUsed": model_used,
             "intent": "small_talk",
         }
 
@@ -1015,6 +1261,18 @@ def answer_question(question: str) -> dict[str, Any]:
             "matched": False,
             "modelUsed": False,
             "intent": "scope",
+        }
+
+    troubleshooting_rule = get_troubleshooting_rule(question)
+    if troubleshooting_rule:
+        return {
+            "answer": troubleshooting_answer(troubleshooting_rule),
+            "matched": True,
+            "modelUsed": False,
+            "intent": "troubleshooting",
+            "diagnosticId": troubleshooting_rule.get("id"),
+            "relatedQuestions": [],
+            "matches": [],
         }
 
     faq_matches = find_matches(question, faq_items, limit=2)
@@ -1027,11 +1285,17 @@ def answer_question(question: str) -> dict[str, Any]:
     matches = matches[:3]
     if not matches:
         if not is_probably_ulearning_related(question):
+            try:
+                answer = call_deepseek_general_chat(question)
+                model_used = True
+            except Exception:
+                answer = general_chat_fallback(question)
+                model_used = False
             return {
-                "answer": unrelated_answer(question),
+                "answer": answer,
                 "matched": False,
-                "modelUsed": False,
-                "intent": "unrelated",
+                "modelUsed": model_used,
+                "intent": "general_chat",
             }
         return {
             "answer": fallback_answer(question),
@@ -1040,14 +1304,14 @@ def answer_question(question: str) -> dict[str, Any]:
             "recorded": True,
         }
 
-    matched_items = [match["item"] for match in matches]
+    # Use only the strongest retrieval result. Combining weaker candidates caused
+    # the model to merge unrelated procedures (for example AI assistant creation
+    # and the teacher lesson-preparation assistant).
+    matches = matches[:1]
+    matched_items = [matches[0]["item"]]
     related_questions = recommend_related_questions(question, matched_items, faq_items)
-    try:
-        answer = call_deepseek_rewrite(question, matched_items, related_questions)
-        model_used = True
-    except Exception:
-        answer = "\n\n".join(format_faq_answer(item) for item in matched_items)
-        model_used = False
+    answer = format_faq_answer(matched_items[0])
+    model_used = False
 
     return {
         "answer": answer,
@@ -1153,6 +1417,7 @@ def normalize_ocr_step_text(value: str) -> str:
     text = re.sub(r"(?<=[\u4e00-\u9fff])\s+(?=[\u4e00-\u9fff])", "", text)
     replacements = {
         "占击": "点击",
+        "单击": "点击",
         "单兀": "单元",
         "创也": "创建",
         "教師": "教师",
@@ -1177,13 +1442,17 @@ def read_screenshot_sidecar_text(image: Path) -> str:
 
 
 def extract_action_sentence(text: str) -> str:
-    if len(text) > 140:
-        return ""
     for keyword in ["点击", "选择", "进入", "打开", "填写", "上传", "保存", "发布", "确认"]:
         index = text.find(keyword)
         if index < 0:
             continue
-        sentence = text[index : index + 36].strip(" ，,。.")
+        sentence = text[index : index + 48]
+        sentence = re.split(
+            r"回顶部|关于我们|关于文华|帮助中心|友情链接|国家智慧|联系我|跳转",
+            sentence,
+            maxsplit=1,
+        )[0]
+        sentence = sentence[:32].strip(" ，,。.")
         if sentence:
             return f"{sentence}。"
     return ""
@@ -1193,6 +1462,36 @@ def infer_structured_step_text(step_index: int, title_parts: list[str]) -> str:
     leaf_title = title_parts[-1] if title_parts else ""
     parent_title = title_parts[-2] if len(title_parts) >= 2 else ""
     root_title = title_parts[0] if title_parts else ""
+
+    guide_steps = {
+        "如何创建AI助手": [
+            "进入课程的【AI工作台】，点击助手区域的加号。",
+            "进入【管理我的AI助手】页面。",
+            "点击【创建AI助手】并选择【手动创建】。",
+            "填写助手名称、简介和指令。",
+            "按需要配置知识库、工作流和头像，然后保存发布。",
+            "返回 AI 助手管理页面，确认新助手已经出现在列表中。",
+        ],
+        "如何添加AI助手至AI工作台首页": [
+            "进入目标课程的【AI工作台】，打开【设置】。",
+            "在 AI 助手区域点击【添加AI助手】。",
+            "选择要添加到首页的 AI 助手并确认。",
+            "返回设置页面，确认该助手状态为【已启用】。",
+            "返回 AI 工作台首页，确认刚添加的助手已经显示。",
+        ],
+        "加入学生-学生扫码": [
+            "进入班级管理页面，打开目标班级的学生加入入口。",
+            "点击班级二维码，让学生使用优学院 App 扫码加入班级。",
+        ],
+        "新增AI助手中-选择AI助手": [
+            "进入课程的【AI工作台】，点击助手区域的加号。",
+            "选择【选择AI助手】，在弹窗中勾选已有助手。",
+            "点击【确定】，返回工作台确认助手已经显示。",
+        ],
+    }
+    matched_steps = guide_steps.get(leaf_title)
+    if matched_steps and step_index <= len(matched_steps):
+        return matched_steps[step_index - 1]
 
     if root_title == "AI工作台的功能" and leaf_title:
         specific_steps = {
@@ -1341,6 +1640,78 @@ def build_screenshot_guides() -> list[dict[str, Any]]:
     return guides
 
 
+VIDEO_QUESTION_OVERRIDES = {
+    "创建课件": "如何创建课件？",
+    "添加章节结构": "如何添加章节结构？",
+    "填充课程内容": "如何填充课程内容？",
+    "课件设置及发布": "如何进行课件设置及发布？",
+    "关联课件": "如何为班课关联教学课件？",
+    "添加教学团队": "如何设置教学团队？",
+    "发布课程公告": "如何发布公告？",
+    "设置学习计划": "如何设置学习计划？",
+    "邀请学生加班": "如何邀请学生加入班课？",
+    "查看进度成绩": "如何查看进度成绩？",
+    "添加资源": "如何添加资源？",
+    "个人作业": "如何布置个人作业？",
+    "小组作业": "如何布置小组作业？",
+    "发布测验": "如何发布测验？",
+    "批阅作业": "如何批阅作业？",
+    "发布讨论": "如何发布讨论？",
+    "试题库-创建试题": "如何添加题目到试题库？",
+    "试卷库-添加试卷": "如何添加试卷？",
+    "设置课程考核规则": "如何设置课程考核规则？",
+    "查看课程分析": "如何查看课程分析？",
+    "发起投屏": "如何发起投屏？",
+    "结束投屏和导出数据": "如何结束投屏和导出数据？",
+    "客服": "如何联系在线客服？",
+    "修改个人资料、密码": "如何修改个人资料或密码？",
+    "发布考试": "如何安排考试？",
+    "考试管理考试分析等": "如何查看考试分析？",
+    "课程证书": "如何设置课程证书？",
+    "PC端发起直播": "如何在PC端发起直播？",
+    "客户端发起直播": "如何在客户端发起直播？",
+}
+
+
+def clean_video_title(path: Path) -> str:
+    title = re.sub(r"^\d+[.、_\-\s]*", "", path.stem).strip()
+    title = re.sub(r"(?i)pc端?$", "", title).strip()
+    return title or path.stem
+
+
+def build_video_guides() -> list[dict[str, Any]]:
+    guides: list[dict[str, Any]] = []
+    seen_files: set[str] = set()
+    for directory in VIDEO_DIRS:
+        if not directory.exists():
+            continue
+        for video in sorted(
+            (
+                path
+                for path in directory.rglob("*")
+                if path.is_file() and path.suffix.lower() in VIDEO_EXTENSIONS
+            ),
+            key=lambda path: [natural_sort_key(part) for part in path.relative_to(directory).parts],
+        ):
+            file_key = f"{video.name.lower()}:{video.stat().st_size}"
+            if file_key in seen_files:
+                continue
+            seen_files.add(file_key)
+            title = clean_video_title(video)
+            question = VIDEO_QUESTION_OVERRIDES.get(title, f"如何{title}？")
+            aliases = expand_screenshot_aliases([title], question)
+            guides.append(
+                {
+                    "id": f"video-{len(guides) + 1:03d}",
+                    "title": title,
+                    "question": question,
+                    "aliases": aliases,
+                    "src": video.relative_to(ROOT).as_posix(),
+                }
+            )
+    return guides
+
+
 class AgentHandler(SimpleHTTPRequestHandler):
     def end_headers(self) -> None:
         self.send_header("Cache-Control", "no-store, no-cache, must-revalidate, max-age=0")
@@ -1362,6 +1733,7 @@ class AgentHandler(SimpleHTTPRequestHandler):
             configured = bool(
                 os.getenv("DEEPSEEK_API_KEY")
                 or os.getenv("ULEARNING_TEACHER_ASSISTANT_API_KEY")
+                or os.getenv("OPENAI_API_KEY")
             )
             self._send_json(
                 200,
@@ -1370,7 +1742,8 @@ class AgentHandler(SimpleHTTPRequestHandler):
                     "configured": configured,
                     "faqCount": len(load_faq_items()),
                     "builtinGuideCount": 0,
-                    "screenshotGuideCount": 0,
+                    "screenshotGuideCount": len(build_screenshot_guides()),
+                    "videoGuideCount": len(build_video_guides()),
                     "helpKnowledgeCount": 0,
                     "chunkKnowledgeCount": 0,
                     "screenshotKnowledgeCount": 0,
@@ -1381,7 +1754,10 @@ class AgentHandler(SimpleHTTPRequestHandler):
             )
             return
         if request_path == "/api/screenshot-guides":
-            self._send_json(200, {"ok": True, "guides": [], "disabled": True})
+            self._send_json(200, {"ok": True, "guides": build_screenshot_guides()})
+            return
+        if request_path == "/api/video-guides":
+            self._send_json(200, {"ok": True, "guides": build_video_guides()})
             return
         super().do_GET()
 

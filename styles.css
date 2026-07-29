@@ -64,10 +64,24 @@ button {
 .brand {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 6px;
   min-height: 38px;
   margin-bottom: 14px;
   font-size: 15px;
+}
+
+.brand strong {
+  flex: 0 0 auto;
+  white-space: nowrap;
+}
+
+.brand-status {
+  flex: 0 0 auto;
+  color: #94a3b8;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: -0.3px;
+  white-space: nowrap;
 }
 
 .bee-avatar {
@@ -902,6 +916,93 @@ button {
   background: #111827;
 }
 
+.answer-tutorial {
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid #dfe7ef;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 8px 24px rgb(15 23 42 / 5%);
+}
+
+.tutorial-tabs {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  padding: 5px;
+  border-bottom: 1px solid #e8edf3;
+  background: #f6f8fb;
+}
+
+.tutorial-tab {
+  position: relative;
+  min-height: 42px;
+  border: 0;
+  border-radius: 8px;
+  color: #64748b;
+  background: transparent;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.tutorial-tab:hover {
+  color: #1d4ed8;
+  background: #eef4ff;
+}
+
+.tutorial-tab.active {
+  color: #1d4ed8;
+  background: #fff;
+  box-shadow: 0 2px 8px rgb(15 23 42 / 8%);
+}
+
+.tutorial-tab.active::after {
+  position: absolute;
+  right: 24%;
+  bottom: -5px;
+  left: 24%;
+  height: 2px;
+  border-radius: 999px;
+  background: #2563eb;
+  content: "";
+}
+
+.tutorial-panel {
+  padding: 18px;
+}
+
+.tutorial-panel[hidden] {
+  display: none;
+}
+
+.tutorial-panel .screenshot-guide {
+  margin: 0;
+}
+
+.tutorial-empty {
+  display: grid;
+  min-height: 180px;
+  place-items: center;
+  border: 1px dashed #d8e0e8;
+  border-radius: 10px;
+  color: #94a3b8;
+  background: #f8fafc;
+  font-size: 14px;
+}
+
+@media (max-width: 680px) {
+  .tutorial-panel {
+    padding: 10px;
+  }
+
+  .tutorial-tab {
+    min-height: 40px;
+    font-size: 13px;
+  }
+
+}
+
 .screenshot-guide {
   position: relative;
   display: grid;
@@ -966,7 +1067,7 @@ button {
   grid-template-columns: minmax(170px, var(--step-column-width, 220px)) minmax(0, 1fr);
   align-items: stretch;
   height: var(--screenshot-image-height, auto);
-  min-height: 0;
+  min-height: var(--screenshot-min-height, 0);
   border: 1px solid var(--line);
   border-top: 0;
   border-radius: 0 0 8px 8px;
@@ -1056,6 +1157,27 @@ button {
   color: var(--text);
   font-size: 13px;
   line-height: 1.45;
+}
+
+.screenshot-guide.is-dense .screenshot-steps {
+  gap: 4px;
+  padding: 8px;
+}
+
+.screenshot-guide.is-dense .screenshot-step {
+  gap: 6px;
+  padding: 5px 7px;
+  line-height: 1.2;
+}
+
+.screenshot-guide.is-dense .screenshot-step-index {
+  font-size: 11px;
+}
+
+.screenshot-guide.is-dense .screenshot-step span:last-child {
+  overflow-wrap: anywhere;
+  font-size: 11px;
+  line-height: 1.25;
 }
 
 .screenshot-image-wrap {
