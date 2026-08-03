@@ -225,6 +225,97 @@ button {
   overflow: hidden;
 }
 
+.language-switcher {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 8px;
+  flex: 0 0 auto;
+  width: 100%;
+  min-width: 0;
+  margin-top: 12px;
+  padding: 10px;
+  border: 1px solid #f1c75b;
+  border-radius: 12px;
+  background: #fff7d6;
+}
+
+.language-current {
+  min-width: 0;
+  overflow: hidden;
+  color: #475569;
+  font-size: 13px;
+  font-weight: 600;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.language-toggle {
+  min-width: 72px;
+  min-height: 30px;
+  padding: 5px 9px;
+  border: 1px solid #e7aa17;
+  border-radius: 999px;
+  color: #5f4100;
+  background: #f8c33a;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+.language-toggle:hover {
+  border-color: #ca8a04;
+  background: #f5b82e;
+}
+
+html[lang="en"] .brand {
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+html[lang="en"] .brand-status {
+  flex: 1 1 auto;
+  min-width: 0;
+  line-height: 1.2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+html[lang="en"] .prompt-card,
+html[lang="en"] .guided-action,
+html[lang="en"] .tutorial-tab,
+html[lang="en"] .message-tools button {
+  overflow-wrap: anywhere;
+  white-space: normal;
+}
+
+html[lang="en"] .prompt-card {
+  min-height: 86px;
+}
+
+html[lang="en"] .prompt-card span,
+html[lang="en"] .prompt-card small {
+  line-height: 1.3;
+}
+
+html[lang="en"] .message-content,
+html[lang="en"] .guide-step-text,
+html[lang="en"] .guided-action {
+  overflow-wrap: anywhere;
+  word-break: normal;
+}
+
+html[lang="en"] .message {
+  line-height: 1.45;
+}
+
+html[lang="en"] .message.assistant .message-content {
+  font-size: 15px;
+  line-height: 1.48;
+}
+
 .section-label,
 .eyebrow {
   color: var(--muted);
@@ -1584,6 +1675,11 @@ button {
 
   .history-section {
     display: none;
+  }
+
+  .language-switcher {
+    grid-column: 1 / -1;
+    margin-top: 0;
   }
 
   .sidebar-actions {
