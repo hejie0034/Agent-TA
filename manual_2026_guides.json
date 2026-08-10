@@ -1,0 +1,1926 @@
+[
+  {
+    "id": "manual-2026-ulms-906db67f35-guide",
+    "title": "ULMS - 设置章节目录",
+    "titleEn": "ULMS - Set Up Table of Contents",
+    "question": "如何设置课件章节目录？",
+    "questionEn": "How do I set up the courseware table of contents?",
+    "aliases": [
+      "如何设置课件章节目录？",
+      "How do I set up the courseware table of contents?",
+      "设置章节目录",
+      "（一）课前准备：创建课件内容",
+      "创建课件",
+      "1.2 设置章节目录"
+    ],
+    "path": "2026 教师用户手册 > ULMS > 设置章节目录",
+    "steps": [
+      {
+        "label": "Step 1",
+        "text": "进入【设置章节目录】页面，先确认当前操作的课程、班级或考试对象；如果教师已有完整的目录内容，可以通过【快速创建章节目录】工具，将课件目录内容复制粘贴到系统里，一次性设置完整的课件目录（后续可修改）；。",
+        "textEn": "Open 设置章节目录 / 快速创建章节目录 and verify that the selected course, class, or exam is correct.",
+        "src": "截图教程/2026用户手册/ULMS/设置章节目录/step1.png"
+      },
+      {
+        "label": "Step 2",
+        "text": "保存【设置章节目录】设置，返回列表确认状态和显示结果已经更新。",
+        "textEn": "Complete the required settings in 设置章节目录, verify the scope and time, and save the changes.",
+        "src": "截图教程/2026用户手册/ULMS/设置章节目录/step2.png"
+      }
+    ],
+    "source": "ULMS 教师用户手册（2026）"
+  },
+  {
+    "id": "manual-2026-ulms-915594c318-guide",
+    "title": "ULMS - 添加课件资源",
+    "titleEn": "ULMS - Add Courseware Resources",
+    "question": "如何添加课件资源？",
+    "questionEn": "How do I add courseware resources?",
+    "aliases": [
+      "如何添加课件资源？",
+      "How do I add courseware resources?",
+      "添加课件资源",
+      "（一）课前准备：创建课件内容",
+      "创建课件",
+      "1.3 编辑课件内容",
+      "1.3.1 添加课件资源"
+    ],
+    "path": "2026 教师用户手册 > ULMS > 添加课件资源",
+    "steps": [
+      {
+        "label": "Step 1",
+        "text": "进入【点击【课件资源】模块；点击【点击【添加资源】，进入下一步设置；完成【勾选本地文件并上传】页面的必填设置，核对对象和时间后保存。",
+        "textEn": "Open 点击【课件资源 / 点击【添加资源 / 勾选本地文件并上传 and verify that the selected course, class, or exam is correct.",
+        "src": "截图教程/2026用户手册/ULMS/添加课件资源/step1.png"
+      }
+    ],
+    "source": "ULMS 教师用户手册（2026）"
+  },
+  {
+    "id": "manual-2026-ulms-62e9829981-guide",
+    "title": "ULMS - 添加课件试题",
+    "titleEn": "ULMS - Add Courseware Questions",
+    "question": "如何添加课件试题？",
+    "questionEn": "How do I add courseware questions?",
+    "aliases": [
+      "如何添加课件试题？",
+      "How do I add courseware questions?",
+      "添加课件试题",
+      "（一）课前准备：创建课件内容",
+      "创建课件",
+      "1.3 编辑课件内容",
+      "1.3.2 添加课件试题"
+    ],
+    "path": "2026 教师用户手册 > ULMS > 添加课件试题",
+    "steps": [
+      {
+        "label": "Step 1",
+        "text": "进入【添加课件试题】页面，先确认当前操作的课程、班级或考试对象；完成【点击【添加新题】页面的必填设置，核对对象和时间后保存；保存【添加课件试题】设置，返回列表确认状态和显示结果已经更新。",
+        "textEn": "Open 添加课件试题 / 点击【添加新题 / 添加课件试题 and verify that the selected course, class, or exam is correct.",
+        "src": "截图教程/2026用户手册/ULMS/添加课件试题/step1.png"
+      }
+    ],
+    "source": "ULMS 教师用户手册（2026）"
+  },
+  {
+    "id": "manual-2026-ulms-ee9e8326d2-guide",
+    "title": "ULMS - 添加内容组件",
+    "titleEn": "ULMS - Add Content Components",
+    "question": "如何在课件中添加内容组件？",
+    "questionEn": "How do I add content components to courseware?",
+    "aliases": [
+      "如何在课件中添加内容组件？",
+      "How do I add content components to courseware?",
+      "添加内容组件",
+      "（一）课前准备：创建课件内容",
+      "创建课件",
+      "1.3 编辑课件内容",
+      "1.3.4 添加内容组件"
+    ],
+    "path": "2026 教师用户手册 > ULMS > 添加内容组件",
+    "steps": [
+      {
+        "label": "Step 1",
+        "text": "在课件编辑区点击【视频】组件，打开视频添加窗口。",
+        "textEn": "In the courseware editing area, click the Video component to open the video addition window.",
+        "src": "截图教程/2026用户手册/ULMS/添加内容组件/step1.png"
+      },
+      {
+        "label": "Step 2",
+        "text": "选择从课件资源、个人资源库引用视频，或从电脑本地上传视频。",
+        "textEn": "Choose to reference a video from courseware resources or your personal resource library, or upload a video from your computer.",
+        "src": "截图教程/2026用户手册/ULMS/添加内容组件/step2.png"
+      },
+      {
+        "label": "Step 3",
+        "text": "选中已插入的视频，按需添加注释、在线剪辑或替换视频。",
+        "textEn": "Select the inserted video and add notes, edit it online, or replace it as needed.",
+        "src": "截图教程/2026用户手册/ULMS/添加内容组件/step3.png"
+      },
+      {
+        "label": "Step 4",
+        "text": "在课件编辑区点击【音频】组件，打开音频添加窗口。",
+        "textEn": "In the courseware editing area, click the Audio component to open the audio addition window.",
+        "src": "截图教程/2026用户手册/ULMS/添加内容组件/step4.png"
+      },
+      {
+        "label": "Step 5",
+        "text": "选择已有音频资源，或点击本地上传并等待文件处理完成。",
+        "textEn": "Select an existing audio resource, or click to upload locally and wait for the file to finish processing.",
+        "src": "截图教程/2026用户手册/ULMS/添加内容组件/step5.png"
+      },
+      {
+        "label": "Step 6",
+        "text": "选中音频组件，设置播放方式并检查音频是否可以正常播放。",
+        "textEn": "Select the audio component, set the playback mode, and check that the audio plays correctly.",
+        "src": "截图教程/2026用户手册/ULMS/添加内容组件/step6.png"
+      },
+      {
+        "label": "Step 7",
+        "text": "在课件编辑区点击【文档】组件，打开文档添加窗口。",
+        "textEn": "In the courseware editing area, click the Document component to open the document addition window.",
+        "src": "截图教程/2026用户手册/ULMS/添加内容组件/step7.png"
+      },
+      {
+        "label": "Step 8",
+        "text": "选择已有文档或上传本地文件，确认后将文档插入当前页面。",
+        "textEn": "Select an existing document or upload a local file, then confirm to insert the document into the current page.",
+        "src": "截图教程/2026用户手册/ULMS/添加内容组件/step8.png"
+      },
+      {
+        "label": "Step 9",
+        "text": "点击【练习】组件，从课件试题中选择需要插入的题目。",
+        "textEn": "Click the Practice component and choose the questions to insert from the courseware questions.",
+        "src": "截图教程/2026用户手册/ULMS/添加内容组件/step9.png"
+      },
+      {
+        "label": "Step 10",
+        "text": "需要新题时点击【添加新题】，选择题型并完整填写题干和答案。",
+        "textEn": "If you need new questions, click Add New Question, select the question type, and fully fill in the prompt and answer.",
+        "src": "截图教程/2026用户手册/ULMS/添加内容组件/step10.png"
+      },
+      {
+        "label": "Step 11",
+        "text": "设置练习题的作答、答案显示和反馈方式，然后保存练习。",
+        "textEn": "Set how the practice questions are answered, how answers are displayed, and the feedback method, then save the practice.",
+        "src": "截图教程/2026用户手册/ULMS/添加内容组件/step11.png"
+      },
+      {
+        "label": "Step 12",
+        "text": "点击【音频文字】组件，进入音频与文本同步编辑页面。",
+        "textEn": "Click the Audio Text component to enter the audio and text synchronization editing page.",
+        "src": "截图教程/2026用户手册/ULMS/添加内容组件/step12.png"
+      },
+      {
+        "label": "Step 13",
+        "text": "上传或选择音频，并录入与音频对应的文本内容。",
+        "textEn": "Upload or select audio, and enter the text content that matches the audio.",
+        "src": "截图教程/2026用户手册/ULMS/添加内容组件/step13.png"
+      },
+      {
+        "label": "Step 14",
+        "text": "调整文本与音频的对应关系，试听无误后保存组件。",
+        "textEn": "Adjust the alignment between the text and audio, preview to confirm it is correct, then save the component.",
+        "src": "截图教程/2026用户手册/ULMS/添加内容组件/step14.png"
+      },
+      {
+        "label": "Step 15",
+        "text": "点击【口语评分】组件，进入口语练习设置页面。",
+        "textEn": "Click the Speaking Scoring component to enter the speaking practice settings page.",
+        "src": "截图教程/2026用户手册/ULMS/添加内容组件/step15.png"
+      },
+      {
+        "label": "Step 16",
+        "text": "阅读使用说明，准备朗读文本和评分所需的音频设置。",
+        "textEn": "Read the usage instructions and prepare the reading text and audio settings needed for scoring.",
+        "src": "截图教程/2026用户手册/ULMS/添加内容组件/step16.png"
+      },
+      {
+        "label": "Step 17",
+        "text": "填写朗读内容与评分参数，保存后预览口语评分组件。",
+        "textEn": "Fill in the reading content and scoring parameters, save, then preview the speaking scoring component.",
+        "src": "截图教程/2026用户手册/ULMS/添加内容组件/step17.png"
+      }
+    ],
+    "source": "ULMS 教师用户手册（2026）"
+  },
+  {
+    "id": "manual-2026-ulms-f674c730c7-guide",
+    "title": "ULMS - 设置试听章节",
+    "titleEn": "ULMS - Set Up Preview Chapters",
+    "question": "如何设置课件试听章节？",
+    "questionEn": "How do I set up preview chapters for courseware?",
+    "aliases": [
+      "如何设置课件试听章节？",
+      "How do I set up preview chapters for courseware?",
+      "设置试听章节",
+      "（一）课前准备：创建课件内容",
+      "创建课件",
+      "1.4 设置试听章节"
+    ],
+    "path": "2026 教师用户手册 > ULMS > 设置试听章节",
+    "steps": [
+      {
+        "label": "Step 1",
+        "text": "进入【设置试听章节】页面，先确认当前操作的课程、班级或考试对象；课件内容编辑完成后，可以设置试听章节，点击“设置试听章节”，勾选相应章节后点击“确定”即可。",
+        "textEn": "Open 设置试听章节 and verify that the selected course, class, or exam is correct.",
+        "src": "截图教程/2026用户手册/ULMS/设置试听章节/step1.png"
+      },
+      {
+        "label": "Step 2",
+        "text": "保存【设置试听章节】设置，返回列表确认状态和显示结果已经更新。",
+        "textEn": "Complete the required settings in 设置试听章节, verify the scope and time, and save the changes.",
+        "src": "截图教程/2026用户手册/ULMS/设置试听章节/step2.png"
+      }
+    ],
+    "source": "ULMS 教师用户手册（2026）"
+  },
+  {
+    "id": "manual-2026-ulms-0ee145baf8-guide",
+    "title": "ULMS - 预览课件",
+    "titleEn": "ULMS - Preview Courseware",
+    "question": "如何预览课件？",
+    "questionEn": "How do I preview courseware?",
+    "aliases": [
+      "如何预览课件？",
+      "How do I preview courseware?",
+      "预览课件",
+      "（一）课前准备：创建课件内容",
+      "创建课件",
+      "1.5 预览课件"
+    ],
+    "path": "2026 教师用户手册 > ULMS > 预览课件",
+    "steps": [
+      {
+        "label": "Step 1",
+        "text": "进入【预览课件】页面，先确认当前操作的课程、班级或考试对象；教师在课件首页和课件编辑界面可点击【预览】，预览课件内容。",
+        "textEn": "Open 预览课件 / 预览 and verify that the selected course, class, or exam is correct.",
+        "src": "截图教程/2026用户手册/ULMS/预览课件/step1.png"
+      },
+      {
+        "label": "Step 2",
+        "text": "保存【预览课件】设置，返回列表确认状态和显示结果已经更新。",
+        "textEn": "Complete the required settings in 预览课件, verify the scope and time, and save the changes.",
+        "src": "截图教程/2026用户手册/ULMS/预览课件/step2.png"
+      }
+    ],
+    "source": "ULMS 教师用户手册（2026）"
+  },
+  {
+    "id": "manual-2026-ulms-3dfa5c4410-guide",
+    "title": "ULMS - 设置协同编辑",
+    "titleEn": "ULMS - Set Up Collaborative Editing",
+    "question": "如何设置课件协同编辑？",
+    "questionEn": "How do I set up collaborative editing for courseware?",
+    "aliases": [
+      "如何设置课件协同编辑？",
+      "How do I set up collaborative editing for courseware?",
+      "设置协同编辑",
+      "（一）课前准备：创建课件内容",
+      "创建课件",
+      "1.6 设置协同编辑"
+    ],
+    "path": "2026 教师用户手册 > ULMS > 设置协同编辑",
+    "steps": [
+      {
+        "label": "Step 1",
+        "text": "进入【设置协同编辑】页面，先确认当前操作的课程、班级或考试对象；平台支持多名教师共建一门课程，选择其他教师作为“协同编辑”，共同编辑课程内容。",
+        "textEn": "Open 设置协同编辑 and verify that the selected course, class, or exam is correct.",
+        "src": "截图教程/2026用户手册/ULMS/设置协同编辑/step1.png"
+      },
+      {
+        "label": "Step 2",
+        "text": "保存【设置协同编辑】设置，返回列表确认状态和显示结果已经更新。",
+        "textEn": "Complete the required settings in 设置协同编辑, verify the scope and time, and save the changes.",
+        "src": "截图教程/2026用户手册/ULMS/设置协同编辑/step2.png"
+      }
+    ],
+    "source": "ULMS 教师用户手册（2026）"
+  },
+  {
+    "id": "manual-2026-ulms-b616c65e2a-guide",
+    "title": "ULMS - 基本信息",
+    "titleEn": "ULMS - Basic Information",
+    "question": "如何完善课件基本信息？",
+    "questionEn": "How do I complete basic courseware information?",
+    "aliases": [
+      "如何完善课件基本信息？",
+      "How do I complete basic courseware information?",
+      "基本信息",
+      "（一）课前准备：创建课件内容",
+      "完善门户信息",
+      "2.1 基本信息"
+    ],
+    "path": "2026 教师用户手册 > ULMS > 基本信息",
+    "steps": [
+      {
+        "label": "Step 1",
+        "text": "进入目标课件的【基本信息】页面；填写课程名称、分类等信息，带星号的项目必须完整填写；点击保存；如果无法保存，逐项检查是否仍有必填项为空。",
+        "textEn": "Open 基本信息 and verify that the selected course, class, or exam is correct.",
+        "src": "截图教程/2026用户手册/ULMS/基本信息/step1.png"
+      }
+    ],
+    "source": "ULMS 教师用户手册（2026）"
+  },
+  {
+    "id": "manual-2026-ulms-36054a1742-guide",
+    "title": "ULMS - 详细介绍",
+    "titleEn": "ULMS - Detailed Description",
+    "question": "如何完善课件详细介绍？",
+    "questionEn": "How do I complete the detailed courseware description?",
+    "aliases": [
+      "如何完善课件详细介绍？",
+      "How do I complete the detailed courseware description?",
+      "详细介绍",
+      "（一）课前准备：创建课件内容",
+      "完善门户信息",
+      "2.2 详细介绍"
+    ],
+    "path": "2026 教师用户手册 > ULMS > 详细介绍",
+    "steps": [
+      {
+        "label": "Step 1",
+        "text": "进入目标课件的【详细介绍】页面；填写内容介绍和教学大纲，并按需上传课程精彩片段及出版信息；保存后重新进入页面，确认介绍、附件和出版信息显示完整。",
+        "textEn": "Open 详细介绍 and verify that the selected course, class, or exam is correct.",
+        "src": "截图教程/2026用户手册/ULMS/详细介绍/step1.png"
+      }
+    ],
+    "source": "ULMS 教师用户手册（2026）"
+  },
+  {
+    "id": "manual-2026-ulms-9a0786ed9d-guide",
+    "title": "ULMS - 团队成员",
+    "titleEn": "ULMS - Team Members",
+    "question": "如何设置课件门户团队成员？",
+    "questionEn": "How do I set up the courseware portal team members?",
+    "aliases": [
+      "如何设置课件门户团队成员？",
+      "How do I set up the courseware portal team members?",
+      "团队成员",
+      "（一）课前准备：创建课件内容",
+      "完善门户信息",
+      "2.3 团队成员"
+    ],
+    "path": "2026 教师用户手册 > ULMS > 团队成员",
+    "steps": [
+      {
+        "label": "Step 1",
+        "text": "进入目标课件门户的【团队成员】页面；填写教师姓名、所在院校和简介，上传头像；需要多人展示时点击添加教师；保存后检查教师顺序、头像和简介是否正确显示。",
+        "textEn": "Open 团队成员 and verify that the selected course, class, or exam is correct.",
+        "src": "截图教程/2026用户手册/ULMS/团队成员/step1.png"
+      }
+    ],
+    "source": "ULMS 教师用户手册（2026）"
+  },
+  {
+    "id": "manual-2026-ulms-dcf1a4466a-guide",
+    "title": "ULMS - 门户设置",
+    "titleEn": "ULMS - Portal Settings",
+    "question": "如何设置课件门户背景？",
+    "questionEn": "How do I set the courseware portal background?",
+    "aliases": [
+      "如何设置课件门户背景？",
+      "How do I set the courseware portal background?",
+      "门户设置",
+      "（一）课前准备：创建课件内容",
+      "完善门户信息",
+      "2.4 门户设置"
+    ],
+    "path": "2026 教师用户手册 > ULMS > 门户设置",
+    "steps": [
+      {
+        "label": "Step 1",
+        "text": "进入目标课件门户的【门户设置】页面；选择符合课程展示要求的门户背景图并查看预览；保存设置，返回课件门户确认背景图没有拉伸或遮挡文字。",
+        "textEn": "Open 门户设置 and verify that the selected course, class, or exam is correct.",
+        "src": "截图教程/2026用户手册/ULMS/门户设置/step1.png"
+      }
+    ],
+    "source": "ULMS 教师用户手册（2026）"
+  },
+  {
+    "id": "manual-2026-ulms-b4bc79dce9-guide",
+    "title": "ULMS - 课件发布与更新",
+    "titleEn": "ULMS - Publish and Update Courseware",
+    "question": "如何发布或更新课件？",
+    "questionEn": "How do I publish or update courseware?",
+    "aliases": [
+      "如何发布或更新课件？",
+      "How do I publish or update courseware?",
+      "课件发布与更新",
+      "（一）课前准备：创建课件内容"
+    ],
+    "path": "2026 教师用户手册 > ULMS > 课件发布与更新",
+    "steps": [
+      {
+        "label": "Step 1",
+        "text": "完成课件内容、基本信息和门户信息后，返回课件首页点击【发布】。",
+        "textEn": "After completing the courseware content, basic information, and portal information, return to the courseware homepage and click Publish.",
+        "src": "截图教程/2026用户手册/ULMS/课件发布与更新/step1.png"
+      },
+      {
+        "label": "Step 2",
+        "text": "填写开课院校，选择发布到本校课程网站或优学院网站。",
+        "textEn": "Enter the institution offering the course and choose whether to publish it to your school's course website or the uLearning website.",
+        "src": "截图教程/2026用户手册/ULMS/课件发布与更新/step2.png"
+      },
+      {
+        "label": "Step 3",
+        "text": "设置课程是否在网站显示，核对发布范围后确认发布。",
+        "textEn": "Set whether the course is displayed on the website, verify the publishing scope, and then confirm the publication.",
+        "src": "截图教程/2026用户手册/ULMS/课件发布与更新/step3.png"
+      },
+      {
+        "label": "Step 4",
+        "text": "课件内容有修改时重新进入编辑页，完成修改并保存。",
+        "textEn": "If the courseware content is modified, re-enter the editing page, complete the changes, and save.",
+        "src": "截图教程/2026用户手册/ULMS/课件发布与更新/step4.png"
+      },
+      {
+        "label": "Step 5",
+        "text": "点击【更新】使新版本生效，并返回门户检查显示内容。",
+        "textEn": "Click Update to make the new version effective, then return to the portal to check the displayed content.",
+        "src": "截图教程/2026用户手册/ULMS/课件发布与更新/step5.png"
+      }
+    ],
+    "source": "ULMS 教师用户手册（2026）"
+  },
+  {
+    "id": "manual-2026-ulms-6f564c1814-guide",
+    "title": "ULMS - 学生管理与分组",
+    "titleEn": "ULMS - Student Management and Grouping",
+    "question": "如何管理学生并进行分组？",
+    "questionEn": "How do I manage students and create groups?",
+    "aliases": [
+      "如何管理学生并进行分组？",
+      "How do I manage students and create groups?",
+      "学生管理与分组",
+      "（二）课程运行：开课建班"
+    ],
+    "path": "2026 教师用户手册 > ULMS > 学生管理与分组",
+    "steps": [
+      {
+        "label": "Step 1",
+        "text": "进入【成员】>【班级管理】，选择需要学生加入的班级。",
+        "textEn": "Go to Members > Class Management and select the class for students to join.",
+        "src": "截图教程/2026用户手册/ULMS/学生管理与分组/step1.png"
+      },
+      {
+        "label": "Step 2",
+        "text": "打开班级二维码并分享给学生，学生使用优学院 APP 扫码加入。",
+        "textEn": "Open the class QR code and share it with students; they scan it using the uLearning app to join.",
+        "src": "截图教程/2026用户手册/ULMS/学生管理与分组/step2.png"
+      },
+      {
+        "label": "Step 3",
+        "text": "也可以复制班级编码，让学生在平台或 APP 中输入编码加入。",
+        "textEn": "Alternatively, copy the class code and have students enter it on the platform or in the app to join.",
+        "src": "截图教程/2026用户手册/ULMS/学生管理与分组/step3.png"
+      },
+      {
+        "label": "Step 4",
+        "text": "需要教师添加时点击【添加学生】，搜索并勾选学生后保存。",
+        "textEn": "If the teacher needs to add students, click Add Students, search for and select the students, then save.",
+        "src": "截图教程/2026用户手册/ULMS/学生管理与分组/step4.png"
+      },
+      {
+        "label": "Step 5",
+        "text": "需要批量添加时下载导入模板，按模板填写学生信息。",
+        "textEn": "For bulk addition, download the import template and fill in student information according to the template.",
+        "src": "截图教程/2026用户手册/ULMS/学生管理与分组/step5.png"
+      },
+      {
+        "label": "Step 6",
+        "text": "上传填写完成的模板，处理导入提示并核对学生名单。",
+        "textEn": "Upload the completed template, handle any import prompts, and verify the student list.",
+        "src": "截图教程/2026用户手册/ULMS/学生管理与分组/step6.png"
+      },
+      {
+        "label": "Step 7",
+        "text": "进入班级的【分组管理】，点击创建新的学生分组。",
+        "textEn": "Go to the class's Group Management and click to create a new student group.",
+        "src": "截图教程/2026用户手册/ULMS/学生管理与分组/step7.png"
+      },
+      {
+        "label": "Step 8",
+        "text": "填写组名并将学生分配到对应小组，检查是否有人遗漏。",
+        "textEn": "Enter the group name and assign students to the corresponding group, checking that no one is missed.",
+        "src": "截图教程/2026用户手册/ULMS/学生管理与分组/step8.png"
+      },
+      {
+        "label": "Step 9",
+        "text": "保存分组，返回分组列表确认人数和成员关系正确。",
+        "textEn": "Save the group, then return to the group list to confirm the member count and relationships are correct.",
+        "src": "截图教程/2026用户手册/ULMS/学生管理与分组/step9.png"
+      }
+    ],
+    "source": "ULMS 教师用户手册（2026）"
+  },
+  {
+    "id": "manual-2026-ulms-3492fcd47d-guide",
+    "title": "ULMS - 发布教学活动",
+    "titleEn": "ULMS - Publishing Teaching Activities",
+    "question": "如何发布教学活动？",
+    "questionEn": "How do I publish teaching activities?",
+    "aliases": [
+      "如何发布教学活动？",
+      "How do I publish teaching activities?",
+      "发布教学活动",
+      "（三）课程运行：在线教学"
+    ],
+    "path": "2026 教师用户手册 > ULMS > 发布教学活动",
+    "steps": [
+      {
+        "label": "Step 1",
+        "text": "进入课程【单元】，在目标单元中点击添加教学活动。",
+        "textEn": "Go to the course Units and click to add a teaching activity in the target unit.",
+        "src": "截图教程/2026用户手册/ULMS/发布教学活动/step1.png"
+      },
+      {
+        "label": "Step 2",
+        "text": "选择课件、资源、公告、作业、讨论、直播、课堂或考试类型。",
+        "textEn": "Select the type: courseware, resource, announcement, assignment, discussion, live session, classroom, or exam.",
+        "src": "截图教程/2026用户手册/ULMS/发布教学活动/step2.png"
+      },
+      {
+        "label": "Step 3",
+        "text": "完成活动内容、参与班级、开放时间等必填设置。",
+        "textEn": "Complete required settings such as activity content, participating classes, and availability time.",
+        "src": "截图教程/2026用户手册/ULMS/发布教学活动/step3.png"
+      },
+      {
+        "label": "Step 4",
+        "text": "发布后返回单元，确认活动已显示在正确位置和对应模块。",
+        "textEn": "After publishing, return to the unit and confirm the activity appears in the correct location and corresponding module.",
+        "src": "截图教程/2026用户手册/ULMS/发布教学活动/step4.png"
+      }
+    ],
+    "source": "ULMS 教师用户手册（2026）"
+  },
+  {
+    "id": "manual-2026-ulms-3ac900b7ce-guide",
+    "title": "ULMS - 设置学习计划",
+    "titleEn": "ULMS - Setting Up Study Plans",
+    "question": "如何设置学习计划？",
+    "questionEn": "How do I set up a study plan?",
+    "aliases": [
+      "如何设置学习计划？",
+      "How do I set up a study plan?",
+      "设置学习计划",
+      "（三）课程运行：在线教学",
+      "导入课件",
+      "3.1 设置学习计划"
+    ],
+    "path": "2026 教师用户手册 > ULMS > 设置学习计划",
+    "steps": [
+      {
+        "label": "Step 1",
+        "text": "进入【设置学习计划】页面，先确认当前操作的课程、班级或考试对象；完成【设置学习计划】页面的必填设置，核对对象和时间后保存。",
+        "textEn": "Open 设置学习计划 / 设置学习计划 and verify that the selected course, class, or exam is correct.",
+        "src": "截图教程/2026用户手册/ULMS/设置学习计划/step1.png"
+      },
+      {
+        "label": "Step 2",
+        "text": "保存【设置学习计划】设置，返回列表确认状态和显示结果已经更新。",
+        "textEn": "Complete the required settings in 设置学习计划, verify the scope and time, and save the changes.",
+        "src": "截图教程/2026用户手册/ULMS/设置学习计划/step2.png"
+      }
+    ],
+    "source": "ULMS 教师用户手册（2026）"
+  },
+  {
+    "id": "manual-2026-ulms-b1946f65e0-guide",
+    "title": "ULMS - 查看进度成绩",
+    "titleEn": "ULMS - Viewing Progress and Scores",
+    "question": "如何查看课件进度成绩？",
+    "questionEn": "How do I view courseware progress and scores?",
+    "aliases": [
+      "如何查看课件进度成绩？",
+      "How do I view courseware progress and scores?",
+      "查看进度成绩",
+      "（三）课程运行：在线教学",
+      "导入课件",
+      "3.2 查看进度成绩"
+    ],
+    "path": "2026 教师用户手册 > ULMS > 查看进度成绩",
+    "steps": [
+      {
+        "label": "Step 1",
+        "text": "进入【课件】模块。",
+        "textEn": "Go to the Courseware module.",
+        "src": "截图教程/2026用户手册/ULMS/查看进度成绩/step1.png"
+      },
+      {
+        "label": "Step 2",
+        "text": "点击【选择相应的课件】，进入下一步设置。",
+        "textEn": "Click Select the corresponding courseware to proceed to the next step.",
+        "src": "截图教程/2026用户手册/ULMS/查看进度成绩/step2.png"
+      },
+      {
+        "label": "Step 3",
+        "text": "完成【进度成绩】页面的必填设置，核对对象和时间后保存。",
+        "textEn": "Complete the required settings on the Progress and Scores page, verify the target and time, then save.",
+        "src": "截图教程/2026用户手册/ULMS/查看进度成绩/step3.png"
+      }
+    ],
+    "source": "ULMS 教师用户手册（2026）"
+  },
+  {
+    "id": "manual-2026-ulms-b87f94efa9-guide",
+    "title": "ULMS - 发布资源",
+    "titleEn": "ULMS - Publishing Resources",
+    "question": "如何在课程中发布资源？",
+    "questionEn": "How do I publish resources in a course?",
+    "aliases": [
+      "如何在课程中发布资源？",
+      "How do I publish resources in a course?",
+      "发布资源",
+      "（三）课程运行：在线教学"
+    ],
+    "path": "2026 教师用户手册 > ULMS > 发布资源",
+    "steps": [
+      {
+        "label": "Step 1",
+        "text": "进入课程【资源】，选择从资源库引用或直接上传资源。",
+        "textEn": "Go to the course Resources and choose to reference from the resource library or upload files directly.",
+        "src": "截图教程/2026用户手册/ULMS/发布资源/step1.png"
+      },
+      {
+        "label": "Step 2",
+        "text": "从资源库引用时先打开【资源库】，勾选需要发布的文件。",
+        "textEn": "When referencing from the resource library, open the Resource Library first and select the files to publish.",
+        "src": "截图教程/2026用户手册/ULMS/发布资源/step2.png"
+      },
+      {
+        "label": "Step 3",
+        "text": "本校或共享资源需先复制到【我的资源】，再选择发布。",
+        "textEn": "For school or shared resources, copy them to My Resources first, then select them for publishing.",
+        "src": "截图教程/2026用户手册/ULMS/发布资源/step3.png"
+      },
+      {
+        "label": "Step 4",
+        "text": "直接上传时选择本地文件，等待上传和文件处理完成。",
+        "textEn": "When uploading directly, choose local files and wait for the upload and file processing to complete.",
+        "src": "截图教程/2026用户手册/ULMS/发布资源/step4.png"
+      },
+      {
+        "label": "Step 5",
+        "text": "填写资源名称，选择参与班级并设置开放时间。",
+        "textEn": "Enter the resource name, select the participating classes, and set the availability time.",
+        "src": "截图教程/2026用户手册/ULMS/发布资源/step5.png"
+      },
+      {
+        "label": "Step 6",
+        "text": "点击发布，返回资源列表检查学生端可见状态。",
+        "textEn": "Click Publish, then return to the resource list to check that it is visible to students.",
+        "src": "截图教程/2026用户手册/ULMS/发布资源/step6.png"
+      }
+    ],
+    "source": "ULMS 教师用户手册（2026）"
+  },
+  {
+    "id": "manual-2026-ulms-034de3abd5-guide",
+    "title": "ULMS - 发布公告",
+    "titleEn": "ULMS - Publishing Announcements",
+    "question": "如何发布课程公告？",
+    "questionEn": "How do I publish course announcements?",
+    "aliases": [
+      "如何发布课程公告？",
+      "How do I publish course announcements?",
+      "发布公告",
+      "（三）课程运行：在线教学"
+    ],
+    "path": "2026 教师用户手册 > ULMS > 发布公告",
+    "steps": [
+      {
+        "label": "Step 1",
+        "text": "进入课程【公告】，点击【发布新公告】。",
+        "textEn": "Go to the course Announcements and click Publish New Announcement.",
+        "src": "截图教程/2026用户手册/ULMS/发布公告/step1.png"
+      },
+      {
+        "label": "Step 2",
+        "text": "填写公告名称和正文，按需添加供学生下载的附件。",
+        "textEn": "Enter the announcement title and body, and add attachments for students to download as needed.",
+        "src": "截图教程/2026用户手册/ULMS/发布公告/step2.png"
+      },
+      {
+        "label": "Step 3",
+        "text": "选择接收公告的班级，并核对发布时间或开放状态。",
+        "textEn": "Select the classes that will receive the announcement and verify the publish time or availability status.",
+        "src": "截图教程/2026用户手册/ULMS/发布公告/step3.png"
+      },
+      {
+        "label": "Step 4",
+        "text": "点击发布，返回公告列表确认公告状态和参与班级正确。",
+        "textEn": "Click Publish, then return to the announcement list to confirm the status and participating classes are correct.",
+        "src": "截图教程/2026用户手册/ULMS/发布公告/step4.png"
+      }
+    ],
+    "source": "ULMS 教师用户手册（2026）"
+  },
+  {
+    "id": "manual-2026-ulms-c701c01b43-guide",
+    "title": "ULMS - 布置作业",
+    "titleEn": "ULMS - Assign Homework",
+    "question": "如何布置课程作业？",
+    "questionEn": "How do I assign course homework?",
+    "aliases": [
+      "如何布置课程作业？",
+      "How do I assign course homework?",
+      "布置作业",
+      "（三）课程运行：在线教学"
+    ],
+    "path": "2026 教师用户手册 > ULMS > 布置作业",
+    "steps": [
+      {
+        "label": "Step 1",
+        "text": "进入【作业】模块；点击【布置作业】，进入下一步设置；点击【选择作业类型】，进入下一步设置；完成【作业设置】页面的必填设置，核对对象和时间后保存。",
+        "textEn": "Open 作业 / 布置作业 / 选择作业类型 / 作业设置 and verify that the selected course, class, or exam is correct.",
+        "src": "截图教程/2026用户手册/ULMS/布置作业/step1.png"
+      }
+    ],
+    "source": "ULMS 教师用户手册（2026）"
+  },
+  {
+    "id": "manual-2026-ulms-d6de95dcb6-guide",
+    "title": "ULMS - 个人作业",
+    "titleEn": "ULMS - Individual Homework",
+    "question": "如何布置个人作业？",
+    "questionEn": "How do I assign individual homework?",
+    "aliases": [
+      "如何布置个人作业？",
+      "How do I assign individual homework?",
+      "个人作业",
+      "（三）课程运行：在线教学",
+      "布置作业",
+      "6.1 个人作业"
+    ],
+    "path": "2026 教师用户手册 > ULMS > 个人作业",
+    "steps": [
+      {
+        "label": "Step 1",
+        "text": "进入课程【作业】，选择【个人作业】并填写标题和作业要求。",
+        "textEn": "Go to Homework in the course, select Individual Homework, and enter the title and requirements.",
+        "src": "截图教程/2026用户手册/ULMS/个人作业/step1.png"
+      },
+      {
+        "label": "Step 2",
+        "text": "添加附件或录音，设置评分方式、满分和学生提交方式。",
+        "textEn": "Add attachments or recordings, then set the grading method, full score, and student submission method.",
+        "src": "截图教程/2026用户手册/ULMS/个人作业/step2.png"
+      },
+      {
+        "label": "Step 3",
+        "text": "选择参与班级与起止时间，核对后发布个人作业。",
+        "textEn": "Select the participating classes and start/end times, verify the details, then publish the individual homework.",
+        "src": "截图教程/2026用户手册/ULMS/个人作业/step3.png"
+      }
+    ],
+    "source": "ULMS 教师用户手册（2026）"
+  },
+  {
+    "id": "manual-2026-ulms-70353eca7c-guide",
+    "title": "ULMS - 小组作业",
+    "titleEn": "ULMS - Group Homework",
+    "question": "如何布置小组作业？",
+    "questionEn": "How do I assign group homework?",
+    "aliases": [
+      "如何布置小组作业？",
+      "How do I assign group homework?",
+      "小组作业",
+      "（三）课程运行：在线教学",
+      "布置作业",
+      "6.2 小组作业"
+    ],
+    "path": "2026 教师用户手册 > ULMS > 小组作业",
+    "steps": [
+      {
+        "label": "Step 1",
+        "text": "进入【作业】模块；点击【小组作业】，进入下一步设置。",
+        "textEn": "Open 作业 / 小组作业 and verify that the selected course, class, or exam is correct.",
+        "src": "截图教程/2026用户手册/ULMS/小组作业/step1.png"
+      },
+      {
+        "label": "Step 2",
+        "text": "完成【作业设置】页面的必填设置，核对对象和时间后保存。",
+        "textEn": "Complete the required settings in 作业设置, verify the scope and time, and save the changes.",
+        "src": "截图教程/2026用户手册/ULMS/小组作业/step2.png"
+      }
+    ],
+    "source": "ULMS 教师用户手册（2026）"
+  },
+  {
+    "id": "manual-2026-ulms-5df0b54d15-guide",
+    "title": "ULMS - 测验",
+    "titleEn": "ULMS - Quiz",
+    "question": "如何发布课程测验？",
+    "questionEn": "How do I publish a course quiz?",
+    "aliases": [
+      "如何发布课程测验？",
+      "How do I publish a course quiz?",
+      "测验",
+      "（三）课程运行：在线教学",
+      "布置作业",
+      "6.3 测验"
+    ],
+    "path": "2026 教师用户手册 > ULMS > 测验",
+    "steps": [
+      {
+        "label": "Step 1",
+        "text": "进入课程【作业】，选择【测验】，再从个人、本校或共享题库选题。",
+        "textEn": "Go to Homework in the course, select Quiz, then choose questions from personal, school, or shared question banks.",
+        "src": "截图教程/2026用户手册/ULMS/测验/step1.png"
+      },
+      {
+        "label": "Step 2",
+        "text": "设置测验时间、参与班级、提交次数和答案公布时间。",
+        "textEn": "Set the quiz time, participating classes, submission attempts, and answer release time.",
+        "src": "截图教程/2026用户手册/ULMS/测验/step2.png"
+      },
+      {
+        "label": "Step 3",
+        "text": "检查题目、分值和总分无误后发布测验。",
+        "textEn": "Check the questions, scores, and total score for accuracy, then publish the quiz.",
+        "src": "截图教程/2026用户手册/ULMS/测验/step3.png"
+      }
+    ],
+    "source": "ULMS 教师用户手册（2026）"
+  },
+  {
+    "id": "manual-2026-ulms-e898b5d9b7-guide",
+    "title": "ULMS - 批阅作业",
+    "titleEn": "ULMS - Grade Homework",
+    "question": "如何批阅课程作业？",
+    "questionEn": "How do I grade course homework?",
+    "aliases": [
+      "如何批阅课程作业？",
+      "How do I grade course homework?",
+      "批阅作业",
+      "（三）课程运行：在线教学",
+      "布置作业",
+      "6.4 批阅作业"
+    ],
+    "path": "2026 教师用户手册 > ULMS > 批阅作业",
+    "steps": [
+      {
+        "label": "Step 1",
+        "text": "进入【作业】模块。",
+        "textEn": "Go to the Homework module.",
+        "src": "截图教程/2026用户手册/ULMS/批阅作业/step1.png"
+      },
+      {
+        "label": "Step 2",
+        "text": "点击【选择相应的作业】，进入下一步设置。",
+        "textEn": "Click Select the Relevant Homework to proceed to the next setup step.",
+        "src": "截图教程/2026用户手册/ULMS/批阅作业/step2.png"
+      },
+      {
+        "label": "Step 3",
+        "text": "完成【批阅】或【修改】页面的必填设置，核对对象和时间后保存。",
+        "textEn": "Complete the required fields on the Grade or Edit page, verify the audience and time, then save.",
+        "src": "截图教程/2026用户手册/ULMS/批阅作业/step3.png"
+      },
+      {
+        "label": "Step 4",
+        "text": "完成【批阅作业】设置后保存，并返回列表检查状态是否已更新。",
+        "textEn": "Save after completing the Grade Homework settings, then return to the list to check if the status has updated.",
+        "src": "截图教程/2026用户手册/ULMS/批阅作业/step4.png"
+      }
+    ],
+    "source": "ULMS 教师用户手册（2026）"
+  },
+  {
+    "id": "manual-2026-ulms-29869ab552-guide",
+    "title": "ULMS - 发布讨论",
+    "titleEn": "ULMS - Publish Discussion",
+    "question": "如何发布课程讨论？",
+    "questionEn": "How do I publish a course discussion?",
+    "aliases": [
+      "如何发布课程讨论？",
+      "How do I publish a course discussion?",
+      "发布讨论",
+      "（三）课程运行：在线教学"
+    ],
+    "path": "2026 教师用户手册 > ULMS > 发布讨论",
+    "steps": [
+      {
+        "label": "Step 1",
+        "text": "进入【讨论】模块；点击【发布话题】，进入下一步设置。",
+        "textEn": "Open 讨论 / 发布话题 and verify that the selected course, class, or exam is correct.",
+        "src": "截图教程/2026用户手册/ULMS/发布讨论/step1.png"
+      },
+      {
+        "label": "Step 2",
+        "text": "完成【进行讨论设置】页面的必填设置，核对对象和时间后保存。",
+        "textEn": "Complete the required settings in 进行讨论设置, verify the scope and time, and save the changes.",
+        "src": "截图教程/2026用户手册/ULMS/发布讨论/step2.png"
+      }
+    ],
+    "source": "ULMS 教师用户手册（2026）"
+  },
+  {
+    "id": "manual-2026-ulms-8ead1a5519-guide",
+    "title": "ULMS - 题库",
+    "titleEn": "ULMS - Question Bank",
+    "question": "如何建设考试题库？",
+    "questionEn": "How do I build an exam question bank?",
+    "aliases": [
+      "如何建设考试题库？",
+      "How do I build an exam question bank?",
+      "题库",
+      "（四）课程运行：在线考试",
+      "1. 题库"
+    ],
+    "path": "2026 教师用户手册 > ULMS > 题库",
+    "steps": [
+      {
+        "label": "Step 1",
+        "text": "进入课程【考试】>【试题库】，先创建文件夹整理试题分类。",
+        "textEn": "Go to Course [Exam] > [Question Bank], and first create folders to organize question categories.",
+        "src": "截图教程/2026用户手册/ULMS/题库/step1.png"
+      },
+      {
+        "label": "Step 2",
+        "text": "选择目标文件夹，点击【添加新题】开始手动录题。",
+        "textEn": "Select the target folder and click [Add New Question] to start manual entry.",
+        "src": "截图教程/2026用户手册/ULMS/题库/step2.png"
+      },
+      {
+        "label": "Step 3",
+        "text": "选择题型，填写题干、选项、正确答案、解析和分值。",
+        "textEn": "Choose the question type, then fill in the stem, options, correct answer, explanation, and score.",
+        "src": "截图教程/2026用户手册/ULMS/题库/step3.png"
+      },
+      {
+        "label": "Step 4",
+        "text": "保存题目并返回题库，检查题型、答案和所属文件夹。",
+        "textEn": "Save the question and return to the question bank to verify the type, answer, and assigned folder.",
+        "src": "截图教程/2026用户手册/ULMS/题库/step4.png"
+      },
+      {
+        "label": "Step 5",
+        "text": "需要批量录题时点击模板导入并下载标准 Excel 模板。",
+        "textEn": "For bulk entry, click template import and download the standard Excel template.",
+        "src": "截图教程/2026用户手册/ULMS/题库/step5.png"
+      },
+      {
+        "label": "Step 6",
+        "text": "按模板要求填写题目、答案和解析，不要修改表头结构。",
+        "textEn": "Fill in questions, answers, and explanations as per the template requirements without altering the header structure.",
+        "src": "截图教程/2026用户手册/ULMS/题库/step6.png"
+      },
+      {
+        "label": "Step 7",
+        "text": "上传模板，查看导入校验结果并修正失败行。",
+        "textEn": "Upload the template, review the import validation results, and correct any failed rows.",
+        "src": "截图教程/2026用户手册/ULMS/题库/step7.png"
+      },
+      {
+        "label": "Step 8",
+        "text": "也可选择文本批量导入，打开系统提供的文本格式说明。",
+        "textEn": "Alternatively, choose text bulk import and open the system-provided text format guide.",
+        "src": "截图教程/2026用户手册/ULMS/题库/step8.png"
+      },
+      {
+        "label": "Step 9",
+        "text": "按规定格式粘贴多道试题文本并执行格式识别。",
+        "textEn": "Paste multiple question texts in the specified format and run format recognition.",
+        "src": "截图教程/2026用户手册/ULMS/题库/step9.png"
+      },
+      {
+        "label": "Step 10",
+        "text": "逐题检查识别后的题型、选项和正确答案。",
+        "textEn": "Check each recognized question's type, options, and correct answer one by one.",
+        "src": "截图教程/2026用户手册/ULMS/题库/step10.png"
+      },
+      {
+        "label": "Step 11",
+        "text": "确认无误后批量保存到指定题库文件夹。",
+        "textEn": "Once confirmed, bulk save to the designated question bank folder.",
+        "src": "截图教程/2026用户手册/ULMS/题库/step11.png"
+      },
+      {
+        "label": "Step 12",
+        "text": "需要使用本校或共享试题时，进入对应题库搜索题目。",
+        "textEn": "To use school or shared questions, search within the corresponding question bank.",
+        "src": "截图教程/2026用户手册/ULMS/题库/step12.png"
+      },
+      {
+        "label": "Step 13",
+        "text": "勾选所需试题并复制到【我的题库】后再编辑使用。",
+        "textEn": "Select the needed questions and copy them to [My Question Bank] before editing and using.",
+        "src": "截图教程/2026用户手册/ULMS/题库/step13.png"
+      },
+      {
+        "label": "Step 14",
+        "text": "完成后按文件夹筛选题目，抽查题干、答案和分值。",
+        "textEn": "After completion, filter questions by folder and spot-check stems, answers, and scores.",
+        "src": "截图教程/2026用户手册/ULMS/题库/step14.png"
+      }
+    ],
+    "source": "ULMS 教师用户手册（2026）"
+  },
+  {
+    "id": "manual-2026-ulms-8e212fc677-guide",
+    "title": "ULMS - 试卷库",
+    "titleEn": "ULMS - Paper Bank",
+    "question": "如何创建和管理考试试卷？",
+    "questionEn": "How do I create and manage exam papers?",
+    "aliases": [
+      "如何创建和管理考试试卷？",
+      "How do I create and manage exam papers?",
+      "试卷库",
+      "（四）课程运行：在线考试",
+      "2. 试卷库"
+    ],
+    "path": "2026 教师用户手册 > ULMS > 试卷库",
+    "steps": [
+      {
+        "label": "Step 1",
+        "text": "进入【考试】>【试卷库】>【我的试卷】，点击【添加试卷】。",
+        "textEn": "Go to [Exam] > [Paper Bank] > [My Papers], and click [Add Paper].",
+        "src": "截图教程/2026用户手册/ULMS/试卷库/step1.png"
+      },
+      {
+        "label": "Step 2",
+        "text": "选择手动组卷时填写试卷名称和基本信息。",
+        "textEn": "For manual paper assembly, fill in the paper name and basic information.",
+        "src": "截图教程/2026用户手册/ULMS/试卷库/step2.png"
+      },
+      {
+        "label": "Step 3",
+        "text": "按题型或试卷结构添加大题，并设置每部分分值。",
+        "textEn": "Add major sections by question type or paper structure, and set the score for each part.",
+        "src": "截图教程/2026用户手册/ULMS/试卷库/step3.png"
+      },
+      {
+        "label": "Step 4",
+        "text": "从题库选择试题加入试卷，核对题目顺序和总分。",
+        "textEn": "Select questions from the question bank to add to the paper, then verify question order and total score.",
+        "src": "截图教程/2026用户手册/ULMS/试卷库/step4.png"
+      },
+      {
+        "label": "Step 5",
+        "text": "保存手动组卷结果，并使用预览检查试卷内容。",
+        "textEn": "Save the manual assembly result and use preview to check the paper content.",
+        "src": "截图教程/2026用户手册/ULMS/试卷库/step5.png"
+      },
+      {
+        "label": "Step 6",
+        "text": "选择自动组卷时设置题型、题量、难度和知识点范围。",
+        "textEn": "For automatic assembly, set question types, quantity, difficulty, and knowledge point range.",
+        "src": "截图教程/2026用户手册/ULMS/试卷库/step6.png"
+      },
+      {
+        "label": "Step 7",
+        "text": "生成试卷后检查随机选出的题目，必要时替换题目。",
+        "textEn": "After generating the paper, check the randomly selected questions and replace any if necessary.",
+        "src": "截图教程/2026用户手册/ULMS/试卷库/step7.png"
+      },
+      {
+        "label": "Step 8",
+        "text": "确认结构和总分后保存自动组卷结果。",
+        "textEn": "Confirm the structure and total score, then save the automatic assembly result.",
+        "src": "截图教程/2026用户手册/ULMS/试卷库/step8.png"
+      },
+      {
+        "label": "Step 9",
+        "text": "需要随机组卷时设置统一的试卷结构和抽题规则。",
+        "textEn": "For random assembly, set a unified paper structure and question selection rules.",
+        "src": "截图教程/2026用户手册/ULMS/试卷库/step9.png"
+      },
+      {
+        "label": "Step 10",
+        "text": "检查每个随机题组的题库范围、数量和分值。",
+        "textEn": "Check the question bank range, quantity, and score for each random question group.",
+        "src": "截图教程/2026用户手册/ULMS/试卷库/step10.png"
+      },
+      {
+        "label": "Step 11",
+        "text": "保存试卷，并返回【我的试卷】确认状态可用于发布考试。",
+        "textEn": "Save the paper and return to [My Papers] to confirm its status is ready for exam publication.",
+        "src": "截图教程/2026用户手册/ULMS/试卷库/step11.png"
+      }
+    ],
+    "source": "ULMS 教师用户手册（2026）"
+  },
+  {
+    "id": "manual-2026-ulms-da85f96829-guide",
+    "title": "ULMS - 发布考试",
+    "titleEn": "ULMS - Publish Exam",
+    "question": "如何发布考试？",
+    "questionEn": "How do I publish an exam?",
+    "aliases": [
+      "如何发布考试？",
+      "How do I publish an exam?",
+      "发布考试",
+      "（四）课程运行：在线考试",
+      "3. 发布考试"
+    ],
+    "path": "2026 教师用户手册 > ULMS > 发布考试",
+    "steps": [
+      {
+        "label": "Step 1",
+        "text": "进入【考试】模块。",
+        "textEn": "Go to the [Exam] module.",
+        "src": "截图教程/2026用户手册/ULMS/发布考试/step1.png"
+      },
+      {
+        "label": "Step 2",
+        "text": "点击【添加考试】，进入下一步设置。",
+        "textEn": "Click [Add Exam] to proceed to the next step.",
+        "src": "截图教程/2026用户手册/ULMS/发布考试/step2.png"
+      },
+      {
+        "label": "Step 3",
+        "text": "点击【考试设置】，进入下一步设置。",
+        "textEn": "Click [Exam Settings] to proceed to the next step.",
+        "src": "截图教程/2026用户手册/ULMS/发布考试/step3.png"
+      },
+      {
+        "label": "Step 4",
+        "text": "完成【发布考试】页面的必填设置，核对对象和时间后保存。",
+        "textEn": "Complete the required settings on the [Publish Exam] page, verify the audience and time, then save.",
+        "src": "截图教程/2026用户手册/ULMS/发布考试/step4.png"
+      }
+    ],
+    "source": "ULMS 教师用户手册（2026）"
+  },
+  {
+    "id": "manual-2026-ulms-d53f7de529-guide",
+    "title": "ULMS - 考试管理",
+    "titleEn": "ULMS - Exam Management",
+    "question": "如何管理已发布的考试？",
+    "questionEn": "How do I manage published exams?",
+    "aliases": [
+      "如何管理已发布的考试？",
+      "How do I manage published exams?",
+      "考试管理",
+      "（四）课程运行：在线考试",
+      "4. 考试管理"
+    ],
+    "path": "2026 教师用户手册 > ULMS > 考试管理",
+    "steps": [
+      {
+        "label": "Step 1",
+        "text": "进入【考试】模块；点击【选择一场考试】，进入下一步设置。",
+        "textEn": "Open 考试 / 选择一场考试 and verify that the selected course, class, or exam is correct.",
+        "src": "截图教程/2026用户手册/ULMS/考试管理/step1.png"
+      },
+      {
+        "label": "Step 2",
+        "text": "完成【查看成绩】页面的必填设置，核对对象和时间后保存。",
+        "textEn": "Complete the required settings in 查看成绩, verify the scope and time, and save the changes.",
+        "src": "截图教程/2026用户手册/ULMS/考试管理/step2.png"
+      }
+    ],
+    "source": "ULMS 教师用户手册（2026）"
+  },
+  {
+    "id": "manual-2026-ulms-333dccd2b4-guide",
+    "title": "ULMS - 查看考试信息",
+    "titleEn": "ULMS - View Exam Information",
+    "question": "如何查看和修改考试信息？",
+    "questionEn": "How do I view and modify exam information?",
+    "aliases": [
+      "如何查看和修改考试信息？",
+      "How do I view and modify exam information?",
+      "查看考试信息",
+      "（四）课程运行：在线考试",
+      "4. 考试管理",
+      "4.1 查看考试信息"
+    ],
+    "path": "2026 教师用户手册 > ULMS > 查看考试信息",
+    "steps": [
+      {
+        "label": "Step 1",
+        "text": "进入课程【考试】，选择目标考试并点击【查看成绩】；打开【考试信息】，核对考试设置和已启用的试卷；需要时点击修改考试；保存修改后返回考试列表，确认考试时间和状态正确。",
+        "textEn": "Open 考试 / 查看成绩 / 考试信息 and verify that the selected course, class, or exam is correct.",
+        "src": "截图教程/2026用户手册/ULMS/查看考试信息/step1.png"
+      }
+    ],
+    "source": "ULMS 教师用户手册（2026）"
+  },
+  {
+    "id": "manual-2026-ulms-a41b824d0b-guide",
+    "title": "ULMS - 场次安排",
+    "titleEn": "ULMS - Session Scheduling",
+    "question": "如何安排考试场次？",
+    "questionEn": "How do I schedule exam sessions?",
+    "aliases": [
+      "如何安排考试场次？",
+      "How do I schedule exam sessions?",
+      "场次安排",
+      "（四）课程运行：在线考试",
+      "4. 考试管理",
+      "4.2 场次安排"
+    ],
+    "path": "2026 教师用户手册 > ULMS > 场次安排",
+    "steps": [
+      {
+        "label": "Step 1",
+        "text": "进入目标考试的【考务管理】，打开【场次安排】；添加或选择考试场次，设置考试时间、参与班级或学生；保存后检查场次列表；考试进行中如需调整，使用延时或提前收卷功能。",
+        "textEn": "Open 考务管理 / 场次安排 and verify that the selected course, class, or exam is correct.",
+        "src": "截图教程/2026用户手册/ULMS/场次安排/step1.png"
+      }
+    ],
+    "source": "ULMS 教师用户手册（2026）"
+  },
+  {
+    "id": "manual-2026-ulms-21502349e6-guide",
+    "title": "ULMS - 考场安排",
+    "titleEn": "ULMS - Exam Room Arrangement",
+    "question": "如何安排考试考场？",
+    "questionEn": "How do I arrange exam rooms?",
+    "aliases": [
+      "如何安排考试考场？",
+      "How do I arrange exam rooms?",
+      "考场安排",
+      "（四）课程运行：在线考试",
+      "4. 考试管理",
+      "4.3 考场安排"
+    ],
+    "path": "2026 教师用户手册 > ULMS > 考场安排",
+    "steps": [
+      {
+        "label": "Step 1",
+        "text": "进入目标考试的【考务管理】>【考场安排】。",
+        "textEn": "Go to the target exam's Exam Management > Exam Room Arrangement.",
+        "src": "截图教程/2026用户手册/ULMS/考场安排/step1.png"
+      },
+      {
+        "label": "Step 2",
+        "text": "点击添加考场，填写考场名称、座位数和考场类型。",
+        "textEn": "Click Add Exam Room, then enter the room name, seat count, and room type.",
+        "src": "截图教程/2026用户手册/ULMS/考场安排/step2.png"
+      },
+      {
+        "label": "Step 3",
+        "text": "按考试场次选择考场，并将考生分配到对应考场。",
+        "textEn": "Select exam rooms for each exam session and assign students to the corresponding rooms.",
+        "src": "截图教程/2026用户手册/ULMS/考场安排/step3.png"
+      },
+      {
+        "label": "Step 4",
+        "text": "保存编排结果，检查考场容量、考生人数和监考信息。",
+        "textEn": "Save the arrangement results, then check room capacity, student count, and invigilation details.",
+        "src": "截图教程/2026用户手册/ULMS/考场安排/step4.png"
+      }
+    ],
+    "source": "ULMS 教师用户手册（2026）"
+  },
+  {
+    "id": "manual-2026-ulms-a9f9e578c8-guide",
+    "title": "ULMS - 阅卷安排",
+    "titleEn": "ULMS - Grading Arrangement",
+    "question": "如何安排考试阅卷？",
+    "questionEn": "How do I arrange exam grading?",
+    "aliases": [
+      "如何安排考试阅卷？",
+      "How do I arrange exam grading?",
+      "阅卷安排",
+      "（四）课程运行：在线考试",
+      "4. 考试管理",
+      "4.4 阅卷安排"
+    ],
+    "path": "2026 教师用户手册 > ULMS > 阅卷安排",
+    "steps": [
+      {
+        "label": "Step 1",
+        "text": "进入目标考试的【考务管理】，打开【阅卷安排】；选择参与阅卷的教师，并设置是否将待阅试卷平均分配；保存安排并检查每位教师的阅卷任务和完成状态。",
+        "textEn": "Open 考务管理 / 阅卷安排 and verify that the selected course, class, or exam is correct.",
+        "src": "截图教程/2026用户手册/ULMS/阅卷安排/step1.png"
+      }
+    ],
+    "source": "ULMS 教师用户手册（2026）"
+  },
+  {
+    "id": "manual-2026-ulms-a0b0c59fbf-guide",
+    "title": "ULMS - 人脸认证照片审核",
+    "titleEn": "ULMS - Face Authentication Photo Review",
+    "question": "如何审核考试人脸认证照片？",
+    "questionEn": "How do I review exam face authentication photos?",
+    "aliases": [
+      "如何审核考试人脸认证照片？",
+      "How do I review exam face authentication photos?",
+      "人脸认证照片审核",
+      "（四）课程运行：在线考试",
+      "4. 考试管理",
+      "4.5 人脸认证照片审核"
+    ],
+    "path": "2026 教师用户手册 > ULMS > 人脸认证照片审核",
+    "steps": [
+      {
+        "label": "Step 1",
+        "text": "进入课程【考试】，选择目标考试并点击【查看成绩】。",
+        "textEn": "Go to the course's Exams, select the target exam, and click View Scores.",
+        "src": "截图教程/2026用户手册/ULMS/人脸认证照片审核/step1.png"
+      },
+      {
+        "label": "Step 2",
+        "text": "打开【人脸照片审核】，筛选待审核学生。",
+        "textEn": "Open Face Photo Review and filter students pending review.",
+        "src": "截图教程/2026用户手册/ULMS/人脸认证照片审核/step2.png"
+      },
+      {
+        "label": "Step 3",
+        "text": "选择学生并查看其提交的认证照片。",
+        "textEn": "Select a student and view their submitted authentication photo.",
+        "src": "截图教程/2026用户手册/ULMS/人脸认证照片审核/step3.png"
+      },
+      {
+        "label": "Step 4",
+        "text": "将认证照片与学生本人信息进行核对。",
+        "textEn": "Verify the authentication photo against the student's information.",
+        "src": "截图教程/2026用户手册/ULMS/人脸认证照片审核/step4.png"
+      },
+      {
+        "label": "Step 5",
+        "text": "照片符合要求时选择【审核通过】。",
+        "textEn": "If the photo meets requirements, select Approve.",
+        "src": "截图教程/2026用户手册/ULMS/人脸认证照片审核/step5.png"
+      },
+      {
+        "label": "Step 6",
+        "text": "照片不清晰或不符合要求时选择驳回，并提示学生重新上传。",
+        "textEn": "If the photo is unclear or does not meet requirements, select Reject and prompt the student to re-upload.",
+        "src": "截图教程/2026用户手册/ULMS/人脸认证照片审核/step6.png"
+      },
+      {
+        "label": "Step 7",
+        "text": "需要教师统一准备照片时下载批量上传模板。",
+        "textEn": "If teachers need to prepare photos uniformly, download the batch upload template.",
+        "src": "截图教程/2026用户手册/ULMS/人脸认证照片审核/step7.png"
+      },
+      {
+        "label": "Step 8",
+        "text": "按模板规则整理学生照片并执行批量上传。",
+        "textEn": "Organize student photos according to the template rules and perform the batch upload.",
+        "src": "截图教程/2026用户手册/ULMS/人脸认证照片审核/step8.png"
+      },
+      {
+        "label": "Step 9",
+        "text": "返回审核列表，确认所有参考学生均已有有效认证照片。",
+        "textEn": "Return to the review list and confirm all participating students have valid authentication photos.",
+        "src": "截图教程/2026用户手册/ULMS/人脸认证照片审核/step9.png"
+      }
+    ],
+    "source": "ULMS 教师用户手册（2026）"
+  },
+  {
+    "id": "manual-2026-ulms-061babfcc4-guide",
+    "title": "ULMS - 考试备用验证码",
+    "titleEn": "ULMS - Exam Backup Verification Codes",
+    "question": "如何使用考试备用验证码？",
+    "questionEn": "How do I use exam backup verification codes?",
+    "aliases": [
+      "如何使用考试备用验证码？",
+      "How do I use exam backup verification codes?",
+      "考试备用验证码",
+      "（四）课程运行：在线考试",
+      "4. 考试管理",
+      "4.6 考试备用验证码"
+    ],
+    "path": "2026 教师用户手册 > ULMS > 考试备用验证码",
+    "steps": [
+      {
+        "label": "Step 1",
+        "text": "进入目标考试的管理页面，找到【考试备用验证码】；将验证码提供给无法通过正常验证的考生，或提供给经授权的非课程团队监考教师；使用前核对考试场次和人员身份，验证码不要发送给无关人员。",
+        "textEn": "Open 考试备用验证码 and verify that the selected course, class, or exam is correct.",
+        "src": "截图教程/2026用户手册/ULMS/考试备用验证码/step1.png"
+      }
+    ],
+    "source": "ULMS 教师用户手册（2026）"
+  },
+  {
+    "id": "manual-2026-ulms-352b2b0e9d-guide",
+    "title": "ULMS - 考试监控",
+    "titleEn": "ULMS - Exam Monitoring",
+    "question": "如何进行考试监控？",
+    "questionEn": "How do I monitor exams?",
+    "aliases": [
+      "如何进行考试监控？",
+      "How do I monitor exams?",
+      "考试监控",
+      "（四）课程运行：在线考试",
+      "4. 考试管理",
+      "4.7 考试监控"
+    ],
+    "path": "2026 教师用户手册 > ULMS > 考试监控",
+    "steps": [
+      {
+        "label": "Step 1",
+        "text": "进入目标考试，打开对应场次的【考试监控台】。",
+        "textEn": "Go to the target exam and open the Exam Monitoring Console for the corresponding session.",
+        "src": "截图教程/2026用户手册/ULMS/考试监控/step1.png"
+      },
+      {
+        "label": "Step 2",
+        "text": "按未进入、正在答题、已交卷等状态筛选考生。",
+        "textEn": "Filter students by status such as Not Entered, In Progress, or Submitted.",
+        "src": "截图教程/2026用户手册/ULMS/考试监控/step2.png"
+      },
+      {
+        "label": "Step 3",
+        "text": "查看考生设备、抓拍照片和异常提示，定位异常学生。",
+        "textEn": "Review student devices, captured photos, and anomaly alerts to identify students with issues.",
+        "src": "截图教程/2026用户手册/ULMS/考试监控/step3.png"
+      },
+      {
+        "label": "Step 4",
+        "text": "根据实际情况执行提醒、延时或其他考务处理。",
+        "textEn": "Based on the situation, take actions such as sending reminders, extending time, or other exam management measures.",
+        "src": "截图教程/2026用户手册/ULMS/考试监控/step4.png"
+      },
+      {
+        "label": "Step 5",
+        "text": "考试结束后核对交卷状态并导出或保存监控记录。",
+        "textEn": "After the exam ends, verify submission status and export or save the monitoring records.",
+        "src": "截图教程/2026用户手册/ULMS/考试监控/step5.png"
+      }
+    ],
+    "source": "ULMS 教师用户手册（2026）"
+  },
+  {
+    "id": "manual-2026-ulms-488da795ad-guide",
+    "title": "ULMS - 考试签到",
+    "titleEn": "ULMS - Exam Check-In",
+    "question": "如何设置考试签到？",
+    "questionEn": "How do I set up exam check-in?",
+    "aliases": [
+      "如何设置考试签到？",
+      "How do I set up exam check-in?",
+      "考试签到",
+      "（四）课程运行：在线考试",
+      "4. 考试管理",
+      "4.8 考试签到"
+    ],
+    "path": "2026 教师用户手册 > ULMS > 考试签到",
+    "steps": [
+      {
+        "label": "Step 1",
+        "text": "发布考试并开启需要现场签到的考试场次；在教师 APP 的考试监控页面打开并出示签到二维码；让学生到场扫码签到，并在监控页面核对签到状态后再开始考试。",
+        "textEn": "Complete the required settings in the current page, verify the scope and time, and save the changes.",
+        "src": "截图教程/2026用户手册/ULMS/考试签到/step1.png"
+      }
+    ],
+    "source": "ULMS 教师用户手册（2026）"
+  },
+  {
+    "id": "manual-2026-ulms-41cbe5a30c-guide",
+    "title": "ULMS - 逐份批阅",
+    "titleEn": "uLearning - Grade Individually",
+    "question": "如何逐份批阅试卷？",
+    "questionEn": "How do I grade exam papers one by one?",
+    "aliases": [
+      "如何逐份批阅试卷？",
+      "How do I grade exam papers one by one?",
+      "逐份批阅",
+      "（四）课程运行：在线考试",
+      "5. 批阅试卷",
+      "5.1 逐份批阅"
+    ],
+    "path": "2026 教师用户手册 > ULMS > 逐份批阅",
+    "steps": [
+      {
+        "label": "Step 1",
+        "text": "进入【考试】模块。",
+        "textEn": "Go to the Exams module.",
+        "src": "截图教程/2026用户手册/ULMS/逐份批阅/step1.png"
+      },
+      {
+        "label": "Step 2",
+        "text": "点击【选择一场考试】，进入下一步设置。",
+        "textEn": "Click Select an Exam to proceed to the next step.",
+        "src": "截图教程/2026用户手册/ULMS/逐份批阅/step2.png"
+      },
+      {
+        "label": "Step 3",
+        "text": "点击【查看成绩】，进入下一步设置。",
+        "textEn": "Click View Scores to proceed to the next step.",
+        "src": "截图教程/2026用户手册/ULMS/逐份批阅/step3.png"
+      }
+    ],
+    "source": "ULMS 教师用户手册（2026）"
+  },
+  {
+    "id": "manual-2026-ulms-e022ea3fde-guide",
+    "title": "ULMS - 批量批阅",
+    "titleEn": "uLearning - Grade in Bulk",
+    "question": "如何批量批阅试卷？",
+    "questionEn": "How do I grade exam papers in bulk?",
+    "aliases": [
+      "如何批量批阅试卷？",
+      "How do I grade exam papers in bulk?",
+      "批量批阅",
+      "（四）课程运行：在线考试",
+      "5. 批阅试卷",
+      "5.2 批量批阅"
+    ],
+    "path": "2026 教师用户手册 > ULMS > 批量批阅",
+    "steps": [
+      {
+        "label": "Step 1",
+        "text": "进入【考试】模块；点击【选择一场考试】，进入下一步设置。",
+        "textEn": "Open 考试 / 选择一场考试 and verify that the selected course, class, or exam is correct.",
+        "src": "截图教程/2026用户手册/ULMS/批量批阅/step1.png"
+      },
+      {
+        "label": "Step 2",
+        "text": "点击【查看成绩】，进入下一步设置；完成【批量批阅】页面的必填设置，核对对象和时间后保存。",
+        "textEn": "Open 查看成绩 / 批量批阅 and verify that the selected course, class, or exam is correct.",
+        "src": "截图教程/2026用户手册/ULMS/批量批阅/step2.png"
+      }
+    ],
+    "source": "ULMS 教师用户手册（2026）"
+  },
+  {
+    "id": "manual-2026-ulms-c6cbf8aea0-guide",
+    "title": "ULMS - 重新评分",
+    "titleEn": "uLearning - Rescore",
+    "question": "如何对考试重新评分？",
+    "questionEn": "How do I rescore an exam?",
+    "aliases": [
+      "如何对考试重新评分？",
+      "How do I rescore an exam?",
+      "重新评分",
+      "（四）课程运行：在线考试",
+      "5. 批阅试卷",
+      "5.3 重新评分"
+    ],
+    "path": "2026 教师用户手册 > ULMS > 重新评分",
+    "steps": [
+      {
+        "label": "Step 1",
+        "text": "进入【考试】模块；点击【选择一场考试】，进入下一步设置。",
+        "textEn": "Open 考试 / 选择一场考试 and verify that the selected course, class, or exam is correct.",
+        "src": "截图教程/2026用户手册/ULMS/重新评分/step1.png"
+      },
+      {
+        "label": "Step 2",
+        "text": "点击【考试成绩】，进入下一步设置；完成【重新评分】页面的必填设置，核对对象和时间后保存。",
+        "textEn": "Open 考试成绩 / 重新评分 and verify that the selected course, class, or exam is correct.",
+        "src": "截图教程/2026用户手册/ULMS/重新评分/step2.png"
+      }
+    ],
+    "source": "ULMS 教师用户手册（2026）"
+  },
+  {
+    "id": "manual-2026-ulms-1637b5c19b-guide",
+    "title": "ULMS - 成绩分析",
+    "titleEn": "uLearning - Score Analysis",
+    "question": "如何查看考试成绩分析？",
+    "questionEn": "How do I view exam score analysis?",
+    "aliases": [
+      "如何查看考试成绩分析？",
+      "How do I view exam score analysis?",
+      "成绩分析",
+      "（四）课程运行：在线考试",
+      "6. 成绩分析"
+    ],
+    "path": "2026 教师用户手册 > ULMS > 成绩分析",
+    "steps": [
+      {
+        "label": "Step 1",
+        "text": "进入【考试】模块；点击【选择一场考试】，进入下一步设置；完成【分析报告】页面的必填设置，核对对象和时间后保存。",
+        "textEn": "Open 考试 / 选择一场考试 / 分析报告 and verify that the selected course, class, or exam is correct.",
+        "src": "截图教程/2026用户手册/ULMS/成绩分析/step1.png"
+      }
+    ],
+    "source": "ULMS 教师用户手册（2026）"
+  },
+  {
+    "id": "manual-2026-ulms-5546377da5-guide",
+    "title": "ULMS - 设置课程考核规则",
+    "titleEn": "uLearning - Set Course Assessment Rules",
+    "question": "如何设置课程考核规则？",
+    "questionEn": "How do I set course assessment rules?",
+    "aliases": [
+      "如何设置课程考核规则？",
+      "How do I set course assessment rules?",
+      "设置课程考核规则",
+      "(六) 课程运行：考核及证书",
+      "1. 设置课程考核规则"
+    ],
+    "path": "2026 教师用户手册 > ULMS > 设置课程考核规则",
+    "steps": [
+      {
+        "label": "Step 1",
+        "text": "进入【考核】模块。",
+        "textEn": "Go to the Assessments module.",
+        "src": "截图教程/2026用户手册/ULMS/设置课程考核规则/step1.png"
+      },
+      {
+        "label": "Step 2",
+        "text": "点击【设置考核规则】，进入下一步设置。",
+        "textEn": "Click Set Assessment Rules to proceed to the next step.",
+        "src": "截图教程/2026用户手册/ULMS/设置课程考核规则/step2.png"
+      },
+      {
+        "label": "Step 3",
+        "text": "完成【设置考核规则内容】页面的必填设置，核对对象和时间后保存。",
+        "textEn": "Complete the required fields on the Set Assessment Rules Content page, verify the recipients and schedule, then save.",
+        "src": "截图教程/2026用户手册/ULMS/设置课程考核规则/step3.png"
+      }
+    ],
+    "source": "ULMS 教师用户手册（2026）"
+  },
+  {
+    "id": "manual-2026-ulms-55abc8a613-guide",
+    "title": "ULMS - 发放课程证书",
+    "titleEn": "uLearning - Issue Course Certificates",
+    "question": "如何发放课程证书？",
+    "questionEn": "How do I issue course certificates?",
+    "aliases": [
+      "如何发放课程证书？",
+      "How do I issue course certificates?",
+      "发放课程证书",
+      "(六) 课程运行：考核及证书",
+      "2. 发放课程证书"
+    ],
+    "path": "2026 教师用户手册 > ULMS > 发放课程证书",
+    "steps": [
+      {
+        "label": "Step 1",
+        "text": "进入课程【考核】>【证书管理】，打开证书设置。",
+        "textEn": "Go to the course Assessments > Certificate Management section and enable certificate settings.",
+        "src": "截图教程/2026用户手册/ULMS/发放课程证书/step1.png"
+      },
+      {
+        "label": "Step 2",
+        "text": "分别设置合格证书和优秀证书对应的课程考核成绩标准。",
+        "textEn": "Set the course assessment score thresholds for the pass certificate and the merit certificate separately.",
+        "src": "截图教程/2026用户手册/ULMS/发放课程证书/step2.png"
+      },
+      {
+        "label": "Step 3",
+        "text": "从证书模板中选择适用模板并查看预览。",
+        "textEn": "Select an applicable template from the certificate templates and preview it.",
+        "src": "截图教程/2026用户手册/ULMS/发放课程证书/step3.png"
+      },
+      {
+        "label": "Step 4",
+        "text": "需要自定义时点击新建模板，编辑证书展示内容。",
+        "textEn": "To customize, click Create Template and edit the certificate content.",
+        "src": "截图教程/2026用户手册/ULMS/发放课程证书/step4.png"
+      },
+      {
+        "label": "Step 5",
+        "text": "保存模板并核对姓名、课程名、日期等字段位置。",
+        "textEn": "Save the template and verify the placement of fields such as name, course title, and date.",
+        "src": "截图教程/2026用户手册/ULMS/发放课程证书/step5.png"
+      },
+      {
+        "label": "Step 6",
+        "text": "启用证书设置，确认符合成绩条件的学生可以获得证书。",
+        "textEn": "Enable the certificate settings and confirm that students meeting the score criteria can receive certificates.",
+        "src": "截图教程/2026用户手册/ULMS/发放课程证书/step6.png"
+      }
+    ],
+    "source": "ULMS 教师用户手册（2026）"
+  },
+  {
+    "id": "manual-2026-ulms-70ac7d796b-guide",
+    "title": "ULMS - 查看课程分析数据",
+    "titleEn": "ULMS - View Course Analytics Data",
+    "question": "如何查看课程分析数据？",
+    "questionEn": "How do I view course analytics data?",
+    "aliases": [
+      "如何查看课程分析数据？",
+      "How do I view course analytics data?",
+      "查看课程分析数据",
+      "(六) 课程运行：考核及证书",
+      "3. 查看课程分析数据"
+    ],
+    "path": "2026 教师用户手册 > ULMS > 查看课程分析数据",
+    "steps": [
+      {
+        "label": "Step 1",
+        "text": "进入【查看课程分析数据】页面，先确认当前操作的课程、班级或考试对象；每门课程有专门的【分析】板块，展示该课程相关运行数据，包括：课程概览、课程访问情况、课程内容分析、课件学习情况、课堂互动情况和教师行为统计等。",
+        "textEn": "Open 查看课程分析数据 / 分析 and verify that the selected course, class, or exam is correct.",
+        "src": "截图教程/2026用户手册/ULMS/查看课程分析数据/step1.png"
+      },
+      {
+        "label": "Step 2",
+        "text": "保存【查看课程分析数据】设置，返回列表确认状态和显示结果已经更新。",
+        "textEn": "Complete the required settings in 查看课程分析数据, verify the scope and time, and save the changes.",
+        "src": "截图教程/2026用户手册/ULMS/查看课程分析数据/step2.png"
+      }
+    ],
+    "source": "ULMS 教师用户手册（2026）"
+  },
+  {
+    "id": "manual-2026-ulms-ebd9867ca0-guide",
+    "title": "ULMS - （七）结课与再次开课",
+    "titleEn": "ULMS - (7) Ending and Restarting a Course",
+    "question": "如何结束课程或再次开课？",
+    "questionEn": "How do I end a course or restart it?",
+    "aliases": [
+      "如何结束课程或再次开课？",
+      "How do I end a course or restart it?",
+      "（七）结课与再次开课"
+    ],
+    "path": "2026 教师用户手册 > ULMS > （七）结课与再次开课",
+    "steps": [
+      {
+        "label": "Step 1",
+        "text": "进入目标课程的管理菜单，确认所有教学活动和成绩处理已经完成。",
+        "textEn": "Go to the target course's management menu and confirm all teaching activities and grade processing are complete.",
+        "src": "截图教程/2026用户手册/ULMS/（七）结课与再次开课/step1.png"
+      },
+      {
+        "label": "Step 2",
+        "text": "点击【结束课程】并确认；结束后课程只能查看，不能继续修改。",
+        "textEn": "Click End Course and confirm; after ending, the course is view-only and cannot be modified further.",
+        "src": "截图教程/2026用户手册/ULMS/（七）结课与再次开课/step2.png"
+      },
+      {
+        "label": "Step 3",
+        "text": "需要新学期复用时，在已结束课程上选择【再次开课】。",
+        "textEn": "To reuse it for a new semester, select Restart Course on the ended course.",
+        "src": "截图教程/2026用户手册/ULMS/（七）结课与再次开课/step3.png"
+      },
+      {
+        "label": "Step 4",
+        "text": "核对复制的课件、资源、作业、讨论和考试，调整班级与时间后再发布。",
+        "textEn": "Verify the copied courseware, resources, assignments, discussions, and exams, then adjust the class and schedule before publishing.",
+        "src": "截图教程/2026用户手册/ULMS/（七）结课与再次开课/step4.png"
+      }
+    ],
+    "source": "ULMS 教师用户手册（2026）"
+  },
+  {
+    "id": "manual-2026-ulms-115134c92e-guide",
+    "title": "ULMS - （八）移动教学",
+    "titleEn": "ULMS - (8) Mobile Teaching",
+    "question": "如何使用优学院移动教学？",
+    "questionEn": "How do I use mobile teaching with Youxueyuan?",
+    "aliases": [
+      "如何使用优学院移动教学？",
+      "How do I use mobile teaching with Youxueyuan?",
+      "（八）移动教学"
+    ],
+    "path": "2026 教师用户手册 > ULMS > （八）移动教学",
+    "steps": [
+      {
+        "label": "Step 1",
+        "text": "进入【（八）移动教学】页面，先确认当前操作的课程、班级或考试对象；关于优学院APP。",
+        "textEn": "Open （八）移动教学 and verify that the selected course, class, or exam is correct.",
+        "src": "截图教程/2026用户手册/ULMS/（八）移动教学/step1.png"
+      },
+      {
+        "label": "Step 2",
+        "text": "保存【（八）移动教学】设置，返回列表确认状态和显示结果已经更新。",
+        "textEn": "Complete the required settings in （八）移动教学, verify the scope and time, and save the changes.",
+        "src": "截图教程/2026用户手册/ULMS/（八）移动教学/step2.png"
+      }
+    ],
+    "source": "ULMS 教师用户手册（2026）"
+  },
+  {
+    "id": "manual-2026-uclass-0ab73f0b7e-guide",
+    "title": "Uclass - 创建课堂",
+    "titleEn": "Uclass - Create a Class",
+    "question": "如何从 ULMS 课程进入 Uclass 并创建课堂？",
+    "questionEn": "How do I enter Uclass from a ULMS course and create a class?",
+    "aliases": [
+      "如何从 ULMS 课程进入 Uclass 并创建课堂？",
+      "How do I enter Uclass from a ULMS course and create a class?",
+      "创建课堂",
+      "课程运行：课堂互动"
+    ],
+    "path": "2026 教师用户手册 > Uclass > 创建课堂",
+    "steps": [
+      {
+        "label": "Step 1",
+        "text": "进入【课堂】模块；点击【创建课堂】，进入下一步设置；完成【开始上课/暂不上课】页面的必填设置，核对对象和时间后保存。",
+        "textEn": "Open 课堂 / 创建课堂 / 开始上课/暂不上课 and verify that the selected course, class, or exam is correct.",
+        "src": "截图教程/2026用户手册/Uclass/创建课堂/step1.png"
+      }
+    ],
+    "source": "Uclass 教师用户手册（2026）"
+  },
+  {
+    "id": "manual-2026-uclass-b23df9c865-guide",
+    "title": "Uclass - 上课和下课",
+    "titleEn": "Uclass - Starting and Ending a Class",
+    "question": "如何在 Uclass 上课和下课？",
+    "questionEn": "How do I start and end a class in Uclass?",
+    "aliases": [
+      "如何在 Uclass 上课和下课？",
+      "How do I start and end a class in Uclass?",
+      "上课和下课",
+      "课程运行：课堂互动"
+    ],
+    "path": "2026 教师用户手册 > Uclass > 上课和下课",
+    "steps": [
+      {
+        "label": "Step 1",
+        "text": "进入【上课和下课】页面，先确认当前操作的课程、班级或考试对象；进入课堂，课前教师可以在课堂中提前进行备课，创建好课堂上需要发起的各项活动。上课时，需要点击右侧导航菜单的【上课】按钮，才能开始上课。课堂结束后，可以点击【下课】结束。",
+        "textEn": "Open 上课和下课 / 上课 / 下课 and verify that the selected course, class, or exam is correct.",
+        "src": "截图教程/2026用户手册/Uclass/上课和下课/step1.png"
+      },
+      {
+        "label": "Step 2",
+        "text": "保存【上课和下课】设置，返回列表确认状态和显示结果已经更新。",
+        "textEn": "Complete the required settings in 上课和下课, verify the scope and time, and save the changes.",
+        "src": "截图教程/2026用户手册/Uclass/上课和下课/step2.png"
+      }
+    ],
+    "source": "Uclass 教师用户手册（2026）"
+  },
+  {
+    "id": "manual-2026-uclass-026845a85a-guide",
+    "title": "Uclass - 学生扫码进入课堂",
+    "titleEn": "Uclass - Students Scan to Enter Class",
+    "question": "如何让学生扫码进入 Uclass 课堂？",
+    "questionEn": "How do I have students scan a QR code to enter a Uclass session?",
+    "aliases": [
+      "如何让学生扫码进入 Uclass 课堂？",
+      "How do I have students scan a QR code to enter a Uclass session?",
+      "学生扫码进入课堂",
+      "课程运行：课堂互动"
+    ],
+    "path": "2026 教师用户手册 > Uclass > 学生扫码进入课堂",
+    "steps": [
+      {
+        "label": "Step 1",
+        "text": "先在 Uclass 课堂中点击【上课】，确保课堂已经开始；点击【课堂码】打开当前课堂二维码；让学生使用微信或优学院 APP 扫码，并在课堂成员列表核对进入状态。",
+        "textEn": "Open 上课 / 课堂码 and verify that the selected course, class, or exam is correct.",
+        "src": "截图教程/2026用户手册/Uclass/学生扫码进入课堂/step1.png"
+      }
+    ],
+    "source": "Uclass 教师用户手册（2026）"
+  },
+  {
+    "id": "manual-2026-uclass-0d8d566a5d-guide",
+    "title": "Uclass - 演示课件",
+    "titleEn": "Uclass - Present Courseware",
+    "question": "如何在 Uclass 课堂演示课件？",
+    "questionEn": "How do I present courseware in Uclass?",
+    "aliases": [
+      "如何在 Uclass 课堂演示课件？",
+      "How do I present courseware in Uclass?",
+      "演示课件",
+      "课程运行：课堂互动",
+      "4. 演示课件"
+    ],
+    "path": "2026 教师用户手册 > Uclass > 演示课件",
+    "steps": [
+      {
+        "label": "Step 1",
+        "text": "进入【进入课堂】模块。",
+        "textEn": "Go to the Enter Class module.",
+        "src": "截图教程/2026用户手册/Uclass/演示课件/step1.png"
+      },
+      {
+        "label": "Step 2",
+        "text": "点击【资源】，进入下一步设置。",
+        "textEn": "Click Resources to proceed to the next step.",
+        "src": "截图教程/2026用户手册/Uclass/演示课件/step2.png"
+      },
+      {
+        "label": "Step 3",
+        "text": "点击【从资源中打开】，进入下一步设置。",
+        "textEn": "Click Open from Resources to proceed to the next step.",
+        "src": "截图教程/2026用户手册/Uclass/演示课件/step3.png"
+      }
+    ],
+    "source": "Uclass 教师用户手册（2026）"
+  },
+  {
+    "id": "manual-2026-uclass-e67b5b0053-guide",
+    "title": "Uclass - 发布课堂活动",
+    "titleEn": "Uclass - Launch Classroom Activity",
+    "question": "如何在 Uclass 发布课堂互动活动？",
+    "questionEn": "How do I launch an interactive classroom activity in Uclass?",
+    "aliases": [
+      "如何在 Uclass 发布课堂互动活动？",
+      "How do I launch an interactive classroom activity in Uclass?",
+      "发布课堂活动",
+      "课程运行：课堂互动"
+    ],
+    "path": "2026 教师用户手册 > Uclass > 发布课堂活动",
+    "steps": [
+      {
+        "label": "Step 1",
+        "text": "进入【点名】模块。",
+        "textEn": "Go to the Roll Call module.",
+        "src": "截图教程/2026用户手册/Uclass/发布课堂活动/step1.png"
+      },
+      {
+        "label": "Step 2",
+        "text": "点击【创建点名】，进入下一步设置。",
+        "textEn": "Click Create Roll Call to proceed to the next step.",
+        "src": "截图教程/2026用户手册/Uclass/发布课堂活动/step2.png"
+      },
+      {
+        "label": "Step 3",
+        "text": "点击【设置活动规则】，进入下一步设置。",
+        "textEn": "Click Set Activity Rules to proceed to the next step.",
+        "src": "截图教程/2026用户手册/Uclass/发布课堂活动/step3.png"
+      }
+    ],
+    "source": "Uclass 教师用户手册（2026）"
+  }
+]

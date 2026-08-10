@@ -2050,20 +2050,13 @@ function getScreenshotMinimumHeight(stepCount) {
 function prepareScreenshotImages(root = document) {
   root?.querySelectorAll?.("img[data-trim-screenshot]:not([data-trim-ready])").forEach((img) => {
     img.dataset.trimReady = "1";
+    // Imported tutorials are normalized onto equal white canvases. Measure the
+    // first active image once, then keep that height for every subsequent step.
     if (img.complete) {
-      trimScreenshotImage(img);
       syncScreenshotCarouselHeight(img);
     } else {
-      img.addEventListener(
-        "load",
-        () => {
-          trimScreenshotImage(img);
-          syncScreenshotCarouselHeight(img);
-        },
-        { once: true }
-      );
+      img.addEventListener("load", () => syncScreenshotCarouselHeight(img), { once: true });
     }
-    observeScreenshotImageSize(img);
   });
 }
 
@@ -2173,7 +2166,6 @@ function scrollScreenshotRailTo(rail, index) {
   rail.scrollTo({ left: index * card.getBoundingClientRect().width, behavior: "smooth" });
   const guide = rail.closest(".screenshot-guide");
   setActiveScreenshotStep(guide, index);
-  scheduleActiveScreenshotHeightSync(guide, index);
 }
 
 function scheduleActiveScreenshotHeightSync(guide, index) {

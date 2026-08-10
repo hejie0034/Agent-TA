@@ -1,0 +1,516 @@
+{
+  "manual-2026-ulms-906db67f35-guide": {
+    "question": "How do I set up the courseware table of contents?",
+    "title": "ULMS - Set Up Table of Contents",
+    "steps": [
+      "Go to the Set Up Table of Contents page and first confirm the course, class, or exam you are working on.",
+      "If you already have a complete table of contents, use the Quick Create Table of Contents tool to copy and paste your courseware contents into the system, setting up the full table at once (you can edit it later).",
+      "Save your Set Up Table of Contents settings, then return to the list to confirm the status and display have been updated."
+    ]
+  },
+  "manual-2026-ulms-915594c318-guide": {
+    "question": "How do I add courseware resources?",
+    "title": "ULMS - Add Courseware Resources",
+    "steps": [
+      "Go to the Courseware Resources module.",
+      "Click Add Resource to proceed to the next step.",
+      "Complete the required fields on the Select Local Files and Upload page, verify the target and time, then save."
+    ]
+  },
+  "manual-2026-ulms-62e9829981-guide": {
+    "question": "How do I add courseware questions?",
+    "title": "ULMS - Add Courseware Questions",
+    "steps": [
+      "Go to the Add Courseware Questions page and first confirm the course, class, or exam you are working on.",
+      "Complete the required fields on the Add New Question page, verify the target and time, then save.",
+      "Save your Add Courseware Questions settings, then return to the list to confirm the status and display have been updated."
+    ]
+  },
+  "manual-2026-ulms-ee9e8326d2-guide": {
+    "question": "How do I add content components to courseware?",
+    "title": "ULMS - Add Content Components",
+    "steps": [
+      "In the courseware editing area, click the Video component to open the video addition window.",
+      "Choose to reference a video from courseware resources or your personal resource library, or upload a video from your computer.",
+      "Select the inserted video and add notes, edit it online, or replace it as needed.",
+      "In the courseware editing area, click the Audio component to open the audio addition window.",
+      "Select an existing audio resource, or click to upload locally and wait for the file to finish processing.",
+      "Select the audio component, set the playback mode, and check that the audio plays correctly.",
+      "In the courseware editing area, click the Document component to open the document addition window.",
+      "Select an existing document or upload a local file, then confirm to insert the document into the current page.",
+      "Click the Practice component and choose the questions to insert from the courseware questions.",
+      "If you need new questions, click Add New Question, select the question type, and fully fill in the prompt and answer.",
+      "Set how the practice questions are answered, how answers are displayed, and the feedback method, then save the practice.",
+      "Click the Audio Text component to enter the audio and text synchronization editing page.",
+      "Upload or select audio, and enter the text content that matches the audio.",
+      "Adjust the alignment between the text and audio, preview to confirm it is correct, then save the component.",
+      "Click the Speaking Scoring component to enter the speaking practice settings page.",
+      "Read the usage instructions and prepare the reading text and audio settings needed for scoring.",
+      "Fill in the reading content and scoring parameters, save, then preview the speaking scoring component."
+    ]
+  },
+  "manual-2026-ulms-f674c730c7-guide": {
+    "question": "How do I set up preview chapters for courseware?",
+    "title": "ULMS - Set Up Preview Chapters",
+    "steps": [
+      "Go to the Set Up Preview Chapters page and first confirm the course, class, or exam you are working on.",
+      "After finishing the courseware content, you can set preview chapters by clicking Set Up Preview Chapters, checking the relevant chapters, and then clicking OK.",
+      "Save your Set Up Preview Chapters settings, then return to the list to confirm the status and display have been updated."
+    ]
+  },
+  "manual-2026-ulms-0ee145baf8-guide": {
+    "question": "How do I preview courseware?",
+    "title": "ULMS - Preview Courseware",
+    "steps": [
+      "Go to the Preview Courseware page and first confirm the course, class, or exam you are working on.",
+      "On the courseware home page or in the editing interface, click Preview to view the courseware content.",
+      "Save your Preview Courseware settings, then return to the list to confirm the status and display have been updated."
+    ]
+  },
+  "manual-2026-ulms-3dfa5c4410-guide": {
+    "question": "How do I set up collaborative editing for courseware?",
+    "title": "ULMS - Set Up Collaborative Editing",
+    "steps": [
+      "Go to the Set Up Collaborative Editing page and first confirm the course, class, or exam you are currently working on.",
+      "The platform allows multiple teachers to co-build a course. Select other teachers as collaborators to edit the course content together.",
+      "Save the Set Up Collaborative Editing settings, then return to the list to confirm the status and displayed results have been updated."
+    ]
+  },
+  "manual-2026-ulms-b616c65e2a-guide": {
+    "question": "How do I complete basic courseware information?",
+    "title": "ULMS - Basic Information",
+    "steps": [
+      "Go to the Basic Information page of the target courseware.",
+      "Fill in the course name, category, and other details. Items marked with an asterisk must be completed in full.",
+      "Click Save. If it cannot be saved, check each item to see if any required field is still empty."
+    ]
+  },
+  "manual-2026-ulms-36054a1742-guide": {
+    "question": "How do I complete the detailed courseware description?",
+    "title": "ULMS - Detailed Description",
+    "steps": [
+      "Go to the Detailed Description page of the target courseware.",
+      "Fill in the content introduction and teaching outline, and upload course highlights and publication information as needed.",
+      "After saving, re-enter the page to confirm the introduction, attachments, and publication information are fully displayed."
+    ]
+  },
+  "manual-2026-ulms-9a0786ed9d-guide": {
+    "question": "How do I set up the courseware portal team members?",
+    "title": "ULMS - Team Members",
+    "steps": [
+      "Go to the Team Members page of the target courseware portal.",
+      "Enter the teacher's name, institution, and bio, and upload a profile photo. Click Add Teacher if you need to display multiple people.",
+      "After saving, check that the teacher order, photos, and bios are displayed correctly."
+    ]
+  },
+  "manual-2026-ulms-dcf1a4466a-guide": {
+    "question": "How do I set the courseware portal background?",
+    "title": "ULMS - Portal Settings",
+    "steps": [
+      "Go to the Portal Settings page of the target courseware portal.",
+      "Choose a portal background image that fits the course display requirements and preview it.",
+      "Save the settings, then return to the courseware portal to confirm the background image is not stretched or covering any text."
+    ]
+  },
+  "manual-2026-ulms-b4bc79dce9-guide": {
+    "question": "How do I publish or update courseware?",
+    "title": "ULMS - Publish and Update Courseware",
+    "steps": [
+      "After completing the courseware content, basic information, and portal information, return to the courseware homepage and click Publish.",
+      "Enter the institution offering the course and choose whether to publish it to your school's course website or the uLearning website.",
+      "Set whether the course is displayed on the website, verify the publishing scope, and then confirm the publication.",
+      "If the courseware content is modified, re-enter the editing page, complete the changes, and save.",
+      "Click Update to make the new version effective, then return to the portal to check the displayed content."
+    ]
+  },
+  "manual-2026-ulms-6f564c1814-guide": {
+    "question": "How do I manage students and create groups?",
+    "title": "ULMS - Student Management and Grouping",
+    "steps": [
+      "Go to Members > Class Management and select the class for students to join.",
+      "Open the class QR code and share it with students; they scan it using the uLearning app to join.",
+      "Alternatively, copy the class code and have students enter it on the platform or in the app to join.",
+      "If the teacher needs to add students, click Add Students, search for and select the students, then save.",
+      "For bulk addition, download the import template and fill in student information according to the template.",
+      "Upload the completed template, handle any import prompts, and verify the student list.",
+      "Go to the class's Group Management and click to create a new student group.",
+      "Enter the group name and assign students to the corresponding group, checking that no one is missed.",
+      "Save the group, then return to the group list to confirm the member count and relationships are correct."
+    ]
+  },
+  "manual-2026-ulms-3492fcd47d-guide": {
+    "question": "How do I publish teaching activities?",
+    "title": "ULMS - Publishing Teaching Activities",
+    "steps": [
+      "Go to the course Units and click to add a teaching activity in the target unit.",
+      "Select the type: courseware, resource, announcement, assignment, discussion, live session, classroom, or exam.",
+      "Complete required settings such as activity content, participating classes, and availability time.",
+      "After publishing, return to the unit and confirm the activity appears in the correct location and corresponding module."
+    ]
+  },
+  "manual-2026-ulms-3ac900b7ce-guide": {
+    "question": "How do I set up a study plan?",
+    "title": "ULMS - Setting Up Study Plans",
+    "steps": [
+      "Go to the Set Study Plan page and first confirm the course, class, or exam you are working with.",
+      "Complete the required settings on the Set Study Plan page, verify the target and time, then save.",
+      "Save the study plan settings, return to the list, and confirm the status and displayed results have been updated."
+    ]
+  },
+  "manual-2026-ulms-b1946f65e0-guide": {
+    "question": "How do I view courseware progress and scores?",
+    "title": "ULMS - Viewing Progress and Scores",
+    "steps": [
+      "Go to the Courseware module.",
+      "Click Select the corresponding courseware to proceed to the next step.",
+      "Complete the required settings on the Progress and Scores page, verify the target and time, then save."
+    ]
+  },
+  "manual-2026-ulms-b87f94efa9-guide": {
+    "question": "How do I publish resources in a course?",
+    "title": "ULMS - Publishing Resources",
+    "steps": [
+      "Go to the course Resources and choose to reference from the resource library or upload files directly.",
+      "When referencing from the resource library, open the Resource Library first and select the files to publish.",
+      "For school or shared resources, copy them to My Resources first, then select them for publishing.",
+      "When uploading directly, choose local files and wait for the upload and file processing to complete.",
+      "Enter the resource name, select the participating classes, and set the availability time.",
+      "Click Publish, then return to the resource list to check that it is visible to students."
+    ]
+  },
+  "manual-2026-ulms-034de3abd5-guide": {
+    "question": "How do I publish course announcements?",
+    "title": "ULMS - Publishing Announcements",
+    "steps": [
+      "Go to the course Announcements and click Publish New Announcement.",
+      "Enter the announcement title and body, and add attachments for students to download as needed.",
+      "Select the classes that will receive the announcement and verify the publish time or availability status.",
+      "Click Publish, then return to the announcement list to confirm the status and participating classes are correct."
+    ]
+  },
+  "manual-2026-ulms-c701c01b43-guide": {
+    "question": "How do I assign course homework?",
+    "title": "ULMS - Assign Homework",
+    "steps": [
+      "Go to the Homework module.",
+      "Click Assign Homework to proceed to the next setup step.",
+      "Click Select Homework Type to proceed to the next setup step.",
+      "Complete the required fields on the Homework Settings page, verify the audience and time, then save."
+    ]
+  },
+  "manual-2026-ulms-d6de95dcb6-guide": {
+    "question": "How do I assign individual homework?",
+    "title": "ULMS - Individual Homework",
+    "steps": [
+      "Go to Homework in the course, select Individual Homework, and enter the title and requirements.",
+      "Add attachments or recordings, then set the grading method, full score, and student submission method.",
+      "Select the participating classes and start/end times, verify the details, then publish the individual homework."
+    ]
+  },
+  "manual-2026-ulms-70353eca7c-guide": {
+    "question": "How do I assign group homework?",
+    "title": "ULMS - Group Homework",
+    "steps": [
+      "Go to the Homework module.",
+      "Click Group Homework to proceed to the next setup step.",
+      "Complete the required fields on the Homework Settings page, verify the audience and time, then save."
+    ]
+  },
+  "manual-2026-ulms-5df0b54d15-guide": {
+    "question": "How do I publish a course quiz?",
+    "title": "ULMS - Quiz",
+    "steps": [
+      "Go to Homework in the course, select Quiz, then choose questions from personal, school, or shared question banks.",
+      "Set the quiz time, participating classes, submission attempts, and answer release time.",
+      "Check the questions, scores, and total score for accuracy, then publish the quiz."
+    ]
+  },
+  "manual-2026-ulms-e898b5d9b7-guide": {
+    "question": "How do I grade course homework?",
+    "title": "ULMS - Grade Homework",
+    "steps": [
+      "Go to the Homework module.",
+      "Click Select the Relevant Homework to proceed to the next setup step.",
+      "Complete the required fields on the Grade or Edit page, verify the audience and time, then save.",
+      "Save after completing the Grade Homework settings, then return to the list to check if the status has updated."
+    ]
+  },
+  "manual-2026-ulms-29869ab552-guide": {
+    "question": "How do I publish a course discussion?",
+    "title": "ULMS - Publish Discussion",
+    "steps": [
+      "Go to the Discussion module.",
+      "Click Publish Topic to proceed to the next setup step.",
+      "Complete the required fields on the Discussion Settings page, verify the audience and time, then save."
+    ]
+  },
+  "manual-2026-ulms-8ead1a5519-guide": {
+    "question": "How do I build an exam question bank?",
+    "title": "ULMS - Question Bank",
+    "steps": [
+      "Go to Course [Exam] > [Question Bank], and first create folders to organize question categories.",
+      "Select the target folder and click [Add New Question] to start manual entry.",
+      "Choose the question type, then fill in the stem, options, correct answer, explanation, and score.",
+      "Save the question and return to the question bank to verify the type, answer, and assigned folder.",
+      "For bulk entry, click template import and download the standard Excel template.",
+      "Fill in questions, answers, and explanations as per the template requirements without altering the header structure.",
+      "Upload the template, review the import validation results, and correct any failed rows.",
+      "Alternatively, choose text bulk import and open the system-provided text format guide.",
+      "Paste multiple question texts in the specified format and run format recognition.",
+      "Check each recognized question's type, options, and correct answer one by one.",
+      "Once confirmed, bulk save to the designated question bank folder.",
+      "To use school or shared questions, search within the corresponding question bank.",
+      "Select the needed questions and copy them to [My Question Bank] before editing and using.",
+      "After completion, filter questions by folder and spot-check stems, answers, and scores."
+    ]
+  },
+  "manual-2026-ulms-8e212fc677-guide": {
+    "question": "How do I create and manage exam papers?",
+    "title": "ULMS - Paper Bank",
+    "steps": [
+      "Go to [Exam] > [Paper Bank] > [My Papers], and click [Add Paper].",
+      "For manual paper assembly, fill in the paper name and basic information.",
+      "Add major sections by question type or paper structure, and set the score for each part.",
+      "Select questions from the question bank to add to the paper, then verify question order and total score.",
+      "Save the manual assembly result and use preview to check the paper content.",
+      "For automatic assembly, set question types, quantity, difficulty, and knowledge point range.",
+      "After generating the paper, check the randomly selected questions and replace any if necessary.",
+      "Confirm the structure and total score, then save the automatic assembly result.",
+      "For random assembly, set a unified paper structure and question selection rules.",
+      "Check the question bank range, quantity, and score for each random question group.",
+      "Save the paper and return to [My Papers] to confirm its status is ready for exam publication."
+    ]
+  },
+  "manual-2026-ulms-da85f96829-guide": {
+    "question": "How do I publish an exam?",
+    "title": "ULMS - Publish Exam",
+    "steps": [
+      "Go to the [Exam] module.",
+      "Click [Add Exam] to proceed to the next step.",
+      "Click [Exam Settings] to proceed to the next step.",
+      "Complete the required settings on the [Publish Exam] page, verify the audience and time, then save."
+    ]
+  },
+  "manual-2026-ulms-d53f7de529-guide": {
+    "question": "How do I manage published exams?",
+    "title": "ULMS - Exam Management",
+    "steps": [
+      "Go to the [Exam] module.",
+      "Click [Select an Exam] to proceed to the next step.",
+      "Complete the required settings on the [View Scores] page, verify the audience and time, then save."
+    ]
+  },
+  "manual-2026-ulms-333dccd2b4-guide": {
+    "question": "How do I view and modify exam information?",
+    "title": "ULMS - View Exam Information",
+    "steps": [
+      "Go to Course [Exam], select the target exam, and click [View Scores].",
+      "Open [Exam Information], verify the exam settings and enabled paper; click to modify the exam if needed.",
+      "After saving changes, return to the exam list and confirm the time and status are correct."
+    ]
+  },
+  "manual-2026-ulms-a41b824d0b-guide": {
+    "question": "How do I schedule exam sessions?",
+    "title": "ULMS - Session Scheduling",
+    "steps": [
+      "Open [Proctoring Management] for the target exam and access [Session Scheduling].",
+      "Add or select an exam session, and set the exam time, participating classes, or students.",
+      "After saving, check the session list; during the exam, use the extend time or early collection features if adjustments are needed."
+    ]
+  },
+  "manual-2026-ulms-21502349e6-guide": {
+    "question": "How do I arrange exam rooms?",
+    "title": "ULMS - Exam Room Arrangement",
+    "steps": [
+      "Go to the target exam's Exam Management > Exam Room Arrangement.",
+      "Click Add Exam Room, then enter the room name, seat count, and room type.",
+      "Select exam rooms for each exam session and assign students to the corresponding rooms.",
+      "Save the arrangement results, then check room capacity, student count, and invigilation details."
+    ]
+  },
+  "manual-2026-ulms-a9f9e578c8-guide": {
+    "question": "How do I arrange exam grading?",
+    "title": "ULMS - Grading Arrangement",
+    "steps": [
+      "Go to the target exam's Exam Management and open Grading Arrangement.",
+      "Select the teachers who will grade, and set whether to distribute the pending exam papers equally.",
+      "Save the arrangement and check each teacher's grading tasks and completion status."
+    ]
+  },
+  "manual-2026-ulms-a0b0c59fbf-guide": {
+    "question": "How do I review exam face authentication photos?",
+    "title": "ULMS - Face Authentication Photo Review",
+    "steps": [
+      "Go to the course's Exams, select the target exam, and click View Scores.",
+      "Open Face Photo Review and filter students pending review.",
+      "Select a student and view their submitted authentication photo.",
+      "Verify the authentication photo against the student's information.",
+      "If the photo meets requirements, select Approve.",
+      "If the photo is unclear or does not meet requirements, select Reject and prompt the student to re-upload.",
+      "If teachers need to prepare photos uniformly, download the batch upload template.",
+      "Organize student photos according to the template rules and perform the batch upload.",
+      "Return to the review list and confirm all participating students have valid authentication photos."
+    ]
+  },
+  "manual-2026-ulms-061babfcc4-guide": {
+    "question": "How do I use exam backup verification codes?",
+    "title": "ULMS - Exam Backup Verification Codes",
+    "steps": [
+      "Go to the target exam's management page and find Exam Backup Verification Codes.",
+      "Provide the code to students who cannot pass normal verification, or to authorized invigilators who are not part of the course team.",
+      "Before use, verify the exam session and personnel identity; do not send the code to unrelated individuals."
+    ]
+  },
+  "manual-2026-ulms-352b2b0e9d-guide": {
+    "question": "How do I monitor exams?",
+    "title": "ULMS - Exam Monitoring",
+    "steps": [
+      "Go to the target exam and open the Exam Monitoring Console for the corresponding session.",
+      "Filter students by status such as Not Entered, In Progress, or Submitted.",
+      "Review student devices, captured photos, and anomaly alerts to identify students with issues.",
+      "Based on the situation, take actions such as sending reminders, extending time, or other exam management measures.",
+      "After the exam ends, verify submission status and export or save the monitoring records."
+    ]
+  },
+  "manual-2026-ulms-488da795ad-guide": {
+    "question": "How do I set up exam check-in?",
+    "title": "ULMS - Exam Check-In",
+    "steps": [
+      "Publish the exam and enable sessions that require on-site check-in.",
+      "Open the exam monitoring page in the teacher app and display the check-in QR code.",
+      "Have students scan the code to check in on-site, then verify their check-in status on the monitoring page before starting the exam."
+    ]
+  },
+  "manual-2026-ulms-41cbe5a30c-guide": {
+    "question": "How do I grade exam papers one by one?",
+    "title": "uLearning - Grade Individually",
+    "steps": [
+      "Go to the Exams module.",
+      "Click Select an Exam to proceed to the next step.",
+      "Click View Scores to proceed to the next step."
+    ]
+  },
+  "manual-2026-ulms-e022ea3fde-guide": {
+    "question": "How do I grade exam papers in bulk?",
+    "title": "uLearning - Grade in Bulk",
+    "steps": [
+      "Go to the Exams module.",
+      "Click Select an Exam to proceed to the next step.",
+      "Click View Scores to proceed to the next step.",
+      "Complete the required fields on the Bulk Grading page, verify the recipients and schedule, then save."
+    ]
+  },
+  "manual-2026-ulms-c6cbf8aea0-guide": {
+    "question": "How do I rescore an exam?",
+    "title": "uLearning - Rescore",
+    "steps": [
+      "Go to the Exams module.",
+      "Click Select an Exam to proceed to the next step.",
+      "Click Exam Scores to proceed to the next step.",
+      "Complete the required fields on the Rescore page, verify the recipients and schedule, then save."
+    ]
+  },
+  "manual-2026-ulms-1637b5c19b-guide": {
+    "question": "How do I view exam score analysis?",
+    "title": "uLearning - Score Analysis",
+    "steps": [
+      "Go to the Exams module.",
+      "Click Select an Exam to proceed to the next step.",
+      "Complete the required fields on the Analysis Report page, verify the recipients and schedule, then save."
+    ]
+  },
+  "manual-2026-ulms-5546377da5-guide": {
+    "question": "How do I set course assessment rules?",
+    "title": "uLearning - Set Course Assessment Rules",
+    "steps": [
+      "Go to the Assessments module.",
+      "Click Set Assessment Rules to proceed to the next step.",
+      "Complete the required fields on the Set Assessment Rules Content page, verify the recipients and schedule, then save."
+    ]
+  },
+  "manual-2026-ulms-55abc8a613-guide": {
+    "question": "How do I issue course certificates?",
+    "title": "uLearning - Issue Course Certificates",
+    "steps": [
+      "Go to the course Assessments > Certificate Management section and enable certificate settings.",
+      "Set the course assessment score thresholds for the pass certificate and the merit certificate separately.",
+      "Select an applicable template from the certificate templates and preview it.",
+      "To customize, click Create Template and edit the certificate content.",
+      "Save the template and verify the placement of fields such as name, course title, and date.",
+      "Enable the certificate settings and confirm that students meeting the score criteria can receive certificates."
+    ]
+  },
+  "manual-2026-ulms-70ac7d796b-guide": {
+    "question": "How do I view course analytics data?",
+    "title": "ULMS - View Course Analytics Data",
+    "steps": [
+      "Go to the View Course Analytics Data page and first confirm the course, class, or exam you are working with.",
+      "Each course has a dedicated Analytics section that displays operational data for that course, including course overview, course access, content analysis, courseware learning, classroom interaction, and teacher behavior statistics.",
+      "Save the View Course Analytics Data settings, then return to the list to confirm the status and displayed results have been updated."
+    ]
+  },
+  "manual-2026-ulms-ebd9867ca0-guide": {
+    "question": "How do I end a course or restart it?",
+    "title": "ULMS - (7) Ending and Restarting a Course",
+    "steps": [
+      "Go to the target course's management menu and confirm all teaching activities and grade processing are complete.",
+      "Click End Course and confirm; after ending, the course is view-only and cannot be modified further.",
+      "To reuse it for a new semester, select Restart Course on the ended course.",
+      "Verify the copied courseware, resources, assignments, discussions, and exams, then adjust the class and schedule before publishing."
+    ]
+  },
+  "manual-2026-ulms-115134c92e-guide": {
+    "question": "How do I use mobile teaching with Youxueyuan?",
+    "title": "ULMS - (8) Mobile Teaching",
+    "steps": [
+      "Go to the (8) Mobile Teaching page and first confirm the course, class, or exam you are working with.",
+      "About the Youxueyuan app.",
+      "Save the (8) Mobile Teaching settings, then return to the list to confirm the status and displayed results have been updated."
+    ]
+  },
+  "manual-2026-uclass-0ab73f0b7e-guide": {
+    "question": "How do I enter Uclass from a ULMS course and create a class?",
+    "title": "Uclass - Create a Class",
+    "steps": [
+      "Go to the Classes module.",
+      "Click Create Class to proceed to the next setup step.",
+      "Complete the required settings on the Start Class/Not Now page, verify the audience and schedule, then save."
+    ]
+  },
+  "manual-2026-uclass-b23df9c865-guide": {
+    "question": "How do I start and end a class in Uclass?",
+    "title": "Uclass - Starting and Ending a Class",
+    "steps": [
+      "Go to the Starting and Ending a Class page and first confirm the course, class, or exam you are working with.",
+      "Enter the class; before class, teachers can prepare in advance by creating activities to launch during the session. When class begins, click the Start Class button in the right navigation menu to start. After the session, click End Class to finish.",
+      "Save the Starting and Ending a Class settings, then return to the list to confirm the status and displayed results have been updated."
+    ]
+  },
+  "manual-2026-uclass-026845a85a-guide": {
+    "question": "How do I have students scan a QR code to enter a Uclass session?",
+    "title": "Uclass - Students Scan to Enter Class",
+    "steps": [
+      "First, click Start Class in the Uclass session to ensure the class has begun.",
+      "Click Class Code to display the current session's QR code.",
+      "Have students scan it with WeChat or the Youxueyuan app, then check the class member list to confirm their entry status."
+    ]
+  },
+  "manual-2026-uclass-0d8d566a5d-guide": {
+    "question": "How do I present courseware in Uclass?",
+    "title": "Uclass - Present Courseware",
+    "steps": [
+      "Go to the Enter Class module.",
+      "Click Resources to proceed to the next step.",
+      "Click Open from Resources to proceed to the next step."
+    ]
+  },
+  "manual-2026-uclass-e67b5b0053-guide": {
+    "question": "How do I launch an interactive classroom activity in Uclass?",
+    "title": "Uclass - Launch Classroom Activity",
+    "steps": [
+      "Go to the Roll Call module.",
+      "Click Create Roll Call to proceed to the next step.",
+      "Click Set Activity Rules to proceed to the next step."
+    ]
+  }
+}

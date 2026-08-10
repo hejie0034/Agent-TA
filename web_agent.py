@@ -16,11 +16,13 @@ from openpyxl import Workbook, load_workbook
 ROOT = Path(__file__).resolve().parent
 ENV_PATH = ROOT / ".env"
 FAQ_PATH = ROOT / "ulearning_teacher_faq.json"
+MANUAL_2026_FAQ_PATH = ROOT / "manual_2026_faq.json"
 PROMPT_PATH = ROOT / "deepseek_prompt.md"
 HELP_KB_PATH = ROOT / "help知识库.docx"
 CHUNK_KB_PATH = ROOT / "切片读取知识库" / "knowledge_chunks.jsonl"
 SCREENSHOT_KB_PATH = ROOT / "切片读取知识库" / "screenshot_tutorial_kb.jsonl"
 SCREENSHOT_EN_TRANSLATIONS_PATH = ROOT / "screenshot_guide_translations_en.json"
+MANUAL_2026_GUIDES_PATH = ROOT / "manual_2026_guides.json"
 PRECONDITION_PATH = ROOT / "不完全前置条件功能.txt"
 UNKNOWN_LOG_PATH = ROOT / "unanswered_questions.jsonl"
 FEEDBACK_DIR = ROOT / "feedback"
@@ -89,7 +91,14 @@ def load_faq_items() -> list[dict[str, Any]]:
         return []
     if not isinstance(data, list):
         return []
-    return [item for item in data if isinstance(item, dict)]
+    items = [item for item in data if isinstance(item, dict)]
+    try:
+        manual_data = json.loads(MANUAL_2026_FAQ_PATH.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        manual_data = []
+    if isinstance(manual_data, list):
+        items.extend(item for item in manual_data if isinstance(item, dict))
+    return items
 
 
 def load_help_kb_items() -> list[dict[str, Any]]:
@@ -1199,6 +1208,8 @@ ENGLISH_QUESTION_ALIASES = {
     "how do i start a class?": "如何开始上课？",
     "how do i view learning progress and grades?": "如何查看进度成绩？",
     "what can i do in ulearning?": "uLearning 有哪些功能？",
+    "how do i set up preview chapters for courseware?": "如何设置课件试听章节？",
+    "how do i set up trial chapters for courseware?": "如何设置课件试听章节？",
 }
 
 
@@ -1256,6 +1267,18 @@ def resolve_english_question(question: str) -> str:
     alias = ENGLISH_QUESTION_ALIASES.get(question.strip().lower())
     if alias:
         return alias
+    normalized_question = normalize(question)
+    try:
+        manual_guides = json.loads(MANUAL_2026_GUIDES_PATH.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        manual_guides = []
+    if isinstance(manual_guides, list):
+        for guide in manual_guides:
+            if not isinstance(guide, dict):
+                continue
+            english_candidates = [guide.get("questionEn"), *(guide.get("aliases") or [])]
+            if any(normalize(str(candidate)) == normalized_question for candidate in english_candidates if candidate):
+                return str(guide.get("question") or question)
     return deepseek_translate(
         question,
         "Simplified Chinese",
@@ -1748,6 +1771,7 @@ def build_screenshot_guides() -> list[dict[str, Any]]:
             image.parent
             for image in SCREENSHOT_DIR.rglob("*")
             if image.is_file() and image.suffix.lower() in IMAGE_EXTENSIONS
+            and "2026用户手册" not in image.relative_to(SCREENSHOT_DIR).parts
         },
         key=lambda path: [natural_sort_key(part) for part in path.relative_to(SCREENSHOT_DIR).parts],
     )
@@ -1807,6 +1831,19 @@ def build_screenshot_guides() -> list[dict[str, Any]]:
                 ],
             }
         )
+    try:
+        manual_guides = json.loads(MANUAL_2026_GUIDES_PATH.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        manual_guides = []
+    if isinstance(manual_guides, list):
+        known_ids = {str(guide.get("id") or "") for guide in guides}
+        for guide in manual_guides:
+            if not isinstance(guide, dict) or not guide.get("steps"):
+                continue
+            guide_id = str(guide.get("id") or "")
+            if guide_id and guide_id not in known_ids:
+                guides.append(guide)
+                known_ids.add(guide_id)
     return guides
 
 
