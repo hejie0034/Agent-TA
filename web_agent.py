@@ -16,10 +16,13 @@ from openpyxl import Workbook, load_workbook
 ROOT = Path(__file__).resolve().parent
 ENV_PATH = ROOT / ".env"
 FAQ_PATH = ROOT / "ulearning_teacher_faq.json"
+MANUAL_2026_FAQ_PATH = ROOT / "manual_2026_faq.json"
 PROMPT_PATH = ROOT / "deepseek_prompt.md"
 HELP_KB_PATH = ROOT / "help知识库.docx"
 CHUNK_KB_PATH = ROOT / "切片读取知识库" / "knowledge_chunks.jsonl"
 SCREENSHOT_KB_PATH = ROOT / "切片读取知识库" / "screenshot_tutorial_kb.jsonl"
+SCREENSHOT_EN_TRANSLATIONS_PATH = ROOT / "screenshot_guide_translations_en.json"
+MANUAL_2026_GUIDES_PATH = ROOT / "manual_2026_guides.json"
 PRECONDITION_PATH = ROOT / "不完全前置条件功能.txt"
 UNKNOWN_LOG_PATH = ROOT / "unanswered_questions.jsonl"
 FEEDBACK_DIR = ROOT / "feedback"
@@ -88,7 +91,14 @@ def load_faq_items() -> list[dict[str, Any]]:
         return []
     if not isinstance(data, list):
         return []
-    return [item for item in data if isinstance(item, dict)]
+    items = [item for item in data if isinstance(item, dict)]
+    try:
+        manual_data = json.loads(MANUAL_2026_FAQ_PATH.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        manual_data = []
+    if isinstance(manual_data, list):
+        items.extend(item for item in manual_data if isinstance(item, dict))
+    return items
 
 
 def load_help_kb_items() -> list[dict[str, Any]]:
@@ -438,7 +448,9 @@ def canonical_intent_text(value: Any) -> str:
         if text.startswith(prefix):
             text = text[len(prefix) :]
             break
-    return re.sub(r"^(创建|新建|新增|添加|做|建)(?:一个|一名|个)", r"\1", text)
+    text = re.sub(r"^(快速|立即|直接|马上|迅速|便捷)+", "", text)
+    text = re.sub(r"^(新建|新增)", "创建", text)
+    return re.sub(r"^(创建|新建|新增|添加|做|建)(?:一个|一门|一项|一份|一名|个)", r"\1", text)
 
 
 def split_term(term: str) -> list[str]:
@@ -466,12 +478,14 @@ def score_item(question: str, item: dict[str, Any]) -> int:
     for term in searchable_terms(item):
         if not term:
             continue
+        canonical_term = canonical_intent_text(term)
         if raw_text and raw_text == term:
             term_score = 240
         else:
-            canonical_term = canonical_intent_text(term)
             if core_text and len(core_text) >= 3 and core_text == canonical_term:
-                term_score = 200
+                # Exact intent equivalents must tie with the literal wording so
+                # harmless modifiers do not switch to another source record.
+                term_score = 240
             elif core_text and len(core_text) >= 4 and (
                 core_text in canonical_term or canonical_term in core_text
             ):
@@ -541,7 +555,10 @@ def recommend_related_questions(
 ) -> list[dict[str, str]]:
     by_id = {str(item.get("id")): item for item in faq_items if item.get("id")}
     excluded_ids = {str(item.get("id")) for item in matched_items if item.get("id")}
-    excluded_questions = {normalize(item.get("question", "")) for item in matched_items}
+    excluded_questions = {
+        canonical_intent_text(item.get("question", ""))
+        for item in matched_items
+    }
     ranked: dict[str, tuple[int, dict[str, Any]]] = {}
 
     def add(item_id: str, score: int) -> None:
@@ -549,7 +566,10 @@ def recommend_related_questions(
         if not item or item_id in excluded_ids:
             return
         item_question = str(item.get("question", "")).strip()
-        if not item_question or normalize(item_question) in excluded_questions:
+        if (
+            not item_question
+            or canonical_intent_text(item_question) in excluded_questions
+        ):
             return
         previous = ranked.get(item_id)
         if previous is None or score > previous[0]:
@@ -577,13 +597,23 @@ def recommend_related_questions(
         ranked.values(),
         key=lambda entry: (-entry[0], str(entry[1].get("question", ""))),
     )
-    return [
-        {
-            "label": str(item.get("question", "")).rstrip("？?"),
-            "question": str(item.get("question", "")),
-        }
-        for _, item in sorted_items[:limit]
-    ]
+    recommendations: list[dict[str, str]] = []
+    recommended_intents: set[str] = set()
+    for _, item in sorted_items:
+        item_question = str(item.get("question", ""))
+        intent = canonical_intent_text(item_question)
+        if not intent or intent in excluded_questions or intent in recommended_intents:
+            continue
+        recommended_intents.add(intent)
+        recommendations.append(
+            {
+                "label": item_question.rstrip("？?"),
+                "question": item_question,
+            }
+        )
+        if len(recommendations) >= limit:
+            break
+    return recommendations
 
 
 def is_greeting_or_small_talk(question: str) -> bool:
@@ -849,19 +879,11 @@ def get_prompt_guide_items(question: str, items: list[dict[str, Any]]) -> list[d
         "应该先做什么",
         "从哪里开始",
     ]
-    course_triggers = [
-        "快速创建一门课程",
-        "创建一门课程",
-        "开始建课",
-    ]
-
     guide_key = None
     if any(trigger in text for trigger in overview_triggers):
         guide_key = "overview"
     elif any(trigger in text for trigger in start_triggers):
         guide_key = "start"
-    elif "课件" not in text and any(trigger in text for trigger in course_triggers):
-        guide_key = "course"
 
     if not guide_key:
         return []
@@ -1175,6 +1197,158 @@ def general_chat_fallback(question: str) -> str:
     else:
         lead = "这个问题我暂时没能连接到通用问答服务。你可以稍后再问一次，我不会把普通聊天当成平台故障。"
     return f"{lead}\n\n{GENERAL_CHAT_SUFFIX}"
+
+
+ENGLISH_QUESTION_ALIASES = {
+    "quick start": "快速开始",
+    "how do i create a course?": "如何创建课程？",
+    "how do i set up a teaching team?": "如何设置教学团队？",
+    "how do i create courseware?": "如何新建课件？",
+    "how do i assign individual homework?": "如何布置个人作业？",
+    "how do i start a class?": "如何开始上课？",
+    "how do i view learning progress and grades?": "如何查看进度成绩？",
+    "what can i do in ulearning?": "uLearning 有哪些功能？",
+    "how do i set up preview chapters for courseware?": "如何设置课件试听章节？",
+    "how do i set up trial chapters for courseware?": "如何设置课件试听章节？",
+}
+
+
+def deepseek_translate(text: str, target_language: str, purpose: str = "") -> str:
+    api_key = (
+        os.getenv("DEEPSEEK_API_KEY")
+        or os.getenv("ULEARNING_TEACHER_ASSISTANT_API_KEY")
+        or os.getenv("OPENAI_API_KEY")
+    )
+    if not api_key:
+        raise RuntimeError("Missing DEEPSEEK_API_KEY")
+
+    base_url = os.getenv("DEEPSEEK_BASE_URL", "https://api.deepseek.com/v1").rstrip("/")
+    model = os.getenv("DEEPSEEK_MODEL", "deepseek-chat")
+    system_prompt = (
+        f"Translate the supplied text into {target_language}. "
+        "Preserve the original meaning, numbered steps, paragraph breaks, product names, "
+        "button labels, and the name uLearning. Use concise, natural wording suitable for "
+        "a teacher-facing software help center. Do not add explanations or Markdown fences."
+    )
+    if purpose:
+        system_prompt += f" Context: {purpose}"
+    payload = {
+        "model": model,
+        "messages": [
+            {"role": "system", "content": system_prompt},
+            {"role": "user", "content": text},
+        ],
+        "temperature": 0.1,
+        "stream": False,
+    }
+    request = urllib.request.Request(
+        f"{base_url}/chat/completions",
+        data=json.dumps(payload).encode("utf-8"),
+        headers={
+            "Authorization": f"Bearer {api_key}",
+            "Content-Type": "application/json",
+        },
+        method="POST",
+    )
+    with urllib.request.urlopen(request, timeout=60) as response:
+        data = json.loads(response.read().decode("utf-8"))
+    choices = data.get("choices") or []
+    translated = (
+        ((choices[0].get("message") or {}).get("content") or "").strip()
+        if choices
+        else ""
+    )
+    if not translated:
+        raise RuntimeError("DeepSeek returned an empty translation")
+    return clean_model_answer(translated)
+
+
+def resolve_english_question(question: str) -> str:
+    alias = ENGLISH_QUESTION_ALIASES.get(question.strip().lower())
+    if alias:
+        return alias
+    normalized_question = normalize(question)
+    try:
+        manual_guides = json.loads(MANUAL_2026_GUIDES_PATH.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        manual_guides = []
+    if isinstance(manual_guides, list):
+        for guide in manual_guides:
+            if not isinstance(guide, dict):
+                continue
+            english_candidates = [guide.get("questionEn"), *(guide.get("aliases") or [])]
+            if any(normalize(str(candidate)) == normalized_question for candidate in english_candidates if candidate):
+                return str(guide.get("question") or question)
+    return deepseek_translate(
+        question,
+        "Simplified Chinese",
+        "Convert the user's English uLearning help question into a concise Chinese search query.",
+    )
+
+
+def english_translation_fallback(result: dict[str, Any]) -> str:
+    if result.get("intent") == "troubleshooting":
+        return (
+            "Let’s identify which prerequisite is missing before repeating the operation.\n\n"
+            "1. Confirm that the item was saved or published successfully.\n"
+            "2. Check that the correct course, class, and target users were selected.\n"
+            "3. Confirm that your account has permission for this operation.\n"
+            "4. Check the active time range and current status.\n"
+            "5. Refresh the page or sign in again, then test once more.\n\n"
+            "If the issue remains, share the page name, your role, the target item, and the on-screen message."
+        )
+    return (
+        "I found the relevant uLearning guide, but the English translation service is "
+        "temporarily unavailable. Please try again in a moment."
+    )
+
+
+def answer_question_localized(question: str, language: str = "zh") -> dict[str, Any]:
+    if language.lower() not in {"en", "english", "en-us", "en-gb"}:
+        return answer_question(question)
+
+    try:
+        resolved_question = (
+            resolve_english_question(question)
+            if re.search(r"[A-Za-z]", question) and not re.search(r"[\u4e00-\u9fff]", question)
+            else question
+        )
+    except Exception:
+        resolved_question = ENGLISH_QUESTION_ALIASES.get(
+            question.strip().lower(),
+            question,
+        )
+
+    result = answer_question(resolved_question)
+    try:
+        result["answer"] = deepseek_translate(
+            str(result.get("answer") or ""),
+            "English",
+            "Translate a structured uLearning help answer. Keep every numbered step.",
+        )
+        related = result.get("relatedQuestions") or []
+        if related:
+            translated_related = []
+            for item in related[:4]:
+                translated_question = deepseek_translate(
+                    str(item.get("question") or ""),
+                    "English",
+                    "Translate a short suggested follow-up question.",
+                )
+                translated_related.append(
+                    {
+                        "label": translated_question.rstrip("?."),
+                        "question": translated_question,
+                    }
+                )
+            result["relatedQuestions"] = translated_related
+    except Exception:
+        result["answer"] = english_translation_fallback(result)
+        result["relatedQuestions"] = []
+
+    result["resolvedQuestion"] = resolved_question
+    result["language"] = "en"
+    return result
 
 
 def clean_model_answer(answer: str) -> str:
@@ -1597,11 +1771,22 @@ def build_screenshot_guides() -> list[dict[str, Any]]:
             image.parent
             for image in SCREENSHOT_DIR.rglob("*")
             if image.is_file() and image.suffix.lower() in IMAGE_EXTENSIONS
+            and "2026用户手册" not in image.relative_to(SCREENSHOT_DIR).parts
         },
         key=lambda path: [natural_sort_key(part) for part in path.relative_to(SCREENSHOT_DIR).parts],
     )
 
     guides: list[dict[str, Any]] = []
+    english_translations: dict[str, Any] = {}
+    if SCREENSHOT_EN_TRANSLATIONS_PATH.exists():
+        try:
+            loaded_translations = json.loads(
+                SCREENSHOT_EN_TRANSLATIONS_PATH.read_text(encoding="utf-8")
+            )
+            if isinstance(loaded_translations, dict):
+                english_translations = loaded_translations
+        except (OSError, json.JSONDecodeError):
+            english_translations = {}
     for tutorial_dir in tutorial_dirs:
         images = sorted(
             [
@@ -1620,10 +1805,14 @@ def build_screenshot_guides() -> list[dict[str, Any]]:
         title = " - ".join(title_parts)
         question = leaf_title if leaf_title.startswith("如何") else f"如何{leaf_title}？"
         aliases = expand_screenshot_aliases(title_parts, question)
+        guide_id = screenshot_guide_id(rel_dir)
+        english_guide = english_translations.get(guide_id) or {}
+        english_steps = english_guide.get("steps") or []
         guides.append(
             {
-                "id": screenshot_guide_id(rel_dir),
+                "id": guide_id,
                 "title": title,
+                "titleEn": english_guide.get("title"),
                 "question": question,
                 "aliases": aliases,
                 "path": " > ".join(title_parts),
@@ -1631,12 +1820,30 @@ def build_screenshot_guides() -> list[dict[str, Any]]:
                     {
                         "label": f"Step {index}",
                         "text": infer_screenshot_step_text(image, index, title_parts),
+                        "textEn": (
+                            english_steps[index - 1]
+                            if index - 1 < len(english_steps)
+                            else ""
+                        ),
                         "src": image.relative_to(ROOT).as_posix(),
                     }
                     for index, image in enumerate(images, start=1)
                 ],
             }
         )
+    try:
+        manual_guides = json.loads(MANUAL_2026_GUIDES_PATH.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        manual_guides = []
+    if isinstance(manual_guides, list):
+        known_ids = {str(guide.get("id") or "") for guide in guides}
+        for guide in manual_guides:
+            if not isinstance(guide, dict) or not guide.get("steps"):
+                continue
+            guide_id = str(guide.get("id") or "")
+            if guide_id and guide_id not in known_ids:
+                guides.append(guide)
+                known_ids.add(guide_id)
     return guides
 
 
@@ -1784,7 +1991,8 @@ class AgentHandler(SimpleHTTPRequestHandler):
             if not message:
                 self._send_json(400, {"error": "message is required"})
                 return
-            self._send_json(200, answer_question(message))
+            language = str(payload.get("language", "zh")).strip().lower()
+            self._send_json(200, answer_question_localized(message, language))
         except Exception as exc:
             self._send_json(500, {"error": str(exc)})
 

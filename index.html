@@ -3,55 +3,61 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AI 教师助手</title>
-    <link rel="stylesheet" href="styles.css?v=20260727-carousel-min-height" />
+    <title data-i18n="pageTitle">AI 教师助手</title>
+    <link rel="stylesheet" href="styles.css?v=20260730-bilingual-layout-v3" />
   </head>
   <body>
     <div class="shell" id="appShell">
-      <aside class="sidebar" aria-label="对话侧边栏">
+      <aside class="sidebar" aria-label="对话侧边栏" data-i18n-aria-label="sidebarLabel">
         <div class="brand">
           <span class="bee-avatar bee-mascot" aria-hidden="true">
             <span class="bee-wing bee-wing-left"></span>
             <span class="bee-wing bee-wing-right"></span>
             <span class="bee-body"><span class="bee-face"></span></span>
           </span>
-          <strong>小蜜蜂</strong>
-          <span class="brand-status">（我还在测试中哦）</span>
+          <strong data-i18n="brandName">小蜜蜂</strong>
+          <span class="brand-status" data-i18n="brandStatus">（我还在测试中哦）</span>
         </div>
 
         <button class="new-chat" id="newChat" type="button">
           <span aria-hidden="true">＋</span>
-          <span class="label">新建对话</span>
+          <span class="label" data-i18n="newChat">新建对话</span>
         </button>
 
         <section class="history-section">
-          <div class="section-label">对话回溯</div>
+          <div class="section-label" data-i18n="history">对话回溯</div>
           <div id="historyList" class="history-list"></div>
         </section>
 
+        <div class="language-switcher" aria-label="语言切换" data-i18n-aria-label="languageSwitcher">
+          <span class="language-current" data-i18n="languageCurrent">中文</span>
+          <button class="language-toggle" id="languageToggle" type="button" aria-label="Switch to English">
+            English
+          </button>
+        </div>
       </aside>
 
       <main class="chat-panel">
-        <section class="prompt-strip" aria-label="推荐问题">
-          <button class="prompt-collapsed-icon" type="button" aria-label="打开常见问题" aria-expanded="false">问</button>
+        <section class="prompt-strip" aria-label="推荐问题" data-i18n-aria-label="recommendedQuestions">
+          <button class="prompt-collapsed-icon" type="button" aria-label="打开常见问题" data-i18n-aria-label="openCommonQuestions" aria-expanded="false"><span data-i18n="questionIcon">问</span></button>
           <div class="prompt-panel-content" id="promptPanelContent">
-            <button class="prompt-panel-close" type="button" aria-label="收起常见问题">×</button>
+            <button class="prompt-panel-close" type="button" aria-label="收起常见问题" data-i18n-aria-label="closeCommonQuestions">×</button>
             <div class="prompt-heading">
               <span class="prompt-bee bee-mascot" aria-hidden="true"><span class="bee-wing bee-wing-left"></span><span class="bee-wing bee-wing-right"></span><span class="bee-body"><span class="bee-face"></span></span></span>
               <div>
-                <h1>老师您好，我是小蜜蜂</h1>
-                <p>不知道怎么问也没关系，点一个常见问题就能开始。</p>
+                <h1 data-i18n="welcomeTitle">老师您好，我是小蜜蜂</h1>
+                <p data-i18n="welcomeSubtitle">不知道怎么问也没关系，点一个常见问题就能开始。</p>
               </div>
             </div>
             <div class="prompt-grid">
-              <button class="prompt-card prompt-card-primary" type="button" data-question="快速开始"><span>快速开始</span><small>第一次使用，按四步完成开课</small></button>
-              <button class="prompt-card" type="button" data-question="如何快速创建一门课程？"><span>创建课程</span><small>建立第一门课程</small></button>
-              <button class="prompt-card" type="button" data-question="如何设置教学团队？"><span>教学团队</span><small>添加老师和分配班级</small></button>
-              <button class="prompt-card" type="button" data-question="如何新建课件？"><span>制作课件</span><small>添加并发布教学内容</small></button>
-              <button class="prompt-card" type="button" data-question="如何布置个人作业？"><span>布置作业</span><small>设置要求、班级和时间</small></button>
-              <button class="prompt-card" type="button" data-question="如何开始上课？"><span>开始上课</span><small>创建课堂并邀请学生</small></button>
-              <button class="prompt-card" type="button" data-question="如何查看进度成绩？"><span>查看成绩</span><small>了解学生学习情况</small></button>
-              <button class="prompt-card" type="button" data-question="uLearning 有哪些功能？"><span>功能总览</span><small>看看平台能帮你做什么</small></button>
+              <button class="prompt-card prompt-card-primary" type="button" data-question="快速开始" data-question-en="Quick start"><span data-i18n="quickStart">快速开始</span><small data-i18n="quickStartDesc">第一次使用，按四步完成开课</small></button>
+              <button class="prompt-card" type="button" data-question="如何快速创建一门课程？" data-question-en="How do I create a course?"><span data-i18n="createCourse">创建课程</span><small data-i18n="createCourseDesc">建立第一门课程</small></button>
+              <button class="prompt-card" type="button" data-question="如何设置教学团队？" data-question-en="How do I set up a teaching team?"><span data-i18n="teachingTeam">教学团队</span><small data-i18n="teachingTeamDesc">添加老师和分配班级</small></button>
+              <button class="prompt-card" type="button" data-question="如何新建课件？" data-question-en="How do I create courseware?"><span data-i18n="makeCourseware">制作课件</span><small data-i18n="makeCoursewareDesc">添加并发布教学内容</small></button>
+              <button class="prompt-card" type="button" data-question="如何布置个人作业？" data-question-en="How do I assign individual homework?"><span data-i18n="assignHomework">布置作业</span><small data-i18n="assignHomeworkDesc">设置要求、班级和时间</small></button>
+              <button class="prompt-card" type="button" data-question="如何开始上课？" data-question-en="How do I start a class?"><span data-i18n="startClass">开始上课</span><small data-i18n="startClassDesc">创建课堂并邀请学生</small></button>
+              <button class="prompt-card" type="button" data-question="如何查看进度成绩？" data-question-en="How do I view learning progress and grades?"><span data-i18n="viewGrades">查看成绩</span><small data-i18n="viewGradesDesc">了解学生学习情况</small></button>
+              <button class="prompt-card" type="button" data-question="uLearning 有哪些功能？" data-question-en="What can I do in uLearning?"><span data-i18n="featureOverview">功能总览</span><small data-i18n="featureOverviewDesc">看看平台能帮你做什么</small></button>
             </div>
           </div>
         </section>
@@ -59,11 +65,11 @@
         <section class="messages" id="messages" aria-live="polite"></section>
 
         <form class="composer" id="chatForm">
-          <button class="icon-button" id="knowledgeButton" type="button" title="查看知识库范围" aria-label="查看知识库范围">
+          <button class="icon-button" id="knowledgeButton" type="button" title="查看知识库范围" aria-label="查看知识库范围" data-i18n-title="knowledgeScope" data-i18n-aria-label="knowledgeScope">
             <span aria-hidden="true">?</span>
           </button>
-          <textarea id="chatInput" rows="1" placeholder="请输入你的问题，例如：如何发布作业？"></textarea>
-          <button class="send-button" type="submit" title="发送" aria-label="发送">
+          <textarea id="chatInput" rows="1" placeholder="请输入你的问题，例如：如何发布作业？" data-i18n-placeholder="inputPlaceholder"></textarea>
+          <button class="send-button" type="submit" title="发送" aria-label="发送" data-i18n-title="send" data-i18n-aria-label="send">
             <svg aria-hidden="true" viewBox="0 0 24 24" fill="none">
               <path d="M4.8 5.4 20 12 4.8 18.6l2.1-5.1L14 12l-7.1-1.5-2.1-5.1Z" />
             </svg>
@@ -76,29 +82,29 @@
 
     <div class="feedback-dialog" id="feedbackDialog" aria-hidden="true">
       <div class="feedback-dialog-card" role="dialog" aria-modal="true" aria-labelledby="feedbackDialogTitle">
-        <button class="dialog-close" id="feedbackDialogClose" type="button" aria-label="关闭">×</button>
-        <h2 id="feedbackDialogTitle">很抱歉给您带来了不好的体验</h2>
-        <p>请问您需要转人工吗？点击后将进入人工服务入口。</p>
+        <button class="dialog-close" id="feedbackDialogClose" type="button" aria-label="关闭" data-i18n-aria-label="close">×</button>
+        <h2 id="feedbackDialogTitle" data-i18n="feedbackTitle">很抱歉给您带来了不好的体验</h2>
+        <p data-i18n="feedbackPrompt">请问您需要转人工吗？点击后将进入人工服务入口。</p>
         <div class="dialog-actions">
-          <button class="dialog-primary" id="dialogHandoff" type="button">转人工</button>
-          <button class="dialog-secondary" id="dialogCancel" type="button">暂时不用</button>
+          <button class="dialog-primary" id="dialogHandoff" type="button" data-i18n="humanSupport">转人工</button>
+          <button class="dialog-secondary" id="dialogCancel" type="button" data-i18n="notNow">暂时不用</button>
         </div>
       </div>
     </div>
 
     <div class="feedback-dialog" id="handoffDialog" aria-hidden="true">
       <div class="feedback-dialog-card" role="dialog" aria-modal="true" aria-labelledby="handoffDialogTitle">
-        <button class="dialog-close" id="handoffDialogClose" type="button" aria-label="关闭">×</button>
-        <h2 id="handoffDialogTitle">目前暂未接入人工</h2>
-        <p>麻烦您写下遇到的问题，我们将完善知识库，感谢您的反馈。</p>
-        <textarea class="handoff-textarea" id="handoffInput" rows="4" placeholder="请描述您遇到的问题"></textarea>
+        <button class="dialog-close" id="handoffDialogClose" type="button" aria-label="关闭" data-i18n-aria-label="close">×</button>
+        <h2 id="handoffDialogTitle" data-i18n="handoffTitle">目前暂未接入人工</h2>
+        <p data-i18n="handoffPrompt">麻烦您写下遇到的问题，我们将完善知识库，感谢您的反馈。</p>
+        <textarea class="handoff-textarea" id="handoffInput" rows="4" placeholder="请描述您遇到的问题" data-i18n-placeholder="handoffPlaceholder"></textarea>
         <div class="dialog-actions">
-          <button class="dialog-primary" id="handoffSubmit" type="button">提交反馈</button>
-          <button class="dialog-secondary" id="handoffCancel" type="button">取消</button>
+          <button class="dialog-primary" id="handoffSubmit" type="button" data-i18n="submitFeedback">提交反馈</button>
+          <button class="dialog-secondary" id="handoffCancel" type="button" data-i18n="cancel">取消</button>
         </div>
       </div>
     </div>
 
-    <script src="app.js?v=20260727-gentle-bee-buzz-louder"></script>
+    <script src="app.js?v=20260730-english-steps-v4"></script>
   </body>
 </html>

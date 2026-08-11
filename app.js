@@ -526,7 +526,143 @@ const state = {
   messages: [],
   sessions: readJson("ai-helper-sessions", []),
   feedback: readJson("ai-helper-feedback", []),
-  currentSessionId: null
+  currentSessionId: null,
+  language: localStorage.getItem("ai-helper-language") === "en" ? "en" : "zh"
+};
+
+const UI_TRANSLATIONS = {
+  zh: {
+    pageTitle: "AI 教师助手",
+    sidebarLabel: "对话侧边栏",
+    brandName: "小蜜蜂",
+    brandStatus: "（我还在测试中哦）",
+    newChat: "新建对话",
+    history: "对话回溯",
+    languageSwitcher: "语言切换",
+    languageCurrent: "中文",
+    languageTarget: "English",
+    recommendedQuestions: "推荐问题",
+    openCommonQuestions: "打开常见问题",
+    closeCommonQuestions: "收起常见问题",
+    questionIcon: "问",
+    welcomeTitle: "老师您好，我是小蜜蜂",
+    welcomeSubtitle: "不知道怎么问也没关系，点一个常见问题就能开始。",
+    quickStart: "快速开始",
+    quickStartDesc: "第一次使用，按四步完成开课",
+    createCourse: "创建课程",
+    createCourseDesc: "建立第一门课程",
+    teachingTeam: "教学团队",
+    teachingTeamDesc: "添加老师和分配班级",
+    makeCourseware: "制作课件",
+    makeCoursewareDesc: "添加并发布教学内容",
+    assignHomework: "布置作业",
+    assignHomeworkDesc: "设置要求、班级和时间",
+    startClass: "开始上课",
+    startClassDesc: "创建课堂并邀请学生",
+    viewGrades: "查看成绩",
+    viewGradesDesc: "了解学生学习情况",
+    featureOverview: "功能总览",
+    featureOverviewDesc: "看看平台能帮你做什么",
+    knowledgeScope: "查看知识库范围",
+    inputPlaceholder: "请输入你的问题，例如：如何发布作业？",
+    send: "发送",
+    close: "关闭",
+    feedbackTitle: "很抱歉给您带来了不好的体验",
+    feedbackPrompt: "请问您需要转人工吗？点击后将进入人工服务入口。",
+    humanSupport: "转人工",
+    notNow: "暂时不用",
+    handoffTitle: "目前暂未接入人工",
+    handoffPrompt: "麻烦您写下遇到的问题，我们将完善知识库，感谢您的反馈。",
+    handoffPlaceholder: "请描述您遇到的问题",
+    submitFeedback: "提交反馈",
+    cancel: "取消",
+    emptyHistory: "暂无对话",
+    teacher: "教师",
+    assistant: "小蜜蜂",
+    textAnswer: "文字解答",
+    imageTutorial: "图片教程",
+    videoTutorial: "视频教程",
+    noImageTutorial: "暂未提供图片教程",
+    noVideoTutorial: "暂未提供视频教程",
+    copy: "复制",
+    edit: "重新编辑",
+    regenerate: "重新生成",
+    like: "点赞",
+    dislike: "点踩",
+    helpful: "有帮助",
+    notHelpful: "没帮助",
+    thinking: "DeepSeek 正在思考",
+    visualGuide: "图片操作指引",
+    videoGuide: "指导视频",
+    switched: "已切换为中文",
+    newChatStarted: "已开始新对话"
+  },
+  en: {
+    pageTitle: "AI Teaching Assistant",
+    sidebarLabel: "Conversation sidebar",
+    brandName: "Little Bee",
+    brandStatus: "(Beta)",
+    newChat: "New chat",
+    history: "Conversation history",
+    languageSwitcher: "Language switcher",
+    languageCurrent: "English",
+    languageTarget: "中文",
+    recommendedQuestions: "Suggested questions",
+    openCommonQuestions: "Open common questions",
+    closeCommonQuestions: "Close common questions",
+    questionIcon: "Q",
+    welcomeTitle: "Hello, I’m Little Bee",
+    welcomeSubtitle: "Not sure what to ask? Choose a common question to get started.",
+    quickStart: "Quick start",
+    quickStartDesc: "Set up your first course in four steps",
+    createCourse: "Create a course",
+    createCourseDesc: "Build your first course",
+    teachingTeam: "Teaching team",
+    teachingTeamDesc: "Add teachers and assign classes",
+    makeCourseware: "Create courseware",
+    makeCoursewareDesc: "Add and publish learning content",
+    assignHomework: "Assign homework",
+    assignHomeworkDesc: "Set requirements, classes, and dates",
+    startClass: "Start a class",
+    startClassDesc: "Create a classroom session and invite students",
+    viewGrades: "View progress",
+    viewGradesDesc: "Review student progress and grades",
+    featureOverview: "Feature overview",
+    featureOverviewDesc: "See what you can do in uLearning",
+    knowledgeScope: "View supported topics",
+    inputPlaceholder: "Ask a question, e.g. How do I publish homework?",
+    send: "Send",
+    close: "Close",
+    feedbackTitle: "We’re sorry this answer was not helpful",
+    feedbackPrompt: "Would you like human support? This will open the support entry.",
+    humanSupport: "Human support",
+    notNow: "Not now",
+    handoffTitle: "Human support is not connected yet",
+    handoffPrompt: "Please describe the issue. Your feedback will help us improve the knowledge base.",
+    handoffPlaceholder: "Describe the issue you encountered",
+    submitFeedback: "Submit feedback",
+    cancel: "Cancel",
+    emptyHistory: "No conversations yet",
+    teacher: "Teacher",
+    assistant: "Little Bee",
+    textAnswer: "Text guide",
+    imageTutorial: "Image guide",
+    videoTutorial: "Video guide",
+    noImageTutorial: "No image guide is available yet.",
+    noVideoTutorial: "No video guide is available yet.",
+    copy: "Copy",
+    edit: "Edit",
+    regenerate: "Regenerate",
+    like: "Helpful",
+    dislike: "Not helpful",
+    helpful: "Helpful",
+    notHelpful: "Not helpful",
+    thinking: "DeepSeek is thinking",
+    visualGuide: "Visual step-by-step guide",
+    videoGuide: "video tutorial",
+    switched: "Switched to English",
+    newChatStarted: "Started a new chat"
+  }
 };
 
 const nodes = {
@@ -545,8 +681,46 @@ const nodes = {
   handoffDialogClose: document.querySelector("#handoffDialogClose"),
   handoffCancel: document.querySelector("#handoffCancel"),
   handoffSubmit: document.querySelector("#handoffSubmit"),
-  handoffInput: document.querySelector("#handoffInput")
+  handoffInput: document.querySelector("#handoffInput"),
+  languageToggle: document.querySelector("#languageToggle")
 };
+
+function t(key) {
+  return UI_TRANSLATIONS[state.language]?.[key] || UI_TRANSLATIONS.zh[key] || key;
+}
+
+function applyLanguage() {
+  const language = state.language;
+  document.documentElement.lang = language === "en" ? "en" : "zh-CN";
+  document.title = t("pageTitle");
+  document.querySelectorAll("[data-i18n]").forEach((element) => {
+    element.textContent = t(element.dataset.i18n);
+  });
+  [
+    ["data-i18n-placeholder", "placeholder"],
+    ["data-i18n-title", "title"],
+    ["data-i18n-aria-label", "aria-label"]
+  ].forEach(([dataAttribute, targetAttribute]) => {
+    document.querySelectorAll(`[${dataAttribute}]`).forEach((element) => {
+      element.setAttribute(targetAttribute, t(element.getAttribute(dataAttribute)));
+    });
+  });
+  if (nodes.languageToggle) {
+    nodes.languageToggle.textContent = t("languageTarget");
+    nodes.languageToggle.setAttribute(
+      "aria-label",
+      language === "en" ? "切换到中文" : "Switch to English"
+    );
+  }
+  renderHistory();
+}
+
+function toggleLanguage() {
+  state.language = state.language === "zh" ? "en" : "zh";
+  localStorage.setItem("ai-helper-language", state.language);
+  applyLanguage();
+  showToast(t("switched"));
+}
 
 const welcome = "老师您好，欢迎来到ULearning花园，我是小蜜蜂，也是您的小助手，在这里遇到的任何问题都可以问我，很高兴为您答疑解惑。";
 const beeMascotMarkup = `<span class="bee-mascot" aria-hidden="true"><span class="bee-wing bee-wing-left"></span><span class="bee-wing bee-wing-right"></span><span class="bee-body"><span class="bee-face"></span></span></span>`;
@@ -983,6 +1157,7 @@ init();
 
 async function init() {
   await Promise.all([loadScreenshotGuides(), loadVideoGuides()]);
+  applyLanguage();
   repairSessionTitles();
   startSession(false);
   renderHistory();
@@ -1072,7 +1247,11 @@ function bindEvents() {
       window.open(button.dataset.url, "_blank", "noopener");
       return;
     }
-    ask(button.dataset.question);
+    const displayQuestion =
+      state.language === "en" && button.dataset.questionEn
+        ? button.dataset.questionEn
+        : button.dataset.question;
+    ask(displayQuestion, button.dataset.question);
   });
 
   document.addEventListener("click", (event) => {
@@ -1133,12 +1312,21 @@ function bindEvents() {
 
   document.querySelector("#newChat").addEventListener("click", () => {
     startSession(true);
-    showToast("已开始新对话");
+    showToast(t("newChatStarted"));
   });
 
+  nodes.languageToggle?.addEventListener("click", toggleLanguage);
+
   document.querySelector("#knowledgeButton").addEventListener("click", () => {
-    const categories = ["开课", "教学内容", "教学活动", "课堂互动", "考试题库", "成绩评价", "常见问题"];
-    addMessage("assistant", `我可以回答这些操作：${categories.join("、")}。\n\n你可以直接输入问题，也可以点击页面开头的推荐问题快速开始。`, "uLearning教师操作助手");
+    const content =
+      state.language === "en"
+        ? "I can help with course setup, learning content, teaching activities, classroom interaction, exams, grading, and common uLearning issues.\n\nType a question or choose one of the suggested questions above."
+        : "我可以回答这些操作：开课、教学内容、教学活动、课堂互动、考试题库、成绩评价、常见问题。\n\n你可以直接输入问题，也可以点击页面开头的推荐问题快速开始。";
+    addMessage(
+      "assistant",
+      content,
+      state.language === "en" ? "uLearning Teaching Assistant" : "uLearning教师操作助手"
+    );
     persistCurrentSession();
   });
 
@@ -1166,7 +1354,13 @@ function showVideoGuideMenu() {
     result[group].push(video);
     return result;
   }, {});
-  addMessage("assistant", "请问你想看什么功能的视频教程？", "uLearning教师操作助手", null, grouped);
+  addMessage(
+    "assistant",
+    state.language === "en" ? "Which feature would you like to watch a video tutorial for?" : "请问你想看什么功能的视频教程？",
+    state.language === "en" ? "uLearning Teaching Assistant" : "uLearning教师操作助手",
+    null,
+    grouped
+  );
   persistCurrentSession("操作视频教程");
 }
 
@@ -1236,19 +1430,22 @@ function startSession(createRecord) {
   if (createRecord) persistCurrentSession();
 }
 
-async function ask(question) {
+async function ask(question, queryQuestion = question) {
   closePromptPanel();
   if (nodes.promptStrip.contains(document.activeElement)) document.activeElement.blur();
   setConversationMode(true);
-  addMessage("user", question, "教师");
+  addMessage("user", question, t("teacher"));
   const thinkingMessage = addThinkingMessage();
-  const guidedResponse = findGuidedResponse(question);
-  const result = await getAssistantAnswer(question);
+  const guidedResponse = state.language === "en" ? null : findGuidedResponse(queryQuestion);
+  const result = await getAssistantAnswer(queryQuestion);
   window.setTimeout(() => {
     removeMessage(thinkingMessage);
     const video = null;
-    const rawAnswer = isOverviewQuestion(question) ? overviewAnswer : result.answer;
-    const answer = addContextualLead(rawAnswer, result, question);
+    const rawAnswer =
+      isOverviewQuestion(queryQuestion) && state.language !== "en"
+        ? overviewAnswer
+        : result.answer;
+    const answer = addContextualLead(rawAnswer, result, queryQuestion);
     const next = guidedResponse
       ? {
           type: "guided",
@@ -1256,16 +1453,16 @@ async function ask(question) {
           actions: guidedResponse.actions || [],
           screenshots: (guidedResponse.screenshotIds || []).map(findScreenshotGuideById).filter(Boolean)
         }
-      : getTextAnswerGuidance(result, question);
+      : getTextAnswerGuidance(result, queryQuestion);
     addMessage(
       "assistant",
       answer,
-      "uLearning教师操作助手",
+      state.language === "en" ? "uLearning Teaching Assistant" : "uLearning教师操作助手",
       video,
       null,
       null,
       next,
-      question,
+      result.resolvedQuestion || queryQuestion,
       (result.matches || []).map((item) => item.question).filter(Boolean),
       Boolean(result.matched && !["small_talk", "general_chat", "troubleshooting"].includes(result.intent))
     );
@@ -1278,7 +1475,7 @@ async function getAssistantAnswer(question) {
     const response = await fetch("/api/chat", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ message: question })
+      body: JSON.stringify({ message: question, language: state.language })
     });
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const data = await response.json();
@@ -1287,14 +1484,17 @@ async function getAssistantAnswer(question) {
     console.warn("Backend chat failed.", error);
   }
   return {
-    answer: "后端服务暂时没有响应，请先确认本地服务已经启动后再试。",
+    answer:
+      state.language === "en"
+        ? "The local service is not responding. Please confirm that the backend is running and try again."
+        : "后端服务暂时没有响应，请先确认本地服务已经启动后再试。",
     matched: false
   };
 }
 
 function renderHistory() {
   if (!state.sessions.length) {
-    nodes.historyList.innerHTML = `<div class="empty-history">暂无对话</div>`;
+    nodes.historyList.innerHTML = `<div class="empty-history">${escapeHtml(t("emptyHistory"))}</div>`;
     return;
   }
   nodes.historyList.innerHTML = state.sessions
@@ -1382,10 +1582,14 @@ function addMessage(role, content, meta, video, videoMenu, screenshot, guidance,
     role === "assistant" && tutorialMode
       ? ensureTutorialTextAnswer(content, findScreenshotGuide(sourceQuestion))
       : content;
+  const localizedContent =
+    state.language === "en" && role === "assistant"
+      ? String(normalizedContent || "").replace(/\n{2,}/g, "\n")
+      : normalizedContent;
   const message = {
     id: `msg-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`,
     role,
-    content: normalizeMessageDisplayText(normalizedContent),
+    content: normalizeMessageDisplayText(localizedContent),
     meta,
     video,
     videoMenu,
@@ -1413,8 +1617,8 @@ function addThinkingMessage() {
   const message = {
     id: `msg-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`,
     role: "assistant",
-    content: "DeepSeek 正在思考",
-    meta: "uLearning教师操作助手",
+    content: t("thinking"),
+    meta: state.language === "en" ? "uLearning Teaching Assistant" : "uLearning教师操作助手",
     pending: true,
     at: new Date().toISOString()
   };
@@ -1457,7 +1661,7 @@ function refreshMessage(message) {
 function renderMessageToContainer(message, container) {
   if (!message.id) message.id = `msg-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`;
   const el = document.createElement("article");
-  const label = message.role === "user" ? "教师" : "小蜜蜂";
+  const label = message.role === "user" ? t("teacher") : t("assistant");
   const hasScreenshotGuide = Boolean(message.screenshot || message.guidance?.screenshots?.length);
   const classNames = ["message", message.role];
   if (message.role === "assistant") classNames.push("has-avatar");
@@ -1478,7 +1682,7 @@ function renderMessageToContainer(message, container) {
   const unifiedTutorial = Boolean(message.tutorialMode || matchedScreenshotGuide || matchedVideoGuide);
   const content =
     message.pending
-      ? `<div class="thinking-indicator" role="status"><span class="thinking-spinner" aria-hidden="true"></span><span>DeepSeek 正在思考</span></div>`
+      ? `<div class="thinking-indicator" role="status"><span class="thinking-spinner" aria-hidden="true"></span><span>${escapeHtml(t("thinking"))}</span></div>`
       : message.role === "assistant" && hasScreenshotGuide && !unifiedTutorial
       ? ""
       : message.role === "assistant"
@@ -1504,17 +1708,17 @@ function renderMessageTools(message) {
   if (message.role === "user") {
     return `
       <div class="message-tools" aria-label="提问操作">
-        <button type="button" data-message-action="edit" data-message-id="${escapeAttr(message.id)}" title="重新编辑">✎ 重新编辑</button>
-        <button type="button" data-message-action="copy" data-message-id="${escapeAttr(message.id)}" title="复制">⧉ 复制</button>
+        <button type="button" data-message-action="edit" data-message-id="${escapeAttr(message.id)}" title="${escapeAttr(t("edit"))}">✎ ${escapeHtml(t("edit"))}</button>
+        <button type="button" data-message-action="copy" data-message-id="${escapeAttr(message.id)}" title="${escapeAttr(t("copy"))}">⧉ ${escapeHtml(t("copy"))}</button>
       </div>
     `;
   }
   return `
     <div class="message-tools" aria-label="回答操作">
-      <button type="button" data-message-action="copy" data-message-id="${escapeAttr(message.id)}" title="复制">⧉ 复制</button>
-      <button type="button" data-message-action="regenerate" data-message-id="${escapeAttr(message.id)}" title="重新生成">↻ 重新生成</button>
-      <button class="${message.feedbackState?.type === "like" ? "active" : ""}" type="button" data-message-action="like" data-message-id="${escapeAttr(message.id)}" title="有帮助">♡ 点赞</button>
-      <button class="${message.feedbackState?.type === "dislike" ? "active" : ""}" type="button" data-message-action="dislike" data-message-id="${escapeAttr(message.id)}" title="没帮助"><span class="tool-icon broken-heart" aria-hidden="true">♡</span> 点踩</button>
+      <button type="button" data-message-action="copy" data-message-id="${escapeAttr(message.id)}" title="${escapeAttr(t("copy"))}">⧉ ${escapeHtml(t("copy"))}</button>
+      <button type="button" data-message-action="regenerate" data-message-id="${escapeAttr(message.id)}" title="${escapeAttr(t("regenerate"))}">↻ ${escapeHtml(t("regenerate"))}</button>
+      <button class="${message.feedbackState?.type === "like" ? "active" : ""}" type="button" data-message-action="like" data-message-id="${escapeAttr(message.id)}" title="${escapeAttr(t("helpful"))}">♡ ${escapeHtml(t("like"))}</button>
+      <button class="${message.feedbackState?.type === "dislike" ? "active" : ""}" type="button" data-message-action="dislike" data-message-id="${escapeAttr(message.id)}" title="${escapeAttr(t("notHelpful"))}"><span class="tool-icon broken-heart" aria-hidden="true">♡</span> ${escapeHtml(t("dislike"))}</button>
     </div>
   `;
 }
@@ -1757,16 +1961,16 @@ function renderGuidance(guidance) {
 function getGuidanceTitle(prompt) {
   return String(prompt || "")
     .trim()
-    .replace(/[。；;：:]+$/, "") + "：";
+    .replace(/[。；;：:]+$/, "") + (state.language === "en" ? ":" : "：");
 }
 
 function renderVideoGuide(video) {
   if (!video?.src) {
-    return `<div class="tutorial-empty" role="status">暂未提供视频教程</div>`;
+    return `<div class="tutorial-empty" role="status">${escapeHtml(t("noVideoTutorial"))}</div>`;
   }
   return `
     <figure class="video-guide">
-      <figcaption>${escapeHtml(video.title)} 指导视频</figcaption>
+      <figcaption>${state.language === "en" ? escapeHtml(t("videoTutorial")) : `${escapeHtml(video.title)} ${escapeHtml(t("videoGuide"))}`}</figcaption>
       <video controls preload="metadata" src="${escapeAttr(encodeURI(video.src))}"></video>
     </figure>
   `;
@@ -1775,15 +1979,15 @@ function renderVideoGuide(video) {
 function renderScreenshotGuide(guide) {
   const steps = guide.steps || [];
   if (!steps.length) {
-    return `<div class="tutorial-empty" role="status">暂未提供图片教程</div>`;
+    return `<div class="tutorial-empty" role="status">${escapeHtml(t("noImageTutorial"))}</div>`;
   }
-  const brief = getGuideBrief(guide);
-  const prerequisite = getGuidePrerequisite(guide);
+  const brief = state.language === "en" ? t("visualGuide") : getGuideBrief(guide);
+  const prerequisite = state.language === "en" ? null : getGuidePrerequisite(guide);
   const stepCount = Math.max(steps.length, 1);
   const stepColumnWidth = getScreenshotStepColumnWidth(stepCount);
   const minimumCarouselHeight = getScreenshotMinimumHeight(stepCount);
   return `
-    <section class="screenshot-guide ${stepCount >= 6 ? "is-dense" : ""}" aria-label="${escapeAttr(guide.title)}截图教程">
+    <section class="screenshot-guide ${stepCount >= 6 ? "is-dense" : ""}" aria-label="${escapeAttr(state.language === "en" ? t("imageTutorial") : `${guide.title}截图教程`)}">
       <div class="guide-brief">
         <strong>${escapeHtml(brief)}</strong>
         ${
@@ -1802,7 +2006,7 @@ function renderScreenshotGuide(guide) {
               (item, stepIndex) => `
                 <button class="screenshot-step ${stepIndex === 0 ? "active" : ""}" type="button" data-screenshot-step="${stepIndex}">
                   <span class="screenshot-step-index">Step ${stepIndex + 1}</span>
-                  <span>${escapeHtml(shortenStepText(item.text))}</span>
+                  <span>${escapeHtml(localizedScreenshotStep(item, stepIndex))}</span>
                 </button>
               `
             )
@@ -1816,7 +2020,7 @@ function renderScreenshotGuide(guide) {
                 (step, index) => `
                   <article class="screenshot-card" data-step-index="${index}">
                     <div class="screenshot-image-wrap">
-                      <img src="${escapeAttr(encodeURI(step.src))}" alt="${escapeAttr(`${guide.title} ${step.label}`)}" loading="lazy" data-trim-screenshot>
+                      <img src="${escapeAttr(encodeURI(step.src))}" alt="${escapeAttr(state.language === "en" ? `Visual guide, step ${index + 1}` : `${guide.title} ${step.label}`)}" loading="lazy" data-trim-screenshot>
                     </div>
                   </article>
                 `
@@ -1846,20 +2050,13 @@ function getScreenshotMinimumHeight(stepCount) {
 function prepareScreenshotImages(root = document) {
   root?.querySelectorAll?.("img[data-trim-screenshot]:not([data-trim-ready])").forEach((img) => {
     img.dataset.trimReady = "1";
+    // Imported tutorials are normalized onto equal white canvases. Measure the
+    // first active image once, then keep that height for every subsequent step.
     if (img.complete) {
-      trimScreenshotImage(img);
       syncScreenshotCarouselHeight(img);
     } else {
-      img.addEventListener(
-        "load",
-        () => {
-          trimScreenshotImage(img);
-          syncScreenshotCarouselHeight(img);
-        },
-        { once: true }
-      );
+      img.addEventListener("load", () => syncScreenshotCarouselHeight(img), { once: true });
     }
-    observeScreenshotImageSize(img);
   });
 }
 
@@ -1969,7 +2166,6 @@ function scrollScreenshotRailTo(rail, index) {
   rail.scrollTo({ left: index * card.getBoundingClientRect().width, behavior: "smooth" });
   const guide = rail.closest(".screenshot-guide");
   setActiveScreenshotStep(guide, index);
-  scheduleActiveScreenshotHeightSync(guide, index);
 }
 
 function scheduleActiveScreenshotHeightSync(guide, index) {
@@ -2064,7 +2260,8 @@ function findVideoGuide(question) {
 
 function findScreenshotGuide(question) {
   if (isCreateCoursewareTutorialQuestion(question)) {
-    return findScreenshotGuideById("new-courseware-flow");
+    const dynamicCoursewareGuide = findScreenshotGuideById("screenshot-如何新建课件");
+    if (dynamicCoursewareGuide) return dynamicCoursewareGuide;
   }
   return findBestTutorialGuide(question, screenshotGuides);
 }
@@ -2072,19 +2269,19 @@ function findScreenshotGuide(question) {
 function findBestTutorialGuide(question, guides) {
   const ranked = guides
     .map((guide) => ({ guide, score: tutorialGuideScore(question, guide) }))
-    .filter((item) => item.score >= 35)
+    .filter((item) => item.score >= 70)
     .sort((left, right) => right.score - left.score);
   return ranked[0]?.guide || null;
 }
 
 function tutorialGuideScore(question, guide) {
   const text = normalize(question);
-  const coreText = text.replace(/^(请问|如何|怎么|怎样|咋)/, "").replace(/[？?。.]$/, "");
+  const coreText = canonicalTutorialIntent(text);
   const terms = [guide.title, guide.question, guide.path, ...(guide.aliases || [])].filter(Boolean);
   let best = 0;
   terms.forEach((term) => {
     const normalizedTerm = normalize(term);
-    const coreTerm = normalizedTerm.replace(/^(请问|如何|怎么|怎样|咋)/, "").replace(/[？?。.]$/, "");
+    const coreTerm = canonicalTutorialIntent(normalizedTerm);
     if (text === normalizedTerm) {
       best = Math.max(best, 240);
       return;
@@ -2105,6 +2302,16 @@ function tutorialGuideScore(question, guide) {
   return best;
 }
 
+function canonicalTutorialIntent(value) {
+  return normalize(value)
+    .replace(/^(麻烦|请问|请教|请)/, "")
+    .replace(/^(如何|怎么|怎样|咋)/, "")
+    .replace(/^(快速|立即|直接|马上|迅速|便捷)+/, "")
+    .replace(/^(新建|新增)/, "创建")
+    .replace(/^(创建|新建|新增|添加|做|建)(一个|一门|一项|一份|一名|个)/, "$1")
+    .replace(/[？?。.]$/, "");
+}
+
 function isCreateCoursewareTutorialQuestion(question) {
   const text = normalize(question || "");
   return ["如何创建课件", "怎么创建课件", "怎样创建课件", "如何新建课件", "怎么新建课件"].some((term) =>
@@ -2114,6 +2321,7 @@ function isCreateCoursewareTutorialQuestion(question) {
 
 function ensureTutorialTextAnswer(answer, guide) {
   const text = normalizeMessageDisplayText(answer);
+  if (state.language === "en") return text;
   const numberedSteps = text.match(/(?:^|\n)\s*\d+[、.．)]\s*\S+/g) || [];
   if (numberedSteps.length >= 2) return text;
 
@@ -2139,22 +2347,31 @@ function ensureTutorialTextAnswer(answer, guide) {
 function renderUnifiedTutorialTabs(answer, guide, video) {
   return `
     <section class="answer-tutorial" data-answer-tutorial>
-      <div class="tutorial-tabs" role="tablist" aria-label="选择教程形式">
-        <button class="tutorial-tab active" type="button" role="tab" aria-selected="true" data-tutorial-tab="text">文字解答</button>
-        <button class="tutorial-tab" type="button" role="tab" aria-selected="false" data-tutorial-tab="image">图片教程</button>
-        <button class="tutorial-tab" type="button" role="tab" aria-selected="false" data-tutorial-tab="video">视频教程</button>
+      <div class="tutorial-tabs" role="tablist" aria-label="${escapeAttr(state.language === "en" ? "Choose a guide format" : "选择教程形式")}">
+        <button class="tutorial-tab active" type="button" role="tab" aria-selected="true" data-tutorial-tab="text">${escapeHtml(t("textAnswer"))}</button>
+        <button class="tutorial-tab" type="button" role="tab" aria-selected="false" data-tutorial-tab="image">${escapeHtml(t("imageTutorial"))}</button>
+        <button class="tutorial-tab" type="button" role="tab" aria-selected="false" data-tutorial-tab="video">${escapeHtml(t("videoTutorial"))}</button>
       </div>
       <div class="tutorial-panel active" role="tabpanel" data-tutorial-panel="text">
         <div class="message-content">${renderAssistantContent(answer)}</div>
       </div>
       <div class="tutorial-panel" role="tabpanel" data-tutorial-panel="image" hidden>
-        ${guide ? renderScreenshotGuide(guide) : `<div class="tutorial-empty" role="status">暂未提供图片教程</div>`}
+        ${guide ? renderScreenshotGuide(guide) : `<div class="tutorial-empty" role="status">${escapeHtml(t("noImageTutorial"))}</div>`}
       </div>
       <div class="tutorial-panel" role="tabpanel" data-tutorial-panel="video" hidden>
         ${renderVideoGuide(video)}
       </div>
     </section>
   `;
+}
+
+function localizedScreenshotStep(step, index) {
+  if (state.language !== "en") return shortenStepText(step.text);
+  const englishStep = String(step.textEn || "")
+    .trim()
+    .replace(/[。；;]+$/, "")
+    .replace(/\.+$/, "");
+  return englishStep ? `${englishStep}.` : "";
 }
 
 function switchTutorialTab(button) {
@@ -2239,9 +2456,20 @@ function getTextAnswerGuidance(result, question) {
   if (related.length) {
     return {
       type: "related",
-      prompt: "下面是我给您推荐的几个相关的功能教程：",
+      prompt: state.language === "en" ? "You may also want to explore:" : "下面是我给您推荐的几个相关的功能教程：",
       actions: related
     };
+  }
+
+  if (state.language === "en") {
+    const englishFallback = getEnglishGeneralGuidanceActions(question);
+    return englishFallback.length
+      ? {
+          type: "general-guides",
+          prompt: "You may also want to explore:",
+          actions: englishFallback
+        }
+      : null;
   }
 
   const matchedGuides = getQuestionMatchedGuideActions(question);
@@ -2263,6 +2491,19 @@ function getTextAnswerGuidance(result, question) {
   }
 
   return null;
+}
+
+function getEnglishGeneralGuidanceActions(sourceQuestion) {
+  const actions = [
+    { label: "Create a course", question: "How do I create a course?" },
+    { label: "Set up a teaching team", question: "How do I set up a teaching team?" },
+    { label: "Create courseware", question: "How do I create courseware?" },
+    { label: "Assign homework", question: "How do I assign individual homework?" },
+    { label: "Start a class", question: "How do I start a class?" }
+  ];
+  return actions
+    .filter((item) => normalize(item.question) !== normalize(sourceQuestion))
+    .slice(0, 4);
 }
 
 function getScreenshotGuidance(screenshot, result, question) {
@@ -2397,7 +2638,10 @@ function addContextualLead(answer, result, question) {
   let lead = "";
 
   if (["报错", "失败", "看不到", "找不到", "没有按钮", "权限"].some((term) => normalizedQuestion.includes(normalize(term)))) {
-    lead = "先别着急，我们先定位问题出现在哪一步。";
+    lead =
+      state.language === "en"
+        ? "Let’s identify which step is causing the issue."
+        : "先别着急，我们先定位问题出现在哪一步。";
   }
 
   return lead ? `${lead}\n\n${text}` : text;
@@ -2483,7 +2727,7 @@ function splitTerm(term) {
 }
 
 function formatTime(value) {
-  return new Date(value).toLocaleString("zh-CN", { month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit" });
+  return new Date(value).toLocaleString(state.language === "en" ? "en-US" : "zh-CN", { month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit" });
 }
 
 function formatFeedbackTime(value) {

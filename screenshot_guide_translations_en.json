@@ -1,0 +1,384 @@
+{
+  "screenshot-AI工作台的功能-公式识别": {
+    "title": "AI Workbench Features - Formula Recognition",
+    "steps": [
+      "In [AI Workbench], find and click [Formula Recognition].",
+      "Upload an image containing formulas. Supports png, jpg, jpeg formats.",
+      "View the recognition result. You can copy the formula or re-upload the image."
+    ]
+  },
+  "screenshot-AI工作台的功能-备课": {
+    "title": "AI Workbench Features - Lesson Preparation",
+    "steps": [
+      "In [AI Workbench], find and click [Lesson Preparation].",
+      "Follow the on-screen prompts to enter lesson requirements or upload materials."
+    ]
+  },
+  "screenshot-AI工作台的功能-学情分析": {
+    "title": "AI Workbench Features - Learning Analytics",
+    "steps": [
+      "In [AI Workbench], find and click [Learning Analytics].",
+      "Select the course, class, or data range you want to analyze."
+    ]
+  },
+  "screenshot-AI工作台的功能-学生画像": {
+    "title": "AI Workbench Features - Student Profile",
+    "steps": [
+      "In [AI Workbench], find and click [Student Profile].",
+      "Select the student or class you want to view.",
+      "Review the student profile content to assist with subsequent teaching adjustments.",
+      "View the generated or analyzed results, and edit, copy, or use them as needed."
+    ]
+  },
+  "screenshot-AI工作台的功能-教案生成": {
+    "title": "AI Workbench Features - Lesson Plan Generation",
+    "steps": [
+      "In [AI Workbench], find and click [Lesson Plan Generation].",
+      "Follow the on-screen prompts to upload materials, enter requirements, or select examples.",
+      "View the generated or analyzed results, and edit, copy, or use them as needed.",
+      "View the generated or analyzed results, and edit, copy, or use them as needed."
+    ]
+  },
+  "screenshot-AI工作台的功能-文档阅读": {
+    "title": "AI Workbench Features - Document Reading",
+    "steps": [
+      "In [AI Workbench], find and click [Document Reading].",
+      "Follow the on-screen prompts to upload materials, enter requirements, or select examples.",
+      "View the generated or analyzed results, and edit, copy, or use them as needed.",
+      "View the generated or analyzed results, and edit, copy, or use them as needed.",
+      "View the generated or analyzed results, and edit, copy, or use them as needed."
+    ]
+  },
+  "screenshot-AI工作台的功能-智能出题": {
+    "title": "AI Workbench Features - Smart Question Generation",
+    "steps": [
+      "In [AI Workbench], find and click [Smart Question Generation].",
+      "Follow the on-screen prompts to upload materials, enter requirements, or select examples.",
+      "View the generated or analyzed results, and edit, copy, or use them as needed.",
+      "View the generated or analyzed results, and edit, copy, or use them as needed.",
+      "View the generated or analyzed results, and edit, copy, or use them as needed."
+    ]
+  },
+  "screenshot-AI工作台的功能-智能批改": {
+    "title": "AI Workbench Features - Smart Grading",
+    "steps": [
+      "In [AI Workbench], find and click [Smart Grading].",
+      "Follow the on-screen prompts to upload materials, enter requirements, or select examples.",
+      "View the generated or analyzed results, and edit, copy, or use them as needed.",
+      "View the generated or analyzed results, and edit, copy, or use them as needed."
+    ]
+  },
+  "screenshot-AI工作台的功能-生成PPT-主题生成PPT": {
+    "title": "AI Workbench - Generate PPT - Generate PPT by Topic",
+    "steps": [
+      "In [AI Workbench], find and click [Generate PPT by Topic].",
+      "Follow on-screen prompts to upload materials, enter requirements, or select an example.",
+      "Review the generated or analyzed results, then edit, copy, or use as needed.",
+      "Review the generated or analyzed results, then edit, copy, or use as needed.",
+      "Review the generated or analyzed results, then edit, copy, or use as needed.",
+      "Review the generated or analyzed results, then edit, copy, or use as needed."
+    ]
+  },
+  "screenshot-AI工作台的功能-生成PPT-大纲生成PPT": {
+    "title": "AI Workbench - Generate PPT - Generate PPT from Outline",
+    "steps": [
+      "In [AI Workbench], find and click [Generate PPT from Outline].",
+      "Follow on-screen prompts to upload materials, enter requirements, or select an example.",
+      "Review the generated or analyzed results, then edit, copy, or use as needed.",
+      "Review the generated or analyzed results, then edit, copy, or use as needed.",
+      "Review the generated or analyzed results, then edit, copy, or use as needed."
+    ]
+  },
+  "screenshot-AI工作台的功能-生成图谱": {
+    "title": "AI Workbench - Generate Diagram",
+    "steps": [
+      "In [AI Workbench], find and click [Generate Diagram].",
+      "Follow on-screen prompts to upload materials, enter requirements, or select an example.",
+      "Review the generated or analyzed results, then edit, copy, or use as needed.",
+      "Review the generated or analyzed results, then edit, copy, or use as needed."
+    ]
+  },
+  "screenshot-AI工作台的功能-视频分析": {
+    "title": "AI Workbench - Video Analysis",
+    "steps": [
+      "In [AI Workbench], find and click [Video Analysis].",
+      "Follow on-screen prompts to upload materials, enter requirements, or select an example.",
+      "Review the generated or analyzed results, then edit, copy, or use as needed."
+    ]
+  },
+  "screenshot-AI工作台的功能-资源检索": {
+    "title": "AI Workbench - Resource Search",
+    "steps": [
+      "In [AI Workbench], find and click [Resource Search].",
+      "Follow on-screen prompts to upload materials, enter requirements, or select an example.",
+      "Review the generated or analyzed results, then edit, copy, or use as needed."
+    ]
+  },
+  "screenshot-创建课程": {
+    "title": "Create Course",
+    "steps": [
+      "Click [Create Course].",
+      "Click the [Create] button to complete creation and open the teacher development center.",
+      "Click [Enter Course Editing]."
+    ]
+  },
+  "screenshot-删除课程": {
+    "title": "Delete Course",
+    "steps": [
+      "Click [Delete Course].",
+      "After clicking [Delete Course], a pop-up window appears. Deleting the course cannot be undone."
+    ]
+  },
+  "screenshot-如何从课件库导入课件": {
+    "title": "How to Import Courseware from Courseware Library",
+    "steps": [
+      "Click [Import from Courseware Library]. The current course has no courseware imported yet. You can import from files or the library.",
+      "Select the courseware you want to import.",
+      "Click [Import] to complete the operation."
+    ]
+  },
+  "screenshot-如何使用教师备课助手": {
+    "title": "How to Use the Teacher Lesson Preparation Assistant",
+    "steps": [
+      "Click to enter the course.",
+      "Click on the Workbench, then Resources, then Discussion, then Teacher Lesson Preparation Assistant, and select Teacher Lesson Preparation Assistant.",
+      "Enter the dialog and generate a knowledge graph.",
+      "Click the arrow icon.",
+      "Click A, then Lesson Preparation Assistant 1, then Lesson Preparation, then Save, then Publish, then Workbench 0.",
+      "Click Download to save the outline to the local Workbench 0, Resources 0, Discussion, Exam, Project, Lesson.",
+      "Click Publish; a pop-up window will appear. Click Save, then Publish, then Workbench.",
+      "Click Resource 1, enter a keyword in the text box to see the newly generated outline, then add resources."
+    ]
+  },
+  "screenshot-如何创建AI助手": {
+    "title": "How to Create an AI Assistant",
+    "steps": [
+      "Enter the course's AI Workbench and click the plus sign in the assistant area.",
+      "Enter the Manage My AI Assistants page.",
+      "Click Create AI Assistant and select Manual Creation.",
+      "Fill in the assistant name, description, and instructions.",
+      "Configure the knowledge base, workflow, and avatar as needed, then save and publish.",
+      "Return to the AI Assistant management page and confirm the new assistant appears in the list."
+    ]
+  },
+  "screenshot-如何创建单元-导入课件生成单元": {
+    "title": "How to Create a Unit - Import Courseware to Generate a Unit",
+    "steps": [
+      "Click to enter the course.",
+      "In the pop-up window, select Import Courseware to Generate Unit under Teaching Activities.",
+      "Click Import Courseware to Generate Unit.",
+      "Click Import."
+    ]
+  },
+  "screenshot-如何创建单元-添加单元": {
+    "title": "How to Create a Unit - Add a Unit",
+    "steps": [
+      "Click Confirm.",
+      "Click to enter the course.",
+      "In the pop-up window, select Add Unit under Teaching Activities.",
+      "In the pop-up window, select Add Unit under Teaching Activities."
+    ]
+  },
+  "screenshot-如何删除公告": {
+    "title": "How to Delete an Announcement",
+    "steps": [
+      "Click the delete button next to the announcement.",
+      "Click Delete; a pop-up window will appear asking to confirm deletion of the announcement. Click to confirm."
+    ]
+  },
+  "screenshot-如何在单元内添加资源-添加教学活动-添加个人作业": {
+    "title": "How to Add Resources in a Unit - Add Teaching Activities - Add Individual Assignment",
+    "steps": [
+      "Enter the unit page and click the + to add an entry.",
+      "In the pop-up window, select Add Individual Assignment under Teaching Activities."
+    ]
+  },
+  "screenshot-如何在单元内添加资源-添加教学活动-添加公告": {
+    "title": "How to Add Resources in a Unit - Add Teaching Activities - Add Announcement",
+    "steps": [
+      "Enter the unit page and click the + to add an entry.",
+      "In the pop-up window, select Add Announcement under Teaching Activities."
+    ]
+  },
+  "screenshot-如何在单元内添加资源-添加教学活动-添加小组作业": {
+    "title": "How to Add Resources in a Unit - Add Teaching Activities - Add Group Assignment",
+    "steps": [
+      "Enter the unit page and click the + to add an entry.",
+      "In the pop-up window, select Add Group Assignment under Teaching Activities."
+    ]
+  },
+  "screenshot-如何在单元内添加资源-添加教学活动-添加测验": {
+    "title": "Add a Quiz to a Unit",
+    "steps": [
+      "Go to the unit page and click the [ + ] add button.",
+      "In the pop-up, select [ Add Quiz ] under [ Teaching Activities ]."
+    ]
+  },
+  "screenshot-如何在单元内添加资源-添加教学活动-添加直播": {
+    "title": "Add a Live Session to a Unit",
+    "steps": [
+      "Go to the unit page and click the [ + ] add button.",
+      "In the pop-up, select [ Add Live Session ] under [ Teaching Activities ]."
+    ]
+  },
+  "screenshot-如何在单元内添加资源-添加教学活动-添加考试": {
+    "title": "Add an Exam to a Unit",
+    "steps": [
+      "Go to the unit page and click the [ + ] add button.",
+      "In the pop-up, select [ Add Exam ] under [ Teaching Activities ]."
+    ]
+  },
+  "screenshot-如何在单元内添加资源-添加教学活动-添加讨论": {
+    "title": "Add a Discussion to a Unit",
+    "steps": [
+      "Go to the unit page and click the [ + ] add button.",
+      "In the pop-up, select [ Add Discussion ] under [ Teaching Activities ]."
+    ]
+  },
+  "screenshot-如何在单元内添加资源-添加教学活动-添加课堂": {
+    "title": "Add a Classroom to a Unit",
+    "steps": [
+      "Go to the unit page and click the [ + ] add button.",
+      "In the pop-up, select [ Add Classroom ] under [ Teaching Activities ]."
+    ]
+  },
+  "screenshot-如何在单元内添加资源-添加教学资源-添加课件": {
+    "title": "Add Courseware to a Unit",
+    "steps": [
+      "Go to the unit page and click the [ + ] add button.",
+      "In the pop-up, select [ Add Courseware ] under [ Teaching Resources ]."
+    ]
+  },
+  "screenshot-如何在单元内添加资源-添加教学资源-添加资源": {
+    "title": "Add a Resource to a Unit",
+    "steps": [
+      "Go to the unit page and click the [ + ] add button.",
+      "In the pop-up, select [ Add Resource ] under [ Teaching Resources ]."
+    ]
+  },
+  "screenshot-如何在课堂中打开资源": {
+    "title": "Open a Resource in Class",
+    "steps": [
+      "Click [ Start Class ].",
+      "Click [ Open Resource ].",
+      "Select the file you need for class, then send it to the student AI Workbench."
+    ]
+  },
+  "screenshot-如何导入自己的课件": {
+    "title": "How to Import Your Own Courseware",
+    "steps": [
+      "Click Resource Library, then click Upload File, Create Time, Add Folder, Upload File, Add, and Add.",
+      "After clicking “Upload File”, this pop-up window will appear: Resource Library Type, enter search keyword 2."
+    ]
+  },
+  "screenshot-如何开始上课": {
+    "title": "How to Start a Class",
+    "steps": [
+      "Open [Classroom] from the course menu, then click [Create Classroom].",
+      "In the dialog, configure the classroom session and confirm the course and teaching content.",
+      "Click [Start Class] when the session is ready.",
+      "Enter the live classroom and begin teaching."
+    ]
+  },
+  "screenshot-如何批量导入班级与学生": {
+    "title": "How to Batch Import Classes and Students",
+    "steps": [
+      "Open the class import tool and choose to import classes and students from another course.",
+      "Select the source course and the classes or students to copy, then click [Confirm].",
+      "Alternatively, choose to import students from the student library and select the required students.",
+      "Click [Confirm] to finish importing the selected classes and students."
+    ]
+  },
+  "screenshot-如何新建公告": {
+    "title": "How to Create a New Announcement",
+    "steps": [
+      "Click to enter the course.",
+      "Click Announcement 1 No Announcement C to Publish New Announcement 2, then click Publish New Announcement 0.",
+      "After clicking “Publish New Announcement”, this pop-up window will appear: Resource 0 口 0 囗.",
+      "Publish here. Course administrators can publish announcements to all classes, instructors."
+    ]
+  },
+  "screenshot-如何新建课件": {
+    "title": "How to Create New Courseware",
+    "steps": [
+      "Open [Courseware] in the course workspace, then select [Edit My Courseware].",
+      "On the My Courseware page, click [Create Courseware].",
+      "Enter a courseware name in the dialog, then click [Create Courseware] to continue.",
+      "Enter or paste the chapter outline, then click [Create] to generate the structure; you can also publish directly.",
+      "Add and edit the page content, click [Save], then select [Return to Courseware Home].",
+      "Review the generated chapters on the courseware home page, then click [Publish].",
+      "Select the publishing site in the dialog and click [Publish] to confirm.",
+      "Click [Return to My Home] and verify that the new courseware appears with a Published status."
+    ]
+  },
+  "screenshot-如何新建题库文件夹": {
+    "title": "How to Create a New Question Bank Folder",
+    "steps": [
+      "Open [Exam] from the course menu, then enter [Question Bank].",
+      "Click [Add] and choose [Add Folder].",
+      "Enter the folder information in the dialog and confirm to create the question-bank folder."
+    ]
+  },
+  "screenshot-如何添加AI助手至AI工作台首页": {
+    "title": "How to Add an AI Assistant to the AI Workbench Homepage",
+    "steps": [
+      "Enter the target course's [AI Workbench] and open [Settings].",
+      "In the AI Assistant area, click [Add AI Assistant].",
+      "Select the AI assistant to add to the homepage and confirm.",
+      "Return to the settings page and confirm the assistant status is [Enabled].",
+      "Return to the AI Workbench homepage and confirm the newly added assistant is displayed."
+    ]
+  },
+  "screenshot-如何添加扣子智能体": {
+    "title": "How to Add a Coze Agent",
+    "steps": [
+      "Click A 《 Workbench 1 \\ File Requirements 0 Exam Teacher Assistant Teacher Fan.",
+      "Click Add Coze Agent, Add Coze Agent.",
+      "After clicking “Add Coze Agent”, this pop-up window will appear: AI Assistant Coze Agent."
+    ]
+  },
+  "screenshot-如何编辑公告": {
+    "title": "How to Edit an Announcement",
+    "steps": [
+      "Click the edit button on the right. The default read level is 'Read'.",
+      "Click 'Edit' to open this popup. You can rename the announcement and edit its content here."
+    ]
+  },
+  "screenshot-如何设置教学团队-创建班级": {
+    "title": "How to Set Up a Teaching Team - Create a Class",
+    "steps": [
+      "Click to enter the course.",
+      "Click 'Create Class'. You can batch create classes. Enter the class name and teacher sequence number.",
+      "Click 'Enter class name here'. Each line represents one class. Enter the classes you want to create."
+    ]
+  },
+  "screenshot-如何设置教学团队-加入学生-学生扫码": {
+    "title": "How to Set Up a Teaching Team - Add Students via QR Code",
+    "steps": [
+      "Go to the class management page and open the student entry for the target class.",
+      "Click the class QR code so students can scan it with the uLearning App to join the class."
+    ]
+  },
+  "screenshot-如何设置教学团队-加入学生-老师添加": {
+    "title": "How to Set Up a Teaching Team - Add Students Manually",
+    "steps": [
+      "Click 'Add Student'. Confirm the class is created successfully. You can assign students or specify a teacher to delete the class.",
+      "After clicking 'Add Student', this popup appears. Tip: Students need to..."
+    ]
+  },
+  "screenshot-如何设置教学团队-指定教师": {
+    "title": "How to Set Up a Teaching Team - Assign a Teacher",
+    "steps": [
+      "Click 'Assign Teacher' to delete the class.",
+      "After clicking 'Assign Teacher', this popup appears. You can directly assign exams, assessments, or other items."
+    ]
+  },
+  "screenshot-新增AI助手中-选择AI助手": {
+    "title": "Add an AI Assistant - Select an AI Assistant",
+    "steps": [
+      "Go to the course's 'AI Workbench' and click the plus icon in the assistant area.",
+      "Select 'Choose AI Assistant'. In the popup, check an existing assistant.",
+      "Click 'Confirm'. Return to the workbench to verify the assistant is now displayed."
+    ]
+  }
+}
